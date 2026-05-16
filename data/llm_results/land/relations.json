@@ -1,0 +1,1962 @@
+[
+  {
+    "source_id": "e01c4bf1-34c3-5da1-aa95-252915b96542",
+    "target_id": "89b39360-5f87-56f6-965f-9ee3ad9904ad",
+    "type": "REFERENCES",
+    "evidence": "Отнесение земель к категориям, указанным в статье 1 настоящего Кодекса",
+    "metadata": {
+      "source_kz": "2-бап",
+      "target_kz": "1-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 1"
+    }
+  },
+  {
+    "source_id": "d1c2f062-0fb8-56ad-a093-9de904b0107f",
+    "target_id": "89b39360-5f87-56f6-965f-9ee3ad9904ad",
+    "type": "BASED_ON",
+    "evidence": "Зонирование - определение территории земель с установлением их целевого назначения и режима использования.",
+    "metadata": {
+      "source_kz": "8-бап",
+      "target_kz": "1-бап"
+    }
+  },
+  {
+    "source_id": "7b08f756-ca28-5abe-96e3-48936a601031",
+    "target_id": "d5a25d58-1188-5038-b2fe-06a61e066162",
+    "type": "REFERENCES",
+    "evidence": "Плата за возмездное предоставление (продажу) права частной собственности на земельный участок ... исчисляется на основе кадастровой (оценочной) стоимости, рассчитываемой по базовым ставкам платы за земельные участки с применением поправочных коэффициентов.",
+    "metadata": {
+      "source_kz": "9-бап",
+      "target_kz": "10-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 10"
+    }
+  },
+  {
+    "source_id": "d5a25d58-1188-5038-b2fe-06a61e066162",
+    "target_id": "ed87b7f7-7141-556c-aa4f-71867df55496",
+    "type": "REFERENCES",
+    "evidence": "При определении кадастровой (оценочной) стоимости земельных участков, указанных в пунктах 3 и 4 настоящей статьи, применяются поправочные коэффициенты ... в соответствии с подпунктом 3) пункта 4 статьи 11 настоящего Кодекса.",
+    "metadata": {
+      "source_kz": "10-бап",
+      "target_kz": "11-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 11"
+    }
+  },
+  {
+    "source_id": "ed87b7f7-7141-556c-aa4f-71867df55496",
+    "target_id": "d5a25d58-1188-5038-b2fe-06a61e066162",
+    "type": "REFERENCES",
+    "evidence": "Общий размер повышения или понижения кадастровой (оценочной) стоимости земельного участка для ведения сельскохозяйственного производства не должен превышать пятьдесят процентов от базовых ставок платы, установленных в соответствии с пунктом 1 статьи 10 настоящего Кодекса.",
+    "metadata": {
+      "source_kz": "11-бап",
+      "target_kz": "10-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 10"
+    }
+  },
+  {
+    "source_id": "b53c66e5-bcf5-5b62-a14c-99354d562b20",
+    "target_id": "fc3bc13f-f21b-5a0e-aa41-dd0a6a40f824",
+    "type": "BASED_ON",
+    "evidence": "Земельное законодательство в Республике Казахстан основывается на Конституции Республики Казахстан и состоит из настоящего Кодекса и принимаемых в соответствии с ним нормативных правовых актов Республики Казахстан.",
+    "metadata": {
+      "source_kz": "6-бап",
+      "target_kz": "3-бап"
+    }
+  },
+  {
+    "source_id": "30cb57b5-5235-51b8-965f-ac8bbfb3bcaf",
+    "target_id": "b53c66e5-bcf5-5b62-a14c-99354d562b20",
+    "type": "CORRELATED_WITH",
+    "evidence": "Если международным договором, ратифицированным Республикой Казахстан, установлены иные правила, чем те, которые содержатся в настоящем Кодексе, применяются правила указанного договора.",
+    "metadata": {
+      "source_kz": "7-бап",
+      "target_kz": "6-бап"
+    }
+  },
+  {
+    "source_id": "d89b136c-7dbd-52ff-bf82-9dbfcc646cad",
+    "target_id": "89b39360-5f87-56f6-965f-9ee3ad9904ad",
+    "type": "CORRELATED_WITH",
+    "evidence": "В настоящем Кодексе используются следующие основные понятия: ... земельный фонд ...",
+    "metadata": {
+      "source_kz": "12-бап",
+      "target_kz": "1-бап"
+    }
+  },
+  {
+    "source_id": "0909516a-7922-5a63-9bf8-6dd5fbdd22d7",
+    "target_id": "40ff7848-056c-5f9d-979c-84cd9ff12d44",
+    "type": "CORRELATED_WITH",
+    "evidence": "К компетенции Правительства Республики Казахстан в области регулирования земельных отношений относятся",
+    "metadata": {
+      "source_kz": "13-бап",
+      "target_kz": "14-бап"
+    }
+  },
+  {
+    "source_id": "0909516a-7922-5a63-9bf8-6dd5fbdd22d7",
+    "target_id": "7ecad980-4bda-5b59-89af-7a3d5fb20592",
+    "type": "CORRELATED_WITH",
+    "evidence": "К компетенции Правительства Республики Казахстан в области регулирования земельных отношений относятся",
+    "metadata": {
+      "source_kz": "13-бап",
+      "target_kz": "14-1-бап"
+    }
+  },
+  {
+    "source_id": "0909516a-7922-5a63-9bf8-6dd5fbdd22d7",
+    "target_id": "eb46d215-41d0-554f-a11d-acbc3af56799",
+    "type": "CORRELATED_WITH",
+    "evidence": "К компетенции Правительства Республики Казахстан в области регулирования земельных отношений относятся",
+    "metadata": {
+      "source_kz": "13-бап",
+      "target_kz": "15-бап"
+    }
+  },
+  {
+    "source_id": "0909516a-7922-5a63-9bf8-6dd5fbdd22d7",
+    "target_id": "8faf8ff3-f08b-5b05-9c1a-37a8772c9cfa",
+    "type": "CORRELATED_WITH",
+    "evidence": "К компетенции Правительства Республики Казахстан в области регулирования земельных отношений относятся",
+    "metadata": {
+      "source_kz": "13-бап",
+      "target_kz": "16-бап"
+    }
+  },
+  {
+    "source_id": "0909516a-7922-5a63-9bf8-6dd5fbdd22d7",
+    "target_id": "ff486d67-c6d4-58f5-a9ee-990af56e1fe3",
+    "type": "CORRELATED_WITH",
+    "evidence": "К компетенции Правительства Республики Казахстан в области регулирования земельных отношений относятся",
+    "metadata": {
+      "source_kz": "13-бап",
+      "target_kz": "17-бап"
+    }
+  },
+  {
+    "source_id": "40ff7848-056c-5f9d-979c-84cd9ff12d44",
+    "target_id": "7ecad980-4bda-5b59-89af-7a3d5fb20592",
+    "type": "CORRELATED_WITH",
+    "evidence": "К компетенции центрального уполномоченного органа относятся",
+    "metadata": {
+      "source_kz": "14-бап",
+      "target_kz": "14-1-бап"
+    }
+  },
+  {
+    "source_id": "40ff7848-056c-5f9d-979c-84cd9ff12d44",
+    "target_id": "eb46d215-41d0-554f-a11d-acbc3af56799",
+    "type": "CORRELATED_WITH",
+    "evidence": "К компетенции центрального уполномоченного органа относятся",
+    "metadata": {
+      "source_kz": "14-бап",
+      "target_kz": "15-бап"
+    }
+  },
+  {
+    "source_id": "40ff7848-056c-5f9d-979c-84cd9ff12d44",
+    "target_id": "8faf8ff3-f08b-5b05-9c1a-37a8772c9cfa",
+    "type": "CORRELATED_WITH",
+    "evidence": "К компетенции центрального уполномоченного органа относятся",
+    "metadata": {
+      "source_kz": "14-бап",
+      "target_kz": "16-бап"
+    }
+  },
+  {
+    "source_id": "40ff7848-056c-5f9d-979c-84cd9ff12d44",
+    "target_id": "ff486d67-c6d4-58f5-a9ee-990af56e1fe3",
+    "type": "CORRELATED_WITH",
+    "evidence": "К компетенции центрального уполномоченного органа относятся",
+    "metadata": {
+      "source_kz": "14-бап",
+      "target_kz": "17-бап"
+    }
+  },
+  {
+    "source_id": "7ecad980-4bda-5b59-89af-7a3d5fb20592",
+    "target_id": "eb46d215-41d0-554f-a11d-acbc3af56799",
+    "type": "CORRELATED_WITH",
+    "evidence": "К компетенции уполномоченного органа области относятся",
+    "metadata": {
+      "source_kz": "14-1-бап",
+      "target_kz": "15-бап"
+    }
+  },
+  {
+    "source_id": "7ecad980-4bda-5b59-89af-7a3d5fb20592",
+    "target_id": "8faf8ff3-f08b-5b05-9c1a-37a8772c9cfa",
+    "type": "CORRELATED_WITH",
+    "evidence": "К компетенции уполномоченного органа области относятся",
+    "metadata": {
+      "source_kz": "14-1-бап",
+      "target_kz": "16-бап"
+    }
+  },
+  {
+    "source_id": "7ecad980-4bda-5b59-89af-7a3d5fb20592",
+    "target_id": "ff486d67-c6d4-58f5-a9ee-990af56e1fe3",
+    "type": "CORRELATED_WITH",
+    "evidence": "К компетенции уполномоченного органа области относятся",
+    "metadata": {
+      "source_kz": "14-1-бап",
+      "target_kz": "17-бап"
+    }
+  },
+  {
+    "source_id": "eb46d215-41d0-554f-a11d-acbc3af56799",
+    "target_id": "8faf8ff3-f08b-5b05-9c1a-37a8772c9cfa",
+    "type": "CORRELATED_WITH",
+    "evidence": "К компетенции местных представительных органов в области регулирования земельных отношений на соответствующих территориях относятся",
+    "metadata": {
+      "source_kz": "15-бап",
+      "target_kz": "16-бап"
+    }
+  },
+  {
+    "source_id": "eb46d215-41d0-554f-a11d-acbc3af56799",
+    "target_id": "ff486d67-c6d4-58f5-a9ee-990af56e1fe3",
+    "type": "CORRELATED_WITH",
+    "evidence": "К компетенции местных представительных органов в области регулирования земельных отношений на соответствующих территориях относятся",
+    "metadata": {
+      "source_kz": "15-бап",
+      "target_kz": "17-бап"
+    }
+  },
+  {
+    "source_id": "8faf8ff3-f08b-5b05-9c1a-37a8772c9cfa",
+    "target_id": "ff486d67-c6d4-58f5-a9ee-990af56e1fe3",
+    "type": "CORRELATED_WITH",
+    "evidence": "К компетенции местного исполнительного органа области относятся",
+    "metadata": {
+      "source_kz": "16-бап",
+      "target_kz": "17-бап"
+    }
+  },
+  {
+    "source_id": "dfbbe51e-8641-53b8-8ad0-4f4877d32ae3",
+    "target_id": "262786a6-8712-5dbf-be82-5358da778a62",
+    "type": "CORRELATED_WITH",
+    "evidence": "К компетенции местного исполнительного органа города областного значения в области регулирования земельных отношений",
+    "metadata": {
+      "source_kz": "18-бап",
+      "target_kz": "19-бап"
+    }
+  },
+  {
+    "source_id": "dfbbe51e-8641-53b8-8ad0-4f4877d32ae3",
+    "target_id": "6e798dc3-ae89-5984-a3f3-f162c46ff207",
+    "type": "REFERENCES",
+    "evidence": "за исключением случаев, предусмотренных статьями 13, 16 и 19 настоящего Кодекса",
+    "metadata": {
+      "source_kz": "18-бап",
+      "target_kz": "20-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 19"
+    }
+  },
+  {
+    "source_id": "262786a6-8712-5dbf-be82-5358da778a62",
+    "target_id": "dfbbe51e-8641-53b8-8ad0-4f4877d32ae3",
+    "type": "REFERENCES",
+    "evidence": "за исключением случаев, предусмотренных статьями 13 и 16 настоящего Кодекса",
+    "metadata": {
+      "source_kz": "19-бап",
+      "target_kz": "18-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 18"
+    }
+  },
+  {
+    "source_id": "8acd36c5-60ed-5ea7-9636-49ca83400478",
+    "target_id": "072e010b-f2c2-5f9e-b9d9-3fb63cc67891",
+    "type": "EXTENDS",
+    "evidence": "Земельные участки сельскохозяйственного назначения, находящиеся в государственной собственности, могут предоставляться гражданам и юридическим лицам Республики Казахстан без иностранного участия на праве землепользования",
+    "metadata": {
+      "source_kz": "24-бап",
+      "target_kz": "23-бап"
+    }
+  },
+  {
+    "source_id": "1dae0215-6700-5c90-8be7-13e19d30c6b9",
+    "target_id": "6e798dc3-ae89-5984-a3f3-f162c46ff207",
+    "type": "MANIFESTED_IN",
+    "evidence": "В государственной собственности находятся земельные участки",
+    "metadata": {
+      "source_kz": "26-бап",
+      "target_kz": "20-бап"
+    }
+  },
+  {
+    "source_id": "6e23bbe3-b898-5eb0-814d-e6ef3b4822a3",
+    "target_id": "1dae0215-6700-5c90-8be7-13e19d30c6b9",
+    "type": "BASED_ON",
+    "evidence": "Земельные участки из земель, находящихся в государственной собственности, могут быть",
+    "metadata": {
+      "source_kz": "27-бап",
+      "target_kz": "26-бап"
+    }
+  },
+  {
+    "source_id": "0986f55d-7478-524b-a9f2-1adcd17e76b9",
+    "target_id": "6e798dc3-ae89-5984-a3f3-f162c46ff207",
+    "type": "CORRELATED_WITH",
+    "evidence": "К праву землепользования применяются нормы о праве собственности",
+    "metadata": {
+      "source_kz": "28-бап",
+      "target_kz": "20-бап"
+    }
+  },
+  {
+    "source_id": "1fd778dc-803c-57a9-a817-5ec6ec94d1e4",
+    "target_id": "0986f55d-7478-524b-a9f2-1adcd17e76b9",
+    "type": "MANIFESTED_IN",
+    "evidence": "Право землепользования может быть постоянным или временным",
+    "metadata": {
+      "source_kz": "29-бап",
+      "target_kz": "28-бап"
+    }
+  },
+  {
+    "source_id": "74bae18e-8d75-5dd8-a987-483dbb4439bc",
+    "target_id": "8a812470-fb96-5e7c-8c7c-24afae093fa4",
+    "type": "CORRELATED_WITH",
+    "evidence": "Право землепользования возникает путем: 1) предоставления права землепользования; 2) передачи права землепользования; 3) перехода права землепользования в порядке универсального правопреемства",
+    "metadata": {
+      "source_kz": "31-бап",
+      "target_kz": "22-бап"
+    }
+  },
+  {
+    "source_id": "17129f8f-469c-5f4b-8df9-0ae17e763a76",
+    "target_id": "74bae18e-8d75-5dd8-a987-483dbb4439bc",
+    "type": "MANIFESTED_IN",
+    "evidence": "Предоставление права землепользования означает наделение лица правом землепользования непосредственно государством",
+    "metadata": {
+      "source_kz": "32-бап",
+      "target_kz": "31-бап"
+    }
+  },
+  {
+    "source_id": "44e9688e-b46d-50b4-a9b5-aeb712454cf3",
+    "target_id": "74bae18e-8d75-5dd8-a987-483dbb4439bc",
+    "type": "MANIFESTED_IN",
+    "evidence": "Передача права землепользования означает наделение лица правом землепользования другим землепользователем",
+    "metadata": {
+      "source_kz": "33-бап",
+      "target_kz": "31-бап"
+    }
+  },
+  {
+    "source_id": "187742fc-7289-5a90-9983-da05cb41a7f4",
+    "target_id": "1fd778dc-803c-57a9-a817-5ec6ec94d1e4",
+    "type": "MANIFESTED_IN",
+    "evidence": "На праве постоянного землепользования предоставляются земельные участки",
+    "metadata": {
+      "source_kz": "34-бап",
+      "target_kz": "29-бап"
+    }
+  },
+  {
+    "source_id": "9e25c4f6-a985-5c18-96ff-dc4b8f20ef90",
+    "target_id": "8005e847-dbbc-5a95-8f24-be236be20f39",
+    "type": "CORRELATED_WITH",
+    "evidence": "Право временного безвозмездного землепользования",
+    "metadata": {
+      "source_kz": "35-бап",
+      "target_kz": "36-бап"
+    }
+  },
+  {
+    "source_id": "9e25c4f6-a985-5c18-96ff-dc4b8f20ef90",
+    "target_id": "2d7e8076-3f7e-576a-bcc0-3e55304f0550",
+    "type": "CORRELATED_WITH",
+    "evidence": "Право временного возмездного землепользования (аренды)",
+    "metadata": {
+      "source_kz": "35-бап",
+      "target_kz": "37-бап"
+    }
+  },
+  {
+    "source_id": "8005e847-dbbc-5a95-8f24-be236be20f39",
+    "target_id": "e88e9847-09b9-545d-a42a-dbdf4cfcf16a",
+    "type": "REFERENCES",
+    "evidence": "в виде служебных земельных наделов",
+    "metadata": {
+      "source_kz": "36-бап",
+      "target_kz": "41-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 41"
+    }
+  },
+  {
+    "source_id": "2d7e8076-3f7e-576a-bcc0-3e55304f0550",
+    "target_id": "9e25c4f6-a985-5c18-96ff-dc4b8f20ef90",
+    "type": "REFERENCES",
+    "evidence": "части третьей и четвертой пункта 2 статьи 35 настоящего Кодекса",
+    "metadata": {
+      "source_kz": "37-бап",
+      "target_kz": "35-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 35"
+    }
+  },
+  {
+    "source_id": "c3925687-2742-5f8a-b993-d48e18ad7f9d",
+    "target_id": "e88e9847-09b9-545d-a42a-dbdf4cfcf16a",
+    "type": "REFERENCES",
+    "evidence": "в соответствии со статьей 41 настоящего Кодекса",
+    "metadata": {
+      "source_kz": "38-бап",
+      "target_kz": "41-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 41"
+    }
+  },
+  {
+    "source_id": "c1f289d4-9d10-55d3-9ff2-b499fb7791a9",
+    "target_id": "73069c81-9642-5094-83aa-8282cb9b09bf",
+    "type": "REFERENCES",
+    "evidence": "пунктом 3 статьи 52 настоящего Кодекса",
+    "metadata": {
+      "source_kz": "39-бап",
+      "target_kz": "42-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 52"
+    }
+  },
+  {
+    "source_id": "c1f289d4-9d10-55d3-9ff2-b499fb7791a9",
+    "target_id": "20be7d36-60e2-54e6-b68c-1f9fc4308292",
+    "type": "REFERENCES",
+    "evidence": "пункт 3 статьи 78 настоящего Кодекса",
+    "metadata": {
+      "source_kz": "39-бап",
+      "target_kz": "40-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 78"
+    }
+  },
+  {
+    "source_id": "73069c81-9642-5094-83aa-8282cb9b09bf",
+    "target_id": "2d7e8076-3f7e-576a-bcc0-3e55304f0550",
+    "type": "REFERENCES",
+    "evidence": "статьей 64 настоящего Кодекса",
+    "metadata": {
+      "source_kz": "42-бап",
+      "target_kz": "37-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 64"
+    }
+  },
+  {
+    "source_id": "4986bd12-a348-5ed7-b71f-ee45ac13dab3",
+    "target_id": "4986bd12-a348-5ed7-b71f-ee45ac13dab3",
+    "type": "REFERENCES",
+    "evidence": "статьями 44-1 и 44-2 настоящего Кодекса",
+    "metadata": {
+      "source_kz": "43-бап",
+      "target_kz": "44-1-бап және 44-2-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 44-1 и 44-2"
+    }
+  },
+  {
+    "source_id": "4986bd12-a348-5ed7-b71f-ee45ac13dab3",
+    "target_id": "4986bd12-a348-5ed7-b71f-ee45ac13dab3",
+    "type": "REFERENCES",
+    "evidence": "статьей 48 настоящего Кодекса",
+    "metadata": {
+      "source_kz": "43-бап",
+      "target_kz": "48-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 48"
+    }
+  },
+  {
+    "source_id": "4986bd12-a348-5ed7-b71f-ee45ac13dab3",
+    "target_id": "4986bd12-a348-5ed7-b71f-ee45ac13dab3",
+    "type": "REFERENCES",
+    "evidence": "статьей 43-1 настоящего Кодекса",
+    "metadata": {
+      "source_kz": "43-бап",
+      "target_kz": "43-1-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 43-1"
+    }
+  },
+  {
+    "source_id": "4986bd12-a348-5ed7-b71f-ee45ac13dab3",
+    "target_id": "4986bd12-a348-5ed7-b71f-ee45ac13dab3",
+    "type": "REFERENCES",
+    "evidence": "статьей 44 настоящего Кодекса",
+    "metadata": {
+      "source_kz": "43-бап",
+      "target_kz": "44-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 44"
+    }
+  },
+  {
+    "source_id": "4986bd12-a348-5ed7-b71f-ee45ac13dab3",
+    "target_id": "4986bd12-a348-5ed7-b71f-ee45ac13dab3",
+    "type": "REFERENCES",
+    "evidence": "статьей 84 настоящего Кодекса",
+    "metadata": {
+      "source_kz": "43-бап",
+      "target_kz": "84-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 84"
+    }
+  },
+  {
+    "source_id": "4986bd12-a348-5ed7-b71f-ee45ac13dab3",
+    "target_id": "4986bd12-a348-5ed7-b71f-ee45ac13dab3",
+    "type": "REFERENCES",
+    "evidence": "статьей 120 настоящего Кодекса",
+    "metadata": {
+      "source_kz": "43-бап",
+      "target_kz": "120-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 120"
+    }
+  },
+  {
+    "source_id": "4986bd12-a348-5ed7-b71f-ee45ac13dab3",
+    "target_id": "4986bd12-a348-5ed7-b71f-ee45ac13dab3",
+    "type": "REFERENCES",
+    "evidence": "статьей 50 настоящего Кодекса",
+    "metadata": {
+      "source_kz": "43-бап",
+      "target_kz": "50-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 50"
+    }
+  },
+  {
+    "source_id": "4986bd12-a348-5ed7-b71f-ee45ac13dab3",
+    "target_id": "4986bd12-a348-5ed7-b71f-ee45ac13dab3",
+    "type": "REFERENCES",
+    "evidence": "статьей 119-2 настоящего Кодекса",
+    "metadata": {
+      "source_kz": "43-бап",
+      "target_kz": "119-2-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 119-2"
+    }
+  },
+  {
+    "source_id": "f97606fc-02b2-5905-952c-84860860c123",
+    "target_id": "b062774a-8cba-572c-9145-838245a90844",
+    "type": "CORRELATED_WITH",
+    "evidence": "Предоставление земельных участков, находящихся в государственной собственности",
+    "metadata": {
+      "source_kz": "43-1-бап",
+      "target_kz": "44-бап"
+    }
+  },
+  {
+    "source_id": "b062774a-8cba-572c-9145-838245a90844",
+    "target_id": "b3f3db18-2b45-5abf-8ba3-8cbada411aeb",
+    "type": "REFERENCES",
+    "evidence": "в соответствии со статьями 44-1 и 44-2 настоящего Кодекса",
+    "metadata": {
+      "source_kz": "44-бап",
+      "target_kz": "44-1-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 44-1"
+    }
+  },
+  {
+    "source_id": "4d88a1b3-a878-533a-895d-2fb90cbe75b2",
+    "target_id": "3d0807bf-28c6-55a5-937a-a571e13b3852",
+    "type": "REFERENCES",
+    "evidence": "пунктом 1 статьи 48 настоящего Кодекса",
+    "metadata": {
+      "source_kz": "44-2-бап",
+      "target_kz": "48-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 48"
+    }
+  },
+  {
+    "source_id": "4d88a1b3-a878-533a-895d-2fb90cbe75b2",
+    "target_id": "67e6ce8f-80f7-5374-8be1-096c75b25eb1",
+    "type": "REFERENCES",
+    "evidence": "статьями 47 и 49 настоящего Кодекса",
+    "metadata": {
+      "source_kz": "44-2-бап",
+      "target_kz": "47-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 47"
+    }
+  },
+  {
+    "source_id": "4d88a1b3-a878-533a-895d-2fb90cbe75b2",
+    "target_id": "3d0807bf-28c6-55a5-937a-a571e13b3852",
+    "type": "REFERENCES",
+    "evidence": "пункте 1 статьи 48 настоящего Кодекса",
+    "metadata": {
+      "source_kz": "44-2-бап",
+      "target_kz": "48-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 48"
+    }
+  },
+  {
+    "source_id": "62311262-ef6e-57db-8856-bcf5cd4947e3",
+    "target_id": "3d0807bf-28c6-55a5-937a-a571e13b3852",
+    "type": "REFERENCES",
+    "evidence": "статьи 48 настоящего Кодекса",
+    "metadata": {
+      "source_kz": "46-бап",
+      "target_kz": "48-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 48"
+    }
+  },
+  {
+    "source_id": "67e6ce8f-80f7-5374-8be1-096c75b25eb1",
+    "target_id": "4d88a1b3-a878-533a-895d-2fb90cbe75b2",
+    "type": "REFERENCES",
+    "evidence": "статьях 43, 44, 44-1 и 44-2 настоящего Кодекса",
+    "metadata": {
+      "source_kz": "47-бап",
+      "target_kz": "44-2-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 44-2"
+    }
+  },
+  {
+    "source_id": "67e6ce8f-80f7-5374-8be1-096c75b25eb1",
+    "target_id": "3d0807bf-28c6-55a5-937a-a571e13b3852",
+    "type": "REFERENCES",
+    "evidence": "подпунктом 2) части первой пункта 2 статьи 119-2 настоящего Кодекса",
+    "metadata": {
+      "source_kz": "47-бап",
+      "target_kz": "119-2-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 119-2"
+    }
+  },
+  {
+    "source_id": "67e6ce8f-80f7-5374-8be1-096c75b25eb1",
+    "target_id": "3d0807bf-28c6-55a5-937a-a571e13b3852",
+    "type": "REFERENCES",
+    "evidence": "статьей 119-2 настоящего Кодекса",
+    "metadata": {
+      "source_kz": "47-бап",
+      "target_kz": "119-2-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 119-2"
+    }
+  },
+  {
+    "source_id": "3d0807bf-28c6-55a5-937a-a571e13b3852",
+    "target_id": "67e6ce8f-80f7-5374-8be1-096c75b25eb1",
+    "type": "REFERENCES",
+    "evidence": "статьей 71 настоящего Кодекса",
+    "metadata": {
+      "source_kz": "48-бап",
+      "target_kz": "71-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 71"
+    }
+  },
+  {
+    "source_id": "3d0807bf-28c6-55a5-937a-a571e13b3852",
+    "target_id": "67e6ce8f-80f7-5374-8be1-096c75b25eb1",
+    "type": "REFERENCES",
+    "evidence": "статьей 119 настоящего Кодекса",
+    "metadata": {
+      "source_kz": "48-бап",
+      "target_kz": "119-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 119"
+    }
+  },
+  {
+    "source_id": "3d0807bf-28c6-55a5-937a-a571e13b3852",
+    "target_id": "67e6ce8f-80f7-5374-8be1-096c75b25eb1",
+    "type": "REFERENCES",
+    "evidence": "статьей 121 настоящего Кодекса",
+    "metadata": {
+      "source_kz": "48-бап",
+      "target_kz": "121-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 121"
+    }
+  },
+  {
+    "source_id": "3d0807bf-28c6-55a5-937a-a571e13b3852",
+    "target_id": "67e6ce8f-80f7-5374-8be1-096c75b25eb1",
+    "type": "REFERENCES",
+    "evidence": "пунктом 3 статьи 9 настоящего Кодекса",
+    "metadata": {
+      "source_kz": "48-бап",
+      "target_kz": "9-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 9"
+    }
+  },
+  {
+    "source_id": "3d0807bf-28c6-55a5-937a-a571e13b3852",
+    "target_id": "67e6ce8f-80f7-5374-8be1-096c75b25eb1",
+    "type": "REFERENCES",
+    "evidence": "пунктом 3 статьи 101 настоящего Кодекса",
+    "metadata": {
+      "source_kz": "48-бап",
+      "target_kz": "101-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 101"
+    }
+  },
+  {
+    "source_id": "3d0807bf-28c6-55a5-937a-a571e13b3852",
+    "target_id": "67e6ce8f-80f7-5374-8be1-096c75b25eb1",
+    "type": "REFERENCES",
+    "evidence": "подпунктом 8) части пятой пункта 3 статьи 107 настоящего Кодекса",
+    "metadata": {
+      "source_kz": "48-бап",
+      "target_kz": "107-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 107"
+    }
+  },
+  {
+    "source_id": "79d5d0a2-0832-543b-8156-bbc2a3b3f402",
+    "target_id": "ced4afb4-1496-54a0-a670-b4269d76a2c7",
+    "type": "REFERENCES",
+    "evidence": "пунктом 3 статьи 24 настоящего Кодекса",
+    "metadata": {
+      "source_kz": "49-бап",
+      "target_kz": "24-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 24"
+    }
+  },
+  {
+    "source_id": "79d5d0a2-0832-543b-8156-bbc2a3b3f402",
+    "target_id": "ba187a7e-2faa-5ce3-9e66-92b02df12840",
+    "type": "REFERENCES",
+    "evidence": "пунктом 1 статьи 48 настоящего Кодекса",
+    "metadata": {
+      "source_kz": "49-бап",
+      "target_kz": "48-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 48"
+    }
+  },
+  {
+    "source_id": "3acc47d0-45d5-597a-89fa-ef70a9c685cd",
+    "target_id": "82762b07-4a3f-5ac6-9c0a-6d392f105bfa",
+    "type": "CORRELATED_WITH",
+    "evidence": "Порядок пользования земельным участком сельскохозяйственного назначения, находящимся в общей собственности или общем землепользовании",
+    "metadata": {
+      "source_kz": "54-бап",
+      "target_kz": "56-бап"
+    }
+  },
+  {
+    "source_id": "355babcc-566e-5dd5-9ffe-f50577b439a2",
+    "target_id": "f8980464-d285-5272-bfb8-6739b2adf522",
+    "type": "REFERENCES",
+    "evidence": "за исключением случая, когда земельная доля находится в составе объекта кондоминиума",
+    "metadata": {
+      "source_kz": "55-бап",
+      "target_kz": "57-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 57"
+    }
+  },
+  {
+    "source_id": "f8980464-d285-5272-bfb8-6739b2adf522",
+    "target_id": "355babcc-566e-5dd5-9ffe-f50577b439a2",
+    "type": "REFERENCES",
+    "evidence": "в соответствии с правилами, установленными пунктом 2 статьи 55 настоящего Кодекса",
+    "metadata": {
+      "source_kz": "57-бап",
+      "target_kz": "55-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 55"
+    }
+  },
+  {
+    "source_id": "0ec14730-1379-5ce4-8e86-5be1acaa9793",
+    "target_id": "82762b07-4a3f-5ac6-9c0a-6d392f105bfa",
+    "type": "REFERENCES",
+    "evidence": "в соответствии со статьями 56 и 57 настоящего Кодекса",
+    "metadata": {
+      "source_kz": "58-бап",
+      "target_kz": "56-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 56"
+    }
+  },
+  {
+    "source_id": "0ec14730-1379-5ce4-8e86-5be1acaa9793",
+    "target_id": "f8980464-d285-5272-bfb8-6739b2adf522",
+    "type": "REFERENCES",
+    "evidence": "в соответствии со статьями 56 и 57 настоящего Кодекса",
+    "metadata": {
+      "source_kz": "58-бап",
+      "target_kz": "57-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 57"
+    }
+  },
+  {
+    "source_id": "3347eecf-3996-5ecb-9bd7-e5b4fa814ec2",
+    "target_id": "f8980464-d285-5272-bfb8-6739b2adf522",
+    "type": "REFERENCES",
+    "evidence": "в соответствии с правилами, установленными пунктом 2 статьи 55 настоящего Кодекса",
+    "metadata": {
+      "source_kz": "59-бап",
+      "target_kz": "55-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 55"
+    }
+  },
+  {
+    "source_id": "7c6d53c0-d08f-5541-bd25-15b6475d82e3",
+    "target_id": "0ec14730-1379-5ce4-8e86-5be1acaa9793",
+    "type": "REFERENCES",
+    "evidence": "Порядок определения долей супругов в совместной собственности (совместном землепользовании) при разделе земельного участка устанавливается статьей 58 настоящего Кодекса.",
+    "metadata": {
+      "source_kz": "60-бап",
+      "target_kz": "58-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 58"
+    }
+  },
+  {
+    "source_id": "d5b05289-a3ac-5dc1-96c3-9891a5576e31",
+    "target_id": "f8980464-d285-5272-bfb8-6739b2adf522",
+    "type": "REFERENCES",
+    "evidence": "за исключением случаев, предусмотренных пунктом 2 статьи 62 настоящего Кодекса",
+    "metadata": {
+      "source_kz": "62-бап",
+      "target_kz": "57-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 57"
+    }
+  },
+  {
+    "source_id": "5c76a0f6-be10-5e6b-a74e-8a4fdb818f15",
+    "target_id": "f6631c36-ce42-58df-a327-193f9b0f01ad",
+    "type": "CORRELATED_WITH",
+    "evidence": "Земельный участок, находящийся в частной собственности, а также право постоянного и долгосрочного временного землепользования входят в состав имущества физических и юридических лиц",
+    "metadata": {
+      "source_kz": "63-бап",
+      "target_kz": "64-бап"
+    }
+  },
+  {
+    "source_id": "b53f901d-77a6-59f9-99f6-de3d3f31995a",
+    "target_id": "f6631c36-ce42-58df-a327-193f9b0f01ad",
+    "type": "CORRELATED_WITH",
+    "evidence": "Обязанности собственников земельных участков и землепользователей по использованию земельных участков",
+    "metadata": {
+      "source_kz": "65-бап",
+      "target_kz": "64-бап"
+    }
+  },
+  {
+    "source_id": "405d1ebe-2059-5583-8ad2-31bf73fce0e6",
+    "target_id": "f6631c36-ce42-58df-a327-193f9b0f01ad",
+    "type": "CORRELATED_WITH",
+    "evidence": "Права и обязанности собственников земельных участков и землепользователей, которым права на земельный участок в силу настоящего Кодекса не могут принадлежать",
+    "metadata": {
+      "source_kz": "66-бап",
+      "target_kz": "64-бап"
+    }
+  },
+  {
+    "source_id": "5f522f22-40ab-526f-839e-d82bcc56d84e",
+    "target_id": "b53f901d-77a6-59f9-99f6-de3d3f31995a",
+    "type": "CORRELATED_WITH",
+    "evidence": "Основания возникновения сервитута",
+    "metadata": {
+      "source_kz": "67-бап",
+      "target_kz": "65-бап"
+    }
+  },
+  {
+    "source_id": "a80eec47-280d-5cd3-bcba-77d51a317055",
+    "target_id": "5f522f22-40ab-526f-839e-d82bcc56d84e",
+    "type": "CORRELATED_WITH",
+    "evidence": "Право нахождения физического лица на чужих земельных участках и прохода через них",
+    "metadata": {
+      "source_kz": "68-бап",
+      "target_kz": "67-бап"
+    }
+  },
+  {
+    "source_id": "3d43e9b9-23a9-5048-a33f-ad1a466ced69",
+    "target_id": "c157fa97-36dd-5508-a86f-917511f20bb8",
+    "type": "REFERENCES",
+    "evidence": "Публичный сервитут, устанавливаемый для проведения операций по разведке полезных ископаемых или геологическому изучению",
+    "metadata": {
+      "source_kz": "69-бап",
+      "target_kz": "71-1-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 71-1"
+    }
+  },
+  {
+    "source_id": "3d43e9b9-23a9-5048-a33f-ad1a466ced69",
+    "target_id": "20510365-ab5b-566d-a749-bf12c9639459",
+    "type": "CORRELATED_WITH",
+    "evidence": "прогона скота через земельный участок",
+    "metadata": {
+      "source_kz": "69-бап",
+      "target_kz": "70-бап"
+    }
+  },
+  {
+    "source_id": "3d43e9b9-23a9-5048-a33f-ad1a466ced69",
+    "target_id": "b37c33f9-5a4f-5917-8678-e6609b42775a",
+    "type": "CORRELATED_WITH",
+    "evidence": "временного использования земельного участка в целях проведения изыскательских, исследовательских и других работ",
+    "metadata": {
+      "source_kz": "69-бап",
+      "target_kz": "71-бап"
+    }
+  },
+  {
+    "source_id": "3d43e9b9-23a9-5048-a33f-ad1a466ced69",
+    "target_id": "c157fa97-36dd-5508-a86f-917511f20bb8",
+    "type": "CORRELATED_WITH",
+    "evidence": "временного использования земельного участка или его части в целях проведения разведки полезных ископаемых или геологического изучения",
+    "metadata": {
+      "source_kz": "69-бап",
+      "target_kz": "71-1-бап"
+    }
+  },
+  {
+    "source_id": "3d43e9b9-23a9-5048-a33f-ad1a466ced69",
+    "target_id": "9f111932-6e05-54b1-a480-06894c517225",
+    "type": "EXTENDS",
+    "evidence": "могут быть установлены другие сервитуты, кроме указанных в настоящем Кодексе",
+    "metadata": {
+      "source_kz": "69-бап",
+      "target_kz": "72-бап"
+    }
+  },
+  {
+    "source_id": "3d43e9b9-23a9-5048-a33f-ad1a466ced69",
+    "target_id": "fa5b1c9d-3f0f-5baa-89bb-c1c55a7ee845",
+    "type": "CORRELATED_WITH",
+    "evidence": "Сервитут сохраняется в случае перехода права собственности на земельный участок",
+    "metadata": {
+      "source_kz": "69-бап",
+      "target_kz": "73-бап"
+    }
+  },
+  {
+    "source_id": "3d43e9b9-23a9-5048-a33f-ad1a466ced69",
+    "target_id": "3920834b-7812-540f-a358-abed4837739b",
+    "type": "CORRELATED_WITH",
+    "evidence": "Действие сервитута прекращается",
+    "metadata": {
+      "source_kz": "69-бап",
+      "target_kz": "74-бап"
+    }
+  },
+  {
+    "source_id": "3d43e9b9-23a9-5048-a33f-ad1a466ced69",
+    "target_id": "0c55f2f7-fdc7-5484-a2ea-d57ad37438fb",
+    "type": "CORRELATED_WITH",
+    "evidence": "Государственной регистрации в правовом кадастре подлежат возникновение, изменение и прекращение сервитутов",
+    "metadata": {
+      "source_kz": "69-бап",
+      "target_kz": "75-бап"
+    }
+  },
+  {
+    "source_id": "20510365-ab5b-566d-a749-bf12c9639459",
+    "target_id": "3d43e9b9-23a9-5048-a33f-ad1a466ced69",
+    "type": "BASED_ON",
+    "evidence": "Скотопрогонные трассы временного (сезонного) пользования могут устанавливаться",
+    "metadata": {
+      "source_kz": "70-бап",
+      "target_kz": "69-бап"
+    }
+  },
+  {
+    "source_id": "b37c33f9-5a4f-5917-8678-e6609b42775a",
+    "target_id": "c157fa97-36dd-5508-a86f-917511f20bb8",
+    "type": "REFERENCES",
+    "evidence": "Действие настоящей статьи не распространяется на проведение изыскательских работ при осуществлении операций по разведке полезных ископаемых и геологическому изучению",
+    "metadata": {
+      "source_kz": "71-бап",
+      "target_kz": "71-1-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 71-1"
+    }
+  },
+  {
+    "source_id": "c157fa97-36dd-5508-a86f-917511f20bb8",
+    "target_id": "3d43e9b9-23a9-5048-a33f-ad1a466ced69",
+    "type": "BASED_ON",
+    "evidence": "Публичный сервитут, устанавливаемый для проведения операций по разведке полезных ископаемых или геологическому изучению",
+    "metadata": {
+      "source_kz": "71-1-бап",
+      "target_kz": "69-бап"
+    }
+  },
+  {
+    "source_id": "c157fa97-36dd-5508-a86f-917511f20bb8",
+    "target_id": "b37c33f9-5a4f-5917-8678-e6609b42775a",
+    "type": "REFERENCES",
+    "evidence": "Операции по разведке полезных ископаемых или геологическому изучению могут проводиться недропользователями",
+    "metadata": {
+      "source_kz": "71-1-бап",
+      "target_kz": "71-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 71"
+    }
+  },
+  {
+    "source_id": "e0a60869-dbb5-599a-a39e-22e8cb2c4739",
+    "target_id": "415a5709-160f-5eaf-952e-084f380e642a",
+    "type": "EXTENDS",
+    "evidence": "Ограничения залога земельного участка и права землепользования",
+    "metadata": {
+      "source_kz": "76-бап",
+      "target_kz": "77-бап"
+    }
+  },
+  {
+    "source_id": "e0a60869-dbb5-599a-a39e-22e8cb2c4739",
+    "target_id": "5f06d94d-c3aa-5079-923d-4c1196efa78a",
+    "type": "EXTENDS",
+    "evidence": "Залог земельного участка или права землепользования земельным участком, на котором имеются здания",
+    "metadata": {
+      "source_kz": "76-бап",
+      "target_kz": "78-бап"
+    }
+  },
+  {
+    "source_id": "e0a60869-dbb5-599a-a39e-22e8cb2c4739",
+    "target_id": "ab22ca37-6f0f-535c-94e3-52d1ef78422d",
+    "type": "EXTENDS",
+    "evidence": "Порядок залога земельных участков и прав землепользования",
+    "metadata": {
+      "source_kz": "76-бап",
+      "target_kz": "79-бап"
+    }
+  },
+  {
+    "source_id": "e0a60869-dbb5-599a-a39e-22e8cb2c4739",
+    "target_id": "b3b0a137-57aa-5dd1-84ff-9870b51e6ea9",
+    "type": "EXTENDS",
+    "evidence": "Регистрация залога земельного участка или права землепользования",
+    "metadata": {
+      "source_kz": "76-бап",
+      "target_kz": "80-бап"
+    }
+  },
+  {
+    "source_id": "415a5709-160f-5eaf-952e-084f380e642a",
+    "target_id": "5f06d94d-c3aa-5079-923d-4c1196efa78a",
+    "type": "CORRELATED_WITH",
+    "evidence": "Не допускается залог части земельного участка или права землепользования на часть земельного участка",
+    "metadata": {
+      "source_kz": "77-бап",
+      "target_kz": "78-бап"
+    }
+  },
+  {
+    "source_id": "b94ee16d-4472-5b5f-9f34-621d24686a01",
+    "target_id": "b8e2c617-f023-508e-b18c-90dfb535b665",
+    "type": "EXTENDS",
+    "evidence": "Отказ от права частной собственности или права землепользования",
+    "metadata": {
+      "source_kz": "81-бап",
+      "target_kz": "82-бап"
+    }
+  },
+  {
+    "source_id": "1b47fcb2-7b97-5e30-a207-ec8bb71e27a4",
+    "target_id": "a79093a2-ae6f-51dd-a545-94756a3ca35d",
+    "type": "REFERENCES",
+    "evidence": "статья 63 настоящего Кодекса",
+    "metadata": {
+      "source_kz": "83-бап",
+      "target_kz": "63-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 63"
+    }
+  },
+  {
+    "source_id": "a79093a2-ae6f-51dd-a545-94756a3ca35d",
+    "target_id": "3271ad62-1b34-5290-a03e-44d41066a592",
+    "type": "EXTENDS",
+    "evidence": "Статья 85. Принудительное отчуждение земельного участка для государственных нужд",
+    "metadata": {
+      "source_kz": "84-бап",
+      "target_kz": "85-бап"
+    }
+  },
+  {
+    "source_id": "a79093a2-ae6f-51dd-a545-94756a3ca35d",
+    "target_id": "0990ab91-239e-5b79-adc7-226da104848e",
+    "type": "EXTENDS",
+    "evidence": "Статья 86. Права собственника или негосударственного землепользователя при принудительном отчуждении земельного участка для государственных нужд",
+    "metadata": {
+      "source_kz": "84-бап",
+      "target_kz": "86-бап"
+    }
+  },
+  {
+    "source_id": "a79093a2-ae6f-51dd-a545-94756a3ca35d",
+    "target_id": "d737e078-89ce-5b46-b820-06d260ad4110",
+    "type": "EXTENDS",
+    "evidence": "Статья 87. Возмещение стоимости земельного участка при его принудительном отчуждении для государственных нужд",
+    "metadata": {
+      "source_kz": "84-бап",
+      "target_kz": "87-бап"
+    }
+  },
+  {
+    "source_id": "a79093a2-ae6f-51dd-a545-94756a3ca35d",
+    "target_id": "e6b5275b-00ec-5f12-97cc-05d1f4f5fb9d",
+    "type": "EXTENDS",
+    "evidence": "Статья 88. Принудительное отчуждение земельного участка для государственных нужд по решению суда",
+    "metadata": {
+      "source_kz": "84-бап",
+      "target_kz": "88-бап"
+    }
+  },
+  {
+    "source_id": "a79093a2-ae6f-51dd-a545-94756a3ca35d",
+    "target_id": "eb5201d1-cb74-5da2-9390-517d432b6c7f",
+    "type": "EXTENDS",
+    "evidence": "Статья 89. Изъятие земельного участка у государственного землепользователя для государственных нужд",
+    "metadata": {
+      "source_kz": "84-бап",
+      "target_kz": "89-бап"
+    }
+  },
+  {
+    "source_id": "a79093a2-ae6f-51dd-a545-94756a3ca35d",
+    "target_id": "38f4479f-0ffe-5a32-a75a-81505ba59eca",
+    "type": "EXTENDS",
+    "evidence": "Статья 90. Ограничение изъятия земель отдельных категорий",
+    "metadata": {
+      "source_kz": "84-бап",
+      "target_kz": "90-бап"
+    }
+  },
+  {
+    "source_id": "a79093a2-ae6f-51dd-a545-94756a3ca35d",
+    "target_id": "059fd341-3073-51d7-a41b-7ce3eb308e02",
+    "type": "EXTENDS",
+    "evidence": "Статья 91. Временное изъятие земельного участка при чрезвычайных ситуациях",
+    "metadata": {
+      "source_kz": "84-бап",
+      "target_kz": "91-бап"
+    }
+  },
+  {
+    "source_id": "3e566892-7638-5ae9-86f6-f1e7c06d3bc7",
+    "target_id": "8ad7df3c-3a4b-5327-9ba1-f9b2731751ba",
+    "type": "REFERENCES",
+    "evidence": "статьей 94 настоящего Кодекса",
+    "metadata": {
+      "source_kz": "92-бап",
+      "target_kz": "94-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 94"
+    }
+  },
+  {
+    "source_id": "81e098f9-30f7-51f4-8b06-7f8726a9b147",
+    "target_id": "8ad7df3c-3a4b-5327-9ba1-f9b2731751ba",
+    "type": "REFERENCES",
+    "evidence": "статьей 94 настоящего Кодекса",
+    "metadata": {
+      "source_kz": "93-бап",
+      "target_kz": "94-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 94"
+    }
+  },
+  {
+    "source_id": "8ad7df3c-3a4b-5327-9ba1-f9b2731751ba",
+    "target_id": "3e566892-7638-5ae9-86f6-f1e7c06d3bc7",
+    "type": "REFERENCES",
+    "evidence": "статьями 92 и 93 настоящего Кодекса",
+    "metadata": {
+      "source_kz": "94-бап",
+      "target_kz": "92-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 92"
+    }
+  },
+  {
+    "source_id": "8ad7df3c-3a4b-5327-9ba1-f9b2731751ba",
+    "target_id": "81e098f9-30f7-51f4-8b06-7f8726a9b147",
+    "type": "REFERENCES",
+    "evidence": "статьями 92 и 93 настоящего Кодекса",
+    "metadata": {
+      "source_kz": "94-бап",
+      "target_kz": "93-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 93"
+    }
+  },
+  {
+    "source_id": "8ad7df3c-3a4b-5327-9ba1-f9b2731751ba",
+    "target_id": "a79093a2-ae6f-51dd-a545-94756a3ca35d",
+    "type": "REFERENCES",
+    "evidence": "статьей 84 настоящего Кодекса",
+    "metadata": {
+      "source_kz": "94-бап",
+      "target_kz": "84-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 84"
+    }
+  },
+  {
+    "source_id": "2138d205-0548-514c-acc8-9d23cd478ab9",
+    "target_id": "d62fede4-5434-5b97-bcff-bc7457d57796",
+    "type": "REFERENCES",
+    "evidence": "при принудительном изъятии земельного участка в соответствии со статьями 92, 93 и 95 настоящего Кодекса",
+    "metadata": {
+      "source_kz": "95-бап",
+      "target_kz": "100-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 100"
+    }
+  },
+  {
+    "source_id": "d53a88cd-c7bf-5087-9dd0-7a33c125505c",
+    "target_id": "0470893b-d403-5acf-b415-f50342b70ad4",
+    "type": "REFERENCES",
+    "evidence": "Использование земель специального земельного фонда осуществляется в соответствии со статьей 97 настоящего Кодекса",
+    "metadata": {
+      "source_kz": "99-бап",
+      "target_kz": "97-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 97"
+    }
+  },
+  {
+    "source_id": "d62fede4-5434-5b97-bcff-bc7457d57796",
+    "target_id": "0470893b-d403-5acf-b415-f50342b70ad4",
+    "type": "REFERENCES",
+    "evidence": "Использование земель специального земельного фонда осуществляется в соответствии со статьей 97 настоящего Кодекса",
+    "metadata": {
+      "source_kz": "100-бап",
+      "target_kz": "97-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 97"
+    }
+  },
+  {
+    "source_id": "d62fede4-5434-5b97-bcff-bc7457d57796",
+    "target_id": "2138d205-0548-514c-acc8-9d23cd478ab9",
+    "type": "REFERENCES",
+    "evidence": "при принудительном изъятии земельного участка в соответствии со статьями 92, 93 и 95 настоящего Кодекса",
+    "metadata": {
+      "source_kz": "100-бап",
+      "target_kz": "95-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 95"
+    }
+  },
+  {
+    "source_id": "a4801762-cde0-514c-92db-de9ae09c38e0",
+    "target_id": "d62fede4-5434-5b97-bcff-bc7457d57796",
+    "type": "CORRELATED_WITH",
+    "evidence": "Реестр лиц, у которых принудительно изъяты земельные участки",
+    "metadata": {
+      "source_kz": "96-1-бап",
+      "target_kz": "100-бап"
+    }
+  },
+  {
+    "source_id": "26e156b4-57bc-53e8-af3e-8272af42dd36",
+    "target_id": "0470893b-d403-5acf-b415-f50342b70ad4",
+    "type": "EXTENDS",
+    "evidence": "Перевод сельскохозяйственных угодий из одного вида в другой",
+    "metadata": {
+      "source_kz": "98-бап",
+      "target_kz": "97-бап"
+    }
+  },
+  {
+    "source_id": "d53a88cd-c7bf-5087-9dd0-7a33c125505c",
+    "target_id": "26e156b4-57bc-53e8-af3e-8272af42dd36",
+    "type": "CORRELATED_WITH",
+    "evidence": "орошаемые инженерно подготовленные земли",
+    "metadata": {
+      "source_kz": "99-бап",
+      "target_kz": "98-бап"
+    }
+  },
+  {
+    "source_id": "86ea27a8-dc6c-5fba-8d8b-bfaad78d5317",
+    "target_id": "d62fede4-5434-5b97-bcff-bc7457d57796",
+    "type": "REFERENCES",
+    "evidence": "земельные участки из специального земельного фонда",
+    "metadata": {
+      "source_kz": "101-бап",
+      "target_kz": "100-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 100"
+    }
+  },
+  {
+    "source_id": "86ea27a8-dc6c-5fba-8d8b-bfaad78d5317",
+    "target_id": "0470893b-d403-5acf-b415-f50342b70ad4",
+    "type": "REFERENCES",
+    "evidence": "в соответствии с настоящим Кодексом",
+    "metadata": {
+      "source_kz": "101-бап",
+      "target_kz": "97-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 97"
+    }
+  },
+  {
+    "source_id": "222e0784-8ee6-5a04-967a-029d0ead0d4f",
+    "target_id": "0470893b-d403-5acf-b415-f50342b70ad4",
+    "type": "REFERENCES",
+    "evidence": "земельные участки из земель сельскохозяйственного назначения",
+    "metadata": {
+      "source_kz": "102-бап",
+      "target_kz": "97-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 97"
+    }
+  },
+  {
+    "source_id": "31c14c7b-6526-5f58-8a60-f6cb8a8fbd11",
+    "target_id": "d62fede4-5434-5b97-bcff-bc7457d57796",
+    "type": "REFERENCES",
+    "evidence": "включенных в состав специального земельного фонда района",
+    "metadata": {
+      "source_kz": "103-бап",
+      "target_kz": "100-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 100"
+    }
+  },
+  {
+    "source_id": "f9406366-d449-5a73-a450-091e05c416e8",
+    "target_id": "fc843446-13ba-5d0d-9c74-e0cbafe0b3bb",
+    "type": "REFERENCES",
+    "evidence": "статья 70 настоящего Кодекса",
+    "metadata": {
+      "source_kz": "104-бап",
+      "target_kz": "70-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 70"
+    }
+  },
+  {
+    "source_id": "4e1dfd80-a7b1-534e-b34e-2e418af6a87a",
+    "target_id": "b278da6f-2481-5833-9884-57fd230246d9",
+    "type": "REFERENCES",
+    "evidence": "статьей 166 настоящего Кодекса",
+    "metadata": {
+      "source_kz": "105-бап",
+      "target_kz": "166-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 166"
+    }
+  },
+  {
+    "source_id": "ec084302-0b6b-5c10-ba8e-782edfabb92d",
+    "target_id": "fc843446-13ba-5d0d-9c74-e0cbafe0b3bb",
+    "type": "REFERENCES",
+    "evidence": "пунктом 3 статьи 107 настоящего Кодекса",
+    "metadata": {
+      "source_kz": "109-бап",
+      "target_kz": "107-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 107"
+    }
+  },
+  {
+    "source_id": "fadc5547-00e1-57fd-8ec8-54510f8b6464",
+    "target_id": "f9406366-d449-5a73-a450-091e05c416e8",
+    "type": "REFERENCES",
+    "evidence": "пункт 4 статьи 69 настоящего Кодекса",
+    "metadata": {
+      "source_kz": "118-бап",
+      "target_kz": "69-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 69"
+    }
+  },
+  {
+    "source_id": "384f9d21-4ff7-5f68-9094-8315b6f30dbd",
+    "target_id": "b007b7d8-98ad-51d4-864a-9ecb1f94bda3",
+    "type": "REFERENCES",
+    "evidence": "охранные зоны магистральных трубопроводов, линий связи, радиофикации, электрических и тепловых сетей",
+    "metadata": {
+      "source_kz": "119-бап",
+      "target_kz": "121-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 121"
+    }
+  },
+  {
+    "source_id": "66a4bff2-e9c3-59c6-ade3-84a4d2e19864",
+    "target_id": "b007b7d8-98ad-51d4-864a-9ecb1f94bda3",
+    "type": "REFERENCES",
+    "evidence": "охранные зоны объектов наземной космической инфраструктуры",
+    "metadata": {
+      "source_kz": "119-1-бап",
+      "target_kz": "121-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 121"
+    }
+  },
+  {
+    "source_id": "21665105-cd00-50e0-8b18-1fc6db99a50d",
+    "target_id": "b007b7d8-98ad-51d4-864a-9ecb1f94bda3",
+    "type": "REFERENCES",
+    "evidence": "коммерческой зоне, определяемой в соответствии со статьей 107 настоящего Кодекса",
+    "metadata": {
+      "source_kz": "119-2-бап",
+      "target_kz": "121-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 107"
+    }
+  },
+  {
+    "source_id": "f99e9e7c-0efb-5121-a196-57e0e708ca2f",
+    "target_id": "b007b7d8-98ad-51d4-864a-9ecb1f94bda3",
+    "type": "REFERENCES",
+    "evidence": "территория военных полигонов, а также арсеналов, баз и складов",
+    "metadata": {
+      "source_kz": "120-бап",
+      "target_kz": "121-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 121"
+    }
+  },
+  {
+    "source_id": "22d0d2b7-4c5d-548f-b472-a3e0204027e1",
+    "target_id": "9ff22d57-b6d9-5cb2-8006-17c52e2e0ad4",
+    "type": "EXTENDS",
+    "evidence": "Для обеспечения особой охраны и защиты от неблагоприятного внешнего воздействия вокруг особо охраняемых природных территорий",
+    "metadata": {
+      "source_kz": "122-бап",
+      "target_kz": "123-бап"
+    }
+  },
+  {
+    "source_id": "22d0d2b7-4c5d-548f-b472-a3e0204027e1",
+    "target_id": "7bea9ca8-99a3-533c-b4e2-f029071622c2",
+    "type": "REFERENCES",
+    "evidence": "Отнесение земель к категории особо охраняемых природных территорий осуществляется в соответствии с законодательством",
+    "metadata": {
+      "source_kz": "122-бап",
+      "target_kz": "124-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 124"
+    }
+  },
+  {
+    "source_id": "9ff22d57-b6d9-5cb2-8006-17c52e2e0ad4",
+    "target_id": "22d0d2b7-4c5d-548f-b472-a3e0204027e1",
+    "type": "BASED_ON",
+    "evidence": "охранные зоны особо охраняемых природных территорий",
+    "metadata": {
+      "source_kz": "123-бап",
+      "target_kz": "122-бап"
+    }
+  },
+  {
+    "source_id": "7d3257b0-4cd5-5a8f-8be6-cbcf0f28a614",
+    "target_id": "b007b7d8-98ad-51d4-864a-9ecb1f94bda3",
+    "type": "REFERENCES",
+    "evidence": "санитарно-защитные зоны",
+    "metadata": {
+      "source_kz": "125-бап",
+      "target_kz": "121-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 121"
+    }
+  },
+  {
+    "source_id": "35d2c385-8072-5196-a640-c27c4c7ba0d3",
+    "target_id": "b007b7d8-98ad-51d4-864a-9ecb1f94bda3",
+    "type": "REFERENCES",
+    "evidence": "зоны с особыми условиями пользования землей",
+    "metadata": {
+      "source_kz": "126-бап",
+      "target_kz": "121-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 121"
+    }
+  },
+  {
+    "source_id": "3c8d7ca1-1898-5eb5-8aae-89102d960c47",
+    "target_id": "ca78406b-2d9a-5d9f-965d-6377964b6268",
+    "type": "CORRELATED_WITH",
+    "evidence": "Земельные участки под водоохранные зоны и полосы по берегам поверхностных водных объектов не выделяются на землях особо охраняемых природных территорий и государственного лесного фонда.",
+    "metadata": {
+      "source_kz": "127-бап",
+      "target_kz": "128-бап"
+    }
+  },
+  {
+    "source_id": "3c8d7ca1-1898-5eb5-8aae-89102d960c47",
+    "target_id": "f943a24b-bc54-5e00-b330-7c2001b7bf25",
+    "type": "CORRELATED_WITH",
+    "evidence": "Предоставление лесопользователям участков под объекты строительства на землях государственного лесного фонда, где лесные ресурсы предоставлены в долгосрочное лесопользование для оздоровительных, рекреационных, историко-культурных, туристских и спортивных целей",
+    "metadata": {
+      "source_kz": "127-бап",
+      "target_kz": "129-бап"
+    }
+  },
+  {
+    "source_id": "ca78406b-2d9a-5d9f-965d-6377964b6268",
+    "target_id": "f943a24b-bc54-5e00-b330-7c2001b7bf25",
+    "type": "REFERENCES",
+    "evidence": "Предоставление лесопользователям участков под объекты строительства на землях государственного лесного фонда",
+    "metadata": {
+      "source_kz": "128-бап",
+      "target_kz": "129-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 129"
+    }
+  },
+  {
+    "source_id": "ca78406b-2d9a-5d9f-965d-6377964b6268",
+    "target_id": "ea0fb53a-c239-5663-b05d-bafabffc7e3e",
+    "type": "CORRELATED_WITH",
+    "evidence": "Перевод земель лесного фонда в земли других категорий",
+    "metadata": {
+      "source_kz": "128-бап",
+      "target_kz": "130-бап"
+    }
+  },
+  {
+    "source_id": "ca78406b-2d9a-5d9f-965d-6377964b6268",
+    "target_id": "2f6ae680-1e2c-503a-8d57-a279e0566c06",
+    "type": "CORRELATED_WITH",
+    "evidence": "Потери лесохозяйственного производства, вызванные изъятием лесных угодий",
+    "metadata": {
+      "source_kz": "128-бап",
+      "target_kz": "131-бап"
+    }
+  },
+  {
+    "source_id": "cdb58c57-b8b7-546e-b033-8dbcaa38e041",
+    "target_id": "ab6a52aa-47a3-54a6-9d3a-429a172a1a0b",
+    "type": "REFERENCES",
+    "evidence": "Землями водного фонда признаются земли, занятые поверхностными водными объектами",
+    "metadata": {
+      "source_kz": "132-бап",
+      "target_kz": "133-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 133"
+    }
+  },
+  {
+    "source_id": "cdb58c57-b8b7-546e-b033-8dbcaa38e041",
+    "target_id": "0dfd84a8-8669-5d1d-b2cf-703661bd9866",
+    "type": "CORRELATED_WITH",
+    "evidence": "Земли, выделенные под водоохранные полосы поверхностных водных объектов",
+    "metadata": {
+      "source_kz": "132-бап",
+      "target_kz": "134-бап"
+    }
+  },
+  {
+    "source_id": "cdb58c57-b8b7-546e-b033-8dbcaa38e041",
+    "target_id": "99a5a979-b8ba-5347-bbcb-e54640e1e942",
+    "type": "CORRELATED_WITH",
+    "evidence": "Земельные участки из состава земель водного фонда",
+    "metadata": {
+      "source_kz": "132-бап",
+      "target_kz": "135-бап"
+    }
+  },
+  {
+    "source_id": "cdb58c57-b8b7-546e-b033-8dbcaa38e041",
+    "target_id": "4b3620a9-274c-5cd4-9a70-9528e6da4888",
+    "type": "REFERENCES",
+    "evidence": "Использование земель водного фонда осуществляется в порядке и на условиях, установленных настоящим Кодексом и водным законодательством",
+    "metadata": {
+      "source_kz": "132-бап",
+      "target_kz": "136-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 136"
+    }
+  },
+  {
+    "source_id": "cdb58c57-b8b7-546e-b033-8dbcaa38e041",
+    "target_id": "424b0770-2205-5247-907d-962ead5c54cc",
+    "type": "CORRELATED_WITH",
+    "evidence": "Перевод земель водного фонда в земли других категорий",
+    "metadata": {
+      "source_kz": "132-бап",
+      "target_kz": "136-1-бап"
+    }
+  },
+  {
+    "source_id": "0dfd84a8-8669-5d1d-b2cf-703661bd9866",
+    "target_id": "99a5a979-b8ba-5347-bbcb-e54640e1e942",
+    "type": "CORRELATED_WITH",
+    "evidence": "Земельные участки, занятые водоохранными зонами, могут быть предоставлены во временное землепользование",
+    "metadata": {
+      "source_kz": "134-бап",
+      "target_kz": "135-бап"
+    }
+  },
+  {
+    "source_id": "7d74391e-0cfc-51ce-a9da-805b26e8a5c8",
+    "target_id": "514a4c65-ec62-5132-b3f7-16439d04a6dd",
+    "type": "REFERENCES",
+    "evidence": "Земли запаса предоставляются в собственность или землепользование",
+    "metadata": {
+      "source_kz": "137-бап",
+      "target_kz": "138-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 138"
+    }
+  },
+  {
+    "source_id": "d24069f3-1867-5b2a-b7a7-10fdef411e93",
+    "target_id": "c16dbbd7-de9c-59b2-9a81-ca1b472755d3",
+    "type": "REFERENCES",
+    "evidence": "Охрана земель включает систему правовых, организационных, экономических, технологических и других мероприятий",
+    "metadata": {
+      "source_kz": "139-бап",
+      "target_kz": "140-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 140"
+    }
+  },
+  {
+    "source_id": "a98b3baa-b995-5f33-a41c-e53ca253b8f7",
+    "target_id": "1dc4aa22-13c8-5243-8ca0-44ca81c983b4",
+    "type": "CORRELATED_WITH",
+    "evidence": "Нормативы предельно допустимых концентраций вредных веществ в почве",
+    "metadata": {
+      "source_kz": "141-бап",
+      "target_kz": "142-бап"
+    }
+  },
+  {
+    "source_id": "1dc4aa22-13c8-5243-8ca0-44ca81c983b4",
+    "target_id": "72d79f5a-ba8b-5cd9-821d-6bf7a48b5e2d",
+    "type": "CORRELATED_WITH",
+    "evidence": "отрицательно влияющих на состояние земель",
+    "metadata": {
+      "source_kz": "142-бап",
+      "target_kz": "143-бап"
+    }
+  },
+  {
+    "source_id": "592b5f0a-7011-5299-ac29-229c0c0f6ec2",
+    "target_id": "8d157fea-d8f3-5ecb-8b07-640508974870",
+    "type": "EXTENDS",
+    "evidence": "Задачи государственного контроля за использованием и охраной земель",
+    "metadata": {
+      "source_kz": "144-бап",
+      "target_kz": "145-бап"
+    }
+  },
+  {
+    "source_id": "8d157fea-d8f3-5ecb-8b07-640508974870",
+    "target_id": "3e0fd796-2c82-5444-b852-7917a25e6204",
+    "type": "EXTENDS",
+    "evidence": "профилактического контроля без посещения субъекта (объекта) контроля",
+    "metadata": {
+      "source_kz": "145-бап",
+      "target_kz": "145-1-бап"
+    }
+  },
+  {
+    "source_id": "8d157fea-d8f3-5ecb-8b07-640508974870",
+    "target_id": "aa4ea310-b7a5-516d-9387-006a767317e0",
+    "type": "REFERENCES",
+    "evidence": "Государственные инспекторы по использованию и охране земель",
+    "metadata": {
+      "source_kz": "145-бап",
+      "target_kz": "146-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 146"
+    }
+  },
+  {
+    "source_id": "8d157fea-d8f3-5ecb-8b07-640508974870",
+    "target_id": "991de413-adff-5d7d-9ecc-2d54a8e2200c",
+    "type": "REFERENCES",
+    "evidence": "центральный уполномоченный орган, территориальные подразделения",
+    "metadata": {
+      "source_kz": "145-бап",
+      "target_kz": "147-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 147"
+    }
+  },
+  {
+    "source_id": "8d157fea-d8f3-5ecb-8b07-640508974870",
+    "target_id": "a4ef2428-8e8d-5b4c-a993-92e5f9325ed1",
+    "type": "REFERENCES",
+    "evidence": "Решение государственных инспекторов ... может быть обжаловано в соответствии с пунктом 3 статьи 148",
+    "metadata": {
+      "source_kz": "145-бап",
+      "target_kz": "148-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 148"
+    }
+  },
+  {
+    "source_id": "aa4ea310-b7a5-516d-9387-006a767317e0",
+    "target_id": "a4ef2428-8e8d-5b4c-a993-92e5f9325ed1",
+    "type": "EXTENDS",
+    "evidence": "Права и обязанности должностных лиц",
+    "metadata": {
+      "source_kz": "146-бап",
+      "target_kz": "148-бап"
+    }
+  },
+  {
+    "source_id": "991de413-adff-5d7d-9ecc-2d54a8e2200c",
+    "target_id": "a4ef2428-8e8d-5b4c-a993-92e5f9325ed1",
+    "type": "EXTENDS",
+    "evidence": "Функции ... и его территориальных подразделений",
+    "metadata": {
+      "source_kz": "147-бап",
+      "target_kz": "148-бап"
+    }
+  },
+  {
+    "source_id": "3571229a-7fa9-5a99-84f7-2cb5c1348d96",
+    "target_id": "7890d457-8d27-57cb-9afd-8da8493df3c9",
+    "type": "EXTENDS",
+    "evidence": "Проведение землеустройства",
+    "metadata": {
+      "source_kz": "149-бап",
+      "target_kz": "150-бап"
+    }
+  },
+  {
+    "source_id": "7890d457-8d27-57cb-9afd-8da8493df3c9",
+    "target_id": "eb13c242-0c46-50d4-82b3-34904f2b02b8",
+    "type": "EXTENDS",
+    "evidence": "Землеустроительный процесс",
+    "metadata": {
+      "source_kz": "150-бап",
+      "target_kz": "151-бап"
+    }
+  },
+  {
+    "source_id": "1d525114-bf73-559f-b633-d4a2552118aa",
+    "target_id": "be526507-bd56-51b1-b540-884036fa38e5",
+    "type": "REFERENCES",
+    "evidence": "подпунктом 2) пункта 1 статьи 153 настоящего Кодекса",
+    "metadata": {
+      "source_kz": "152-бап",
+      "target_kz": "153-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 153"
+    }
+  },
+  {
+    "source_id": "1d525114-bf73-559f-b633-d4a2552118aa",
+    "target_id": "2c51e6fe-0bd1-5ed0-a5bb-236c0fc52ae5",
+    "type": "CORRELATED_WITH",
+    "evidence": "Государственный земельный кадастр Республики Казахстан ... ведется по единой системе на всей территории Республики Казахстан",
+    "metadata": {
+      "source_kz": "152-бап",
+      "target_kz": "157-бап"
+    }
+  },
+  {
+    "source_id": "be526507-bd56-51b1-b540-884036fa38e5",
+    "target_id": "1d525114-bf73-559f-b633-d4a2552118aa",
+    "type": "REFERENCES",
+    "evidence": "статьи 153 настоящего Кодекса",
+    "metadata": {
+      "source_kz": "153-бап",
+      "target_kz": "152-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 152"
+    }
+  },
+  {
+    "source_id": "be526507-bd56-51b1-b540-884036fa38e5",
+    "target_id": "2ace021b-8cb4-50af-9bc2-8b671fa682d0",
+    "type": "CORRELATED_WITH",
+    "evidence": "ведение земельно-кадастровой книги и единого государственного реестра земель",
+    "metadata": {
+      "source_kz": "153-бап",
+      "target_kz": "156-бап"
+    }
+  },
+  {
+    "source_id": "eb2c6cb9-430b-5247-acbc-a0c1288c1868",
+    "target_id": "1d525114-bf73-559f-b633-d4a2552118aa",
+    "type": "BASED_ON",
+    "evidence": "Учет земельных участков для целей регистрации ... обеспечивающим государственную регистрацию прав",
+    "metadata": {
+      "source_kz": "154-бап",
+      "target_kz": "152-бап"
+    }
+  },
+  {
+    "source_id": "6b4d6ecb-c5b0-588a-9494-b3d1b4eab6bc",
+    "target_id": "be526507-bd56-51b1-b540-884036fa38e5",
+    "type": "REFERENCES",
+    "evidence": "присвоение кадастровых номеров земельным участкам",
+    "metadata": {
+      "source_kz": "155-бап",
+      "target_kz": "153-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 153"
+    }
+  },
+  {
+    "source_id": "2ace021b-8cb4-50af-9bc2-8b671fa682d0",
+    "target_id": "1d525114-bf73-559f-b633-d4a2552118aa",
+    "type": "CORRELATED_WITH",
+    "evidence": "Земельно-кадастровая документация на всех уровнях учета",
+    "metadata": {
+      "source_kz": "156-бап",
+      "target_kz": "152-бап"
+    }
+  },
+  {
+    "source_id": "09270639-eca8-551b-bcfc-facce5d8dac7",
+    "target_id": "1d525114-bf73-559f-b633-d4a2552118aa",
+    "type": "CORRELATED_WITH",
+    "evidence": "Сведения государственного земельного кадастра об определенном земельном участке предоставляются в виде выписок",
+    "metadata": {
+      "source_kz": "158-бап",
+      "target_kz": "152-бап"
+    }
+  },
+  {
+    "source_id": "23969609-3ec4-5726-a121-ebefe8b6ebf3",
+    "target_id": "5ce10cda-e5b4-5f96-9e4e-a6f7458386f8",
+    "type": "EXTENDS",
+    "evidence": "Мониторинг земель представляет собой систему ... наблюдений",
+    "metadata": {
+      "source_kz": "159-бап",
+      "target_kz": "160-бап"
+    }
+  },
+  {
+    "source_id": "5ce10cda-e5b4-5f96-9e4e-a6f7458386f8",
+    "target_id": "23969609-3ec4-5726-a121-ebefe8b6ebf3",
+    "type": "BASED_ON",
+    "evidence": "Задачами мониторинга земель являются",
+    "metadata": {
+      "source_kz": "160-бап",
+      "target_kz": "159-бап"
+    }
+  },
+  {
+    "source_id": "ee8cd2cd-49c2-5a23-bf81-754c4dd500e7",
+    "target_id": "23969609-3ec4-5726-a121-ebefe8b6ebf3",
+    "type": "CORRELATED_WITH",
+    "evidence": "Организацию ведения мониторинга земель осуществляет центральный уполномоченный орган",
+    "metadata": {
+      "source_kz": "161-бап",
+      "target_kz": "159-бап"
+    }
+  },
+  {
+    "source_id": "4f57f57f-7a0d-5864-9016-a22bdc02b508",
+    "target_id": "23969609-3ec4-5726-a121-ebefe8b6ebf3",
+    "type": "CORRELATED_WITH",
+    "evidence": "Для получения необходимой информации при ведении мониторинга земель применяются методы",
+    "metadata": {
+      "source_kz": "162-бап",
+      "target_kz": "159-бап"
+    }
+  },
+  {
+    "source_id": "4e1f2293-3cb5-54ee-9575-0ea4bf27916e",
+    "target_id": "1d525114-bf73-559f-b633-d4a2552118aa",
+    "type": "REFERENCES",
+    "evidence": "ведение земельного кадастра и мониторинга земель",
+    "metadata": {
+      "source_kz": "163-бап",
+      "target_kz": "152-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 152"
+    }
+  },
+  {
+    "source_id": "d2a2554f-f5ee-5c2b-bb1f-cd98858fbd6b",
+    "target_id": "a410f0f3-fd22-53ea-8a51-e00be83f62f0",
+    "type": "EXTENDS",
+    "evidence": "Собственник земельного участка или землепользователь вправе истребовать свой земельный участок из чужого незаконного владения",
+    "metadata": {
+      "source_kz": "164-1-бап",
+      "target_kz": "164-бап"
+    }
+  },
+  {
+    "source_id": "744f81a1-9679-524e-8423-6b1d123e7834",
+    "target_id": "a410f0f3-fd22-53ea-8a51-e00be83f62f0",
+    "type": "EXTENDS",
+    "evidence": "Убытки, причиненные собственникам или землепользователям, подлежат возмещению",
+    "metadata": {
+      "source_kz": "165-бап",
+      "target_kz": "164-бап"
+    }
+  },
+  {
+    "source_id": "a475364a-f727-5455-b702-f47aafcb7fbe",
+    "target_id": "9ff8e686-ec4c-57e8-871b-827f000fdd34",
+    "type": "CORRELATED_WITH",
+    "evidence": "При несогласии собственника земельного участка или землепользователя с решением, влекущим прекращение права собственности или землепользования, оно не может быть осуществлено до разрешения спора в судебном порядке.",
+    "metadata": {
+      "source_kz": "166-бап",
+      "target_kz": "167-бап"
+    }
+  },
+  {
+    "source_id": "a475364a-f727-5455-b702-f47aafcb7fbe",
+    "target_id": "2a9fc39d-2732-5fbd-8bbd-7811824f12ce",
+    "type": "CORRELATED_WITH",
+    "evidence": "Убытки, причиненные собственнику или землепользователю в результате издания не соответствующего законодательству акта органа государственной власти, иного государственного органа, а также действиями (бездействием) должностных лиц этих органов, подлежат возмещению Республикой Казахстан или соответственно административно-территориальной единицей.",
+    "metadata": {
+      "source_kz": "166-бап",
+      "target_kz": "168-бап"
+    }
+  },
+  {
+    "source_id": "57136955-0529-5e3e-a138-2d41055ff067",
+    "target_id": "951c1ae9-0db5-554c-aaf5-a0e0cb6fab0b",
+    "type": "REFERENCES",
+    "evidence": "Правоустанавливающие и идентификационные документы на земельные участки, предоставленные физическим и юридическим лицам до введения в действие статьи 44-1 настоящего Кодекса, сохраняют юридическую силу с учетом изменения прав на земельные участки, установленных земельным законодательством Республики Казахстан.",
+    "metadata": {
+      "source_kz": "171-бап",
+      "target_kz": "169-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 169"
+    }
+  },
+  {
+    "source_id": "57136955-0529-5e3e-a138-2d41055ff067",
+    "target_id": "a475364a-f727-5455-b702-f47aafcb7fbe",
+    "type": "REFERENCES",
+    "evidence": "Положения частей пятой, шестой, седьмой и восьмой пункта 2 статьи 122 настоящего Кодекса применяются для целей добычи твердых полезных ископаемых (за исключением общераспространенных полезных ископаемых), исключительно на месторождении, обнаруженном на участке недр, расположенном в пределах участка разведки либо геологического отвода по контракту на разведку твердых полезных ископаемых или лицензии на разведку твердых полезных ископаемых, заключенному либо выданной до введения в действие указанных частей.",
+    "metadata": {
+      "source_kz": "171-бап",
+      "target_kz": "166-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 122"
+    }
+  }
+]

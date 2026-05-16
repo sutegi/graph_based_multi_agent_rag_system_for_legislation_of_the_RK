@@ -1,0 +1,2830 @@
+[
+  {
+    "source_id": "dd7f6c03-f2e1-57ea-9e0d-545a7c102175",
+    "target_id": "d46c4c8c-b710-5eea-8f8c-a7e76291b06c",
+    "type": "BASED_ON",
+    "evidence": "Законодательство Республики Казахстан о недрах и недропользовании основывается на Конституции Республики Казахстан и состоит из настоящего Кодекса и иных нормативных правовых актов Республики Казахстан.",
+    "metadata": {
+      "source_kz": "1-бап",
+      "target_kz": "3-бап"
+    }
+  },
+  {
+    "source_id": "dd7f6c03-f2e1-57ea-9e0d-545a7c102175",
+    "target_id": "e54e29a2-c716-5eb4-a392-162a4c81ccc7",
+    "type": "BASED_ON",
+    "evidence": "Законодательство Республики Казахстан о недрах и недропользовании основывается на Конституции Республики Казахстан и состоит из настоящего Кодекса и иных нормативных правовых актов Республики Казахстан.",
+    "metadata": {
+      "source_kz": "1-бап",
+      "target_kz": "4-бап"
+    }
+  },
+  {
+    "source_id": "e54e29a2-c716-5eb4-a392-162a4c81ccc7",
+    "target_id": "d36ff610-4e92-59ef-ac4e-79d595ca3979",
+    "type": "MANIFESTED_IN",
+    "evidence": "рационального управления государственным фондом недр",
+    "metadata": {
+      "source_kz": "4-бап",
+      "target_kz": "5-бап"
+    }
+  },
+  {
+    "source_id": "e54e29a2-c716-5eb4-a392-162a4c81ccc7",
+    "target_id": "1f55b7cf-7ba6-5df0-9599-01e9bb3d8195",
+    "type": "MANIFESTED_IN",
+    "evidence": "обеспечения экологической безопасности при пользовании недрами",
+    "metadata": {
+      "source_kz": "4-бап",
+      "target_kz": "6-бап"
+    }
+  },
+  {
+    "source_id": "e54e29a2-c716-5eb4-a392-162a4c81ccc7",
+    "target_id": "0576af50-38ba-5d7b-b0c3-e2d3b7d7d5fb",
+    "type": "MANIFESTED_IN",
+    "evidence": "доступности информации в сфере недропользования",
+    "metadata": {
+      "source_kz": "4-бап",
+      "target_kz": "7-бап"
+    }
+  },
+  {
+    "source_id": "e54e29a2-c716-5eb4-a392-162a4c81ccc7",
+    "target_id": "1c6ea6f7-177a-5ad8-b0aa-dc9ed684a08a",
+    "type": "MANIFESTED_IN",
+    "evidence": "платности недропользования",
+    "metadata": {
+      "source_kz": "4-бап",
+      "target_kz": "8-бап"
+    }
+  },
+  {
+    "source_id": "e54e29a2-c716-5eb4-a392-162a4c81ccc7",
+    "target_id": "930a8f0b-eaa6-5441-b065-4c3533edea4f",
+    "type": "MANIFESTED_IN",
+    "evidence": "добросовестности недропользователей",
+    "metadata": {
+      "source_kz": "4-бап",
+      "target_kz": "9-бап"
+    }
+  },
+  {
+    "source_id": "c0ff8c90-bad4-5002-9271-9ea4b301c4bc",
+    "target_id": "0352c4f0-0ec8-59a8-8a40-8ec68ad1dcc2",
+    "type": "CORRELATED_WITH",
+    "evidence": "В соответствии с Конституцией Республики Казахстан недра принадлежат народу Казахстана.",
+    "metadata": {
+      "source_kz": "11-бап",
+      "target_kz": "10-бап"
+    }
+  },
+  {
+    "source_id": "c16c5b5e-f359-51b9-a51d-c220703fb16a",
+    "target_id": "a4168677-0ab8-53ee-ab90-80efad89457e",
+    "type": "CORRELATED_WITH",
+    "evidence": "Право недропользования представляет собой обеспеченную настоящим Кодексом возможность на возмездной основе пользоваться недрами в пределах выделенного участка в предпринимательских целях в течение определенного срока.",
+    "metadata": {
+      "source_kz": "17-бап",
+      "target_kz": "20-бап"
+    }
+  },
+  {
+    "source_id": "c16c5b5e-f359-51b9-a51d-c220703fb16a",
+    "target_id": "bd759d00-ac89-588a-ac6e-c5b58e8ee822",
+    "type": "CORRELATED_WITH",
+    "evidence": "Право недропользования представляет собой обеспеченную настоящим Кодексом возможность на возмездной основе пользоваться недрами в пределах выделенного участка в предпринимательских целях в течение определенного срока.",
+    "metadata": {
+      "source_kz": "17-бап",
+      "target_kz": "21-бап"
+    }
+  },
+  {
+    "source_id": "a4168677-0ab8-53ee-ab90-80efad89457e",
+    "target_id": "5d376b98-a65d-5937-a34e-13f0fc3e8b22",
+    "type": "CORRELATED_WITH",
+    "evidence": "Право недропользования возникает на основании: 1) лицензии на недропользование; 2) контракта на недропользование.",
+    "metadata": {
+      "source_kz": "20-бап",
+      "target_kz": "22-бап"
+    }
+  },
+  {
+    "source_id": "5d376b98-a65d-5937-a34e-13f0fc3e8b22",
+    "target_id": "78f6d551-3f4a-54b1-ba7d-6dda6f6ab7a3",
+    "type": "CORRELATED_WITH",
+    "evidence": "Право недропользования предоставляется для осуществления следующих операций: 1) геологическое изучение недр; 2) разведка полезных ископаемых; 3) добыча полезных ископаемых; 4) использование пространства недр; 5) старательство.",
+    "metadata": {
+      "source_kz": "22-бап",
+      "target_kz": "23-бап"
+    }
+  },
+  {
+    "source_id": "e21c213c-3548-58ce-9b09-d962ae8f41db",
+    "target_id": "f100a12c-c0cb-5e32-9f4f-cd9115e302b1",
+    "type": "EXTENDS",
+    "evidence": "При проведении операций по разведке и (или) добыче полезных ископаемых недропользователи обязаны отдавать предпочтение казахстанским кадрам.",
+    "metadata": {
+      "source_kz": "28-бап",
+      "target_kz": "28-1-бап"
+    }
+  },
+  {
+    "source_id": "e21c213c-3548-58ce-9b09-d962ae8f41db",
+    "target_id": "dd7f6c03-f2e1-57ea-9e0d-545a7c102175",
+    "type": "REFERENCES",
+    "evidence": "Условия внутристрановой ценности в кадрах при проведении операций по разведке и (или) добыче углеводородов по сложным проектам определяются с учетом положений статьи 36 настоящего Кодекса.",
+    "metadata": {
+      "source_kz": "28-бап",
+      "target_kz": "36-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 36"
+    }
+  },
+  {
+    "source_id": "29212ff3-5c12-536d-99db-8ec78d362a36",
+    "target_id": "d22e6f82-4035-51b4-a740-b979d8ec4c0e",
+    "type": "CORRELATED_WITH",
+    "evidence": "Лицензия на недропользование является документом, выдаваемым государственным органом и предоставляющим ее обладателю право на пользование участком недр",
+    "metadata": {
+      "source_kz": "29-бап",
+      "target_kz": "30-бап"
+    }
+  },
+  {
+    "source_id": "29212ff3-5c12-536d-99db-8ec78d362a36",
+    "target_id": "c8f7c42f-a18d-5a9c-8eae-f4b5cfe4fbb5",
+    "type": "EXTENDS",
+    "evidence": "Лицензия на недропользование является документом, выдаваемым государственным органом и предоставляющим ее обладателю право на пользование участком недр",
+    "metadata": {
+      "source_kz": "29-бап",
+      "target_kz": "31-бап"
+    }
+  },
+  {
+    "source_id": "29212ff3-5c12-536d-99db-8ec78d362a36",
+    "target_id": "8c14c927-75db-5606-944a-f64a20db3bf4",
+    "type": "EXTENDS",
+    "evidence": "Лицензия на недропользование является документом, выдаваемым государственным органом",
+    "metadata": {
+      "source_kz": "29-бап",
+      "target_kz": "32-бап"
+    }
+  },
+  {
+    "source_id": "29212ff3-5c12-536d-99db-8ec78d362a36",
+    "target_id": "6691dbaf-f77e-58eb-859d-87a8e5ed6194",
+    "type": "EXTENDS",
+    "evidence": "Лицензия на недропользование является документом, выдаваемым государственным органом",
+    "metadata": {
+      "source_kz": "29-бап",
+      "target_kz": "33-бап"
+    }
+  },
+  {
+    "source_id": "29212ff3-5c12-536d-99db-8ec78d362a36",
+    "target_id": "f0986b1e-3160-5719-90ff-e0ffa44ce257",
+    "type": "EXTENDS",
+    "evidence": "Лицензия на недропользование является документом, выдаваемым государственным органом",
+    "metadata": {
+      "source_kz": "29-бап",
+      "target_kz": "34-бап"
+    }
+  },
+  {
+    "source_id": "91183839-0327-52b6-b96c-5abb77a74587",
+    "target_id": "b916514d-ae89-54bc-a0e6-e82cd76dc7e1",
+    "type": "EXTENDS",
+    "evidence": "Контракт на недропользование является договором, содержание, порядок заключения, исполнения и прекращения которого определяются настоящим Кодексом.",
+    "metadata": {
+      "source_kz": "35-бап",
+      "target_kz": "36-бап"
+    }
+  },
+  {
+    "source_id": "91183839-0327-52b6-b96c-5abb77a74587",
+    "target_id": "dd133f03-dbb1-5535-9c8d-6511ed97c5c9",
+    "type": "EXTENDS",
+    "evidence": "Контракт на недропользование является договором, содержание, порядок заключения, исполнения и прекращения которого определяются настоящим Кодексом.",
+    "metadata": {
+      "source_kz": "35-бап",
+      "target_kz": "37-бап"
+    }
+  },
+  {
+    "source_id": "91183839-0327-52b6-b96c-5abb77a74587",
+    "target_id": "137786b4-78a9-5cc3-a452-0a5bededfc87",
+    "type": "EXTENDS",
+    "evidence": "Контракт на недропользование является договором, содержание, порядок заключения, исполнения и прекращения которого определяются настоящим Кодексом.",
+    "metadata": {
+      "source_kz": "35-бап",
+      "target_kz": "38-бап"
+    }
+  },
+  {
+    "source_id": "91183839-0327-52b6-b96c-5abb77a74587",
+    "target_id": "8ef736b6-21fa-5b0d-9cf5-c8f2fc422486",
+    "type": "EXTENDS",
+    "evidence": "Контракт на недропользование является договором, содержание, порядок заключения, исполнения и прекращения которого определяются настоящим Кодексом.",
+    "metadata": {
+      "source_kz": "35-бап",
+      "target_kz": "39-бап"
+    }
+  },
+  {
+    "source_id": "b916514d-ae89-54bc-a0e6-e82cd76dc7e1",
+    "target_id": "dd133f03-dbb1-5535-9c8d-6511ed97c5c9",
+    "type": "REFERENCES",
+    "evidence": "подпунктом 5) пункта 2 настоящей статьи",
+    "metadata": {
+      "source_kz": "36-бап",
+      "target_kz": "37-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 37"
+    }
+  },
+  {
+    "source_id": "dd133f03-dbb1-5535-9c8d-6511ed97c5c9",
+    "target_id": "b916514d-ae89-54bc-a0e6-e82cd76dc7e1",
+    "type": "REFERENCES",
+    "evidence": "пунктом 5 статьи 36 настоящего Кодекса",
+    "metadata": {
+      "source_kz": "37-бап",
+      "target_kz": "36-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 36"
+    }
+  },
+  {
+    "source_id": "2222e197-26b4-5b43-8137-e0ca9a2d344a",
+    "target_id": "8c14c927-75db-5606-944a-f64a20db3bf4",
+    "type": "REFERENCES",
+    "evidence": "путем переоформления лицензии на недропользование",
+    "metadata": {
+      "source_kz": "40-бап",
+      "target_kz": "32-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 32"
+    }
+  },
+  {
+    "source_id": "2222e197-26b4-5b43-8137-e0ca9a2d344a",
+    "target_id": "dd133f03-dbb1-5535-9c8d-6511ed97c5c9",
+    "type": "REFERENCES",
+    "evidence": "внесения изменения в контракт на недропользование",
+    "metadata": {
+      "source_kz": "40-бап",
+      "target_kz": "37-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 37"
+    }
+  },
+  {
+    "source_id": "a9075b46-2045-5098-ba53-fb1c7fd7cac3",
+    "target_id": "24c6cf8d-a3f2-534f-b739-562b707aadfd",
+    "type": "CORRELATED_WITH",
+    "evidence": "Объектами, связанными с правом недропользования, являются доли участия, паи, акции и другие формы долевого участия",
+    "metadata": {
+      "source_kz": "41-бап",
+      "target_kz": "42-бап"
+    }
+  },
+  {
+    "source_id": "a9075b46-2045-5098-ba53-fb1c7fd7cac3",
+    "target_id": "86d424e3-f882-5a1d-8634-d2323165da91",
+    "type": "CORRELATED_WITH",
+    "evidence": "Объектами, связанными с правом недропользования, являются доли участия, паи, акции и другие формы долевого участия",
+    "metadata": {
+      "source_kz": "41-бап",
+      "target_kz": "44-бап"
+    }
+  },
+  {
+    "source_id": "24c6cf8d-a3f2-534f-b739-562b707aadfd",
+    "target_id": "86d424e3-f882-5a1d-8634-d2323165da91",
+    "type": "CORRELATED_WITH",
+    "evidence": "Переходом объектов, связанных с правом недропользования, признается",
+    "metadata": {
+      "source_kz": "42-бап",
+      "target_kz": "44-бап"
+    }
+  },
+  {
+    "source_id": "a8d9754d-85bd-5142-b9b4-39997f4de5cb",
+    "target_id": "86d424e3-f882-5a1d-8634-d2323165da91",
+    "type": "REFERENCES",
+    "evidence": "Положения пункта 1 настоящей статьи не применяются в случаях, предусмотренных пунктом 2 статьи 44 настоящего Кодекса.",
+    "metadata": {
+      "source_kz": "43-бап",
+      "target_kz": "44-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 44"
+    }
+  },
+  {
+    "source_id": "86d424e3-f882-5a1d-8634-d2323165da91",
+    "target_id": "71998344-dfa6-5a70-b82f-def829df4c02",
+    "type": "CORRELATED_WITH",
+    "evidence": "Переход права недропользования (доли в праве недропользования) ... осуществляются с разрешения компетентного органа, выдаваемого в порядке, установленном настоящим Кодексом.",
+    "metadata": {
+      "source_kz": "44-бап",
+      "target_kz": "45-бап"
+    }
+  },
+  {
+    "source_id": "86d424e3-f882-5a1d-8634-d2323165da91",
+    "target_id": "48787ed3-0332-5f10-82ea-657c8d252efd",
+    "type": "REFERENCES",
+    "evidence": "Вопрос о реализации приоритетного права подлежит рассмотрению компетентным органом наряду с рассмотрением вопроса о выдаче разрешения, предусмотренного пунктом 1 статьи 44 настоящего Кодекса.",
+    "metadata": {
+      "source_kz": "46-бап",
+      "target_kz": "44-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 44"
+    }
+  },
+  {
+    "source_id": "a8d9754d-85bd-5142-b9b4-39997f4de5cb",
+    "target_id": "48787ed3-0332-5f10-82ea-657c8d252efd",
+    "type": "CORRELATED_WITH",
+    "evidence": "государство имеет приоритетное право",
+    "metadata": {
+      "source_kz": "43-бап",
+      "target_kz": "46-бап"
+    }
+  },
+  {
+    "source_id": "bcc0aef8-819e-5779-9b55-f828f849cd89",
+    "target_id": "28ac8f59-aadc-5305-9a16-bac06e55b63b",
+    "type": "CORRELATED_WITH",
+    "evidence": "Оператором по контракту на недропользование ... является юридическое лицо",
+    "metadata": {
+      "source_kz": "49-бап",
+      "target_kz": "50-бап"
+    }
+  },
+  {
+    "source_id": "bcc0aef8-819e-5779-9b55-f828f849cd89",
+    "target_id": "a0a231e3-d132-599f-a4ec-f40585a2b312",
+    "type": "CORRELATED_WITH",
+    "evidence": "Оператором по контракту на недропользование ... является юридическое лицо",
+    "metadata": {
+      "source_kz": "49-бап",
+      "target_kz": "51-бап"
+    }
+  },
+  {
+    "source_id": "28ac8f59-aadc-5305-9a16-bac06e55b63b",
+    "target_id": "a0a231e3-d132-599f-a4ec-f40585a2b312",
+    "type": "CORRELATED_WITH",
+    "evidence": "О назначении оператора в сфере недропользования недропользователь письменно уведомляет компетентный орган.",
+    "metadata": {
+      "source_kz": "50-бап",
+      "target_kz": "51-бап"
+    }
+  },
+  {
+    "source_id": "fce84990-6d4b-51e7-9af0-fc513d618d70",
+    "target_id": "5e813539-0bee-53b9-8fb7-2e439f5af05f",
+    "type": "CORRELATED_WITH",
+    "evidence": "Операции по недропользованию, включая прогнозирование, планирование и проектирование производственных и иных объектов, должны соответствовать требованиям экологического законодательства Республики Казахстан.",
+    "metadata": {
+      "source_kz": "52-бап",
+      "target_kz": "53-бап"
+    }
+  },
+  {
+    "source_id": "422b9f00-dd39-5b36-aed5-64ac2a0cea03",
+    "target_id": "ffe65d47-4dc8-53fd-9d30-94fc0025854d",
+    "type": "EXTENDS",
+    "evidence": "Недропользователь обязан ликвидировать последствия операций по недропользованию на предоставленном ему участке недр, если иное не установлено настоящим Кодексом.",
+    "metadata": {
+      "source_kz": "54-бап",
+      "target_kz": "55-бап"
+    }
+  },
+  {
+    "source_id": "ffe65d47-4dc8-53fd-9d30-94fc0025854d",
+    "target_id": "ec4cbf88-bee9-577f-9e49-ae138c658518",
+    "type": "MANIFESTED_IN",
+    "evidence": "Исполнение недропользователем обязательства по ликвидации может обеспечиваться гарантией, залогом банковского вклада и (или) страхованием.",
+    "metadata": {
+      "source_kz": "55-бап",
+      "target_kz": "56-бап"
+    }
+  },
+  {
+    "source_id": "ffe65d47-4dc8-53fd-9d30-94fc0025854d",
+    "target_id": "6488bd3b-877c-5e5e-b154-6a228f56759d",
+    "type": "MANIFESTED_IN",
+    "evidence": "Исполнение недропользователем обязательства по ликвидации может обеспечиваться гарантией, залогом банковского вклада и (или) страхованием.",
+    "metadata": {
+      "source_kz": "55-бап",
+      "target_kz": "57-бап"
+    }
+  },
+  {
+    "source_id": "ffe65d47-4dc8-53fd-9d30-94fc0025854d",
+    "target_id": "702182a8-106c-53c0-be1f-3902e342be17",
+    "type": "MANIFESTED_IN",
+    "evidence": "Исполнение недропользователем обязательства по ликвидации может обеспечиваться гарантией, залогом банковского вклада и (или) страхованием.",
+    "metadata": {
+      "source_kz": "55-бап",
+      "target_kz": "58-бап"
+    }
+  },
+  {
+    "source_id": "1c284224-f9db-5e4c-920e-ab625cd37582",
+    "target_id": "2d1adf9a-97b7-5c5f-b170-4267f5133af3",
+    "type": "BASED_ON",
+    "evidence": "В сфере недропользования Правительство Республики Казахстан: ... организует управление недрами как объектом государственной собственности",
+    "metadata": {
+      "source_kz": "59-бап",
+      "target_kz": "60-бап"
+    }
+  },
+  {
+    "source_id": "2d1adf9a-97b7-5c5f-b170-4267f5133af3",
+    "target_id": "084609aa-3587-5f3c-aa32-d102128677c4",
+    "type": "CORRELATED_WITH",
+    "evidence": "Компетентный орган представляет интересы Республики Казахстан и реализует государственную политику в сфере недропользования по твердым полезным ископаемым и углеводородам",
+    "metadata": {
+      "source_kz": "60-бап",
+      "target_kz": "61-бап"
+    }
+  },
+  {
+    "source_id": "2d1adf9a-97b7-5c5f-b170-4267f5133af3",
+    "target_id": "36c6606f-50ee-5df3-ac8e-0ba80ed3a04b",
+    "type": "CORRELATED_WITH",
+    "evidence": "Компетентный орган представляет интересы Республики Казахстан и реализует государственную политику в сфере недропользования по твердым полезным ископаемым и углеводородам",
+    "metadata": {
+      "source_kz": "60-бап",
+      "target_kz": "62-бап"
+    }
+  },
+  {
+    "source_id": "2d1adf9a-97b7-5c5f-b170-4267f5133af3",
+    "target_id": "d8a804c2-e4ba-59a0-a613-9275fce636b5",
+    "type": "CORRELATED_WITH",
+    "evidence": "Компетентный орган представляет интересы Республики Казахстан и реализует государственную политику в сфере недропользования по твердым полезным ископаемым и углеводородам",
+    "metadata": {
+      "source_kz": "60-бап",
+      "target_kz": "63-бап"
+    }
+  },
+  {
+    "source_id": "2d1adf9a-97b7-5c5f-b170-4267f5133af3",
+    "target_id": "85c5bf70-5b74-5869-aa7b-ff5e307fafc4",
+    "type": "CORRELATED_WITH",
+    "evidence": "Компетентный орган представляет интересы Республики Казахстан и реализует государственную политику в сфере недропользования по твердым полезным ископаемым и углеводородам",
+    "metadata": {
+      "source_kz": "60-бап",
+      "target_kz": "64-бап"
+    }
+  },
+  {
+    "source_id": "2d1adf9a-97b7-5c5f-b170-4267f5133af3",
+    "target_id": "8d5d46ce-2fa3-55bf-8eba-1c0f82877c68",
+    "type": "CORRELATED_WITH",
+    "evidence": "Компетентный орган представляет интересы Республики Казахстан и реализует государственную политику в сфере недропользования по твердым полезным ископаемым и углеводородам",
+    "metadata": {
+      "source_kz": "60-бап",
+      "target_kz": "65-бап"
+    }
+  },
+  {
+    "source_id": "d5a70982-d91a-5412-acfb-a8d6256ebcca",
+    "target_id": "040a6acd-30c4-561a-893e-e86962c67258",
+    "type": "CORRELATED_WITH",
+    "evidence": "Контроль за соблюдением недропользователями условий контрактов, в том числе соглашений о разделе продукции, и (или) лицензий на недропользование осуществляется компетентным органом",
+    "metadata": {
+      "source_kz": "66-бап",
+      "target_kz": "67-бап"
+    }
+  },
+  {
+    "source_id": "040a6acd-30c4-561a-893e-e86962c67258",
+    "target_id": "d4f72f60-1616-5eee-838f-f8ded0bb653c",
+    "type": "EXTENDS",
+    "evidence": "Государственный контроль в областях, указанных в пункте 1 настоящей статьи, осуществляется в форме проверки, профилактического контроля с посещением субъекта (объекта) контроля и профилактического контроля без посещения субъекта (объекта) контроля.",
+    "metadata": {
+      "source_kz": "67-бап",
+      "target_kz": "67-1-бап"
+    }
+  },
+  {
+    "source_id": "69553aeb-7f18-5571-9f02-6471aad6f5c1",
+    "target_id": "77c43119-147e-5aa1-bd3c-fc10009f03a9",
+    "type": "REFERENCES",
+    "evidence": "единая платформа недропользования",
+    "metadata": {
+      "source_kz": "68-бап",
+      "target_kz": "68-1-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 68-1"
+    }
+  },
+  {
+    "source_id": "81366775-fd98-5a9c-a73a-546b6083694a",
+    "target_id": "77c43119-147e-5aa1-bd3c-fc10009f03a9",
+    "type": "REFERENCES",
+    "evidence": "подпункта 2) пункта 2 статьи 68-1 настоящего Кодекса",
+    "metadata": {
+      "source_kz": "70-бап",
+      "target_kz": "68-1-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 68-1"
+    }
+  },
+  {
+    "source_id": "81366775-fd98-5a9c-a73a-546b6083694a",
+    "target_id": "c87ac972-5cff-55a1-9fa7-5bab1e57bedb",
+    "type": "BASED_ON",
+    "evidence": "Программа управления государственным фондом недр разрабатывается в целях реализации государственной политики в области рационального управления государственным фондом недр",
+    "metadata": {
+      "source_kz": "70-бап",
+      "target_kz": "69-бап"
+    }
+  },
+  {
+    "source_id": "155baf4d-1530-5adf-a3cf-3fb7ceb863dd",
+    "target_id": "c87ac972-5cff-55a1-9fa7-5bab1e57bedb",
+    "type": "MANIFESTED_IN",
+    "evidence": "Изучение состояния государственного фонда недр направлено на обеспечение научной, информационной и аналитической основы для осуществления операций по недропользованию",
+    "metadata": {
+      "source_kz": "71-бап",
+      "target_kz": "69-бап"
+    }
+  },
+  {
+    "source_id": "745e6818-5d75-543f-b6cd-98ad4101e05b",
+    "target_id": "c87ac972-5cff-55a1-9fa7-5bab1e57bedb",
+    "type": "MANIFESTED_IN",
+    "evidence": "Единый кадастр государственного фонда недр содержит сведения о государственном учете полезных ископаемых",
+    "metadata": {
+      "source_kz": "72-бап",
+      "target_kz": "69-бап"
+    }
+  },
+  {
+    "source_id": "df392be5-956a-5aa4-81f0-5fb585e32f99",
+    "target_id": "c87ac972-5cff-55a1-9fa7-5bab1e57bedb",
+    "type": "MANIFESTED_IN",
+    "evidence": "Государственный мониторинг недр представляет собой систему наблюдений за состоянием недр для обеспечения рационального управления государственным фондом недр",
+    "metadata": {
+      "source_kz": "73-бап",
+      "target_kz": "69-бап"
+    }
+  },
+  {
+    "source_id": "d74d2941-6da5-5c1f-b14d-32544059d5c3",
+    "target_id": "155baf4d-1530-5adf-a3cf-3fb7ceb863dd",
+    "type": "CORRELATED_WITH",
+    "evidence": "Геологическая информация",
+    "metadata": {
+      "source_kz": "75-бап",
+      "target_kz": "71-бап"
+    }
+  },
+  {
+    "source_id": "b92024bb-9d55-5911-aaff-b315fe30cfc3",
+    "target_id": "d74d2941-6da5-5c1f-b14d-32544059d5c3",
+    "type": "CORRELATED_WITH",
+    "evidence": "отчетность недропользователя",
+    "metadata": {
+      "source_kz": "76-бап",
+      "target_kz": "75-бап"
+    }
+  },
+  {
+    "source_id": "edfd4fe4-651b-5a39-b6b0-e2941d6b9262",
+    "target_id": "77c43119-147e-5aa1-bd3c-fc10009f03a9",
+    "type": "REFERENCES",
+    "evidence": "единой платформе недропользования",
+    "metadata": {
+      "source_kz": "77-бап",
+      "target_kz": "68-1-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 68-1"
+    }
+  },
+  {
+    "source_id": "edfd4fe4-651b-5a39-b6b0-e2941d6b9262",
+    "target_id": "d74d2941-6da5-5c1f-b14d-32544059d5c3",
+    "type": "CORRELATED_WITH",
+    "evidence": "геологическая информация",
+    "metadata": {
+      "source_kz": "77-бап",
+      "target_kz": "75-бап"
+    }
+  },
+  {
+    "source_id": "f4f2dfa4-6292-53d8-9e27-d7d505053722",
+    "target_id": "d4d9ec92-0285-5111-9279-c37e220213fa",
+    "type": "CORRELATED_WITH",
+    "evidence": "Нарушение законодательства Республики Казахстан о недрах и недропользовании влечет ответственность",
+    "metadata": {
+      "source_kz": "79-бап",
+      "target_kz": "80-бап"
+    }
+  },
+  {
+    "source_id": "2fda4023-b22a-54fd-9726-73ce1afd158f",
+    "target_id": "0a41782f-76ea-5c12-98a6-71de96782a5f",
+    "type": "EXTENDS",
+    "evidence": "Целями международного сотрудничества в сфере недропользования признаются взаимопомощь и координация",
+    "metadata": {
+      "source_kz": "81-бап",
+      "target_kz": "82-бап"
+    }
+  },
+  {
+    "source_id": "0a41782f-76ea-5c12-98a6-71de96782a5f",
+    "target_id": "8011d9f7-7ca6-521f-9a29-ebfa640745b0",
+    "type": "EXTENDS",
+    "evidence": "Сотрудничество с другими государствами и международными организациями основывается на принципах",
+    "metadata": {
+      "source_kz": "82-бап",
+      "target_kz": "83-бап"
+    }
+  },
+  {
+    "source_id": "3997fac6-e69f-5d4f-aa20-867d1afccb0e",
+    "target_id": "ede01c0d-e6b7-5ce3-9c0b-ba8f6a26a39d",
+    "type": "EXTENDS",
+    "evidence": "По лицензии на геологическое изучение недр ее обладатель имеет право",
+    "metadata": {
+      "source_kz": "84-бап",
+      "target_kz": "85-бап"
+    }
+  },
+  {
+    "source_id": "757239bb-768f-53da-b9b2-233ee42ec7fb",
+    "target_id": "f7e36395-002d-5e2f-8c98-2ede620ca900",
+    "type": "BASED_ON",
+    "evidence": "Заявление должно содержать следующие сведения",
+    "metadata": {
+      "source_kz": "86-бап",
+      "target_kz": "87-бап"
+    }
+  },
+  {
+    "source_id": "bedad912-e239-5dae-b019-6ffb0f4f0f6d",
+    "target_id": "ad63a767-0d2e-5aea-9d15-f0d93969d2ab",
+    "type": "BASED_ON",
+    "evidence": "Проектными документами для проведения операций по геологическому изучению недр являются",
+    "metadata": {
+      "source_kz": "88-бап",
+      "target_kz": "89-бап"
+    }
+  },
+  {
+    "source_id": "ad63a767-0d2e-5aea-9d15-f0d93969d2ab",
+    "target_id": "16652b09-15e9-535a-9bb3-d3696d80fdd0",
+    "type": "BASED_ON",
+    "evidence": "Недропользователь обязан обеспечить представление отчетов",
+    "metadata": {
+      "source_kz": "89-бап",
+      "target_kz": "90-бап"
+    }
+  },
+  {
+    "source_id": "16652b09-15e9-535a-9bb3-d3696d80fdd0",
+    "target_id": "e986f36d-375d-5a3e-94e7-38830de6cdc5",
+    "type": "CORRELATED_WITH",
+    "evidence": "Геологические отчеты основываются на материалах первичной геологической информации",
+    "metadata": {
+      "source_kz": "90-бап",
+      "target_kz": "91-бап"
+    }
+  },
+  {
+    "source_id": "65a61bfd-4c92-519e-a7b1-b29609c80f4a",
+    "target_id": "ad63a767-0d2e-5aea-9d15-f0d93969d2ab",
+    "type": "REFERENCES",
+    "evidence": "нарушения положений пункта 4 статьи 89 настоящего Кодекса",
+    "metadata": {
+      "source_kz": "92-бап",
+      "target_kz": "89-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 89"
+    }
+  },
+  {
+    "source_id": "b4a22c5a-950f-55b7-ad1b-1234b9772df0",
+    "target_id": "5dae091f-4230-584c-8dde-97f8a37fcb46",
+    "type": "BASED_ON",
+    "evidence": "При предоставлении права недропользования по углеводородам лицо",
+    "metadata": {
+      "source_kz": "93-бап",
+      "target_kz": "94-бап"
+    }
+  },
+  {
+    "source_id": "5dae091f-4230-584c-8dde-97f8a37fcb46",
+    "target_id": "2f2e5f6b-a3cb-5252-b562-1aaad76b8821",
+    "type": "BASED_ON",
+    "evidence": "Заявление на проведение аукциона подлежит рассмотрению",
+    "metadata": {
+      "source_kz": "94-бап",
+      "target_kz": "95-бап"
+    }
+  },
+  {
+    "source_id": "84e3d0b9-f2a4-594a-97c8-93428e5a4716",
+    "target_id": "dc193a9a-a82a-50fb-a851-f60225e0d58e",
+    "type": "CORRELATED_WITH",
+    "evidence": "Заявление на участие в аукционе подлежит рассмотрению",
+    "metadata": {
+      "source_kz": "96-бап",
+      "target_kz": "97-бап"
+    }
+  },
+  {
+    "source_id": "84e3d0b9-f2a4-594a-97c8-93428e5a4716",
+    "target_id": "ea929f6e-6208-5f56-97d3-4e7b29a47483",
+    "type": "REFERENCES",
+    "evidence": "в порядке, определяемом компетентным органом согласно пункту 5 статьи 99 настоящего Кодекса",
+    "metadata": {
+      "source_kz": "96-бап",
+      "target_kz": "99-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 99"
+    }
+  },
+  {
+    "source_id": "dc193a9a-a82a-50fb-a851-f60225e0d58e",
+    "target_id": "84e3d0b9-f2a4-594a-97c8-93428e5a4716",
+    "type": "REFERENCES",
+    "evidence": "требованиям статьи 96 настоящего Кодекса",
+    "metadata": {
+      "source_kz": "97-бап",
+      "target_kz": "96-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 96"
+    }
+  },
+  {
+    "source_id": "dc193a9a-a82a-50fb-a851-f60225e0d58e",
+    "target_id": "0a3f1895-969e-52a0-aa81-e6881d40bfc1",
+    "type": "CORRELATED_WITH",
+    "evidence": "отказывает в допуске к участию в аукционе",
+    "metadata": {
+      "source_kz": "97-бап",
+      "target_kz": "100-бап"
+    }
+  },
+  {
+    "source_id": "ea929f6e-6208-5f56-97d3-4e7b29a47483",
+    "target_id": "84e3d0b9-f2a4-594a-97c8-93428e5a4716",
+    "type": "REFERENCES",
+    "evidence": "документов и сведений, предусмотренных пунктом 3 статьи 96 настоящего Кодекса",
+    "metadata": {
+      "source_kz": "99-бап",
+      "target_kz": "96-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 96"
+    }
+  },
+  {
+    "source_id": "ea929f6e-6208-5f56-97d3-4e7b29a47483",
+    "target_id": "0a3f1895-969e-52a0-aa81-e6881d40bfc1",
+    "type": "REFERENCES",
+    "evidence": "в порядке, установленном статьей 100 настоящего Кодекса",
+    "metadata": {
+      "source_kz": "99-бап",
+      "target_kz": "100-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 100"
+    }
+  },
+  {
+    "source_id": "0a3f1895-969e-52a0-aa81-e6881d40bfc1",
+    "target_id": "11c7e538-ffb8-5de5-bfd0-9bcb1bd79059",
+    "type": "CORRELATED_WITH",
+    "evidence": "Победителем аукциона становится участник",
+    "metadata": {
+      "source_kz": "100-бап",
+      "target_kz": "101-бап"
+    }
+  },
+  {
+    "source_id": "0a3f1895-969e-52a0-aa81-e6881d40bfc1",
+    "target_id": "3a53cdfd-ea2a-5c0a-b245-72f4b384a743",
+    "type": "CORRELATED_WITH",
+    "evidence": "Победителем аукциона становится участник",
+    "metadata": {
+      "source_kz": "100-бап",
+      "target_kz": "102-бап"
+    }
+  },
+  {
+    "source_id": "619d1f6a-cd91-5d8b-9168-26e1c06f156e",
+    "target_id": "a4bcf6d2-c8e6-58f7-b446-eb4af3312e8a",
+    "type": "BASED_ON",
+    "evidence": "Заявление на получение права недропользования путем прямых переговоров",
+    "metadata": {
+      "source_kz": "103-бап",
+      "target_kz": "104-бап"
+    }
+  },
+  {
+    "source_id": "a4bcf6d2-c8e6-58f7-b446-eb4af3312e8a",
+    "target_id": "4e5d06cb-4df8-5804-b251-4234883331b4",
+    "type": "CAUSED_BY",
+    "evidence": "Заявление национальной компании в области углеводородов на проведение прямых переговоров",
+    "metadata": {
+      "source_kz": "104-бап",
+      "target_kz": "105-бап"
+    }
+  },
+  {
+    "source_id": "4e5d06cb-4df8-5804-b251-4234883331b4",
+    "target_id": "619d1f6a-cd91-5d8b-9168-26e1c06f156e",
+    "type": "MANIFESTED_IN",
+    "evidence": "Прямые переговоры по предоставлению права недропользования национальной компании",
+    "metadata": {
+      "source_kz": "105-бап",
+      "target_kz": "103-бап"
+    }
+  },
+  {
+    "source_id": "fb1d359e-e483-5902-9800-a8aa414d5a44",
+    "target_id": "0a3f1895-969e-52a0-aa81-e6881d40bfc1",
+    "type": "CORRELATED_WITH",
+    "evidence": "досрочно прекращает свое действие",
+    "metadata": {
+      "source_kz": "106-бап",
+      "target_kz": "100-бап"
+    }
+  },
+  {
+    "source_id": "3eaa1146-9b38-51cb-9e48-4f73f870c439",
+    "target_id": "80374540-f0dd-5ca6-a4a6-4632e0714fcb",
+    "type": "BASED_ON",
+    "evidence": "В случае, предусмотренном подпунктом 3) пункта 4 статьи 107 настоящего Кодекса",
+    "metadata": {
+      "source_kz": "107-бап",
+      "target_kz": "108-бап"
+    }
+  },
+  {
+    "source_id": "3eaa1146-9b38-51cb-9e48-4f73f870c439",
+    "target_id": "7768583e-5bb9-5e95-98c8-cc346d0b8e18",
+    "type": "REFERENCES",
+    "evidence": "в соответствии со статьей 110 настоящего Кодекса",
+    "metadata": {
+      "source_kz": "107-бап",
+      "target_kz": "110-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 110"
+    }
+  },
+  {
+    "source_id": "3eaa1146-9b38-51cb-9e48-4f73f870c439",
+    "target_id": "1bfa6a69-858f-551c-904b-c2d5407d1f4f",
+    "type": "REFERENCES",
+    "evidence": "в соответствии с пунктами 4, 5 и 6 статьи 151 настоящего Кодекса",
+    "metadata": {
+      "source_kz": "107-бап",
+      "target_kz": "151-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 151"
+    }
+  },
+  {
+    "source_id": "80374540-f0dd-5ca6-a4a6-4632e0714fcb",
+    "target_id": "3eaa1146-9b38-51cb-9e48-4f73f870c439",
+    "type": "BASED_ON",
+    "evidence": "В случае, предусмотренном подпунктом 3) пункта 4 статьи 107 настоящего Кодекса",
+    "metadata": {
+      "source_kz": "108-бап",
+      "target_kz": "107-бап"
+    }
+  },
+  {
+    "source_id": "b7c7b246-f28c-5435-acb4-637047c3640d",
+    "target_id": "7768583e-5bb9-5e95-98c8-cc346d0b8e18",
+    "type": "REFERENCES",
+    "evidence": "в соответствии со статьей 45 настоящего Кодекса",
+    "metadata": {
+      "source_kz": "109-бап",
+      "target_kz": "45-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 45"
+    }
+  },
+  {
+    "source_id": "b7c7b246-f28c-5435-acb4-637047c3640d",
+    "target_id": "7768583e-5bb9-5e95-98c8-cc346d0b8e18",
+    "type": "REFERENCES",
+    "evidence": "за исключением случаев, предусмотренных пунктом 2 статьи 44 настоящего Кодекса",
+    "metadata": {
+      "source_kz": "109-бап",
+      "target_kz": "44-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 44"
+    }
+  },
+  {
+    "source_id": "1bfa6a69-858f-551c-904b-c2d5407d1f4f",
+    "target_id": "7768583e-5bb9-5e95-98c8-cc346d0b8e18",
+    "type": "REFERENCES",
+    "evidence": "в соответствии со статьей 110 настоящего Кодекса",
+    "metadata": {
+      "source_kz": "113-бап",
+      "target_kz": "110-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 110"
+    }
+  },
+  {
+    "source_id": "78c60536-3312-561e-9658-86127a00f5d2",
+    "target_id": "7768583e-5bb9-5e95-98c8-cc346d0b8e18",
+    "type": "REFERENCES",
+    "evidence": "в соответствии со статьей 110 настоящего Кодекса",
+    "metadata": {
+      "source_kz": "114-бап",
+      "target_kz": "110-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 110"
+    }
+  },
+  {
+    "source_id": "78c60536-3312-561e-9658-86127a00f5d2",
+    "target_id": "1bfa6a69-858f-551c-904b-c2d5407d1f4f",
+    "type": "REFERENCES",
+    "evidence": "в соответствии с частью второй пункта 3 статьи 113 настоящего Кодекса",
+    "metadata": {
+      "source_kz": "114-бап",
+      "target_kz": "113-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 113"
+    }
+  },
+  {
+    "source_id": "fa246e94-2e16-5e1a-9d1c-92f10aef3d51",
+    "target_id": "1bfa6a69-858f-551c-904b-c2d5407d1f4f",
+    "type": "MANIFESTED_IN",
+    "evidence": "увеличения участка недр",
+    "metadata": {
+      "source_kz": "112-бап",
+      "target_kz": "113-бап"
+    }
+  },
+  {
+    "source_id": "fa246e94-2e16-5e1a-9d1c-92f10aef3d51",
+    "target_id": "78c60536-3312-561e-9658-86127a00f5d2",
+    "type": "MANIFESTED_IN",
+    "evidence": "уменьшения участка недр",
+    "metadata": {
+      "source_kz": "112-бап",
+      "target_kz": "114-бап"
+    }
+  },
+  {
+    "source_id": "4f8e418b-3787-5530-b2a5-bb10effcf6fb",
+    "target_id": "86c9d085-c320-50d1-bad1-1f2e7a336ddf",
+    "type": "CORRELATED_WITH",
+    "evidence": "Выделение участка недр по контракту на разведку и добычу углеводородов",
+    "metadata": {
+      "source_kz": "115-бап",
+      "target_kz": "116-бап"
+    }
+  },
+  {
+    "source_id": "4f8e418b-3787-5530-b2a5-bb10effcf6fb",
+    "target_id": "0032d624-b636-5e26-ab50-03bb749daade",
+    "type": "CORRELATED_WITH",
+    "evidence": "Выделение участка недр по контракту на разведку и добычу углеводородов",
+    "metadata": {
+      "source_kz": "115-бап",
+      "target_kz": "117-бап"
+    }
+  },
+  {
+    "source_id": "4f8e418b-3787-5530-b2a5-bb10effcf6fb",
+    "target_id": "8d06292a-60ad-5e37-a177-ba0e1ca956db",
+    "type": "CORRELATED_WITH",
+    "evidence": "Выделение участка недр по контракту на разведку и добычу углеводородов",
+    "metadata": {
+      "source_kz": "115-бап",
+      "target_kz": "118-бап"
+    }
+  },
+  {
+    "source_id": "86c9d085-c320-50d1-bad1-1f2e7a336ddf",
+    "target_id": "0032d624-b636-5e26-ab50-03bb749daade",
+    "type": "BASED_ON",
+    "evidence": "Период разведки подлежит продлению по заявлению недропользователя в пределах таких сроков",
+    "metadata": {
+      "source_kz": "116-бап",
+      "target_kz": "117-бап"
+    }
+  },
+  {
+    "source_id": "86c9d085-c320-50d1-bad1-1f2e7a336ddf",
+    "target_id": "8d06292a-60ad-5e37-a177-ba0e1ca956db",
+    "type": "CAUSED_BY",
+    "evidence": "после завершения периода разведки и до закрепления периода добычи по заявлению недропользователя допускается закрепление участка (участков) добычи и подготовительного периода",
+    "metadata": {
+      "source_kz": "116-бап",
+      "target_kz": "118-бап"
+    }
+  },
+  {
+    "source_id": "0032d624-b636-5e26-ab50-03bb749daade",
+    "target_id": "8d06292a-60ad-5e37-a177-ba0e1ca956db",
+    "type": "CORRELATED_WITH",
+    "evidence": "Продление периода разведки",
+    "metadata": {
+      "source_kz": "117-бап",
+      "target_kz": "118-бап"
+    }
+  },
+  {
+    "source_id": "fe03b99a-f403-5e40-b530-993edd3f4cb6",
+    "target_id": "cd98bbd4-bee8-56bc-b99f-16b853dfd283",
+    "type": "REFERENCES",
+    "evidence": "пункт 7 статьи 119 настоящего Кодекса",
+    "metadata": {
+      "source_kz": "120-бап",
+      "target_kz": "119-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 119"
+    }
+  },
+  {
+    "source_id": "e1d841ec-c172-55be-8126-b9837b74775f",
+    "target_id": "cd98bbd4-bee8-56bc-b99f-16b853dfd283",
+    "type": "CORRELATED_WITH",
+    "evidence": "Период добычи",
+    "metadata": {
+      "source_kz": "121-бап",
+      "target_kz": "119-бап"
+    }
+  },
+  {
+    "source_id": "72a615f8-dbbb-5181-b4c8-f290ac7e5df9",
+    "target_id": "e1d841ec-c172-55be-8126-b9837b74775f",
+    "type": "CORRELATED_WITH",
+    "evidence": "разведка и добыча углеводородов",
+    "metadata": {
+      "source_kz": "122-бап",
+      "target_kz": "121-бап"
+    }
+  },
+  {
+    "source_id": "b25d80a5-23f3-52c7-b787-f7db52b70b0e",
+    "target_id": "1762594f-6ecc-5c5f-8ba5-5be031c27286",
+    "type": "CORRELATED_WITH",
+    "evidence": "Обустройство месторождения осуществляется в соответствии с техническими проектными документами, разработанными на основе проекта пробной эксплуатации и (или) проекта разработки месторождения.",
+    "metadata": {
+      "source_kz": "123-бап",
+      "target_kz": "124-бап"
+    }
+  },
+  {
+    "source_id": "b25d80a5-23f3-52c7-b787-f7db52b70b0e",
+    "target_id": "65bae2fc-d686-5e9c-8add-de7073f0e749",
+    "type": "CORRELATED_WITH",
+    "evidence": "Работы по разведке углеводородов должны проводиться методами и способами, предусмотренными проектом разведочных работ и (или) проектом пробной эксплуатации, в соответствии с положительной практикой пользования недрами.",
+    "metadata": {
+      "source_kz": "123-бап",
+      "target_kz": "125-бап"
+    }
+  },
+  {
+    "source_id": "b25d80a5-23f3-52c7-b787-f7db52b70b0e",
+    "target_id": "e9c26e5c-7660-5759-a204-53211d8e83df",
+    "type": "REFERENCES",
+    "evidence": "Недропользователь обязан осуществить возврат всего участка недр в порядке и на условиях, которые предусмотрены статьей 126 настоящего Кодекса.",
+    "metadata": {
+      "source_kz": "123-бап",
+      "target_kz": "126-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 126"
+    }
+  },
+  {
+    "source_id": "b25d80a5-23f3-52c7-b787-f7db52b70b0e",
+    "target_id": "e9c26e5c-7660-5759-a204-53211d8e83df",
+    "type": "REFERENCES",
+    "evidence": "По завершении первоначального периода разведки по контракту на разведку и добычу углеводородов на участке недр, расположенном в пределах малоизученных территорий, недропользователь обязан представить в уполномоченный орган по изучению недр отчет о результатах геологоразведочных работ в соответствии со статьей 132 настоящего Кодекса.",
+    "metadata": {
+      "source_kz": "123-бап",
+      "target_kz": "132-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 132"
+    }
+  },
+  {
+    "source_id": "b25d80a5-23f3-52c7-b787-f7db52b70b0e",
+    "target_id": "e9c26e5c-7660-5759-a204-53211d8e83df",
+    "type": "REFERENCES",
+    "evidence": "Если после заключения контракта на разведку и добычу углеводородов территория участка недр, в пределах которой он расположен, была признана как не относящаяся к малоизученным территориям согласно пункту 1-5 статьи 36 настоящего Кодекса, условия разведки по такому контракту, включая обязательства по программе работ контракта, сохраняются в течение периода разведки.",
+    "metadata": {
+      "source_kz": "123-бап",
+      "target_kz": "36-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 36"
+    }
+  },
+  {
+    "source_id": "65bae2fc-d686-5e9c-8add-de7073f0e749",
+    "target_id": "e9c26e5c-7660-5759-a204-53211d8e83df",
+    "type": "REFERENCES",
+    "evidence": "Обнаружение новых залежей на участке недр не является основанием для закрепления в контракте на недропользование периода разведки и (или) продления периода добычи.",
+    "metadata": {
+      "source_kz": "125-бап",
+      "target_kz": "126-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 126"
+    }
+  },
+  {
+    "source_id": "e9c26e5c-7660-5759-a204-53211d8e83df",
+    "target_id": "b25d80a5-23f3-52c7-b787-f7db52b70b0e",
+    "type": "REFERENCES",
+    "evidence": "на участке недр в случае возврата всего участка недр в соответствии с пунктом 13-1 статьи 123 настоящего Кодекса.",
+    "metadata": {
+      "source_kz": "126-бап",
+      "target_kz": "123-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 123"
+    }
+  },
+  {
+    "source_id": "e9c26e5c-7660-5759-a204-53211d8e83df",
+    "target_id": "4a0225a7-454f-5aad-b664-96994da55499",
+    "type": "CORRELATED_WITH",
+    "evidence": "Требования к проведению работ по ликвидации последствий недропользования по углеводородам устанавливаются в правилах консервации и ликвидации при проведении разведки и добычи углеводородов, утверждаемых уполномоченным органом в области углеводородов.",
+    "metadata": {
+      "source_kz": "126-бап",
+      "target_kz": "127-бап"
+    }
+  },
+  {
+    "source_id": "e9c26e5c-7660-5759-a204-53211d8e83df",
+    "target_id": "7391f246-0999-5b48-8110-3365b6202c0d",
+    "type": "REFERENCES",
+    "evidence": "К ликвидации последствий недропользования по углеводородам не относится ликвидация скважин, осуществляемая в соответствии со статьей 128 настоящего Кодекса.",
+    "metadata": {
+      "source_kz": "126-бап",
+      "target_kz": "128-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 128"
+    }
+  },
+  {
+    "source_id": "4a0225a7-454f-5aad-b664-96994da55499",
+    "target_id": "e9c26e5c-7660-5759-a204-53211d8e83df",
+    "type": "CORRELATED_WITH",
+    "evidence": "Требования к проведению работ по консервации участка недр по углеводородам устанавливаются в правилах консервации и ликвидации при проведении разведки и добычи углеводородов, утверждаемых уполномоченным органом в области углеводородов.",
+    "metadata": {
+      "source_kz": "127-бап",
+      "target_kz": "126-бап"
+    }
+  },
+  {
+    "source_id": "7391f246-0999-5b48-8110-3365b6202c0d",
+    "target_id": "e9c26e5c-7660-5759-a204-53211d8e83df",
+    "type": "REFERENCES",
+    "evidence": "Финансирование работ по ликвидации технологических объектов, проводимых вне рамок ликвидации последствий недропользования по углеводородам, осуществляется за счет средств недропользователя.",
+    "metadata": {
+      "source_kz": "128-бап",
+      "target_kz": "126-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 126"
+    }
+  },
+  {
+    "source_id": "7391f246-0999-5b48-8110-3365b6202c0d",
+    "target_id": "4a0225a7-454f-5aad-b664-96994da55499",
+    "type": "CORRELATED_WITH",
+    "evidence": "Требования к проведению работ по консервации или ликвидации технологических объектов устанавливаются в правилах консервации и ликвидации при проведении разведки и добычи углеводородов, утверждаемых уполномоченным органом в области углеводородов.",
+    "metadata": {
+      "source_kz": "128-бап",
+      "target_kz": "127-бап"
+    }
+  },
+  {
+    "source_id": "28b33dea-baa9-59c7-875f-4e6e96122101",
+    "target_id": "2ccd601a-20b6-5cd7-8735-201a947f3987",
+    "type": "CORRELATED_WITH",
+    "evidence": "В целях обеспечения потребностей внутреннего рынка нефтепродуктами недропользователи обязаны в соответствии с графиками поставки осуществлять поставку нефти для переработки на территории Республики Казахстан",
+    "metadata": {
+      "source_kz": "129-бап",
+      "target_kz": "130-бап"
+    }
+  },
+  {
+    "source_id": "2ccd601a-20b6-5cd7-8735-201a947f3987",
+    "target_id": "24b9c7d4-80fc-56cf-af98-c8f187200cc2",
+    "type": "CORRELATED_WITH",
+    "evidence": "Приобретение товаров, работ и услуг при проведении операций по разведке или добыче углеводородов, в том числе подрядчиками, осуществляется одним из следующих способов",
+    "metadata": {
+      "source_kz": "130-бап",
+      "target_kz": "131-бап"
+    }
+  },
+  {
+    "source_id": "ca0d6565-126a-5417-b4e6-ac45d11551aa",
+    "target_id": "b8d88e2a-7417-5e32-8d61-8e4e8b55a640",
+    "type": "CORRELATED_WITH",
+    "evidence": "отчетность недропользователя",
+    "metadata": {
+      "source_kz": "132-бап",
+      "target_kz": "133-бап"
+    }
+  },
+  {
+    "source_id": "47e91d0d-c3ba-5cca-916a-410ceda6d315",
+    "target_id": "0bf098e6-237e-574f-a28a-9d70481cadbd",
+    "type": "MANIFESTED_IN",
+    "evidence": "базовые проектные документы: проект разведочных работ",
+    "metadata": {
+      "source_kz": "134-бап",
+      "target_kz": "135-бап"
+    }
+  },
+  {
+    "source_id": "47e91d0d-c3ba-5cca-916a-410ceda6d315",
+    "target_id": "db49bcbc-896f-5e3a-be43-3703ca5f0d5f",
+    "type": "MANIFESTED_IN",
+    "evidence": "базовые проектные документы: проект пробной эксплуатации",
+    "metadata": {
+      "source_kz": "134-бап",
+      "target_kz": "136-бап"
+    }
+  },
+  {
+    "source_id": "47e91d0d-c3ba-5cca-916a-410ceda6d315",
+    "target_id": "d0391c85-869b-56f7-80cf-192a358fbb94",
+    "type": "MANIFESTED_IN",
+    "evidence": "базовые проектные документы: проект разработки месторождения углеводородов",
+    "metadata": {
+      "source_kz": "134-бап",
+      "target_kz": "137-бап"
+    }
+  },
+  {
+    "source_id": "28325148-5cb9-5abe-a0de-40b849fb27f2",
+    "target_id": "0bf098e6-237e-574f-a28a-9d70481cadbd",
+    "type": "BASED_ON",
+    "evidence": "Технические проектные документы составляются на основе проекта разведочных работ",
+    "metadata": {
+      "source_kz": "138-бап",
+      "target_kz": "135-бап"
+    }
+  },
+  {
+    "source_id": "28325148-5cb9-5abe-a0de-40b849fb27f2",
+    "target_id": "db49bcbc-896f-5e3a-be43-3703ca5f0d5f",
+    "type": "BASED_ON",
+    "evidence": "Технические проектные документы составляются на основе проекта пробной эксплуатации",
+    "metadata": {
+      "source_kz": "138-бап",
+      "target_kz": "136-бап"
+    }
+  },
+  {
+    "source_id": "28325148-5cb9-5abe-a0de-40b849fb27f2",
+    "target_id": "d0391c85-869b-56f7-80cf-192a358fbb94",
+    "type": "BASED_ON",
+    "evidence": "Технические проектные документы составляются на основе проекта разработки месторождения",
+    "metadata": {
+      "source_kz": "138-бап",
+      "target_kz": "137-бап"
+    }
+  },
+  {
+    "source_id": "a39f0c14-ce74-512f-81ea-ab8cd3e44648",
+    "target_id": "6c890b71-0cd7-5ae2-8245-912035338e88",
+    "type": "CORRELATED_WITH",
+    "evidence": "государственная экспертиза проектных документов",
+    "metadata": {
+      "source_kz": "139-бап",
+      "target_kz": "140-бап"
+    }
+  },
+  {
+    "source_id": "a39f0c14-ce74-512f-81ea-ab8cd3e44648",
+    "target_id": "d408605d-83b4-5557-aebe-0931c87e513b",
+    "type": "CORRELATED_WITH",
+    "evidence": "государственная экспертиза недр",
+    "metadata": {
+      "source_kz": "139-бап",
+      "target_kz": "141-бап"
+    }
+  },
+  {
+    "source_id": "a39f0c14-ce74-512f-81ea-ab8cd3e44648",
+    "target_id": "0bf098e6-237e-574f-a28a-9d70481cadbd",
+    "type": "REFERENCES",
+    "evidence": "статьей 113 настоящего Кодекса",
+    "metadata": {
+      "source_kz": "139-бап",
+      "target_kz": "113-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 113"
+    }
+  },
+  {
+    "source_id": "28325148-5cb9-5abe-a0de-40b849fb27f2",
+    "target_id": "d408605d-83b4-5557-aebe-0931c87e513b",
+    "type": "REFERENCES",
+    "evidence": "статьей 126 настоящего Кодекса",
+    "metadata": {
+      "source_kz": "138-бап",
+      "target_kz": "126-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 126"
+    }
+  },
+  {
+    "source_id": "b0bdb9b7-c40d-52b4-9b8f-e52701bfaf28",
+    "target_id": "64d65515-6cc6-5231-9666-d6ab50aac2fc",
+    "type": "REFERENCES",
+    "evidence": "статьей 150 настоящего Кодекса",
+    "metadata": {
+      "source_kz": "148-бап",
+      "target_kz": "150-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 150"
+    }
+  },
+  {
+    "source_id": "e5074968-81a7-5978-9569-96dc7d54000a",
+    "target_id": "ca0d6565-126a-5417-b4e6-ac45d11551aa",
+    "type": "REFERENCES",
+    "evidence": "статьи 130 настоящего Кодекса",
+    "metadata": {
+      "source_kz": "148-1-бап",
+      "target_kz": "130-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 130"
+    }
+  },
+  {
+    "source_id": "a674851d-0970-5c4a-99a1-28d749b30acb",
+    "target_id": "b1f75067-3733-5cc4-963c-562bc2cfbded",
+    "type": "REFERENCES",
+    "evidence": "статьей 146 настоящего Кодекса",
+    "metadata": {
+      "source_kz": "144-бап",
+      "target_kz": "146-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 146"
+    }
+  },
+  {
+    "source_id": "42339dc2-8d17-53c7-863d-32517fac22db",
+    "target_id": "b1602b66-c45d-5951-9799-6ecb7bce11c2",
+    "type": "CORRELATED_WITH",
+    "evidence": "совместное освоение нескольких месторождений",
+    "metadata": {
+      "source_kz": "150-бап",
+      "target_kz": "151-бап"
+    }
+  },
+  {
+    "source_id": "b1602b66-c45d-5951-9799-6ecb7bce11c2",
+    "target_id": "42339dc2-8d17-53c7-863d-32517fac22db",
+    "type": "CORRELATED_WITH",
+    "evidence": "совместная разведка и добыча",
+    "metadata": {
+      "source_kz": "151-бап",
+      "target_kz": "150-бап"
+    }
+  },
+  {
+    "source_id": "b1602b66-c45d-5951-9799-6ecb7bce11c2",
+    "target_id": "2ff20d5c-25d5-5de4-9a52-3c2fc4b096a0",
+    "type": "CORRELATED_WITH",
+    "evidence": "добыча углеводородов",
+    "metadata": {
+      "source_kz": "151-бап",
+      "target_kz": "152-бап"
+    }
+  },
+  {
+    "source_id": "90c47c64-d368-5350-9e8c-1248da3e5237",
+    "target_id": "c68f5a69-56b4-5cc2-b7a1-740c867284ce",
+    "type": "BASED_ON",
+    "evidence": "Национальная система обеспечения готовности и действий по ликвидации разливов нефти на море и в предохранительной зоне",
+    "metadata": {
+      "source_kz": "154-бап",
+      "target_kz": "155-бап"
+    }
+  },
+  {
+    "source_id": "c68f5a69-56b4-5cc2-b7a1-740c867284ce",
+    "target_id": "8b5d67b7-f6c7-5dff-b3d5-57907671746e",
+    "type": "MANIFESTED_IN",
+    "evidence": "Обеспечение готовности и действия по ликвидации разливов нефти на море и в предохранительной зоне",
+    "metadata": {
+      "source_kz": "155-бап",
+      "target_kz": "156-бап"
+    }
+  },
+  {
+    "source_id": "90c47c64-d368-5350-9e8c-1248da3e5237",
+    "target_id": "6e3b5c4a-067f-5ef9-ba60-5b1d5606e1b0",
+    "type": "CORRELATED_WITH",
+    "evidence": "морские объекты",
+    "metadata": {
+      "source_kz": "154-бап",
+      "target_kz": "157-бап"
+    }
+  },
+  {
+    "source_id": "90c47c64-d368-5350-9e8c-1248da3e5237",
+    "target_id": "e44a8c5e-530d-57df-b7c4-9f2608b49ddd",
+    "type": "EXTENDS",
+    "evidence": "Запрет строительства и эксплуатации хранилищ и резервуаров нефти на море",
+    "metadata": {
+      "source_kz": "154-бап",
+      "target_kz": "158-бап"
+    }
+  },
+  {
+    "source_id": "90c47c64-d368-5350-9e8c-1248da3e5237",
+    "target_id": "d5bd7849-f2dc-5a3b-b234-4fbd7b98a4a2",
+    "type": "EXTENDS",
+    "evidence": "Запрет сброса и захоронения отходов при проведении разведки и (или) добычи углеводородов на море",
+    "metadata": {
+      "source_kz": "154-бап",
+      "target_kz": "159-бап"
+    }
+  },
+  {
+    "source_id": "5095a5d4-aaca-5b9c-980b-19d695d71a67",
+    "target_id": "25f9df90-7902-5a97-8e12-b6898d3155c3",
+    "type": "BASED_ON",
+    "evidence": "Заявление национальной компании в области урана на проведение прямых переговоров",
+    "metadata": {
+      "source_kz": "160-бап",
+      "target_kz": "161-бап"
+    }
+  },
+  {
+    "source_id": "25f9df90-7902-5a97-8e12-b6898d3155c3",
+    "target_id": "93b39ccb-5f33-5d64-86ce-351c364cfdf7",
+    "type": "MANIFESTED_IN",
+    "evidence": "Порядок проведения прямых переговоров с национальной компанией в области урана",
+    "metadata": {
+      "source_kz": "161-бап",
+      "target_kz": "162-бап"
+    }
+  },
+  {
+    "source_id": "5aee29b4-24b7-5e25-9bfa-e44f0d69a8ee",
+    "target_id": "fcec216a-8d0c-53a6-ab3d-b6c2de190b01",
+    "type": "CORRELATED_WITH",
+    "evidence": "Досрочное прекращение действия контракта на добычу урана в одностороннем порядке",
+    "metadata": {
+      "source_kz": "163-бап",
+      "target_kz": "164-бап"
+    }
+  },
+  {
+    "source_id": "fcec216a-8d0c-53a6-ab3d-b6c2de190b01",
+    "target_id": "d4086d0d-0ea3-5ed7-adf9-dd3a9c63d30a",
+    "type": "BASED_ON",
+    "evidence": "В случае, предусмотренном пунктом 7 статьи 164 настоящего Кодекса",
+    "metadata": {
+      "source_kz": "164-бап",
+      "target_kz": "165-бап"
+    }
+  },
+  {
+    "source_id": "a80ff0b2-0514-5375-ae51-cb851e67f7b1",
+    "target_id": "6f38b794-844b-56de-b993-a14a88d8e349",
+    "type": "REFERENCES",
+    "evidence": "подпунктами 1) и 2) части первой пункта 5-1 статьи 173 настоящего Кодекса",
+    "metadata": {
+      "source_kz": "173-бап",
+      "target_kz": "176-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 176"
+    }
+  },
+  {
+    "source_id": "6f38b794-844b-56de-b993-a14a88d8e349",
+    "target_id": "a80ff0b2-0514-5375-ae51-cb851e67f7b1",
+    "type": "REFERENCES",
+    "evidence": "подпунктами 1) и 2) части первой пункта 5-1 статьи 173 настоящего Кодекса",
+    "metadata": {
+      "source_kz": "176-бап",
+      "target_kz": "173-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 173"
+    }
+  },
+  {
+    "source_id": "de8768ff-e478-5ee8-adff-1170d206bdde",
+    "target_id": "65a21d66-5c1a-5ce4-b9f1-3e3dcec966c3",
+    "type": "CORRELATED_WITH",
+    "evidence": "включая период опытно-промышленной добычи",
+    "metadata": {
+      "source_kz": "172-бап",
+      "target_kz": "171-бап"
+    }
+  },
+  {
+    "source_id": "fa9a60f5-d21a-541d-b9a1-5febd2fdb28c",
+    "target_id": "2fc74b0a-0c10-5c75-bb4e-f66d3d1c2bec",
+    "type": "MANIFESTED_IN",
+    "evidence": "Увеличение участка недр",
+    "metadata": {
+      "source_kz": "169-бап",
+      "target_kz": "168-бап"
+    }
+  },
+  {
+    "source_id": "a5088e1a-9242-5318-996e-a0647d805216",
+    "target_id": "2fc74b0a-0c10-5c75-bb4e-f66d3d1c2bec",
+    "type": "MANIFESTED_IN",
+    "evidence": "Уменьшение участка недр",
+    "metadata": {
+      "source_kz": "170-бап",
+      "target_kz": "168-бап"
+    }
+  },
+  {
+    "source_id": "8b42a7c4-5dc6-5d20-a2bf-b7426b8e280c",
+    "target_id": "b75bde4d-f7fc-5871-a1e8-43f3878b730e",
+    "type": "REFERENCES",
+    "evidence": "проект ликвидации последствий добычи урана",
+    "metadata": {
+      "source_kz": "177-бап",
+      "target_kz": "182-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 182"
+    }
+  },
+  {
+    "source_id": "8b42a7c4-5dc6-5d20-a2bf-b7426b8e280c",
+    "target_id": "462b69c1-6e67-5165-8845-4f1fded5c6bd",
+    "type": "CORRELATED_WITH",
+    "evidence": "Ликвидация последствий добычи урана",
+    "metadata": {
+      "source_kz": "177-бап",
+      "target_kz": "178-бап"
+    }
+  },
+  {
+    "source_id": "462b69c1-6e67-5165-8845-4f1fded5c6bd",
+    "target_id": "095d9464-db77-5322-a4e7-09136377b134",
+    "type": "REFERENCES",
+    "evidence": "отчет о расходах по финансированию обучения казахстанских кадров",
+    "metadata": {
+      "source_kz": "178-бап",
+      "target_kz": "180-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 180"
+    }
+  },
+  {
+    "source_id": "90f00364-d4c9-5ce3-9952-42fa95f89ad4",
+    "target_id": "095d9464-db77-5322-a4e7-09136377b134",
+    "type": "REFERENCES",
+    "evidence": "отчет о приобретенных товарах, работах и услугах",
+    "metadata": {
+      "source_kz": "179-бап",
+      "target_kz": "180-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 180"
+    }
+  },
+  {
+    "source_id": "b75bde4d-f7fc-5871-a1e8-43f3878b730e",
+    "target_id": "0561ca13-d6d7-51a4-bd12-e5b50218f7e8",
+    "type": "MANIFESTED_IN",
+    "evidence": "Проектными документами в области добычи урана являются: 1) проект опытно-промышленной добычи урана",
+    "metadata": {
+      "source_kz": "182-бап",
+      "target_kz": "182-1-бап"
+    }
+  },
+  {
+    "source_id": "b75bde4d-f7fc-5871-a1e8-43f3878b730e",
+    "target_id": "1841bc48-d27c-51ee-9b4e-ac52b8981e89",
+    "type": "MANIFESTED_IN",
+    "evidence": "Проектными документами в области добычи урана являются: 2) проект разработки месторождения урана",
+    "metadata": {
+      "source_kz": "182-бап",
+      "target_kz": "183-бап"
+    }
+  },
+  {
+    "source_id": "b75bde4d-f7fc-5871-a1e8-43f3878b730e",
+    "target_id": "8b42a7c4-5dc6-5d20-a2bf-b7426b8e280c",
+    "type": "MANIFESTED_IN",
+    "evidence": "Проектными документами в области добычи урана являются: 3) проект ликвидации последствий добычи урана",
+    "metadata": {
+      "source_kz": "182-бап",
+      "target_kz": "177-бап"
+    }
+  },
+  {
+    "source_id": "b75bde4d-f7fc-5871-a1e8-43f3878b730e",
+    "target_id": "7fd5ec9a-bc7e-569f-95f1-7355d3d3218d",
+    "type": "REFERENCES",
+    "evidence": "Проект опытно-промышленной добычи и проект разработки месторождения подлежат экспертизе по промышленной безопасности и государственной экологической экспертизе",
+    "metadata": {
+      "source_kz": "182-бап",
+      "target_kz": "183-1-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 183-1"
+    }
+  },
+  {
+    "source_id": "b75bde4d-f7fc-5871-a1e8-43f3878b730e",
+    "target_id": "f2b6094a-0180-55f7-9a9d-e6c619580a55",
+    "type": "REFERENCES",
+    "evidence": "Недропользователь обязан каждые три года направлять в компетентный орган на экспертизу анализ выполнения проектных условий",
+    "metadata": {
+      "source_kz": "182-бап",
+      "target_kz": "184-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 184"
+    }
+  },
+  {
+    "source_id": "0561ca13-d6d7-51a4-bd12-e5b50218f7e8",
+    "target_id": "b75bde4d-f7fc-5871-a1e8-43f3878b730e",
+    "type": "BASED_ON",
+    "evidence": "Проект опытно-промышленной добычи урана составляется в соответствии с требованиями, предусмотренными настоящим Кодексом",
+    "metadata": {
+      "source_kz": "182-1-бап",
+      "target_kz": "182-бап"
+    }
+  },
+  {
+    "source_id": "1841bc48-d27c-51ee-9b4e-ac52b8981e89",
+    "target_id": "b75bde4d-f7fc-5871-a1e8-43f3878b730e",
+    "type": "BASED_ON",
+    "evidence": "Проект разработки месторождения составляется в период опытно-промышленной добычи в соответствии с требованиями, предусмотренными настоящим Кодексом",
+    "metadata": {
+      "source_kz": "183-бап",
+      "target_kz": "182-бап"
+    }
+  },
+  {
+    "source_id": "7fd5ec9a-bc7e-569f-95f1-7355d3d3218d",
+    "target_id": "b75bde4d-f7fc-5871-a1e8-43f3878b730e",
+    "type": "REFERENCES",
+    "evidence": "Государственная экспертиза проектных документов и анализов разработки месторождения урана",
+    "metadata": {
+      "source_kz": "183-1-бап",
+      "target_kz": "182-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 182"
+    }
+  },
+  {
+    "source_id": "f2b6094a-0180-55f7-9a9d-e6c619580a55",
+    "target_id": "b75bde4d-f7fc-5871-a1e8-43f3878b730e",
+    "type": "REFERENCES",
+    "evidence": "Мониторинг исполнения недропользователем проектов опытно-промышленной добычи и разработки месторождения",
+    "metadata": {
+      "source_kz": "184-бап",
+      "target_kz": "182-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 182"
+    }
+  },
+  {
+    "source_id": "f2b6094a-0180-55f7-9a9d-e6c619580a55",
+    "target_id": "7fd5ec9a-bc7e-569f-95f1-7355d3d3218d",
+    "type": "REFERENCES",
+    "evidence": "Анализ разработки месторождения подлежит государственной экспертизе проектных документов",
+    "metadata": {
+      "source_kz": "184-бап",
+      "target_kz": "183-1-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 183-1"
+    }
+  },
+  {
+    "source_id": "f0631eb2-662a-55a7-969d-3d638335c4f1",
+    "target_id": "d6e87661-0265-5ad0-ac13-40e847088b2a",
+    "type": "CORRELATED_WITH",
+    "evidence": "лицензия на разведку твердых полезных ископаемых",
+    "metadata": {
+      "source_kz": "186-бап",
+      "target_kz": "187-бап"
+    }
+  },
+  {
+    "source_id": "d6e87661-0265-5ad0-ac13-40e847088b2a",
+    "target_id": "2e69b068-817c-5266-b5d7-924c392a63ba",
+    "type": "CORRELATED_WITH",
+    "evidence": "заявление о выдаче лицензии на разведку твердых полезных ископаемых",
+    "metadata": {
+      "source_kz": "187-бап",
+      "target_kz": "188-бап"
+    }
+  },
+  {
+    "source_id": "2e69b068-817c-5266-b5d7-924c392a63ba",
+    "target_id": "f0631eb2-662a-55a7-969d-3d638335c4f1",
+    "type": "REFERENCES",
+    "evidence": "блок, предусмотренный подпунктами 1), 2), 3), 4), 5), 6) и 7) пункта 2 статьи 186 настоящего Кодекса",
+    "metadata": {
+      "source_kz": "188-бап",
+      "target_kz": "186-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 186"
+    }
+  },
+  {
+    "source_id": "2e69b068-817c-5266-b5d7-924c392a63ba",
+    "target_id": "d6e87661-0265-5ad0-ac13-40e847088b2a",
+    "type": "REFERENCES",
+    "evidence": "оснований для отказа в выдаче лицензии на разведку твердых полезных ископаемых, предусмотренных подпунктами 1), 2), 3), 4), 5), 6), 7), 8) и 8-1) пункта 1 статьи 190 настоящего Кодекса",
+    "metadata": {
+      "source_kz": "188-бап",
+      "target_kz": "190-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 190"
+    }
+  },
+  {
+    "source_id": "ffc9b491-bf7d-5d74-9587-82db0f5f24ae",
+    "target_id": "4b8a658d-b421-5a68-a126-2cea4c56ad5d",
+    "type": "REFERENCES",
+    "evidence": "в соответствии со статьей 189 настоящего Кодекса",
+    "metadata": {
+      "source_kz": "189-1-бап",
+      "target_kz": "189-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 189"
+    }
+  },
+  {
+    "source_id": "42cb5842-bc7f-5ed6-a484-0e17e9b52314",
+    "target_id": "2ff4ba4d-2011-5ee9-a719-73011338d9ed",
+    "type": "CORRELATED_WITH",
+    "evidence": "нарушение условий лицензии на разведку твердых полезных ископаемых, предусмотренных статьей 191 настоящего Кодекса",
+    "metadata": {
+      "source_kz": "190-бап",
+      "target_kz": "191-бап"
+    }
+  },
+  {
+    "source_id": "6908ba13-9d36-567c-aaf4-fa2453a67324",
+    "target_id": "3cc80542-1ef8-54eb-9635-aa5d00a59ec9",
+    "type": "REFERENCES",
+    "evidence": "в случае, предусмотренном пунктом 7 статьи 194 настоящего Кодекса",
+    "metadata": {
+      "source_kz": "198-бап",
+      "target_kz": "194-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 194"
+    }
+  },
+  {
+    "source_id": "59560b88-96a1-5c45-bcc9-a92b3c5f1c9c",
+    "target_id": "11d4adce-d2d5-579a-bb4e-454c10cc9a86",
+    "type": "REFERENCES",
+    "evidence": "в случаях, предусмотренных пунктом 4 статьи 197 настоящего Кодекса",
+    "metadata": {
+      "source_kz": "199-бап",
+      "target_kz": "197-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 197"
+    }
+  },
+  {
+    "source_id": "b8bd56c8-c5e3-57bb-87fc-a9ba37e51267",
+    "target_id": "2ff4ba4d-2011-5ee9-a719-73011338d9ed",
+    "type": "REFERENCES",
+    "evidence": "нарушение условий лицензии на разведку твердых полезных ископаемых, предусмотренных статьей 191 настоящего Кодекса",
+    "metadata": {
+      "source_kz": "200-бап",
+      "target_kz": "191-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 191"
+    }
+  },
+  {
+    "source_id": "b8bd56c8-c5e3-57bb-87fc-a9ba37e51267",
+    "target_id": "3cc80542-1ef8-54eb-9635-aa5d00a59ec9",
+    "type": "REFERENCES",
+    "evidence": "нарушение требований части второй пункта 7 статьи 194 настоящего Кодекса",
+    "metadata": {
+      "source_kz": "200-бап",
+      "target_kz": "194-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 194"
+    }
+  },
+  {
+    "source_id": "75f775ba-584e-547b-8f36-81c3b8a239d6",
+    "target_id": "2bf47c37-4c31-5eca-a079-a41311bed3ec",
+    "type": "REFERENCES",
+    "evidence": "в порядке исключительного права в соответствии со статьей 201 настоящего Кодекса",
+    "metadata": {
+      "source_kz": "203-бап",
+      "target_kz": "201-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 201"
+    }
+  },
+  {
+    "source_id": "1e0cc82b-1a24-519d-8640-707fcfa1ebab",
+    "target_id": "80284f77-1ce3-531d-a690-3f31e3fa9f36",
+    "type": "CORRELATED_WITH",
+    "evidence": "Компетентный орган рассматривает заявление в течение десяти рабочих дней со дня его поступления",
+    "metadata": {
+      "source_kz": "204-бап",
+      "target_kz": "205-бап"
+    }
+  },
+  {
+    "source_id": "80284f77-1ce3-531d-a690-3f31e3fa9f36",
+    "target_id": "ba1b7c0c-eed5-561c-9f93-4187db5383fa",
+    "type": "REFERENCES",
+    "evidence": "оснований для отказа в выдаче лицензии на добычу твердых полезных ископаемых, предусмотренных подпунктами 1) -- 6) пункта 1 статьи 207 настоящего Кодекса",
+    "metadata": {
+      "source_kz": "205-бап",
+      "target_kz": "207-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 207"
+    }
+  },
+  {
+    "source_id": "80284f77-1ce3-531d-a690-3f31e3fa9f36",
+    "target_id": "f3a5b69c-a6e9-5e1f-b124-5cf16a9ddf94",
+    "type": "REFERENCES",
+    "evidence": "границы запрашиваемого участка недр не соответствуют требованиям статьи 209 настоящего Кодекса",
+    "metadata": {
+      "source_kz": "205-бап",
+      "target_kz": "209-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 209"
+    }
+  },
+  {
+    "source_id": "80284f77-1ce3-531d-a690-3f31e3fa9f36",
+    "target_id": "1e0cc82b-1a24-519d-8640-707fcfa1ebab",
+    "type": "REFERENCES",
+    "evidence": "предусмотренных соответственно статьями 216 и 217 настоящего Кодекса",
+    "metadata": {
+      "source_kz": "205-бап",
+      "target_kz": "204-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 204"
+    }
+  },
+  {
+    "source_id": "68bd4659-214e-5af2-86e2-04f845ffb736",
+    "target_id": "ba1b7c0c-eed5-561c-9f93-4187db5383fa",
+    "type": "CORRELATED_WITH",
+    "evidence": "отказа в выдаче лицензии по предыдущему рассмотренному заявлению",
+    "metadata": {
+      "source_kz": "206-бап",
+      "target_kz": "207-бап"
+    }
+  },
+  {
+    "source_id": "ba1b7c0c-eed5-561c-9f93-4187db5383fa",
+    "target_id": "1e0cc82b-1a24-519d-8640-707fcfa1ebab",
+    "type": "REFERENCES",
+    "evidence": "заявление или прилагаемые к нему документы не соответствуют требованиям, предусмотренным настоящим Кодексом",
+    "metadata": {
+      "source_kz": "207-бап",
+      "target_kz": "204-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 204"
+    }
+  },
+  {
+    "source_id": "6c1e6c14-f2b4-571a-863a-588e29f54d79",
+    "target_id": "fd5091f9-0457-595a-9edc-b9b4905a3772",
+    "type": "CORRELATED_WITH",
+    "evidence": "размер обязательства недропользователя по финансированию обучения казахстанских кадров",
+    "metadata": {
+      "source_kz": "208-бап",
+      "target_kz": "212-бап"
+    }
+  },
+  {
+    "source_id": "f3a5b69c-a6e9-5e1f-b124-5cf16a9ddf94",
+    "target_id": "1e0cc82b-1a24-519d-8640-707fcfa1ebab",
+    "type": "REFERENCES",
+    "evidence": "отчете, предусмотренном подпунктом 6) пункта 3 статьи 204 настоящего Кодекса",
+    "metadata": {
+      "source_kz": "209-бап",
+      "target_kz": "204-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 204"
+    }
+  },
+  {
+    "source_id": "501ef6a5-070d-571d-861c-00fda8e46591",
+    "target_id": "6c1e6c14-f2b4-571a-863a-588e29f54d79",
+    "type": "MANIFESTED_IN",
+    "evidence": "размер обязательства по ежегодным минимальным расходам на операции по добыче твердых полезных ископаемых",
+    "metadata": {
+      "source_kz": "210-бап",
+      "target_kz": "208-бап"
+    }
+  },
+  {
+    "source_id": "948494bd-342a-558f-a2ad-306d2e656fd6",
+    "target_id": "6c1e6c14-f2b4-571a-863a-588e29f54d79",
+    "type": "CORRELATED_WITH",
+    "evidence": "Срок лицензии на добычу твердых полезных ископаемых",
+    "metadata": {
+      "source_kz": "211-бап",
+      "target_kz": "208-бап"
+    }
+  },
+  {
+    "source_id": "fd5091f9-0457-595a-9edc-b9b4905a3772",
+    "target_id": "501ef6a5-070d-571d-861c-00fda8e46591",
+    "type": "BASED_ON",
+    "evidence": "расходов на добычу, понесенных недропользователем в предыдущем году",
+    "metadata": {
+      "source_kz": "212-бап",
+      "target_kz": "210-бап"
+    }
+  },
+  {
+    "source_id": "a5b749b4-42f1-59f2-ae5a-c9ac594f8254",
+    "target_id": "6c1e6c14-f2b4-571a-863a-588e29f54d79",
+    "type": "MANIFESTED_IN",
+    "evidence": "размер минимальной доли внутристрановой ценности в работах и услугах, используемых при проведении операций по добыче",
+    "metadata": {
+      "source_kz": "213-бап",
+      "target_kz": "208-бап"
+    }
+  },
+  {
+    "source_id": "f430445f-097d-51bd-8389-fbfc064a44b5",
+    "target_id": "1e0cc82b-1a24-519d-8640-707fcfa1ebab",
+    "type": "CORRELATED_WITH",
+    "evidence": "На участке недр по лицензии на добычу твердых полезных ископаемых",
+    "metadata": {
+      "source_kz": "214-бап",
+      "target_kz": "204-бап"
+    }
+  },
+  {
+    "source_id": "6d642532-e329-5fd3-8c36-9a0951d92148",
+    "target_id": "a5b749b4-42f1-59f2-ae5a-c9ac594f8254",
+    "type": "CORRELATED_WITH",
+    "evidence": "отчет о приобретенных товарах, работах и услугах и доле внутристрановой ценности в них",
+    "metadata": {
+      "source_kz": "215-бап",
+      "target_kz": "213-бап"
+    }
+  },
+  {
+    "source_id": "b2d80109-2e91-5351-a6c9-471a6b759eea",
+    "target_id": "02f2cf90-5040-5981-85ab-af2a4aa83fc6",
+    "type": "CORRELATED_WITH",
+    "evidence": "План ликвидации составляется с привлечением лица, имеющего лицензию на выполнение работ и оказание услуг в области охраны окружающей среды, и утверждается недропользователем.",
+    "metadata": {
+      "source_kz": "216-бап",
+      "target_kz": "217-бап"
+    }
+  },
+  {
+    "source_id": "02f2cf90-5040-5981-85ab-af2a4aa83fc6",
+    "target_id": "8b001496-0961-5b58-9054-a9b3a9ff81fc",
+    "type": "BASED_ON",
+    "evidence": "Ликвидация последствий операций по добыче твердых полезных ископаемых проводится в соответствии с проектом ликвидации, разработанным на основе плана ликвидации.",
+    "metadata": {
+      "source_kz": "217-бап",
+      "target_kz": "218-бап"
+    }
+  },
+  {
+    "source_id": "8b001496-0961-5b58-9054-a9b3a9ff81fc",
+    "target_id": "8719bcb4-06b0-5d53-801f-b52dda816236",
+    "type": "CORRELATED_WITH",
+    "evidence": "Сумма обеспечения подлежит окончательному пересчету в соответствии со сметой, предусмотренной проектом работ по ликвидации.",
+    "metadata": {
+      "source_kz": "218-бап",
+      "target_kz": "219-бап"
+    }
+  },
+  {
+    "source_id": "8b001496-0961-5b58-9054-a9b3a9ff81fc",
+    "target_id": "ebe27eb3-d8ef-5c1e-8574-d54e6a66b088",
+    "type": "REFERENCES",
+    "evidence": "Ликвидация последствий операций по добыче твердых полезных ископаемых на части участка добычи, от которого недропользователь отказался в соответствии со статьей 220 настоящего Кодекса, проводится до такого отказа.",
+    "metadata": {
+      "source_kz": "218-бап",
+      "target_kz": "220-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 220"
+    }
+  },
+  {
+    "source_id": "8719bcb4-06b0-5d53-801f-b52dda816236",
+    "target_id": "02f2cf90-5040-5981-85ab-af2a4aa83fc6",
+    "type": "REFERENCES",
+    "evidence": "Если проведение ликвидации планируется осуществлять по плану ликвидации, составленному в соответствии с частью второй пункта 1 статьи 217 настоящего Кодекса для двух и более участков недр, недропользователь вправе предоставить общее обеспечение исполнения обязательств по ликвидации последствий недропользования на данных участках.",
+    "metadata": {
+      "source_kz": "219-бап",
+      "target_kz": "217-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 217"
+    }
+  },
+  {
+    "source_id": "8719bcb4-06b0-5d53-801f-b52dda816236",
+    "target_id": "8b001496-0961-5b58-9054-a9b3a9ff81fc",
+    "type": "REFERENCES",
+    "evidence": "При прекращении действия лицензии на добычу сумма обеспечения с согласия уполномоченного органа в области твердых полезных ископаемых может быть уменьшена соразмерно стоимости части ликвидационных работ, выполненных на участке недр и принятых в порядке, предусмотренном пунктом 4 статьи 218 настоящего Кодекса.",
+    "metadata": {
+      "source_kz": "219-бап",
+      "target_kz": "218-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 218"
+    }
+  },
+  {
+    "source_id": "ebe27eb3-d8ef-5c1e-8574-d54e6a66b088",
+    "target_id": "8b001496-0961-5b58-9054-a9b3a9ff81fc",
+    "type": "REFERENCES",
+    "evidence": "К заявлению прилагаются: 1) акт ликвидации последствий добычи на всем участке добычи или его части, от которых недропользователь отказывается;",
+    "metadata": {
+      "source_kz": "220-бап",
+      "target_kz": "218-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 218"
+    }
+  },
+  {
+    "source_id": "3ade7dac-fb1b-5a21-8b24-1d72b97d8697",
+    "target_id": "c63cde0d-9f5e-5c47-b663-28b293066c4a",
+    "type": "REFERENCES",
+    "evidence": "Если в указанный срок недропользователь не обратится с заявлением о прекращении статуса удержания, компетентный орган отзывает лицензию на добычу в порядке, предусмотренном пунктом 6 статьи 221 настоящего Кодекса.",
+    "metadata": {
+      "source_kz": "230-бап",
+      "target_kz": "221-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 221"
+    }
+  },
+  {
+    "source_id": "c5a8ec6e-a3ff-5fa1-ba3a-7d580cf8fa26",
+    "target_id": "8b001496-0961-5b58-9054-a9b3a9ff81fc",
+    "type": "REFERENCES",
+    "evidence": "Положения подпункта 6) пункта 2 статьи 186 и подпункта 4) пункта 2 статьи 203 настоящего Кодекса не применяются при выдаче лицензий на недропользование по итогам аукциона в соответствии с настоящей статьей.",
+    "metadata": {
+      "source_kz": "221-5-бап",
+      "target_kz": "218-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 218"
+    }
+  },
+  {
+    "source_id": "4d54c1eb-2848-5cdc-8070-d62f9e9b8e83",
+    "target_id": "43f4b04c-d302-5345-919d-c25f5c3bdc83",
+    "type": "MANIFESTED_IN",
+    "evidence": "Статус удержания присваивается по заявлению недропользователя либо реабилитационного управляющего.",
+    "metadata": {
+      "source_kz": "222-бап",
+      "target_kz": "223-бап"
+    }
+  },
+  {
+    "source_id": "43f4b04c-d302-5345-919d-c25f5c3bdc83",
+    "target_id": "c8ea4373-18ef-587a-b18d-7ca3db4a0d3d",
+    "type": "EXTENDS",
+    "evidence": "Компетентный орган отказывает в присвоении участку добычи (его части) по лицензии на добычу твердых полезных ископаемых статуса удержания при наличии одного из следующих оснований:",
+    "metadata": {
+      "source_kz": "223-бап",
+      "target_kz": "224-бап"
+    }
+  },
+  {
+    "source_id": "43f4b04c-d302-5345-919d-c25f5c3bdc83",
+    "target_id": "6615b9c4-fb56-546a-9537-992bcad5ab83",
+    "type": "REFERENCES",
+    "evidence": "К заявлению прилагаются: ... 2) утвержденная недропользователем программа работ.",
+    "metadata": {
+      "source_kz": "223-бап",
+      "target_kz": "225-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 225"
+    }
+  },
+  {
+    "source_id": "43f4b04c-d302-5345-919d-c25f5c3bdc83",
+    "target_id": "42571fc4-a994-5c9b-b405-0888341f63ad",
+    "type": "REFERENCES",
+    "evidence": "Компетентный орган присваивает статус удержания участку добычи (его части) и выдает недропользователю переоформленную лицензию в срок не позднее пяти рабочих дней со дня представления проекта консервации, разработанного в порядке, предусмотренном статьей 226 настоящего Кодекса.",
+    "metadata": {
+      "source_kz": "223-бап",
+      "target_kz": "226-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 226"
+    }
+  },
+  {
+    "source_id": "c8ea4373-18ef-587a-b18d-7ca3db4a0d3d",
+    "target_id": "43f4b04c-d302-5345-919d-c25f5c3bdc83",
+    "type": "REFERENCES",
+    "evidence": "несоблюдение заявителем срока представления компетентному органу проекта консервации, разработанного в порядке, предусмотренном статьей 223 настоящего Кодекса;",
+    "metadata": {
+      "source_kz": "224-бап",
+      "target_kz": "223-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 223"
+    }
+  },
+  {
+    "source_id": "42571fc4-a994-5c9b-b405-0888341f63ad",
+    "target_id": "6615b9c4-fb56-546a-9537-992bcad5ab83",
+    "type": "BASED_ON",
+    "evidence": "Консервация участка недр проводится в соответствии с проектом консервации, разрабатываемым на основании программы работ, согласованной недропользователем с компетентным органом.",
+    "metadata": {
+      "source_kz": "226-бап",
+      "target_kz": "225-бап"
+    }
+  },
+  {
+    "source_id": "aa2fd8c8-89f4-560d-9850-be6537bb1e83",
+    "target_id": "43f4b04c-d302-5345-919d-c25f5c3bdc83",
+    "type": "REFERENCES",
+    "evidence": "Продление статуса удержания производится в порядке, предусмотренном для присвоения участку недр статуса удержания.",
+    "metadata": {
+      "source_kz": "228-бап",
+      "target_kz": "223-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 223"
+    }
+  },
+  {
+    "source_id": "fc288d78-4cb3-5323-afee-2c778bb6122c",
+    "target_id": "3ade7dac-fb1b-5a21-8b24-1d72b97d8697",
+    "type": "REFERENCES",
+    "evidence": "Прекращение статуса удержания является основанием для переоформления лицензии на добычу и применения к недропользователю требований подпункта 2) статьи 208 настоящего Кодекса в полном объеме.",
+    "metadata": {
+      "source_kz": "229-бап",
+      "target_kz": "221-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 208"
+    }
+  },
+  {
+    "source_id": "c63cde0d-9f5e-5c47-b663-28b293066c4a",
+    "target_id": "3ade7dac-fb1b-5a21-8b24-1d72b97d8697",
+    "type": "REFERENCES",
+    "evidence": "Если в указанный срок недропользователь не обратится с заявлением о прекращении статуса удержания, компетентный орган отзывает лицензию на добычу в порядке, предусмотренном пунктом 6 статьи 221 настоящего Кодекса.",
+    "metadata": {
+      "source_kz": "230-бап",
+      "target_kz": "221-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 221"
+    }
+  },
+  {
+    "source_id": "e6e22a81-3f45-5c78-94b1-de883e380f57",
+    "target_id": "f833c6cf-24e0-51d8-b3ee-3e9cab4fb170",
+    "type": "CORRELATED_WITH",
+    "evidence": "Положения настоящей главы применяются в случаях добычи только общераспространенных полезных ископаемых.",
+    "metadata": {
+      "source_kz": "231-бап",
+      "target_kz": "232-бап"
+    }
+  },
+  {
+    "source_id": "e6e22a81-3f45-5c78-94b1-de883e380f57",
+    "target_id": "e38b45bd-b61e-5d64-b453-c8d2aebe557c",
+    "type": "CORRELATED_WITH",
+    "evidence": "Положения настоящей главы применяются в случаях добычи только общераспространенных полезных ископаемых.",
+    "metadata": {
+      "source_kz": "231-бап",
+      "target_kz": "233-бап"
+    }
+  },
+  {
+    "source_id": "e6e22a81-3f45-5c78-94b1-de883e380f57",
+    "target_id": "9650d117-35c3-5806-9504-888b91509de8",
+    "type": "CORRELATED_WITH",
+    "evidence": "Положения настоящей главы применяются в случаях добычи только общераспространенных полезных ископаемых.",
+    "metadata": {
+      "source_kz": "231-бап",
+      "target_kz": "234-бап"
+    }
+  },
+  {
+    "source_id": "e6e22a81-3f45-5c78-94b1-de883e380f57",
+    "target_id": "a23cb0f7-6d96-5e28-a0aa-6435624509e5",
+    "type": "CORRELATED_WITH",
+    "evidence": "Положения настоящей главы применяются в случаях добычи только общераспространенных полезных ископаемых.",
+    "metadata": {
+      "source_kz": "231-бап",
+      "target_kz": "235-бап"
+    }
+  },
+  {
+    "source_id": "e6e22a81-3f45-5c78-94b1-de883e380f57",
+    "target_id": "25ac5653-47a5-5063-bd03-20902cd667d8",
+    "type": "CORRELATED_WITH",
+    "evidence": "Положения настоящей главы применяются в случаях добычи только общераспространенных полезных ископаемых.",
+    "metadata": {
+      "source_kz": "231-бап",
+      "target_kz": "236-бап"
+    }
+  },
+  {
+    "source_id": "e6e22a81-3f45-5c78-94b1-de883e380f57",
+    "target_id": "92b0cbba-2ee6-5a2f-b8e5-9823ed7e8f16",
+    "type": "CORRELATED_WITH",
+    "evidence": "Положения настоящей главы применяются в случаях добычи только общераспространенных полезных ископаемых.",
+    "metadata": {
+      "source_kz": "231-бап",
+      "target_kz": "237-бап"
+    }
+  },
+  {
+    "source_id": "f833c6cf-24e0-51d8-b3ee-3e9cab4fb170",
+    "target_id": "e38b45bd-b61e-5d64-b453-c8d2aebe557c",
+    "type": "CORRELATED_WITH",
+    "evidence": "По лицензии на добычу общераспространенных полезных ископаемых ее обладатель имеет исключительное право пользоваться участком недр",
+    "metadata": {
+      "source_kz": "232-бап",
+      "target_kz": "233-бап"
+    }
+  },
+  {
+    "source_id": "f833c6cf-24e0-51d8-b3ee-3e9cab4fb170",
+    "target_id": "9650d117-35c3-5806-9504-888b91509de8",
+    "type": "CORRELATED_WITH",
+    "evidence": "По лицензии на добычу общераспространенных полезных ископаемых ее обладатель имеет исключительное право пользоваться участком недр",
+    "metadata": {
+      "source_kz": "232-бап",
+      "target_kz": "234-бап"
+    }
+  },
+  {
+    "source_id": "f833c6cf-24e0-51d8-b3ee-3e9cab4fb170",
+    "target_id": "a23cb0f7-6d96-5e28-a0aa-6435624509e5",
+    "type": "CORRELATED_WITH",
+    "evidence": "По лицензии на добычу общераспространенных полезных ископаемых ее обладатель имеет исключительное право пользоваться участком недр",
+    "metadata": {
+      "source_kz": "232-бап",
+      "target_kz": "235-бап"
+    }
+  },
+  {
+    "source_id": "f833c6cf-24e0-51d8-b3ee-3e9cab4fb170",
+    "target_id": "25ac5653-47a5-5063-bd03-20902cd667d8",
+    "type": "CORRELATED_WITH",
+    "evidence": "По лицензии на добычу общераспространенных полезных ископаемых ее обладатель имеет исключительное право пользоваться участком недр",
+    "metadata": {
+      "source_kz": "232-бап",
+      "target_kz": "236-бап"
+    }
+  },
+  {
+    "source_id": "f833c6cf-24e0-51d8-b3ee-3e9cab4fb170",
+    "target_id": "92b0cbba-2ee6-5a2f-b8e5-9823ed7e8f16",
+    "type": "CORRELATED_WITH",
+    "evidence": "Добыча исключительно общераспространенных полезных ископаемых в предпринимательских целях осуществляется на основании лицензии",
+    "metadata": {
+      "source_kz": "232-бап",
+      "target_kz": "237-бап"
+    }
+  },
+  {
+    "source_id": "e38b45bd-b61e-5d64-b453-c8d2aebe557c",
+    "target_id": "f833c6cf-24e0-51d8-b3ee-3e9cab4fb170",
+    "type": "BASED_ON",
+    "evidence": "Лицензия на добычу общераспространенных полезных ископаемых помимо сведений и условий, указанных в статье 31 настоящего Кодекса, должна содержать следующие условия недропользования",
+    "metadata": {
+      "source_kz": "233-бап",
+      "target_kz": "232-бап"
+    }
+  },
+  {
+    "source_id": "a23cb0f7-6d96-5e28-a0aa-6435624509e5",
+    "target_id": "f833c6cf-24e0-51d8-b3ee-3e9cab4fb170",
+    "type": "BASED_ON",
+    "evidence": "Недропользователь, обладающий лицензией на добычу общераспространенных полезных ископаемых, обязан соблюдать требования о ежегодных минимальных расходах на добычу",
+    "metadata": {
+      "source_kz": "235-бап",
+      "target_kz": "232-бап"
+    }
+  },
+  {
+    "source_id": "25ac5653-47a5-5063-bd03-20902cd667d8",
+    "target_id": "f833c6cf-24e0-51d8-b3ee-3e9cab4fb170",
+    "type": "BASED_ON",
+    "evidence": "По лицензии на добычу общераспространенных полезных ископаемых недропользователь обязан представлять следующие периодические отчеты",
+    "metadata": {
+      "source_kz": "236-бап",
+      "target_kz": "232-бап"
+    }
+  },
+  {
+    "source_id": "92b0cbba-2ee6-5a2f-b8e5-9823ed7e8f16",
+    "target_id": "f833c6cf-24e0-51d8-b3ee-3e9cab4fb170",
+    "type": "EXTENDS",
+    "evidence": "Собственники земельных участков и землепользователи вправе для удовлетворения личных, бытовых и иных хозяйственных нужд, не связанных с осуществлением предпринимательской деятельности, извлекать в границах принадлежащих им земельных участков общераспространенные полезные ископаемые.",
+    "metadata": {
+      "source_kz": "237-бап",
+      "target_kz": "232-бап"
+    }
+  },
+  {
+    "source_id": "c8665e7b-0737-5965-b8b2-d8a4bad83ada",
+    "target_id": "6a64fd7b-97a3-58e3-917f-3852eb059c64",
+    "type": "MANIFESTED_IN",
+    "evidence": "Преобразованием участков недр, предоставленных для разведки или добычи твердых полезных ископаемых, является изменение их территориальных границ, производимое способом присоединения одного участка недр по одной лицензии к другому участку недр (основной участок) по другой лицензии или путем выделения из одного участка недр по одной лицензии другого участка (выделенный участок).",
+    "metadata": {
+      "source_kz": "238-бап",
+      "target_kz": "239-бап"
+    }
+  },
+  {
+    "source_id": "c8665e7b-0737-5965-b8b2-d8a4bad83ada",
+    "target_id": "cc222a35-63c1-569e-a631-ea90d9f4a943",
+    "type": "MANIFESTED_IN",
+    "evidence": "Преобразованием участков недр, предоставленных для разведки или добычи твердых полезных ископаемых, является изменение их территориальных границ, производимое способом присоединения одного участка недр по одной лицензии к другому участку недр (основной участок) по другой лицензии или путем выделения из одного участка недр по одной лицензии другого участка (выделенный участок).",
+    "metadata": {
+      "source_kz": "238-бап",
+      "target_kz": "240-бап"
+    }
+  },
+  {
+    "source_id": "c8665e7b-0737-5965-b8b2-d8a4bad83ada",
+    "target_id": "b88d9dc7-3098-5fb4-b26d-2101206e989f",
+    "type": "MANIFESTED_IN",
+    "evidence": "Преобразование участков недр производится компетентным органом по заявлению недропользователя в месячный срок со дня подачи заявления.",
+    "metadata": {
+      "source_kz": "238-бап",
+      "target_kz": "241-бап"
+    }
+  },
+  {
+    "source_id": "6a64fd7b-97a3-58e3-917f-3852eb059c64",
+    "target_id": "c8665e7b-0737-5965-b8b2-d8a4bad83ada",
+    "type": "BASED_ON",
+    "evidence": "Присоединение участков недр производится в случае присоединения одного участка добычи к другому участку добычи твердых полезных ископаемых.",
+    "metadata": {
+      "source_kz": "239-бап",
+      "target_kz": "238-бап"
+    }
+  },
+  {
+    "source_id": "cc222a35-63c1-569e-a631-ea90d9f4a943",
+    "target_id": "c8665e7b-0737-5965-b8b2-d8a4bad83ada",
+    "type": "BASED_ON",
+    "evidence": "Выделение участка недр проводится в случаях: 1) выделения части участка недр по лицензии на разведку; 2) выделения части участка недр по лицензии на добычу.",
+    "metadata": {
+      "source_kz": "240-бап",
+      "target_kz": "238-бап"
+    }
+  },
+  {
+    "source_id": "b88d9dc7-3098-5fb4-b26d-2101206e989f",
+    "target_id": "c8665e7b-0737-5965-b8b2-d8a4bad83ada",
+    "type": "BASED_ON",
+    "evidence": "Заявление на преобразование участка недр составляется по форме, установленной компетентным органом.",
+    "metadata": {
+      "source_kz": "241-бап",
+      "target_kz": "238-бап"
+    }
+  },
+  {
+    "source_id": "ed14f1f7-3ea6-56c5-848c-472f1164609e",
+    "target_id": "6b8830dd-1bba-53de-814b-f3411d99d507",
+    "type": "MANIFESTED_IN",
+    "evidence": "Соглашением о переработке твердых полезных ископаемых является договор, по которому Республика Казахстан обязуется предоставить преференции обладателю права (прав) недропользования на добычу твердых полезных ископаемых, а недропользователь обязуется на свой риск осуществить инвестиции в проект переработки твердых полезных ископаемых (соглашение о переработке).",
+    "metadata": {
+      "source_kz": "242-бап",
+      "target_kz": "243-бап"
+    }
+  },
+  {
+    "source_id": "ed14f1f7-3ea6-56c5-848c-472f1164609e",
+    "target_id": "7ef50a14-61ab-5f2f-b5e5-6dd2e01f5cec",
+    "type": "MANIFESTED_IN",
+    "evidence": "Соглашением о переработке твердых полезных ископаемых является договор, по которому Республика Казахстан обязуется предоставить преференции обладателю права (прав) недропользования на добычу твердых полезных ископаемых, а недропользователь обязуется на свой риск осуществить инвестиции в проект переработки твердых полезных ископаемых (соглашение о переработке).",
+    "metadata": {
+      "source_kz": "242-бап",
+      "target_kz": "244-бап"
+    }
+  },
+  {
+    "source_id": "ed14f1f7-3ea6-56c5-848c-472f1164609e",
+    "target_id": "861affca-209a-5e6d-b700-f0cb111347cc",
+    "type": "MANIFESTED_IN",
+    "evidence": "Соглашением о переработке твердых полезных ископаемых является договор, по которому Республика Казахстан обязуется предоставить преференции обладателю права (прав) недропользования на добычу твердых полезных ископаемых, а недропользователь обязуется на свой риск осуществить инвестиции в проект переработки твердых полезных ископаемых (соглашение о переработке).",
+    "metadata": {
+      "source_kz": "242-бап",
+      "target_kz": "245-бап"
+    }
+  },
+  {
+    "source_id": "ed14f1f7-3ea6-56c5-848c-472f1164609e",
+    "target_id": "9d7e527b-5710-5512-b64c-e77021af5c6c",
+    "type": "MANIFESTED_IN",
+    "evidence": "Соглашением о переработке твердых полезных ископаемых является договор, по которому Республика Казахстан обязуется предоставить преференции обладателю права (прав) недропользования на добычу твердых полезных ископаемых, а недропользователь обязуется на свой риск осуществить инвестиции в проект переработки твердых полезных ископаемых (соглашение о переработке).",
+    "metadata": {
+      "source_kz": "242-бап",
+      "target_kz": "246-бап"
+    }
+  },
+  {
+    "source_id": "ed14f1f7-3ea6-56c5-848c-472f1164609e",
+    "target_id": "ac6355e8-0a24-5793-86c5-c60bd06452ab",
+    "type": "MANIFESTED_IN",
+    "evidence": "Соглашением о переработке твердых полезных ископаемых является договор, по которому Республика Казахстан обязуется предоставить преференции обладателю права (прав) недропользования на добычу твердых полезных ископаемых, а недропользователь обязуется на свой риск осуществить инвестиции в проект переработки твердых полезных ископаемых (соглашение о переработке).",
+    "metadata": {
+      "source_kz": "242-бап",
+      "target_kz": "247-бап"
+    }
+  },
+  {
+    "source_id": "ed14f1f7-3ea6-56c5-848c-472f1164609e",
+    "target_id": "79dfe63e-462f-596f-9cf4-177550b2f3ec",
+    "type": "MANIFESTED_IN",
+    "evidence": "Соглашением о переработке твердых полезных ископаемых является договор, по которому Республика Казахстан обязуется предоставить преференции обладателю права (прав) недропользования на добычу твердых полезных ископаемых, а недропользователь обязуется на свой риск осуществить инвестиции в проект переработки твердых полезных ископаемых (соглашение о переработке).",
+    "metadata": {
+      "source_kz": "242-бап",
+      "target_kz": "248-бап"
+    }
+  },
+  {
+    "source_id": "6b8830dd-1bba-53de-814b-f3411d99d507",
+    "target_id": "ed14f1f7-3ea6-56c5-848c-472f1164609e",
+    "type": "BASED_ON",
+    "evidence": "Недропользователь, имеющий намерение заключить соглашение о переработке, подает заявление в компетентный орган по утверждаемой им форме.",
+    "metadata": {
+      "source_kz": "243-бап",
+      "target_kz": "242-бап"
+    }
+  },
+  {
+    "source_id": "7ef50a14-61ab-5f2f-b5e5-6dd2e01f5cec",
+    "target_id": "ed14f1f7-3ea6-56c5-848c-472f1164609e",
+    "type": "BASED_ON",
+    "evidence": "Соглашение о переработке должно содержать: 1) предмет соглашения; 2) указание на документ, на основании которого предоставлено право недропользования на добычу твердых полезных ископаемых, имеющийся у недропользователя;",
+    "metadata": {
+      "source_kz": "244-бап",
+      "target_kz": "242-бап"
+    }
+  },
+  {
+    "source_id": "861affca-209a-5e6d-b700-f0cb111347cc",
+    "target_id": "ed14f1f7-3ea6-56c5-848c-472f1164609e",
+    "type": "BASED_ON",
+    "evidence": "Инвестиционные преференции предоставляются недропользователю, проводящему операции по добыче твердых полезных ископаемых, являющемуся юридическим лицом, созданным в Республике Казахстан, при реализации им проекта переработки твердых полезных ископаемых на территории Республики Казахстан.",
+    "metadata": {
+      "source_kz": "245-бап",
+      "target_kz": "242-бап"
+    }
+  },
+  {
+    "source_id": "9d7e527b-5710-5512-b64c-e77021af5c6c",
+    "target_id": "ed14f1f7-3ea6-56c5-848c-472f1164609e",
+    "type": "CAUSED_BY",
+    "evidence": "Прекращение соглашения о переработке, предусматривающего изменение или исключение обязательств недропользователя по минимальным расходам на добычу твердых полезных ископаемых и (или) обязательств по финансированию обучения, научно-исследовательской и опытно-конструкторской деятельности по лицензии на добычу, влечет применение условий лицензии, действовавших до заключения данного соглашения.",
+    "metadata": {
+      "source_kz": "246-бап",
+      "target_kz": "242-бап"
+    }
+  },
+  {
+    "source_id": "ac6355e8-0a24-5793-86c5-c60bd06452ab",
+    "target_id": "ed14f1f7-3ea6-56c5-848c-472f1164609e",
+    "type": "BASED_ON",
+    "evidence": "Уступка недропользователем прав и обязанностей по соглашению о переработке без соответствующего перехода права недропользования по лицензии, на основании которой заключено указанное соглашение, запрещается.",
+    "metadata": {
+      "source_kz": "247-бап",
+      "target_kz": "242-бап"
+    }
+  },
+  {
+    "source_id": "79dfe63e-462f-596f-9cf4-177550b2f3ec",
+    "target_id": "ed14f1f7-3ea6-56c5-848c-472f1164609e",
+    "type": "BASED_ON",
+    "evidence": "Обременение прав по соглашению о переработке, включая залог, без обременения права недропользования по лицензии, на основании которой заключено указанное соглашение, не допускается.",
+    "metadata": {
+      "source_kz": "248-бап",
+      "target_kz": "242-бап"
+    }
+  },
+  {
+    "source_id": "0cda7abd-b357-55e1-9d72-561a35e8b8b2",
+    "target_id": "7f041828-f528-5a32-a5a5-2f939c9b6531",
+    "type": "CORRELATED_WITH",
+    "evidence": "По лицензии на использование пространства недр ее обладатель имеет исключительное право пользоваться участком недр в целях проведения одного из следующих подвидов операций",
+    "metadata": {
+      "source_kz": "249-бап",
+      "target_kz": "250-бап"
+    }
+  },
+  {
+    "source_id": "ec9fbf5d-7dbd-582f-8fde-9966d51d1194",
+    "target_id": "fced062a-99a3-598b-894e-7214b5a88f09",
+    "type": "CORRELATED_WITH",
+    "evidence": "Заявление о выдаче лицензии на использование пространства недр",
+    "metadata": {
+      "source_kz": "251-бап",
+      "target_kz": "252-бап"
+    }
+  },
+  {
+    "source_id": "fced062a-99a3-598b-894e-7214b5a88f09",
+    "target_id": "679ddd7a-71b6-597c-9030-5bf04759a82e",
+    "type": "REFERENCES",
+    "evidence": "подпунктами 1) -- 7) пункта 1 статьи 254 настоящего Кодекса",
+    "metadata": {
+      "source_kz": "252-бап",
+      "target_kz": "254-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 254"
+    }
+  },
+  {
+    "source_id": "fced062a-99a3-598b-894e-7214b5a88f09",
+    "target_id": "f3642585-f956-5939-bf13-1aced4550e13",
+    "type": "REFERENCES",
+    "evidence": "статьей 260 настоящего Кодекса",
+    "metadata": {
+      "source_kz": "252-бап",
+      "target_kz": "260-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 260"
+    }
+  },
+  {
+    "source_id": "778a02d7-ec6a-5d1b-8a62-e7017566bf7f",
+    "target_id": "679ddd7a-71b6-597c-9030-5bf04759a82e",
+    "type": "CORRELATED_WITH",
+    "evidence": "отказ в выдаче лицензии",
+    "metadata": {
+      "source_kz": "253-бап",
+      "target_kz": "254-бап"
+    }
+  },
+  {
+    "source_id": "679ddd7a-71b6-597c-9030-5bf04759a82e",
+    "target_id": "f2e1e169-c7c4-5f29-9fe5-3148140b13ba",
+    "type": "CORRELATED_WITH",
+    "evidence": "лицензия на использование пространства недр",
+    "metadata": {
+      "source_kz": "254-бап",
+      "target_kz": "255-бап"
+    }
+  },
+  {
+    "source_id": "f2e1e169-c7c4-5f29-9fe5-3148140b13ba",
+    "target_id": "5c33469a-b9a6-59ca-aa7c-70759be2200f",
+    "type": "REFERENCES",
+    "evidence": "основания отзыва лицензии за нарушение обязательств",
+    "metadata": {
+      "source_kz": "255-бап",
+      "target_kz": "262-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 262"
+    }
+  },
+  {
+    "source_id": "697497a4-0612-5686-9826-2d648f9ef183",
+    "target_id": "fced062a-99a3-598b-894e-7214b5a88f09",
+    "type": "CORRELATED_WITH",
+    "evidence": "лицензия на использование пространства недр",
+    "metadata": {
+      "source_kz": "256-бап",
+      "target_kz": "252-бап"
+    }
+  },
+  {
+    "source_id": "f6cc21db-d9bd-5d40-84c5-d8d8afdfe6db",
+    "target_id": "b807ef6a-2d91-5ba0-bf45-0a6ee047e42e",
+    "type": "CORRELATED_WITH",
+    "evidence": "операции по использованию пространства недр",
+    "metadata": {
+      "source_kz": "257-бап",
+      "target_kz": "258-бап"
+    }
+  },
+  {
+    "source_id": "f59f9779-0343-5f3e-b2c9-dd28665a16de",
+    "target_id": "f3642585-f956-5939-bf13-1aced4550e13",
+    "type": "REFERENCES",
+    "evidence": "статьей 260 настоящего Кодекса",
+    "metadata": {
+      "source_kz": "259-бап",
+      "target_kz": "260-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 260"
+    }
+  },
+  {
+    "source_id": "f59f9779-0343-5f3e-b2c9-dd28665a16de",
+    "target_id": "fa62ae55-30bd-5829-b71e-7effc3adc220",
+    "type": "REFERENCES",
+    "evidence": "статьи 261 настоящего Кодекса",
+    "metadata": {
+      "source_kz": "259-бап",
+      "target_kz": "261-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 261"
+    }
+  },
+  {
+    "source_id": "f3642585-f956-5939-bf13-1aced4550e13",
+    "target_id": "f59f9779-0343-5f3e-b2c9-dd28665a16de",
+    "type": "EXTENDS",
+    "evidence": "Особенности планирования и обеспечения работ по ликвидации последствий отдельных операций",
+    "metadata": {
+      "source_kz": "260-бап",
+      "target_kz": "259-бап"
+    }
+  },
+  {
+    "source_id": "fa62ae55-30bd-5829-b71e-7effc3adc220",
+    "target_id": "f59f9779-0343-5f3e-b2c9-dd28665a16de",
+    "type": "CORRELATED_WITH",
+    "evidence": "ликвидация последствий",
+    "metadata": {
+      "source_kz": "261-бап",
+      "target_kz": "259-бап"
+    }
+  },
+  {
+    "source_id": "5c33469a-b9a6-59ca-aa7c-70759be2200f",
+    "target_id": "f2e1e169-c7c4-5f29-9fe5-3148140b13ba",
+    "type": "REFERENCES",
+    "evidence": "статьей 255 настоящего Кодекса",
+    "metadata": {
+      "source_kz": "262-бап",
+      "target_kz": "255-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 255"
+    }
+  },
+  {
+    "source_id": "9530f478-8e0e-596c-96fd-ed90b03260b7",
+    "target_id": "45f9ffef-429e-5be2-97e9-a19a32b6f27f",
+    "type": "CORRELATED_WITH",
+    "evidence": "лицензия на старательство",
+    "metadata": {
+      "source_kz": "263-бап",
+      "target_kz": "264-бап"
+    }
+  },
+  {
+    "source_id": "45f9ffef-429e-5be2-97e9-a19a32b6f27f",
+    "target_id": "01127784-525c-50b5-852a-5ed0140ad6b6",
+    "type": "CORRELATED_WITH",
+    "evidence": "лицензия на старательство",
+    "metadata": {
+      "source_kz": "264-бап",
+      "target_kz": "265-бап"
+    }
+  },
+  {
+    "source_id": "01127784-525c-50b5-852a-5ed0140ad6b6",
+    "target_id": "f9759e0d-1334-50d2-9000-fc9b958c765e",
+    "type": "CORRELATED_WITH",
+    "evidence": "лицензия на старательство",
+    "metadata": {
+      "source_kz": "265-бап",
+      "target_kz": "266-бап"
+    }
+  },
+  {
+    "source_id": "f9759e0d-1334-50d2-9000-fc9b958c765e",
+    "target_id": "98e76cba-42b6-5434-aeaa-9ec40778fb9c",
+    "type": "CORRELATED_WITH",
+    "evidence": "лицензия на старательство",
+    "metadata": {
+      "source_kz": "266-бап",
+      "target_kz": "267-бап"
+    }
+  },
+  {
+    "source_id": "98e76cba-42b6-5434-aeaa-9ec40778fb9c",
+    "target_id": "7f6bce72-4f47-5504-ae46-d7607446d8ad",
+    "type": "CORRELATED_WITH",
+    "evidence": "лицензия на старательство",
+    "metadata": {
+      "source_kz": "267-бап",
+      "target_kz": "268-бап"
+    }
+  },
+  {
+    "source_id": "7f6bce72-4f47-5504-ae46-d7607446d8ad",
+    "target_id": "a53965c8-acc7-5281-9139-7f617ca1e780",
+    "type": "CORRELATED_WITH",
+    "evidence": "участок старательства",
+    "metadata": {
+      "source_kz": "268-бап",
+      "target_kz": "269-бап"
+    }
+  },
+  {
+    "source_id": "a53965c8-acc7-5281-9139-7f617ca1e780",
+    "target_id": "b135dccf-efa8-5aff-83b9-7cc0bc565309",
+    "type": "CORRELATED_WITH",
+    "evidence": "лицензия на старательство",
+    "metadata": {
+      "source_kz": "269-бап",
+      "target_kz": "270-бап"
+    }
+  },
+  {
+    "source_id": "b135dccf-efa8-5aff-83b9-7cc0bc565309",
+    "target_id": "3ec64527-4cfc-5482-b0c6-6b58e96bca07",
+    "type": "CORRELATED_WITH",
+    "evidence": "старательство",
+    "metadata": {
+      "source_kz": "270-бап",
+      "target_kz": "271-бап"
+    }
+  },
+  {
+    "source_id": "3ec64527-4cfc-5482-b0c6-6b58e96bca07",
+    "target_id": "8c70ccc2-3abc-52e9-b067-fb2e709992f1",
+    "type": "CORRELATED_WITH",
+    "evidence": "старательство",
+    "metadata": {
+      "source_kz": "271-бап",
+      "target_kz": "272-бап"
+    }
+  },
+  {
+    "source_id": "9b87deaf-097b-5a09-afb5-686912a942bd",
+    "target_id": "13b033bd-8676-5518-8dfd-dae7b2b96f8c",
+    "type": "CORRELATED_WITH",
+    "evidence": "План старательства разрабатывается и утверждается недропользователем.",
+    "metadata": {
+      "source_kz": "273-бап",
+      "target_kz": "273-1-бап"
+    }
+  },
+  {
+    "source_id": "13b033bd-8676-5518-8dfd-dae7b2b96f8c",
+    "target_id": "86c9d8d6-cf39-51a2-bcaa-85f6214f3a0c",
+    "type": "CORRELATED_WITH",
+    "evidence": "Ликвидация последствий старательства проводится путем рекультивации нарушенных земель",
+    "metadata": {
+      "source_kz": "273-1-бап",
+      "target_kz": "274-бап"
+    }
+  },
+  {
+    "source_id": "13b033bd-8676-5518-8dfd-dae7b2b96f8c",
+    "target_id": "cc308874-f88c-5996-91cf-94cc53ea0041",
+    "type": "REFERENCES",
+    "evidence": "в соответствии со статьей 275 настоящего Кодекса",
+    "metadata": {
+      "source_kz": "273-1-бап",
+      "target_kz": "275-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 275"
+    }
+  },
+  {
+    "source_id": "57fea4e5-6feb-55d7-9a90-cbc749a361bf",
+    "target_id": "9b87deaf-097b-5a09-afb5-686912a942bd",
+    "type": "REFERENCES",
+    "evidence": "проведение работ по старательству без плана старательства, когда его наличие требуется в соответствии с положениями настоящей главы",
+    "metadata": {
+      "source_kz": "276-бап",
+      "target_kz": "273-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 273"
+    }
+  },
+  {
+    "source_id": "57fea4e5-6feb-55d7-9a90-cbc749a361bf",
+    "target_id": "86c9d8d6-cf39-51a2-bcaa-85f6214f3a0c",
+    "type": "REFERENCES",
+    "evidence": "проведение работ по старательству без предоставления обеспечения исполнения обязательств по ликвидации последствий старательства",
+    "metadata": {
+      "source_kz": "276-бап",
+      "target_kz": "274-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 274"
+    }
+  },
+  {
+    "source_id": "57fea4e5-6feb-55d7-9a90-cbc749a361bf",
+    "target_id": "cc308874-f88c-5996-91cf-94cc53ea0041",
+    "type": "CORRELATED_WITH",
+    "evidence": "Отзыв лицензии на старательство производится местным исполнительным органом области",
+    "metadata": {
+      "source_kz": "276-бап",
+      "target_kz": "275-бап"
+    }
+  }
+]

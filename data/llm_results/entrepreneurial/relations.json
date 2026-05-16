@@ -1,0 +1,3106 @@
+[
+  {
+    "source_id": "09807a62-ad41-50b1-bb42-483f40cfda37",
+    "target_id": "55b945ae-4f0b-5a2c-821d-f422a9b57d5c",
+    "type": "CORRELATED_WITH",
+    "evidence": "Законодательство Республики Казахстан в сфере предпринимательства основывается на Конституции Республики Казахстан и состоит из настоящего Кодекса и иных нормативных правовых актов Республики Казахстан.",
+    "metadata": {
+      "source_kz": "1-бап",
+      "target_kz": "2-бап"
+    }
+  },
+  {
+    "source_id": "09807a62-ad41-50b1-bb42-483f40cfda37",
+    "target_id": "fcb7d300-8fc3-5be9-bfdd-b3f445760c63",
+    "type": "CORRELATED_WITH",
+    "evidence": "Законодательство Республики Казахстан в сфере предпринимательства основывается на Конституции Республики Казахстан и состоит из настоящего Кодекса и иных нормативных правовых актов Республики Казахстан.",
+    "metadata": {
+      "source_kz": "1-бап",
+      "target_kz": "3-бап"
+    }
+  },
+  {
+    "source_id": "55b945ae-4f0b-5a2c-821d-f422a9b57d5c",
+    "target_id": "fcb7d300-8fc3-5be9-bfdd-b3f445760c63",
+    "type": "CORRELATED_WITH",
+    "evidence": "Предпринимательством является самостоятельная, инициативная деятельность граждан, кандасов и юридических лиц, направленная на получение чистого дохода путем использования имущества, производства, продажи товаров, выполнения работ, оказания услуг, основанная на праве частной собственности (частное предпринимательство) либо на праве хозяйственного ведения или оперативного управления государственного предприятия (государственное предпринимательство).",
+    "metadata": {
+      "source_kz": "2-бап",
+      "target_kz": "3-бап"
+    }
+  },
+  {
+    "source_id": "fcb7d300-8fc3-5be9-bfdd-b3f445760c63",
+    "target_id": "89f301e6-3dbb-587c-81d6-b812cf37f6a8",
+    "type": "MANIFESTED_IN",
+    "evidence": "законность",
+    "metadata": {
+      "source_kz": "3-бап",
+      "target_kz": "4-бап"
+    }
+  },
+  {
+    "source_id": "fcb7d300-8fc3-5be9-bfdd-b3f445760c63",
+    "target_id": "2a5a4856-2b9e-52ac-b219-8e0895a8ade9",
+    "type": "MANIFESTED_IN",
+    "evidence": "свобода предпринимательства",
+    "metadata": {
+      "source_kz": "3-бап",
+      "target_kz": "5-бап"
+    }
+  },
+  {
+    "source_id": "fcb7d300-8fc3-5be9-bfdd-b3f445760c63",
+    "target_id": "1c7af532-5a92-5e00-9a3d-aef3b19eabac",
+    "type": "MANIFESTED_IN",
+    "evidence": "равенство субъектов предпринимательства",
+    "metadata": {
+      "source_kz": "3-бап",
+      "target_kz": "6-бап"
+    }
+  },
+  {
+    "source_id": "fcb7d300-8fc3-5be9-bfdd-b3f445760c63",
+    "target_id": "0fae61b2-0af6-5720-ae03-ac5836e6ed02",
+    "type": "MANIFESTED_IN",
+    "evidence": "неприкосновенность собственности",
+    "metadata": {
+      "source_kz": "3-бап",
+      "target_kz": "7-бап"
+    }
+  },
+  {
+    "source_id": "fcb7d300-8fc3-5be9-bfdd-b3f445760c63",
+    "target_id": "413a441c-4ba5-5bf4-92a0-a5c3b9b163c4",
+    "type": "MANIFESTED_IN",
+    "evidence": "добросовестная конкуренция",
+    "metadata": {
+      "source_kz": "3-бап",
+      "target_kz": "8-бап"
+    }
+  },
+  {
+    "source_id": "fcb7d300-8fc3-5be9-bfdd-b3f445760c63",
+    "target_id": "5ffc2f85-b433-5451-97da-ce9d0b630498",
+    "type": "MANIFESTED_IN",
+    "evidence": "баланс интересов потребителей, субъектов предпринимательства и государства",
+    "metadata": {
+      "source_kz": "3-бап",
+      "target_kz": "9-бап"
+    }
+  },
+  {
+    "source_id": "fcb7d300-8fc3-5be9-bfdd-b3f445760c63",
+    "target_id": "bc16ee27-a9ee-5b54-b0f4-9927b6a79525",
+    "type": "MANIFESTED_IN",
+    "evidence": "прозрачность деятельности государственных органов и доступность информации",
+    "metadata": {
+      "source_kz": "3-бап",
+      "target_kz": "10-бап"
+    }
+  },
+  {
+    "source_id": "fcb7d300-8fc3-5be9-bfdd-b3f445760c63",
+    "target_id": "64e84eca-184d-5dd6-83f4-95d3082fa510",
+    "type": "MANIFESTED_IN",
+    "evidence": "эффективность государственного регулирования предпринимательства",
+    "metadata": {
+      "source_kz": "3-бап",
+      "target_kz": "11-бап"
+    }
+  },
+  {
+    "source_id": "fcb7d300-8fc3-5be9-bfdd-b3f445760c63",
+    "target_id": "2399ccde-de82-50bf-b28a-3eaad30db2a5",
+    "type": "MANIFESTED_IN",
+    "evidence": "повышение способности субъектов предпринимательства к самостоятельной защите своих прав и законных интересов",
+    "metadata": {
+      "source_kz": "3-бап",
+      "target_kz": "12-бап"
+    }
+  },
+  {
+    "source_id": "fcb7d300-8fc3-5be9-bfdd-b3f445760c63",
+    "target_id": "38cbf36a-317c-5fff-bf7b-9fe007f71c88",
+    "type": "MANIFESTED_IN",
+    "evidence": "приоритет предупреждения правонарушения",
+    "metadata": {
+      "source_kz": "3-бап",
+      "target_kz": "13-бап"
+    }
+  },
+  {
+    "source_id": "fcb7d300-8fc3-5be9-bfdd-b3f445760c63",
+    "target_id": "288ad9f3-6e6c-521d-a009-5b4ab3e09429",
+    "type": "MANIFESTED_IN",
+    "evidence": "презумпция добросовестности субъектов предпринимательства и взаимная ответственность государства и субъектов предпринимательства",
+    "metadata": {
+      "source_kz": "3-бап",
+      "target_kz": "14-бап"
+    }
+  },
+  {
+    "source_id": "fcb7d300-8fc3-5be9-bfdd-b3f445760c63",
+    "target_id": "48ad3287-3d26-5092-9caa-46fa3cf61bc7",
+    "type": "MANIFESTED_IN",
+    "evidence": "свобода от коррупции",
+    "metadata": {
+      "source_kz": "3-бап",
+      "target_kz": "15-бап"
+    }
+  },
+  {
+    "source_id": "fcb7d300-8fc3-5be9-bfdd-b3f445760c63",
+    "target_id": "850ba8e9-a628-5157-90a2-d27c7da8dba2",
+    "type": "MANIFESTED_IN",
+    "evidence": "стимулирование предпринимательской деятельности и обеспечение ее защиты и поддержки",
+    "metadata": {
+      "source_kz": "3-бап",
+      "target_kz": "16-бап"
+    }
+  },
+  {
+    "source_id": "fcb7d300-8fc3-5be9-bfdd-b3f445760c63",
+    "target_id": "657fe0a8-2f0d-597f-875f-0983c5d2f118",
+    "type": "MANIFESTED_IN",
+    "evidence": "поддержка казахстанских товаропроизводителей, производителей работ, услуг",
+    "metadata": {
+      "source_kz": "3-бап",
+      "target_kz": "17-бап"
+    }
+  },
+  {
+    "source_id": "fcb7d300-8fc3-5be9-bfdd-b3f445760c63",
+    "target_id": "db9b508b-9b3e-5a9e-8741-7ac0bbda405b",
+    "type": "MANIFESTED_IN",
+    "evidence": "недопустимость незаконного вмешательства государства в дела субъектов предпринимательства",
+    "metadata": {
+      "source_kz": "3-бап",
+      "target_kz": "18-бап"
+    }
+  },
+  {
+    "source_id": "fcb7d300-8fc3-5be9-bfdd-b3f445760c63",
+    "target_id": "d6247721-3a44-51ab-a8ff-3ace648e8b40",
+    "type": "MANIFESTED_IN",
+    "evidence": "участие субъектов частного предпринимательства в нормотворчестве",
+    "metadata": {
+      "source_kz": "3-бап",
+      "target_kz": "19-бап"
+    }
+  },
+  {
+    "source_id": "fcb7d300-8fc3-5be9-bfdd-b3f445760c63",
+    "target_id": "442b4fb9-b262-5ce8-b6db-8f210472e78f",
+    "type": "MANIFESTED_IN",
+    "evidence": "стимулирование социальной ответственности предпринимательства",
+    "metadata": {
+      "source_kz": "3-бап",
+      "target_kz": "20-бап"
+    }
+  },
+  {
+    "source_id": "fcb7d300-8fc3-5be9-bfdd-b3f445760c63",
+    "target_id": "ff5ef033-cda0-5898-9095-c968af55b946",
+    "type": "MANIFESTED_IN",
+    "evidence": "ограниченное участие государства в предпринимательской деятельности",
+    "metadata": {
+      "source_kz": "3-бап",
+      "target_kz": "21-бап"
+    }
+  },
+  {
+    "source_id": "fcb7d300-8fc3-5be9-bfdd-b3f445760c63",
+    "target_id": "da509e70-0607-5563-bd03-f0b2df90d550",
+    "type": "MANIFESTED_IN",
+    "evidence": "саморегулирование",
+    "metadata": {
+      "source_kz": "3-бап",
+      "target_kz": "22-бап"
+    }
+  },
+  {
+    "source_id": "dcc5b822-4b93-524b-bab7-42003575a21c",
+    "target_id": "88327887-227d-546d-a497-a5850b924270",
+    "type": "CORRELATED_WITH",
+    "evidence": "Субъектами предпринимательства являются граждане, кандасы и негосударственные коммерческие юридические лица, осуществляющие предпринимательскую деятельность (субъекты частного предпринимательства), государственные предприятия (субъекты государственного предпринимательства).",
+    "metadata": {
+      "source_kz": "23-бап",
+      "target_kz": "24-бап"
+    }
+  },
+  {
+    "source_id": "88327887-227d-546d-a497-a5850b924270",
+    "target_id": "3c0cc495-abf3-55d1-b67b-943da6e899ce",
+    "type": "CORRELATED_WITH",
+    "evidence": "Для использования данных о категориях субъектов предпринимательства уполномоченный орган по предпринимательству ведет реестр субъектов предпринимательства.",
+    "metadata": {
+      "source_kz": "24-бап",
+      "target_kz": "25-бап"
+    }
+  },
+  {
+    "source_id": "dcc5b822-4b93-524b-bab7-42003575a21c",
+    "target_id": "46fd6870-eedb-5f84-b07a-3709fdad72fa",
+    "type": "CORRELATED_WITH",
+    "evidence": "Субъектами предпринимательства являются граждане, кандасы и негосударственные коммерческие юридические лица, осуществляющие предпринимательскую деятельность (субъекты частного предпринимательства), государственные предприятия (субъекты государственного предпринимательства).",
+    "metadata": {
+      "source_kz": "23-бап",
+      "target_kz": "26-бап"
+    }
+  },
+  {
+    "source_id": "dcc5b822-4b93-524b-bab7-42003575a21c",
+    "target_id": "fc6e608a-fe9b-5559-84ea-59fb6eec5045",
+    "type": "CORRELATED_WITH",
+    "evidence": "Субъектами предпринимательства являются граждане, кандасы и негосударственные коммерческие юридические лица, осуществляющие предпринимательскую деятельность (субъекты частного предпринимательства), государственные предприятия (субъекты государственного предпринимательства).",
+    "metadata": {
+      "source_kz": "23-бап",
+      "target_kz": "27-бап"
+    }
+  },
+  {
+    "source_id": "dd8cc99e-bc7e-52b6-95c6-a9e19d0ef90d",
+    "target_id": "09d381c7-0ca4-5633-bf88-fbbd23c7aedc",
+    "type": "MANIFESTED_IN",
+    "evidence": "Индивидуальное предпринимательство осуществляется в виде личного или совместного предпринимательства.",
+    "metadata": {
+      "source_kz": "30-бап",
+      "target_kz": "31-бап"
+    }
+  },
+  {
+    "source_id": "dd8cc99e-bc7e-52b6-95c6-a9e19d0ef90d",
+    "target_id": "2499074e-2247-5bc6-8698-868586dead27",
+    "type": "MANIFESTED_IN",
+    "evidence": "Индивидуальное предпринимательство осуществляется в виде личного или совместного предпринимательства.",
+    "metadata": {
+      "source_kz": "30-бап",
+      "target_kz": "32-бап"
+    }
+  },
+  {
+    "source_id": "69b82744-59e6-5794-b1c3-decf5f94700d",
+    "target_id": "05e9c026-d06b-58ec-afce-435461c7180a",
+    "type": "CORRELATED_WITH",
+    "evidence": "Индивидуальный предприниматель занимается предпринимательской деятельностью",
+    "metadata": {
+      "source_kz": "33-бап",
+      "target_kz": "34-бап"
+    }
+  },
+  {
+    "source_id": "dbb2daae-5fe0-50e4-8b58-b1f4e28813c7",
+    "target_id": "7dc11b9f-0dca-5659-9145-24817a6de5fd",
+    "type": "EXTENDS",
+    "evidence": "Государственная регистрация физических лиц, осуществляющих частное предпринимательство без образования юридического лица",
+    "metadata": {
+      "source_kz": "35-бап",
+      "target_kz": "36-бап"
+    }
+  },
+  {
+    "source_id": "7dc11b9f-0dca-5659-9145-24817a6de5fd",
+    "target_id": "809cba62-1d67-55d6-ad39-66ddc06fe3b0",
+    "type": "BASED_ON",
+    "evidence": "Для государственной регистрации в качестве индивидуального предпринимателя",
+    "metadata": {
+      "source_kz": "36-бап",
+      "target_kz": "37-бап"
+    }
+  },
+  {
+    "source_id": "90903f94-e935-5381-8c93-b091aab57f86",
+    "target_id": "ffb1fbfa-14f8-51f4-adda-aef0bd4c0008",
+    "type": "REFERENCES",
+    "evidence": "вступления в законную силу определения суда о завершении процедуры банкротства в отношении индивидуального предпринимателя",
+    "metadata": {
+      "source_kz": "38-бап",
+      "target_kz": "39-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 39"
+    }
+  },
+  {
+    "source_id": "e0e81ecd-9dd1-5999-969a-1812a714f578",
+    "target_id": "90903f94-e935-5381-8c93-b091aab57f86",
+    "type": "CORRELATED_WITH",
+    "evidence": "Индивидуальные предприниматели несут ответственность по своим обязательствам всем своим имуществом",
+    "metadata": {
+      "source_kz": "40-бап",
+      "target_kz": "38-бап"
+    }
+  },
+  {
+    "source_id": "6908885c-74cb-5912-a217-654b31882226",
+    "target_id": "fcddd20c-d00d-5340-96d9-2ad832b9aeca",
+    "type": "EXTENDS",
+    "evidence": "Крестьянским или фермерским хозяйством признается трудовое объединение лиц",
+    "metadata": {
+      "source_kz": "41-бап",
+      "target_kz": "42-бап"
+    }
+  },
+  {
+    "source_id": "fcddd20c-d00d-5340-96d9-2ad832b9aeca",
+    "target_id": "68c3f86f-0c43-5ff5-b125-b7825a105238",
+    "type": "EXTENDS",
+    "evidence": "Главой крестьянского или фермерского хозяйства может быть дееспособный гражданин",
+    "metadata": {
+      "source_kz": "42-бап",
+      "target_kz": "43-бап"
+    }
+  },
+  {
+    "source_id": "25846ed6-3b18-5d24-a320-78082838404f",
+    "target_id": "6e6e545f-b9b9-56f7-8fd7-a4b0e814dd54",
+    "type": "CORRELATED_WITH",
+    "evidence": "Крестьянское или фермерское хозяйство создается на добровольных началах",
+    "metadata": {
+      "source_kz": "44-бап",
+      "target_kz": "45-бап"
+    }
+  },
+  {
+    "source_id": "48b9dc9c-9fa4-54c0-b25f-b65dfb8b6c27",
+    "target_id": "5ff13571-f9f0-5651-8244-1b48eba88e5b",
+    "type": "CORRELATED_WITH",
+    "evidence": "Имущество крестьянского хозяйства принадлежит его членам на праве совместной собственности",
+    "metadata": {
+      "source_kz": "46-бап",
+      "target_kz": "47-бап"
+    }
+  },
+  {
+    "source_id": "b7aa6ff6-f383-584b-97fc-fbd242db55e2",
+    "target_id": "73a1c43a-d346-5ca0-9019-ff0bf56fb685",
+    "type": "CORRELATED_WITH",
+    "evidence": "Крестьянское или фермерское хозяйство покрывает свои расходы за счет получаемого дохода",
+    "metadata": {
+      "source_kz": "48-бап",
+      "target_kz": "49-бап"
+    }
+  },
+  {
+    "source_id": "f32058be-abf1-536e-931c-528accd5e0f2",
+    "target_id": "ee58b1cd-297c-5674-9c9c-3aec466d545a",
+    "type": "CORRELATED_WITH",
+    "evidence": "Предпринимательство негосударственных юридических лиц может осуществляться путем создания коммерческих юридических лиц",
+    "metadata": {
+      "source_kz": "50-бап",
+      "target_kz": "51-бап"
+    }
+  },
+  {
+    "source_id": "d0cdd385-283e-59b1-aad0-0e9f4b4fd08d",
+    "target_id": "7e8bfea7-26ad-5f13-be73-4d64ddee06d8",
+    "type": "EXTENDS",
+    "evidence": "Юридические лица, создаваемые на территории Республики Казахстан и относящиеся к субъектам предпринимательства, подлежат государственной регистрации",
+    "metadata": {
+      "source_kz": "52-бап",
+      "target_kz": "53-бап"
+    }
+  },
+  {
+    "source_id": "15ba5f25-f8a9-5f45-b751-3c858f751fa5",
+    "target_id": "ed0eb6ea-2d94-51f3-b76f-96a1b39b03b4",
+    "type": "EXTENDS",
+    "evidence": "Объединением субъектов предпринимательства является ассоциация (союз)",
+    "metadata": {
+      "source_kz": "54-бап",
+      "target_kz": "55-бап"
+    }
+  },
+  {
+    "source_id": "b0e1f4d8-2a45-5f5d-be84-ee7ec3bab838",
+    "target_id": "f9e423d8-3876-5781-bded-4bacc081a925",
+    "type": "EXTENDS",
+    "evidence": "Национальной палатой предпринимателей Республики Казахстан является некоммерческая организация",
+    "metadata": {
+      "source_kz": "56-бап",
+      "target_kz": "57-бап"
+    }
+  },
+  {
+    "source_id": "e3a185ab-1e61-5ba2-b035-4a830cf3a125",
+    "target_id": "d4bde6cb-a528-5257-8c70-1c2e9811b76f",
+    "type": "EXTENDS",
+    "evidence": "Деятельность Национальной палаты основывается на принципах",
+    "metadata": {
+      "source_kz": "58-бап",
+      "target_kz": "59-бап"
+    }
+  },
+  {
+    "source_id": "53a5d7c0-b9e2-5ec0-a1f2-c94ffe299877",
+    "target_id": "61a35dd0-2d11-51e4-8d4a-9b9355c95f5a",
+    "type": "EXTENDS",
+    "evidence": "Национальная палата осуществляет функции, предусмотренные настоящим Кодексом",
+    "metadata": {
+      "source_kz": "60-бап",
+      "target_kz": "61-бап"
+    }
+  },
+  {
+    "source_id": "bb1bb2c5-176a-5bb9-be75-2acf0fdb2160",
+    "target_id": "3df28117-13d1-5ce8-8ab3-3122525046f8",
+    "type": "CORRELATED_WITH",
+    "evidence": "В целях создания благоприятных правовых и экономических условий в сферах предпринимательской и профессиональной деятельности может быть введено саморегулирование",
+    "metadata": {
+      "source_kz": "62-бап",
+      "target_kz": "63-бап"
+    }
+  },
+  {
+    "source_id": "b2130b14-28f7-516d-995d-9ad077f0791f",
+    "target_id": "31831936-b058-5e0e-812a-d1e163de474b",
+    "type": "CORRELATED_WITH",
+    "evidence": "Экспертным советом является консультативно-совещательный орган",
+    "metadata": {
+      "source_kz": "64-бап",
+      "target_kz": "65-бап"
+    }
+  },
+  {
+    "source_id": "31831936-b058-5e0e-812a-d1e163de474b",
+    "target_id": "d7ca0425-705c-50d1-bdc7-ea678a153f36",
+    "type": "EXTENDS",
+    "evidence": "Разработка и принятие нормативных правовых актов, затрагивающих интересы субъектов предпринимательства",
+    "metadata": {
+      "source_kz": "65-бап",
+      "target_kz": "66-бап"
+    }
+  },
+  {
+    "source_id": "d7ca0425-705c-50d1-bdc7-ea678a153f36",
+    "target_id": "7562524a-da24-5d7c-bbd8-2e462e6fed52",
+    "type": "EXTENDS",
+    "evidence": "Экспертные заключения по концепциям проектов законов, проектам нормативных правовых актов",
+    "metadata": {
+      "source_kz": "66-бап",
+      "target_kz": "67-бап"
+    }
+  },
+  {
+    "source_id": "7562524a-da24-5d7c-bbd8-2e462e6fed52",
+    "target_id": "540b9899-1a8a-5f28-924a-231b32ed0f6a",
+    "type": "EXTENDS",
+    "evidence": "Опубликование (распространение) проекта нормативного правового акта",
+    "metadata": {
+      "source_kz": "67-бап",
+      "target_kz": "68-бап"
+    }
+  },
+  {
+    "source_id": "c6912c03-ccaa-5f29-bc1b-20cf671b1a5a",
+    "target_id": "28cf2b67-8202-5998-a4af-29dc00eef935",
+    "type": "CORRELATED_WITH",
+    "evidence": "затрагивающих интересы субъектов частного предпринимательства",
+    "metadata": {
+      "source_kz": "69-бап",
+      "target_kz": "70-бап"
+    }
+  },
+  {
+    "source_id": "28cf2b67-8202-5998-a4af-29dc00eef935",
+    "target_id": "faa9b93d-57f1-51a8-913c-14d03bff6897",
+    "type": "EXTENDS",
+    "evidence": "Субъектами государственно-частного партнерства являются государственный партнер и частный партнер",
+    "metadata": {
+      "source_kz": "70-бап",
+      "target_kz": "71-бап"
+    }
+  },
+  {
+    "source_id": "28cf2b67-8202-5998-a4af-29dc00eef935",
+    "target_id": "5e68cf92-d07f-544b-bb29-f74556831411",
+    "type": "MANIFESTED_IN",
+    "evidence": "Объектами государственно-частного партнерства являются здания, сооружения",
+    "metadata": {
+      "source_kz": "70-бап",
+      "target_kz": "72-бап"
+    }
+  },
+  {
+    "source_id": "28cf2b67-8202-5998-a4af-29dc00eef935",
+    "target_id": "e5bc6451-ea56-59ae-bb61-ab543dd653ff",
+    "type": "MANIFESTED_IN",
+    "evidence": "Основными задачами государственно-частного партнерства являются",
+    "metadata": {
+      "source_kz": "70-бап",
+      "target_kz": "73-бап"
+    }
+  },
+  {
+    "source_id": "28cf2b67-8202-5998-a4af-29dc00eef935",
+    "target_id": "cb3a94b0-46ac-5a0f-b8e4-a72cf57caf00",
+    "type": "MANIFESTED_IN",
+    "evidence": "Государственно-частное партнерство осуществляется во всех отраслях (сферах) экономики",
+    "metadata": {
+      "source_kz": "70-бап",
+      "target_kz": "74-бап"
+    }
+  },
+  {
+    "source_id": "39b61ca5-b688-5b55-b30d-9c1e687ecd74",
+    "target_id": "cf0f80fe-613d-535c-8565-8a1b007a514f",
+    "type": "MANIFESTED_IN",
+    "evidence": "Социальная ответственность предпринимательства в сфере занятости и трудовых отношений",
+    "metadata": {
+      "source_kz": "75-бап",
+      "target_kz": "76-бап"
+    }
+  },
+  {
+    "source_id": "39b61ca5-b688-5b55-b30d-9c1e687ecd74",
+    "target_id": "a8beb587-d2ce-5008-a958-5e1a00d7b180",
+    "type": "MANIFESTED_IN",
+    "evidence": "Социальная ответственность предпринимательства в экологической сфере",
+    "metadata": {
+      "source_kz": "75-бап",
+      "target_kz": "77-бап"
+    }
+  },
+  {
+    "source_id": "39b61ca5-b688-5b55-b30d-9c1e687ecd74",
+    "target_id": "b944b531-6897-56e6-bc6f-d47c04a10381",
+    "type": "MANIFESTED_IN",
+    "evidence": "Государственные гарантии при осуществлении благотворительности субъектами предпринимательства",
+    "metadata": {
+      "source_kz": "75-бап",
+      "target_kz": "78-бап"
+    }
+  },
+  {
+    "source_id": "39b61ca5-b688-5b55-b30d-9c1e687ecd74",
+    "target_id": "7e4c7f7d-358c-5dbf-87ee-626c2dfd8db9",
+    "type": "MANIFESTED_IN",
+    "evidence": "Взаимодействие государства и субъектов предпринимательства, занимающихся благотворительностью",
+    "metadata": {
+      "source_kz": "75-бап",
+      "target_kz": "79-бап"
+    }
+  },
+  {
+    "source_id": "4b226c52-950c-5ea2-ad32-2f886884cebd",
+    "target_id": "97b7163f-2658-52cb-ab63-0205a66adc46",
+    "type": "REFERENCES",
+    "evidence": "статьей 79-3 настоящего Кодекса",
+    "metadata": {
+      "source_kz": "79-1-бап",
+      "target_kz": "79-3-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 79-3"
+    }
+  },
+  {
+    "source_id": "a45d7981-4558-5a1e-8c61-e060421b0923",
+    "target_id": "97b7163f-2658-52cb-ab63-0205a66adc46",
+    "type": "REFERENCES",
+    "evidence": "статьей 79-3 настоящего Кодекса",
+    "metadata": {
+      "source_kz": "79-2-бап",
+      "target_kz": "79-3-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 79-3"
+    }
+  },
+  {
+    "source_id": "d2a828cb-ef27-5ef8-8147-a3be71f72c32",
+    "target_id": "97b7163f-2658-52cb-ab63-0205a66adc46",
+    "type": "REFERENCES",
+    "evidence": "статьей 79-3 настоящего Кодекса",
+    "metadata": {
+      "source_kz": "79-4-бап",
+      "target_kz": "79-3-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 79-3"
+    }
+  },
+  {
+    "source_id": "2d615446-af79-53fd-aa20-a36bb6163079",
+    "target_id": "3b4ab916-1fe0-57d4-9568-ecf7e89c17e0",
+    "type": "REFERENCES",
+    "evidence": "статьями 3 и 80 настоящего Кодекса",
+    "metadata": {
+      "source_kz": "81-1-бап",
+      "target_kz": "80-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 80"
+    }
+  },
+  {
+    "source_id": "8858575c-69cc-5002-a356-5f3e20f64dc1",
+    "target_id": "2d615446-af79-53fd-aa20-a36bb6163079",
+    "type": "REFERENCES",
+    "evidence": "правилами проведения и использования анализа регуляторного воздействия",
+    "metadata": {
+      "source_kz": "82-бап",
+      "target_kz": "81-1-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 81-1"
+    }
+  },
+  {
+    "source_id": "2c366aa2-9536-5640-a6b2-3605c6dfd371",
+    "target_id": "2d1f1602-5f16-5f57-b67f-1fec79821400",
+    "type": "REFERENCES",
+    "evidence": "Информация о неисполнении государственными органами положений статьи 83-1 настоящего Кодекса",
+    "metadata": {
+      "source_kz": "83-бап",
+      "target_kz": "83-1-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 83-1"
+    }
+  },
+  {
+    "source_id": "2c366aa2-9536-5640-a6b2-3605c6dfd371",
+    "target_id": "2d1f1602-5f16-5f57-b67f-1fec79821400",
+    "type": "CORRELATED_WITH",
+    "evidence": "Анализ действующих регуляторных актов осуществляется в соответствии со сроками, установленными в реестре обязательных требований в сфере предпринимательства.",
+    "metadata": {
+      "source_kz": "83-бап",
+      "target_kz": "83-1-бап"
+    }
+  },
+  {
+    "source_id": "2d1f1602-5f16-5f57-b67f-1fec79821400",
+    "target_id": "2c366aa2-9536-5640-a6b2-3605c6dfd371",
+    "type": "REFERENCES",
+    "evidence": "Анализ регуляторных актов осуществляется в соответствии с правилами проведения и использования анализа регуляторного воздействия.",
+    "metadata": {
+      "source_kz": "83-1-бап",
+      "target_kz": "83-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 83"
+    }
+  },
+  {
+    "source_id": "2d1f1602-5f16-5f57-b67f-1fec79821400",
+    "target_id": "7dee4894-278e-57eb-9231-b639ddb487d0",
+    "type": "REFERENCES",
+    "evidence": "Уполномоченный орган по предпринимательству при формировании и ведении реестра требований обеспечивает подтверждение соответствия ... требованиям статей 9, 11, 80, 81-1 и 82 настоящего Кодекса.",
+    "metadata": {
+      "source_kz": "83-1-бап",
+      "target_kz": "85-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 85"
+    }
+  },
+  {
+    "source_id": "7dee4894-278e-57eb-9231-b639ddb487d0",
+    "target_id": "2d1f1602-5f16-5f57-b67f-1fec79821400",
+    "type": "REFERENCES",
+    "evidence": "утверждает правила ведения реестра обязательных требований в сфере предпринимательства",
+    "metadata": {
+      "source_kz": "85-бап",
+      "target_kz": "83-1-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 83-1"
+    }
+  },
+  {
+    "source_id": "7dee4894-278e-57eb-9231-b639ddb487d0",
+    "target_id": "2c366aa2-9536-5640-a6b2-3605c6dfd371",
+    "type": "REFERENCES",
+    "evidence": "разрабатывает и утверждает правила проведения и использования анализа регуляторного воздействия",
+    "metadata": {
+      "source_kz": "85-бап",
+      "target_kz": "83-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 83"
+    }
+  },
+  {
+    "source_id": "e978f1f8-6d23-552e-ba95-699e2463902c",
+    "target_id": "7dee4894-278e-57eb-9231-b639ddb487d0",
+    "type": "REFERENCES",
+    "evidence": "Государственный контроль в области защиты субъектов предпринимательства осуществляется в соответствии со статьей 85-2 настоящего Кодекса уполномоченным органом по предпринимательству",
+    "metadata": {
+      "source_kz": "85-1-бап",
+      "target_kz": "85-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 85"
+    }
+  },
+  {
+    "source_id": "e978f1f8-6d23-552e-ba95-699e2463902c",
+    "target_id": "2d1f1602-5f16-5f57-b67f-1fec79821400",
+    "type": "CORRELATED_WITH",
+    "evidence": "включение в реестр требований регуляторных актов, содержащих требования, обязательные для исполнения субъектами предпринимательства.",
+    "metadata": {
+      "source_kz": "85-1-бап",
+      "target_kz": "83-1-бап"
+    }
+  },
+  {
+    "source_id": "0d239e6c-24de-5691-bf59-d27981290d1c",
+    "target_id": "5d38e46d-3509-53cd-ba4d-aab2d075b91f",
+    "type": "CORRELATED_WITH",
+    "evidence": "Государственный контроль в области защиты субъектов предпринимательства осуществляется в форме периодических, внеплановых проверок и дистанционного контроля в соответствии с настоящей статьей.",
+    "metadata": {
+      "source_kz": "85-2-бап",
+      "target_kz": "86-бап"
+    }
+  },
+  {
+    "source_id": "0d239e6c-24de-5691-bf59-d27981290d1c",
+    "target_id": "d5da1b59-eb57-5a1c-95a7-8fb35de908f6",
+    "type": "CORRELATED_WITH",
+    "evidence": "Проверка на предмет соблюдения порядка осуществления государственного контроля и надзора в сферах деятельности субъектов предпринимательства осуществляется в отношении государственных органов, осуществляющих государственный контроль и надзор в сферах деятельности субъектов предпринимательства, предусмотренных статьями 138 и 139 настоящего Кодекса",
+    "metadata": {
+      "source_kz": "85-2-бап",
+      "target_kz": "87-бап"
+    }
+  },
+  {
+    "source_id": "5d38e46d-3509-53cd-ba4d-aab2d075b91f",
+    "target_id": "d5da1b59-eb57-5a1c-95a7-8fb35de908f6",
+    "type": "CORRELATED_WITH",
+    "evidence": "Регулирующими государственными органами являются: 1) государственные органы, осуществляющие руководство в отдельной отрасли или сфере государственного управления, в которой осуществляется государственный контроль и надзор",
+    "metadata": {
+      "source_kz": "86-бап",
+      "target_kz": "87-бап"
+    }
+  },
+  {
+    "source_id": "5d38e46d-3509-53cd-ba4d-aab2d075b91f",
+    "target_id": "68b02c19-cf2c-5af6-8b59-dabcd98b6174",
+    "type": "CORRELATED_WITH",
+    "evidence": "Регулирующими государственными органами являются: 1) государственные органы, осуществляющие руководство в отдельной отрасли или сфере государственного управления",
+    "metadata": {
+      "source_kz": "86-бап",
+      "target_kz": "89-бап"
+    }
+  },
+  {
+    "source_id": "d5da1b59-eb57-5a1c-95a7-8fb35de908f6",
+    "target_id": "68b02c19-cf2c-5af6-8b59-dabcd98b6174",
+    "type": "CORRELATED_WITH",
+    "evidence": "Органами контроля и надзора являются государственные органы, их ведомства и территориальные подразделения, а также местные исполнительные органы",
+    "metadata": {
+      "source_kz": "87-бап",
+      "target_kz": "89-бап"
+    }
+  },
+  {
+    "source_id": "0978bec1-63af-59d6-9062-461413c8ca15",
+    "target_id": "ae63de94-33ef-5ccf-bb60-a9ff59d3e99f",
+    "type": "EXTENDS",
+    "evidence": "Статья 88. Компетенция антимонопольного органа в области государственного регулирования предпринимательства",
+    "metadata": {
+      "source_kz": "88-бап",
+      "target_kz": "90-1-бап"
+    }
+  },
+  {
+    "source_id": "ae63de94-33ef-5ccf-bb60-a9ff59d3e99f",
+    "target_id": "5a5e231d-c0e7-584a-81ad-c3854c617837",
+    "type": "EXTENDS",
+    "evidence": "Статья 90-1. Система антимонопольного органа",
+    "metadata": {
+      "source_kz": "90-1-бап",
+      "target_kz": "90-2-бап"
+    }
+  },
+  {
+    "source_id": "5a5e231d-c0e7-584a-81ad-c3854c617837",
+    "target_id": "5759e1bc-881a-5065-8914-4efa6d76209f",
+    "type": "EXTENDS",
+    "evidence": "Статья 90-2. Задачи антимонопольного органа",
+    "metadata": {
+      "source_kz": "90-2-бап",
+      "target_kz": "90-3-бап"
+    }
+  },
+  {
+    "source_id": "18199242-0d04-553b-b1b3-c16ad6edd9d8",
+    "target_id": "2ff5c22c-be8c-5001-b0f0-d33465e308c9",
+    "type": "CORRELATED_WITH",
+    "evidence": "Статья 90-4. Взаимодействие антимонопольного органа с антимонопольными органами других государств",
+    "metadata": {
+      "source_kz": "90-4-бап",
+      "target_kz": "90-5-бап"
+    }
+  },
+  {
+    "source_id": "6c522ce0-2ee0-55e2-b433-b6abed201235",
+    "target_id": "64ff27ef-02b5-5796-89d0-8b0075900908",
+    "type": "CORRELATED_WITH",
+    "evidence": "Сотрудники антимонопольного органа при исполнении служебных обязанностей",
+    "metadata": {
+      "source_kz": "90-6-бап",
+      "target_kz": "90-7-бап"
+    }
+  },
+  {
+    "source_id": "6c522ce0-2ee0-55e2-b433-b6abed201235",
+    "target_id": "9a817f0e-4246-5b28-813e-83ad08873f2b",
+    "type": "CORRELATED_WITH",
+    "evidence": "информация, составляющая коммерческую и иную охраняемую законом тайну",
+    "metadata": {
+      "source_kz": "90-6-бап",
+      "target_kz": "90-8-бап"
+    }
+  },
+  {
+    "source_id": "9707566f-3f99-56e7-8635-ac46b9515c2b",
+    "target_id": "262e29d7-727d-50f0-b411-528ef1e42217",
+    "type": "MANIFESTED_IN",
+    "evidence": "Государственная поддержка частного предпринимательства осуществляется по следующим основным направлениям",
+    "metadata": {
+      "source_kz": "91-бап",
+      "target_kz": "92-бап"
+    }
+  },
+  {
+    "source_id": "9707566f-3f99-56e7-8635-ac46b9515c2b",
+    "target_id": "6cd6d93d-9d4e-5e8b-b1f8-90369e3d2ff7",
+    "type": "MANIFESTED_IN",
+    "evidence": "Государственная поддержка частного предпринимательства включает следующие основные виды",
+    "metadata": {
+      "source_kz": "91-бап",
+      "target_kz": "93-бап"
+    }
+  },
+  {
+    "source_id": "6cd6d93d-9d4e-5e8b-b1f8-90369e3d2ff7",
+    "target_id": "d4531ebd-3582-5cfd-9899-d01cbb3a3ea6",
+    "type": "MANIFESTED_IN",
+    "evidence": "Финансовая и имущественная поддержка частного предпринимательства",
+    "metadata": {
+      "source_kz": "93-бап",
+      "target_kz": "94-бап"
+    }
+  },
+  {
+    "source_id": "6cd6d93d-9d4e-5e8b-b1f8-90369e3d2ff7",
+    "target_id": "d7d02fc2-0276-591b-92f1-85aaf3f100ae",
+    "type": "MANIFESTED_IN",
+    "evidence": "Нефинансовая поддержка",
+    "metadata": {
+      "source_kz": "93-бап",
+      "target_kz": "96-бап"
+    }
+  },
+  {
+    "source_id": "6cd6d93d-9d4e-5e8b-b1f8-90369e3d2ff7",
+    "target_id": "1ac18a56-9a4f-51c7-815e-19eebf1d7c27",
+    "type": "MANIFESTED_IN",
+    "evidence": "Инфраструктурная поддержка частного предпринимательства",
+    "metadata": {
+      "source_kz": "93-бап",
+      "target_kz": "97-бап"
+    }
+  },
+  {
+    "source_id": "d4531ebd-3582-5cfd-9899-d01cbb3a3ea6",
+    "target_id": "f04760cc-4ad0-5d10-a774-a77d5291ba86",
+    "type": "CORRELATED_WITH",
+    "evidence": "Финансовую поддержку инициатив субъектов частного предпринимательства со стороны государства осуществляет в том числе специальный фонд развития предпринимательства",
+    "metadata": {
+      "source_kz": "94-бап",
+      "target_kz": "95-бап"
+    }
+  },
+  {
+    "source_id": "f04760cc-4ad0-5d10-a774-a77d5291ba86",
+    "target_id": "27cf3d4d-eee5-5fed-b919-fd683afcd930",
+    "type": "MANIFESTED_IN",
+    "evidence": "Система гарантирования обязательств субъектов частного предпринимательства является инструментом финансовой поддержки частного предпринимательства, реализуемым специальным фондом",
+    "metadata": {
+      "source_kz": "95-бап",
+      "target_kz": "95-1-бап"
+    }
+  },
+  {
+    "source_id": "262e29d7-727d-50f0-b411-528ef1e42217",
+    "target_id": "26b19e63-0d36-5252-879e-111449586681",
+    "type": "CORRELATED_WITH",
+    "evidence": "казахстанских товаропроизводителей",
+    "metadata": {
+      "source_kz": "92-бап",
+      "target_kz": "97-1-бап"
+    }
+  },
+  {
+    "source_id": "736fbaee-c308-52b2-a93f-e39a8f179e69",
+    "target_id": "9707566f-3f99-56e7-8635-ac46b9515c2b",
+    "type": "BASED_ON",
+    "evidence": "Правительство Республики Казахстан разрабатывает основные направления государственной политики в области поддержки и развития частного предпринимательства",
+    "metadata": {
+      "source_kz": "98-бап",
+      "target_kz": "91-бап"
+    }
+  },
+  {
+    "source_id": "3225dcad-cf0a-50d5-b834-6310befb4d3e",
+    "target_id": "97f34d8d-9c5e-58f7-b086-59f4dd56a373",
+    "type": "CORRELATED_WITH",
+    "evidence": "Уполномоченный орган по предпринимательству",
+    "metadata": {
+      "source_kz": "99-бап",
+      "target_kz": "100-бап"
+    }
+  },
+  {
+    "source_id": "3225dcad-cf0a-50d5-b834-6310befb4d3e",
+    "target_id": "b305fd22-999a-5bcd-8901-3ded5a49f980",
+    "type": "CORRELATED_WITH",
+    "evidence": "Уполномоченный орган по предпринимательству",
+    "metadata": {
+      "source_kz": "99-бап",
+      "target_kz": "100-1-бап"
+    }
+  },
+  {
+    "source_id": "3225dcad-cf0a-50d5-b834-6310befb4d3e",
+    "target_id": "2b5dd503-6f23-5f8e-95f4-e9a668e3a7d2",
+    "type": "CORRELATED_WITH",
+    "evidence": "Уполномоченный орган по предпринимательству",
+    "metadata": {
+      "source_kz": "99-бап",
+      "target_kz": "101-бап"
+    }
+  },
+  {
+    "source_id": "3225dcad-cf0a-50d5-b834-6310befb4d3e",
+    "target_id": "690ebe69-3f6b-5e7d-949e-f17353f529b5",
+    "type": "CORRELATED_WITH",
+    "evidence": "Уполномоченный орган по предпринимательству",
+    "metadata": {
+      "source_kz": "99-бап",
+      "target_kz": "102-бап"
+    }
+  },
+  {
+    "source_id": "3225dcad-cf0a-50d5-b834-6310befb4d3e",
+    "target_id": "dbdd43aa-f213-531d-850f-9979f3700b11",
+    "type": "CORRELATED_WITH",
+    "evidence": "Уполномоченный орган по предпринимательству",
+    "metadata": {
+      "source_kz": "99-бап",
+      "target_kz": "105-бап"
+    }
+  },
+  {
+    "source_id": "b305fd22-999a-5bcd-8901-3ded5a49f980",
+    "target_id": "6186a0e4-6cfb-52d2-b5d6-36082a0a0055",
+    "type": "CORRELATED_WITH",
+    "evidence": "Уполномоченный орган в области государственной поддержки инновационной деятельности",
+    "metadata": {
+      "source_kz": "100-1-бап",
+      "target_kz": "103-бап"
+    }
+  },
+  {
+    "source_id": "b305fd22-999a-5bcd-8901-3ded5a49f980",
+    "target_id": "2b5dd503-6f23-5f8e-95f4-e9a668e3a7d2",
+    "type": "CORRELATED_WITH",
+    "evidence": "Уполномоченный орган в области государственной поддержки инновационной деятельности",
+    "metadata": {
+      "source_kz": "100-1-бап",
+      "target_kz": "101-бап"
+    }
+  },
+  {
+    "source_id": "a04b5188-41f0-55d4-9f0d-16ca9097152f",
+    "target_id": "de25d4a0-645b-5d41-8d98-fee613f414be",
+    "type": "MANIFESTED_IN",
+    "evidence": "Разрешительный или уведомительный порядок вводится в зависимости от уровня опасности",
+    "metadata": {
+      "source_kz": "107-бап",
+      "target_kz": "106-бап"
+    }
+  },
+  {
+    "source_id": "a04b5188-41f0-55d4-9f0d-16ca9097152f",
+    "target_id": "bdbf4f76-42c9-5844-ac84-44d49dd5633d",
+    "type": "MANIFESTED_IN",
+    "evidence": "Разрешительный или уведомительный порядок вводится в зависимости от уровня опасности",
+    "metadata": {
+      "source_kz": "107-бап",
+      "target_kz": "108-бап"
+    }
+  },
+  {
+    "source_id": "a04b5188-41f0-55d4-9f0d-16ca9097152f",
+    "target_id": "882e4703-51d0-576a-9873-eb707e8cc69b",
+    "type": "MANIFESTED_IN",
+    "evidence": "Уровни опасности деятельности или действий (операций) устанавливаются на основании анализа регуляторного воздействия",
+    "metadata": {
+      "source_kz": "107-бап",
+      "target_kz": "109-бап"
+    }
+  },
+  {
+    "source_id": "bdbf4f76-42c9-5844-ac84-44d49dd5633d",
+    "target_id": "de25d4a0-645b-5d41-8d98-fee613f414be",
+    "type": "MANIFESTED_IN",
+    "evidence": "Разрешительный и уведомительный порядок",
+    "metadata": {
+      "source_kz": "108-бап",
+      "target_kz": "106-бап"
+    }
+  },
+  {
+    "source_id": "bdbf4f76-42c9-5844-ac84-44d49dd5633d",
+    "target_id": "382be8e2-0e1a-566b-b3f6-b7c8b968f45c",
+    "type": "CORRELATED_WITH",
+    "evidence": "субъекты предпринимательства",
+    "metadata": {
+      "source_kz": "108-бап",
+      "target_kz": "110-бап"
+    }
+  },
+  {
+    "source_id": "bdbf4f76-42c9-5844-ac84-44d49dd5633d",
+    "target_id": "7f28c41d-f749-55af-a23a-ec984f51b352",
+    "type": "CORRELATED_WITH",
+    "evidence": "разрешительные органы",
+    "metadata": {
+      "source_kz": "108-бап",
+      "target_kz": "111-бап"
+    }
+  },
+  {
+    "source_id": "882e4703-51d0-576a-9873-eb707e8cc69b",
+    "target_id": "de25d4a0-645b-5d41-8d98-fee613f414be",
+    "type": "MANIFESTED_IN",
+    "evidence": "Порядок введения и отмены разрешительного или уведомительного порядка",
+    "metadata": {
+      "source_kz": "109-бап",
+      "target_kz": "106-бап"
+    }
+  },
+  {
+    "source_id": "882e4703-51d0-576a-9873-eb707e8cc69b",
+    "target_id": "a04b5188-41f0-55d4-9f0d-16ca9097152f",
+    "type": "REFERENCES",
+    "evidence": "в соответствии со статьей 83 настоящего Кодекса",
+    "metadata": {
+      "source_kz": "109-бап",
+      "target_kz": "107-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 83"
+    }
+  },
+  {
+    "source_id": "7cc28566-1638-5d80-96cd-18610a5b875c",
+    "target_id": "de25d4a0-645b-5d41-8d98-fee613f414be",
+    "type": "MANIFESTED_IN",
+    "evidence": "Осуществление лицензирования, разрешительных процедур и уведомлений в электронной форме",
+    "metadata": {
+      "source_kz": "112-бап",
+      "target_kz": "106-бап"
+    }
+  },
+  {
+    "source_id": "43da8b31-b864-5442-872d-54d75772a1ff",
+    "target_id": "06a19499-d06a-5573-bddd-54443439ed9f",
+    "type": "EXTENDS",
+    "evidence": "Под информационными инструментами понимаются требования предоставления информации",
+    "metadata": {
+      "source_kz": "112-1-бап",
+      "target_kz": "112-2-бап"
+    }
+  },
+  {
+    "source_id": "43da8b31-b864-5442-872d-54d75772a1ff",
+    "target_id": "0d209731-29ca-5929-bbb0-7bc2ca74f8c5",
+    "type": "EXTENDS",
+    "evidence": "Под информационными инструментами понимаются требования предоставления информации",
+    "metadata": {
+      "source_kz": "112-1-бап",
+      "target_kz": "112-3-бап"
+    }
+  },
+  {
+    "source_id": "a79afa05-1083-50f7-9e1f-cc63a63608e4",
+    "target_id": "d01cb9b6-3746-553c-9f8f-b02a6213718b",
+    "type": "MANIFESTED_IN",
+    "evidence": "Государственное регулирование в области технического регулирования",
+    "metadata": {
+      "source_kz": "113-бап",
+      "target_kz": "114-бап"
+    }
+  },
+  {
+    "source_id": "a79afa05-1083-50f7-9e1f-cc63a63608e4",
+    "target_id": "fa193f83-0702-5672-95c3-e2f866fb7212",
+    "type": "MANIFESTED_IN",
+    "evidence": "Государственное регулирование в области технического регулирования",
+    "metadata": {
+      "source_kz": "113-бап",
+      "target_kz": "115-бап"
+    }
+  },
+  {
+    "source_id": "706b3124-c450-5a4d-adfd-a576f79857a6",
+    "target_id": "c496fd95-90cf-5528-afb1-1708d66fdf06",
+    "type": "MANIFESTED_IN",
+    "evidence": "Государство регулирует цены и тарифы на следующие товары, работы, услуги субъектов предпринимательства: 1) на социально значимые продовольственные товары",
+    "metadata": {
+      "source_kz": "116-бап",
+      "target_kz": "117-бап"
+    }
+  },
+  {
+    "source_id": "706b3124-c450-5a4d-adfd-a576f79857a6",
+    "target_id": "c16da23d-185a-560b-8abe-677ebfc00265",
+    "type": "MANIFESTED_IN",
+    "evidence": "Государство регулирует цены и тарифы на следующие товары, работы, услуги субъектов предпринимательства: 2) на товары, работы, услуги в сфере естественной монополии",
+    "metadata": {
+      "source_kz": "116-бап",
+      "target_kz": "118-бап"
+    }
+  },
+  {
+    "source_id": "706b3124-c450-5a4d-adfd-a576f79857a6",
+    "target_id": "677be550-1f7a-5219-9e73-6004b5d8ff32",
+    "type": "MANIFESTED_IN",
+    "evidence": "Государство регулирует цены и тарифы на следующие товары, работы, услуги субъектов предпринимательства: 4) на товары (работы, услуги), в отношении которых введено государственное ценовое регулирование",
+    "metadata": {
+      "source_kz": "116-бап",
+      "target_kz": "119-бап"
+    }
+  },
+  {
+    "source_id": "faccb974-1f8c-5854-b6ac-27d68f5d9eaa",
+    "target_id": "ed8481f8-67ea-5b73-9647-a34110e4f4b9",
+    "type": "CORRELATED_WITH",
+    "evidence": "Ценообразование на общественно значимых рынках осуществляется в соответствии с правилами ценообразования на общественно значимых рынках",
+    "metadata": {
+      "source_kz": "120-1-бап",
+      "target_kz": "124-5-бап"
+    }
+  },
+  {
+    "source_id": "591a84ca-94ef-57cd-82c1-ccc90d537d3c",
+    "target_id": "ed8481f8-67ea-5b73-9647-a34110e4f4b9",
+    "type": "CORRELATED_WITH",
+    "evidence": "Уполномоченный орган, осуществляющий руководство в сферах естественных монополий: ... осуществляет государственное регулирование цен и государственный контроль за соблюдением порядка ценообразования и обязанностей субъекта общественно значимого рынка",
+    "metadata": {
+      "source_kz": "124-6-бап",
+      "target_kz": "124-5-бап"
+    }
+  },
+  {
+    "source_id": "92b33df5-b3d6-5bd4-b88f-1c06efd9ade2",
+    "target_id": "ed8481f8-67ea-5b73-9647-a34110e4f4b9",
+    "type": "CORRELATED_WITH",
+    "evidence": "Государственное регулирование цен и государственный контроль за соблюдением порядка ценообразования и обязанностей субъекта общественно значимого рынка осуществляются в целях защиты интересов потребителей и субъектов общественно значимых рынков",
+    "metadata": {
+      "source_kz": "124-7-бап",
+      "target_kz": "124-5-бап"
+    }
+  },
+  {
+    "source_id": "b7c986bb-f4d9-549d-a0af-1110499d9bae",
+    "target_id": "ed8481f8-67ea-5b73-9647-a34110e4f4b9",
+    "type": "CORRELATED_WITH",
+    "evidence": "Субъект общественно значимого рынка обязан: ... предоставлять в уполномоченный орган, осуществляющий руководство в сферах естественных монополий: ...",
+    "metadata": {
+      "source_kz": "124-8-бап",
+      "target_kz": "124-5-бап"
+    }
+  },
+  {
+    "source_id": "5205a17d-6b80-5f67-825c-25b16244b4a0",
+    "target_id": "ed8481f8-67ea-5b73-9647-a34110e4f4b9",
+    "type": "CORRELATED_WITH",
+    "evidence": "Потребитель услуг (товаров, работ) субъекта общественно значимого рынка вправе: ... приобретать услуги (товары, работы) субъекта общественно значимого рынка в порядке и по ценам, не превышающим предельные цены",
+    "metadata": {
+      "source_kz": "124-9-бап",
+      "target_kz": "124-5-бап"
+    }
+  },
+  {
+    "source_id": "86446107-8e0b-5060-b5ac-0c846693232a",
+    "target_id": "ed8481f8-67ea-5b73-9647-a34110e4f4b9",
+    "type": "CORRELATED_WITH",
+    "evidence": "Государственный контроль за соблюдением порядка ценообразования и обязанностей субъекта общественно значимого рынка осуществляется в форме проверки и профилактического контроля",
+    "metadata": {
+      "source_kz": "124-10-бап",
+      "target_kz": "124-5-бап"
+    }
+  },
+  {
+    "source_id": "0c1853c7-d98c-57db-a53f-f8d733ff45fb",
+    "target_id": "faccb974-1f8c-5854-b6ac-27d68f5d9eaa",
+    "type": "CORRELATED_WITH",
+    "evidence": "Правила ценообразования на товары, производимые и реализуемые субъектом государственной монополии, специального права, утверждаются антимонопольным органом",
+    "metadata": {
+      "source_kz": "120-бап",
+      "target_kz": "120-1-бап"
+    }
+  },
+  {
+    "source_id": "25a03399-533e-5b92-b89a-e2dc8533902b",
+    "target_id": "0c1853c7-d98c-57db-a53f-f8d733ff45fb",
+    "type": "CORRELATED_WITH",
+    "evidence": "Регулирование цен в международных деловых операциях и сделках, связанных с международными деловыми операциями, возникающих при трансфертном ценообразовании",
+    "metadata": {
+      "source_kz": "121-бап",
+      "target_kz": "120-бап"
+    }
+  },
+  {
+    "source_id": "073df022-3bee-5c01-939a-e2767f1d3dc7",
+    "target_id": "0c1853c7-d98c-57db-a53f-f8d733ff45fb",
+    "type": "CORRELATED_WITH",
+    "evidence": "Государство регулирует цены на розничную реализацию нефтепродуктов через стационарные автозаправочные станции",
+    "metadata": {
+      "source_kz": "122-бап",
+      "target_kz": "120-бап"
+    }
+  },
+  {
+    "source_id": "7765617e-f8e0-5fa1-9349-4a22f5bff709",
+    "target_id": "0c1853c7-d98c-57db-a53f-f8d733ff45fb",
+    "type": "CORRELATED_WITH",
+    "evidence": "Государством утверждаются предельные цены на лекарственные средства",
+    "metadata": {
+      "source_kz": "122-1-бап",
+      "target_kz": "120-бап"
+    }
+  },
+  {
+    "source_id": "e37af53f-f948-5dc3-8fca-3533f8cab059",
+    "target_id": "0c1853c7-d98c-57db-a53f-f8d733ff45fb",
+    "type": "CORRELATED_WITH",
+    "evidence": "Государством устанавливаются минимальные розничные цены на водки и водки особые",
+    "metadata": {
+      "source_kz": "123-бап",
+      "target_kz": "120-бап"
+    }
+  },
+  {
+    "source_id": "c435f5f6-c7d2-5510-8a32-8e0b8f06c42a",
+    "target_id": "0c1853c7-d98c-57db-a53f-f8d733ff45fb",
+    "type": "CORRELATED_WITH",
+    "evidence": "Государством регулируются предельные тарифы на имущественный наем (аренду) мест для размещения средств связи",
+    "metadata": {
+      "source_kz": "123-1-бап",
+      "target_kz": "120-бап"
+    }
+  },
+  {
+    "source_id": "08c037b3-0513-5de3-9352-84abaa0c7ce1",
+    "target_id": "0c1853c7-d98c-57db-a53f-f8d733ff45fb",
+    "type": "CORRELATED_WITH",
+    "evidence": "Государством устанавливаются минимальные розничные цены на сигареты с фильтром, без фильтра",
+    "metadata": {
+      "source_kz": "124-бап",
+      "target_kz": "120-бап"
+    }
+  },
+  {
+    "source_id": "cce16f93-06a0-516a-89e7-a882a17896a8",
+    "target_id": "0c1853c7-d98c-57db-a53f-f8d733ff45fb",
+    "type": "CORRELATED_WITH",
+    "evidence": "Государство регулирует цены на товарный и сжиженный нефтяной газ",
+    "metadata": {
+      "source_kz": "124-1-бап",
+      "target_kz": "120-бап"
+    }
+  },
+  {
+    "source_id": "ad7e925f-871b-52db-9cc8-2b5e4b6adcaa",
+    "target_id": "cce16f93-06a0-516a-89e7-a882a17896a8",
+    "type": "CORRELATED_WITH",
+    "evidence": "Государством утверждаются цены сырого и товарного газа, приобретаемого национальным оператором",
+    "metadata": {
+      "source_kz": "124-2-бап",
+      "target_kz": "124-1-бап"
+    }
+  },
+  {
+    "source_id": "6e1626b4-25e3-58e6-9ffb-610aa63847b4",
+    "target_id": "0c1853c7-d98c-57db-a53f-f8d733ff45fb",
+    "type": "CORRELATED_WITH",
+    "evidence": "Тарифобразование энергопроизводящих организаций осуществляется в соответствии с законодательством Республики Казахстан об электроэнергетике",
+    "metadata": {
+      "source_kz": "124-3-бап",
+      "target_kz": "120-бап"
+    }
+  },
+  {
+    "source_id": "91417542-90bf-55aa-87e5-695723a2618b",
+    "target_id": "0c1853c7-d98c-57db-a53f-f8d733ff45fb",
+    "type": "CORRELATED_WITH",
+    "evidence": "Государством регулируются цены на субсидируемые услуги в области почты, связи и перевозок",
+    "metadata": {
+      "source_kz": "124-4-бап",
+      "target_kz": "120-бап"
+    }
+  },
+  {
+    "source_id": "abad19f9-a774-5125-93a2-41aee7eb7860",
+    "target_id": "2542a77f-097b-5b53-98cb-36328e775678",
+    "type": "CORRELATED_WITH",
+    "evidence": "Обязательное страхование гражданско-правовой ответственности субъектов предпринимательства устанавливается законами Республики Казахстан",
+    "metadata": {
+      "source_kz": "125-бап",
+      "target_kz": "126-бап"
+    }
+  },
+  {
+    "source_id": "ae815594-d5ab-58e8-99a6-c226c0461339",
+    "target_id": "2542a77f-097b-5b53-98cb-36328e775678",
+    "type": "CORRELATED_WITH",
+    "evidence": "Объектом обязательного страхования гражданско-правовой ответственности субъектов предпринимательства является имущественный интерес",
+    "metadata": {
+      "source_kz": "127-бап",
+      "target_kz": "126-бап"
+    }
+  },
+  {
+    "source_id": "395e0729-dfa0-5cda-b3e5-ea6f15c1d300",
+    "target_id": "2542a77f-097b-5b53-98cb-36328e775678",
+    "type": "CORRELATED_WITH",
+    "evidence": "Договоры обязательного страхования гражданско-правовой ответственности заключаются субъектами предпринимательства на случай возмещения вреда",
+    "metadata": {
+      "source_kz": "128-бап",
+      "target_kz": "126-бап"
+    }
+  },
+  {
+    "source_id": "777f0431-3c70-57c8-bf24-03bb337b95be",
+    "target_id": "1419a415-84f7-5d9b-b2fe-9f600b3f3d81",
+    "type": "CORRELATED_WITH",
+    "evidence": "Статья 129. Отношения в сфере государственного контроля и надзора",
+    "metadata": {
+      "source_kz": "129-бап",
+      "target_kz": "130-бап"
+    }
+  },
+  {
+    "source_id": "777f0431-3c70-57c8-bf24-03bb337b95be",
+    "target_id": "cd2f8b29-7607-5c3d-acd4-b96c0645e511",
+    "type": "REFERENCES",
+    "evidence": "пунктов 1, 2, 3 и 4 статьи 131",
+    "metadata": {
+      "source_kz": "129-бап",
+      "target_kz": "131-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 131"
+    }
+  },
+  {
+    "source_id": "777f0431-3c70-57c8-bf24-03bb337b95be",
+    "target_id": "dc6ec731-817b-5bd9-aa01-ebf00c6fc683",
+    "type": "REFERENCES",
+    "evidence": "статьи 131-1",
+    "metadata": {
+      "source_kz": "129-бап",
+      "target_kz": "131-1-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 131-1"
+    }
+  },
+  {
+    "source_id": "777f0431-3c70-57c8-bf24-03bb337b95be",
+    "target_id": "77b170e5-c28f-59c7-9c11-1adf4ff42179",
+    "type": "REFERENCES",
+    "evidence": "пунктом 2 статьи 132",
+    "metadata": {
+      "source_kz": "129-бап",
+      "target_kz": "132-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 132"
+    }
+  },
+  {
+    "source_id": "777f0431-3c70-57c8-bf24-03bb337b95be",
+    "target_id": "589284d5-0bf2-504a-ab89-091b7482ffb9",
+    "type": "REFERENCES",
+    "evidence": "статьи 133",
+    "metadata": {
+      "source_kz": "129-бап",
+      "target_kz": "133-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 133"
+    }
+  },
+  {
+    "source_id": "777f0431-3c70-57c8-bf24-03bb337b95be",
+    "target_id": "e062bd2c-25a3-5d9e-9701-bb8cab877dbe",
+    "type": "REFERENCES",
+    "evidence": "статьями 135, 136 и 153",
+    "metadata": {
+      "source_kz": "129-бап",
+      "target_kz": "136-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 136"
+    }
+  },
+  {
+    "source_id": "777f0431-3c70-57c8-bf24-03bb337b95be",
+    "target_id": "0a2521f9-5a3d-5fb1-ac36-a529166a2096",
+    "type": "REFERENCES",
+    "evidence": "статьей 137",
+    "metadata": {
+      "source_kz": "129-бап",
+      "target_kz": "137-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 137"
+    }
+  },
+  {
+    "source_id": "1419a415-84f7-5d9b-b2fe-9f600b3f3d81",
+    "target_id": "cd2f8b29-7607-5c3d-acd4-b96c0645e511",
+    "type": "CORRELATED_WITH",
+    "evidence": "Статья 130. Цель и задачи государственного контроля и надзора",
+    "metadata": {
+      "source_kz": "130-бап",
+      "target_kz": "131-бап"
+    }
+  },
+  {
+    "source_id": "cd2f8b29-7607-5c3d-acd4-b96c0645e511",
+    "target_id": "dc6ec731-817b-5bd9-aa01-ebf00c6fc683",
+    "type": "CORRELATED_WITH",
+    "evidence": "Статья 131. Гарантии для субъектов предпринимательства при осуществлении государственного контроля и надзора",
+    "metadata": {
+      "source_kz": "131-бап",
+      "target_kz": "131-1-бап"
+    }
+  },
+  {
+    "source_id": "cd2f8b29-7607-5c3d-acd4-b96c0645e511",
+    "target_id": "77b170e5-c28f-59c7-9c11-1adf4ff42179",
+    "type": "CORRELATED_WITH",
+    "evidence": "Статья 131. Гарантии для субъектов предпринимательства при осуществлении государственного контроля и надзора",
+    "metadata": {
+      "source_kz": "131-бап",
+      "target_kz": "132-бап"
+    }
+  },
+  {
+    "source_id": "cd2f8b29-7607-5c3d-acd4-b96c0645e511",
+    "target_id": "589284d5-0bf2-504a-ab89-091b7482ffb9",
+    "type": "CORRELATED_WITH",
+    "evidence": "Статья 131. Гарантии для субъектов предпринимательства при осуществлении государственного контроля и надзора",
+    "metadata": {
+      "source_kz": "131-бап",
+      "target_kz": "133-бап"
+    }
+  },
+  {
+    "source_id": "1126dd8d-d028-5c35-9c48-74bd944746d8",
+    "target_id": "fe08583b-fa41-5e5c-8806-adcd1bda9c74",
+    "type": "CORRELATED_WITH",
+    "evidence": "Статья 134. Государственный контроль",
+    "metadata": {
+      "source_kz": "134-бап",
+      "target_kz": "135-бап"
+    }
+  },
+  {
+    "source_id": "fe08583b-fa41-5e5c-8806-adcd1bda9c74",
+    "target_id": "e062bd2c-25a3-5d9e-9701-bb8cab877dbe",
+    "type": "MANIFESTED_IN",
+    "evidence": "с правом применения мер оперативного реагирования",
+    "metadata": {
+      "source_kz": "135-бап",
+      "target_kz": "136-бап"
+    }
+  },
+  {
+    "source_id": "e062bd2c-25a3-5d9e-9701-bb8cab877dbe",
+    "target_id": "0a2521f9-5a3d-5fb1-ac36-a529166a2096",
+    "type": "REFERENCES",
+    "evidence": "статьей 139 настоящего Кодекса",
+    "metadata": {
+      "source_kz": "136-бап",
+      "target_kz": "139-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 139"
+    }
+  },
+  {
+    "source_id": "0a2521f9-5a3d-5fb1-ac36-a529166a2096",
+    "target_id": "e062bd2c-25a3-5d9e-9701-bb8cab877dbe",
+    "type": "REFERENCES",
+    "evidence": "статьи 136 настоящего Кодекса",
+    "metadata": {
+      "source_kz": "137-бап",
+      "target_kz": "136-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 136"
+    }
+  },
+  {
+    "source_id": "06540a4f-0162-5191-b9d7-b42c9e2c4385",
+    "target_id": "9386bd3d-abe8-5e68-8f27-a6611eab735d",
+    "type": "CORRELATED_WITH",
+    "evidence": "Контроль осуществляется: ... Надзор осуществляется:",
+    "metadata": {
+      "source_kz": "138-бап",
+      "target_kz": "139-бап"
+    }
+  },
+  {
+    "source_id": "1fd15967-6b42-5b20-bb18-65ddd129aa03",
+    "target_id": "54d88d30-9b63-5bc4-9f7b-e3048e2f36af",
+    "type": "REFERENCES",
+    "evidence": "в соответствии с пунктом 2 статьи 132 и пунктом 3 статьи 143 настоящего Кодекса",
+    "metadata": {
+      "source_kz": "141-бап",
+      "target_kz": "143-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 143"
+    }
+  },
+  {
+    "source_id": "1fd15967-6b42-5b20-bb18-65ddd129aa03",
+    "target_id": "28ca738b-19b7-5274-8b24-b8ce46dcb331",
+    "type": "REFERENCES",
+    "evidence": "с кратностью, установленной статьей 141 настоящего Кодекса",
+    "metadata": {
+      "source_kz": "144-бап",
+      "target_kz": "141-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 141"
+    }
+  },
+  {
+    "source_id": "28ca738b-19b7-5274-8b24-b8ce46dcb331",
+    "target_id": "1fd15967-6b42-5b20-bb18-65ddd129aa03",
+    "type": "BASED_ON",
+    "evidence": "Проверки на соответствие требованиям осуществляются с применением критериев оценки рисков с кратностью, установленной статьей 141 настоящего Кодекса.",
+    "metadata": {
+      "source_kz": "144-бап",
+      "target_kz": "141-бап"
+    }
+  },
+  {
+    "source_id": "b02796ae-60fe-58a7-92bf-f1c8b55d8c99",
+    "target_id": "28ca738b-19b7-5274-8b24-b8ce46dcb331",
+    "type": "EXTENDS",
+    "evidence": "Профилактический контроль без посещения субъекта (объекта) контроля и надзора осуществляется органами контроля и надзора на основе изучения и анализа...",
+    "metadata": {
+      "source_kz": "144-1-бап",
+      "target_kz": "144-бап"
+    }
+  },
+  {
+    "source_id": "1166490f-cb85-54c4-b0af-cf039b2e9179",
+    "target_id": "b481c584-7208-5d75-b013-5f09ffe54b62",
+    "type": "CORRELATED_WITH",
+    "evidence": "Профилактический контроль с посещением субъекта (объекта) контроля и надзора",
+    "metadata": {
+      "source_kz": "144-2-бап",
+      "target_kz": "144-3-бап"
+    }
+  },
+  {
+    "source_id": "b481c584-7208-5d75-b013-5f09ffe54b62",
+    "target_id": "4b7a28e8-57b5-5b8a-bf84-ca26da21cbf7",
+    "type": "REFERENCES",
+    "evidence": "результаты исследования продукции по итогам контрольного закупа",
+    "metadata": {
+      "source_kz": "144-3-бап",
+      "target_kz": "144-4-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 144-4"
+    }
+  },
+  {
+    "source_id": "4b7a28e8-57b5-5b8a-bf84-ca26da21cbf7",
+    "target_id": "b481c584-7208-5d75-b013-5f09ffe54b62",
+    "type": "REFERENCES",
+    "evidence": "результаты исследования продукции по итогам контрольного закупа",
+    "metadata": {
+      "source_kz": "144-4-бап",
+      "target_kz": "144-3-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 144-3"
+    }
+  },
+  {
+    "source_id": "b1d07fbb-875f-5e38-b06b-5de36e1e2a58",
+    "target_id": "1166490f-cb85-54c4-b0af-cf039b2e9179",
+    "type": "REFERENCES",
+    "evidence": "Профилактический контроль с посещением субъекта (объекта) контроля и надзора и (или) проверка проводятся на основании акта",
+    "metadata": {
+      "source_kz": "145-бап",
+      "target_kz": "144-2-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 144-2"
+    }
+  },
+  {
+    "source_id": "b02213e8-b91f-568f-8aa5-9e5dccc67f68",
+    "target_id": "b1d07fbb-875f-5e38-b06b-5de36e1e2a58",
+    "type": "REFERENCES",
+    "evidence": "Акт о назначении, дополнительный акт о продлении сроков профилактического контроля с посещением субъекта (объекта) контроля и надзора и (или) проверки",
+    "metadata": {
+      "source_kz": "146-бап",
+      "target_kz": "145-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 145"
+    }
+  },
+  {
+    "source_id": "f40381e4-5a62-5b06-a64f-dd6129971e63",
+    "target_id": "b1d07fbb-875f-5e38-b06b-5de36e1e2a58",
+    "type": "REFERENCES",
+    "evidence": "акт о назначении профилактического контроля с посещением субъекта (объекта) контроля и надзора и (или) проверки",
+    "metadata": {
+      "source_kz": "147-бап",
+      "target_kz": "145-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 145"
+    }
+  },
+  {
+    "source_id": "68c7a615-777b-5fe9-8f02-c5736683c15d",
+    "target_id": "b02213e8-b91f-568f-8aa5-9e5dccc67f68",
+    "type": "REFERENCES",
+    "evidence": "дополнительный акт о продлении профилактического контроля с посещением субъекта (объекта) контроля и надзора и (или) проверки с регистрацией в уполномоченном органе",
+    "metadata": {
+      "source_kz": "148-бап",
+      "target_kz": "146-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 146"
+    }
+  },
+  {
+    "source_id": "49afbd6a-f927-5729-9e33-2f0bd22aab1a",
+    "target_id": "0e37c550-ce6f-5cc6-9123-3038764ca5eb",
+    "type": "REFERENCES",
+    "evidence": "Акт отбора образцов продукции",
+    "metadata": {
+      "source_kz": "150-бап",
+      "target_kz": "149-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 149"
+    }
+  },
+  {
+    "source_id": "6abec7e7-3d5e-5819-bcb7-9d22f4827053",
+    "target_id": "0e37c550-ce6f-5cc6-9123-3038764ca5eb",
+    "type": "REFERENCES",
+    "evidence": "отбирать образцы продукции, пробы обследования объектов окружающей среды и объектов производственной среды для проведения их исследований, испытаний, измерений без оформления акта об отборе указанных образцов",
+    "metadata": {
+      "source_kz": "151-бап",
+      "target_kz": "149-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 149"
+    }
+  },
+  {
+    "source_id": "ef43dd7b-67f7-5f20-8ed3-da9c8298a015",
+    "target_id": "2ce3c837-dd10-507e-8b5e-7079eb41c0ee",
+    "type": "CORRELATED_WITH",
+    "evidence": "Профилактический контроль с посещением субъекта (объекта) контроля и надзора и (или) проверки признаются недействительными, если они проведены органом контроля и надзора с грубым нарушением требований",
+    "metadata": {
+      "source_kz": "152-бап",
+      "target_kz": "156-бап"
+    }
+  },
+  {
+    "source_id": "ef43dd7b-67f7-5f20-8ed3-da9c8298a015",
+    "target_id": "a373fba9-be3b-57da-8632-f7179ae4452a",
+    "type": "CORRELATED_WITH",
+    "evidence": "акт о результатах профилактического контроля с посещением субъекта (объекта) контроля и надзора и (или) проверки",
+    "metadata": {
+      "source_kz": "152-бап",
+      "target_kz": "154-бап"
+    }
+  },
+  {
+    "source_id": "ef43dd7b-67f7-5f20-8ed3-da9c8298a015",
+    "target_id": "32e9a459-1d52-5e4b-957a-0cfb62857496",
+    "type": "CORRELATED_WITH",
+    "evidence": "субъект контроля и надзора обязан предоставить в орган контроля и надзора информацию об устранении выявленных нарушений",
+    "metadata": {
+      "source_kz": "152-бап",
+      "target_kz": "155-бап"
+    }
+  },
+  {
+    "source_id": "87c34b16-58f1-55ef-90ee-1b71b93dd4ca",
+    "target_id": "ef43dd7b-67f7-5f20-8ed3-da9c8298a015",
+    "type": "CORRELATED_WITH",
+    "evidence": "меры по устранению выявленных нарушений",
+    "metadata": {
+      "source_kz": "153-бап",
+      "target_kz": "152-бап"
+    }
+  },
+  {
+    "source_id": "a373fba9-be3b-57da-8632-f7179ae4452a",
+    "target_id": "ef43dd7b-67f7-5f20-8ed3-da9c8298a015",
+    "type": "CORRELATED_WITH",
+    "evidence": "акт о результатах профилактического контроля с посещением субъекта (объекта) контроля и надзора и (или) проверки",
+    "metadata": {
+      "source_kz": "154-бап",
+      "target_kz": "152-бап"
+    }
+  },
+  {
+    "source_id": "32e9a459-1d52-5e4b-957a-0cfb62857496",
+    "target_id": "ef43dd7b-67f7-5f20-8ed3-da9c8298a015",
+    "type": "CORRELATED_WITH",
+    "evidence": "акт о результатах профилактического контроля с посещением субъекта (объекта) контроля и надзора и (или) проверки",
+    "metadata": {
+      "source_kz": "155-бап",
+      "target_kz": "152-бап"
+    }
+  },
+  {
+    "source_id": "2ce3c837-dd10-507e-8b5e-7079eb41c0ee",
+    "target_id": "ef43dd7b-67f7-5f20-8ed3-da9c8298a015",
+    "type": "CORRELATED_WITH",
+    "evidence": "Профилактический контроль с посещением субъекта (объекта) контроля и надзора и (или) проверки признаются недействительными",
+    "metadata": {
+      "source_kz": "156-бап",
+      "target_kz": "152-бап"
+    }
+  },
+  {
+    "source_id": "4974cbcf-6f71-59c5-ae79-756bbdc4df9b",
+    "target_id": "ef43dd7b-67f7-5f20-8ed3-da9c8298a015",
+    "type": "CORRELATED_WITH",
+    "evidence": "обжаловать решения, действия (бездействие) органов контроля и надзора",
+    "metadata": {
+      "source_kz": "157-бап",
+      "target_kz": "152-бап"
+    }
+  },
+  {
+    "source_id": "9efcf90b-a448-55d0-ab69-b13bf60db8b4",
+    "target_id": "77fba75f-f965-5979-b78c-84b02a129eec",
+    "type": "CORRELATED_WITH",
+    "evidence": "государственного регулирования конкуренции",
+    "metadata": {
+      "source_kz": "160-бап",
+      "target_kz": "163-бап"
+    }
+  },
+  {
+    "source_id": "607f0a8a-b4cb-535f-a0ef-070cf4380bac",
+    "target_id": "b437a14e-5bc1-5e51-87cb-1285bf96933d",
+    "type": "CORRELATED_WITH",
+    "evidence": "субъектов рынка",
+    "metadata": {
+      "source_kz": "162-бап",
+      "target_kz": "164-бап"
+    }
+  },
+  {
+    "source_id": "77fba75f-f965-5979-b78c-84b02a129eec",
+    "target_id": "9efcf90b-a448-55d0-ab69-b13bf60db8b4",
+    "type": "CORRELATED_WITH",
+    "evidence": "государственной политики в сфере защиты конкуренции",
+    "metadata": {
+      "source_kz": "163-бап",
+      "target_kz": "160-бап"
+    }
+  },
+  {
+    "source_id": "4719a832-4e62-532a-b209-3c1735cffa14",
+    "target_id": "77fba75f-f965-5979-b78c-84b02a129eec",
+    "type": "CORRELATED_WITH",
+    "evidence": "защиты конкуренции и ограничения монополистической деятельности",
+    "metadata": {
+      "source_kz": "163-1-бап",
+      "target_kz": "163-бап"
+    }
+  },
+  {
+    "source_id": "c68dabae-d574-59bf-bcb8-3e6ac089f29c",
+    "target_id": "ae08ef26-a625-5fcd-837e-a87d12416908",
+    "type": "CORRELATED_WITH",
+    "evidence": "Группой лиц признается совокупность физических лиц и (или) юридических лиц",
+    "metadata": {
+      "source_kz": "165-бап",
+      "target_kz": "166-бап"
+    }
+  },
+  {
+    "source_id": "c68dabae-d574-59bf-bcb8-3e6ac089f29c",
+    "target_id": "011502a3-c584-546b-9030-780305504380",
+    "type": "REFERENCES",
+    "evidence": "входящими в одну группу лиц",
+    "metadata": {
+      "source_kz": "165-бап",
+      "target_kz": "169-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 169"
+    }
+  },
+  {
+    "source_id": "ae08ef26-a625-5fcd-837e-a87d12416908",
+    "target_id": "c68dabae-d574-59bf-bcb8-3e6ac089f29c",
+    "type": "BASED_ON",
+    "evidence": "Для целей настоящего раздела под аффилированными лицами юридических лиц",
+    "metadata": {
+      "source_kz": "166-бап",
+      "target_kz": "165-бап"
+    }
+  },
+  {
+    "source_id": "622a6767-07d0-5004-990f-c41ef754fb31",
+    "target_id": "e63c1913-1805-5e14-ae4d-c31205a82664",
+    "type": "MANIFESTED_IN",
+    "evidence": "антиконкурентные соглашения субъектов рынка",
+    "metadata": {
+      "source_kz": "167-бап",
+      "target_kz": "168-бап"
+    }
+  },
+  {
+    "source_id": "622a6767-07d0-5004-990f-c41ef754fb31",
+    "target_id": "d64c2641-49a3-57a0-af08-eea4a1d80693",
+    "type": "MANIFESTED_IN",
+    "evidence": "антиконкурентные согласованные действия субъектов рынка",
+    "metadata": {
+      "source_kz": "167-бап",
+      "target_kz": "170-бап"
+    }
+  },
+  {
+    "source_id": "622a6767-07d0-5004-990f-c41ef754fb31",
+    "target_id": "89bfd010-beab-5305-b867-2c45c45e417c",
+    "type": "MANIFESTED_IN",
+    "evidence": "злоупотребление доминирующим или монопольным положением",
+    "metadata": {
+      "source_kz": "167-бап",
+      "target_kz": "174-бап"
+    }
+  },
+  {
+    "source_id": "e63c1913-1805-5e14-ae4d-c31205a82664",
+    "target_id": "011502a3-c584-546b-9030-780305504380",
+    "type": "EXTENDS",
+    "evidence": "Антиконкурентные соглашения или согласованные действия между субъектами рынка",
+    "metadata": {
+      "source_kz": "168-бап",
+      "target_kz": "169-бап"
+    }
+  },
+  {
+    "source_id": "011502a3-c584-546b-9030-780305504380",
+    "target_id": "c3ec3d36-da41-5f61-bb45-86c1057a462f",
+    "type": "REFERENCES",
+    "evidence": "в соответствии со статьей 169 настоящего Кодекса",
+    "metadata": {
+      "source_kz": "169-бап",
+      "target_kz": "171-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 171"
+    }
+  },
+  {
+    "source_id": "011502a3-c584-546b-9030-780305504380",
+    "target_id": "b3640da0-da84-5a85-b8f0-d00e9833c3e1",
+    "type": "CORRELATED_WITH",
+    "evidence": "вертикальных соглашений при организации и проведении закупок товаров и торгов",
+    "metadata": {
+      "source_kz": "169-бап",
+      "target_kz": "169-1-бап"
+    }
+  },
+  {
+    "source_id": "3e6eb05a-b241-57e1-bc45-7786dd544bc3",
+    "target_id": "89bfd010-beab-5305-b867-2c45c45e417c",
+    "type": "CAUSED_BY",
+    "evidence": "Доминирующим или монопольным положением признается положение субъекта рынка",
+    "metadata": {
+      "source_kz": "172-бап",
+      "target_kz": "174-бап"
+    }
+  },
+  {
+    "source_id": "3e6eb05a-b241-57e1-bc45-7786dd544bc3",
+    "target_id": "db76a510-5c1f-5df7-8fbf-ae61dd998c76",
+    "type": "EXTENDS",
+    "evidence": "занимающий (занимающая) доминирующее или монопольное положение на соответствующем и смежном товарном рынках",
+    "metadata": {
+      "source_kz": "172-бап",
+      "target_kz": "172-1-бап"
+    }
+  },
+  {
+    "source_id": "3e6eb05a-b241-57e1-bc45-7786dd544bc3",
+    "target_id": "d2f380aa-52fb-54ec-9d66-0a5ad31bed6c",
+    "type": "MANIFESTED_IN",
+    "evidence": "Формирование и ведение государственного реестра субъектов рынка, занимающих доминирующее или монопольное положение",
+    "metadata": {
+      "source_kz": "172-бап",
+      "target_kz": "173-бап"
+    }
+  },
+  {
+    "source_id": "89bfd010-beab-5305-b867-2c45c45e417c",
+    "target_id": "4dd8362f-81fe-508c-b518-28bd08daac49",
+    "type": "MANIFESTED_IN",
+    "evidence": "установление, поддержание монопольно высоких (низких) или монопсонически низких цен",
+    "metadata": {
+      "source_kz": "174-бап",
+      "target_kz": "175-бап"
+    }
+  },
+  {
+    "source_id": "89bfd010-beab-5305-b867-2c45c45e417c",
+    "target_id": "0f9e1a46-863f-5090-a071-15ee01504c9d",
+    "type": "MANIFESTED_IN",
+    "evidence": "монопсонически низких цен",
+    "metadata": {
+      "source_kz": "174-бап",
+      "target_kz": "176-бап"
+    }
+  },
+  {
+    "source_id": "89bfd010-beab-5305-b867-2c45c45e417c",
+    "target_id": "29aa9eae-c812-5ece-aa4b-81697e0ad546",
+    "type": "MANIFESTED_IN",
+    "evidence": "непредоставление равного доступа к ключевой мощности",
+    "metadata": {
+      "source_kz": "174-бап",
+      "target_kz": "176-1-бап"
+    }
+  },
+  {
+    "source_id": "f8d37bb9-f85a-54c0-a815-27ca1387781b",
+    "target_id": "5e6c4e1d-455e-5521-823d-e694e1f2f756",
+    "type": "MANIFESTED_IN",
+    "evidence": "неправомерное использование средств индивидуализации товаров, работ, услуг, а также объектов авторского права",
+    "metadata": {
+      "source_kz": "177-бап",
+      "target_kz": "178-бап"
+    }
+  },
+  {
+    "source_id": "f8d37bb9-f85a-54c0-a815-27ca1387781b",
+    "target_id": "c8e7289a-d123-5b6f-84d8-a2044d834602",
+    "type": "MANIFESTED_IN",
+    "evidence": "неправомерное использование товара другого производителя",
+    "metadata": {
+      "source_kz": "177-бап",
+      "target_kz": "179-бап"
+    }
+  },
+  {
+    "source_id": "d730f3b0-f628-5725-8952-82dae97ecaab",
+    "target_id": "7393b229-7c11-5053-8c2c-dde0e388b5e1",
+    "type": "CORRELATED_WITH",
+    "evidence": "Подкупом работника продавца (поставщика) является предоставление ему конкурентом покупателя",
+    "metadata": {
+      "source_kz": "187-бап",
+      "target_kz": "188-бап"
+    }
+  },
+  {
+    "source_id": "5ee20002-f16c-5aab-a78d-e7c0e18096b4",
+    "target_id": "d8ce727b-2df9-51f2-9186-2d7a14b62d80",
+    "type": "CORRELATED_WITH",
+    "evidence": "Государственной монополией является исключительное право государства",
+    "metadata": {
+      "source_kz": "192-бап",
+      "target_kz": "193-бап"
+    }
+  },
+  {
+    "source_id": "c4ffa757-52d4-55cd-b4f3-65f6d869ee21",
+    "target_id": "ef4d402b-3bf5-5ee5-90bf-ea7b77cc7632",
+    "type": "MANIFESTED_IN",
+    "evidence": "анализ состояния конкуренции на товарных рынках",
+    "metadata": {
+      "source_kz": "195-бап",
+      "target_kz": "196-бап"
+    }
+  },
+  {
+    "source_id": "c4ffa757-52d4-55cd-b4f3-65f6d869ee21",
+    "target_id": "1a3add7b-e062-5807-8e48-1bfd0c65b75f",
+    "type": "MANIFESTED_IN",
+    "evidence": "предупреждения нарушений законодательства Республики Казахстан в области защиты конкуренции",
+    "metadata": {
+      "source_kz": "195-бап",
+      "target_kz": "195-1-бап"
+    }
+  },
+  {
+    "source_id": "f1695e24-4719-5b26-b9ef-d64da937aa5a",
+    "target_id": "b20b29ff-1070-5853-ac77-b4cf039ee912",
+    "type": "CORRELATED_WITH",
+    "evidence": "предупреждения нарушения законодательства Республики Казахстан в области защиты конкуренции",
+    "metadata": {
+      "source_kz": "198-бап",
+      "target_kz": "199-бап"
+    }
+  },
+  {
+    "source_id": "8db96b02-a9c5-5a8a-ba26-567a822332d9",
+    "target_id": "fdf92d31-4140-56e9-826a-fc22052375f1",
+    "type": "REFERENCES",
+    "evidence": "указанных в подпунктах 1), 2) и 3) пункта 1 статьи 201 настоящего Кодекса",
+    "metadata": {
+      "source_kz": "200-бап",
+      "target_kz": "201-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 201"
+    }
+  },
+  {
+    "source_id": "e4a6c098-7d32-577a-bbfc-85af0e62fb1b",
+    "target_id": "fdf92d31-4140-56e9-826a-fc22052375f1",
+    "type": "REFERENCES",
+    "evidence": "В случаях, предусмотренных подпунктом 1) пункта 1 статьи 201 настоящего Кодекса",
+    "metadata": {
+      "source_kz": "202-бап",
+      "target_kz": "201-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 201"
+    }
+  },
+  {
+    "source_id": "b0dcd87f-11ca-589f-8712-6583dab0b996",
+    "target_id": "bcb2968a-fdbe-5707-8f66-17e9a15cc430",
+    "type": "REFERENCES",
+    "evidence": "с приложением документов и сведений, предусмотренных в статье 204 настоящего Кодекса",
+    "metadata": {
+      "source_kz": "203-бап",
+      "target_kz": "204-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 204"
+    }
+  },
+  {
+    "source_id": "bcb2968a-fdbe-5707-8f66-17e9a15cc430",
+    "target_id": "fdf92d31-4140-56e9-826a-fc22052375f1",
+    "type": "REFERENCES",
+    "evidence": "предусмотренную подпунктом 1) пункта 1 статьи 201 настоящего Кодекса",
+    "metadata": {
+      "source_kz": "204-бап",
+      "target_kz": "201-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 201"
+    }
+  },
+  {
+    "source_id": "bcb2968a-fdbe-5707-8f66-17e9a15cc430",
+    "target_id": "8db96b02-a9c5-5a8a-ba26-567a822332d9",
+    "type": "REFERENCES",
+    "evidence": "В случае, предусмотренном пунктом 3 статьи 200 настоящего Кодекса",
+    "metadata": {
+      "source_kz": "204-бап",
+      "target_kz": "200-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 200"
+    }
+  },
+  {
+    "source_id": "bcb2968a-fdbe-5707-8f66-17e9a15cc430",
+    "target_id": "fc644b5a-19d4-5ee4-a42d-2594f76eaf7c",
+    "type": "REFERENCES",
+    "evidence": "предусмотренных статьей 207 настоящего Кодекса",
+    "metadata": {
+      "source_kz": "204-бап",
+      "target_kz": "207-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 207"
+    }
+  },
+  {
+    "source_id": "578cd2e6-ad57-53b9-9206-8fb2fee1bed8",
+    "target_id": "fdf92d31-4140-56e9-826a-fc22052375f1",
+    "type": "CORRELATED_WITH",
+    "evidence": "экономическая концентрация",
+    "metadata": {
+      "source_kz": "205-бап",
+      "target_kz": "201-бап"
+    }
+  },
+  {
+    "source_id": "dcb8b5ba-6b60-5c3a-acfb-b7a7cba1c110",
+    "target_id": "fdf92d31-4140-56e9-826a-fc22052375f1",
+    "type": "REFERENCES",
+    "evidence": "предусмотренные подпунктами 3), 4) и 5) пункта 1 статьи 201 настоящего Кодекса",
+    "metadata": {
+      "source_kz": "206-бап",
+      "target_kz": "201-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 201"
+    }
+  },
+  {
+    "source_id": "fc644b5a-19d4-5ee4-a42d-2594f76eaf7c",
+    "target_id": "fdf92d31-4140-56e9-826a-fc22052375f1",
+    "type": "REFERENCES",
+    "evidence": "предусмотренной подпунктом 4) пункта 1 статьи 201 настоящего Кодекса",
+    "metadata": {
+      "source_kz": "207-бап",
+      "target_kz": "201-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 201"
+    }
+  },
+  {
+    "source_id": "31d5c59b-e1e9-52d5-bdb0-6d5db1c8d1b2",
+    "target_id": "fdf92d31-4140-56e9-826a-fc22052375f1",
+    "type": "CORRELATED_WITH",
+    "evidence": "экономическая концентрация",
+    "metadata": {
+      "source_kz": "208-бап",
+      "target_kz": "201-бап"
+    }
+  },
+  {
+    "source_id": "108d6fb0-3ac8-55fd-80b6-67720694a8c3",
+    "target_id": "fdf92d31-4140-56e9-826a-fc22052375f1",
+    "type": "REFERENCES",
+    "evidence": "уведомления о совершенной экономической концентрации",
+    "metadata": {
+      "source_kz": "209-бап",
+      "target_kz": "201-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 201"
+    }
+  },
+  {
+    "source_id": "ec7712f0-aacf-5a9f-a6e8-bf45719c2999",
+    "target_id": "fdf92d31-4140-56e9-826a-fc22052375f1",
+    "type": "CORRELATED_WITH",
+    "evidence": "экономическая концентрация",
+    "metadata": {
+      "source_kz": "210-бап",
+      "target_kz": "201-бап"
+    }
+  },
+  {
+    "source_id": "d699dc22-13eb-55b3-9b57-332ae6fea0de",
+    "target_id": "31d5c59b-e1e9-52d5-bdb0-6d5db1c8d1b2",
+    "type": "REFERENCES",
+    "evidence": "решением антимонопольного органа о согласии на экономическую концентрацию",
+    "metadata": {
+      "source_kz": "210-1-бап",
+      "target_kz": "208-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 208"
+    }
+  },
+  {
+    "source_id": "cdd115e6-df8c-5477-bc93-6f8367e31791",
+    "target_id": "3ce7547f-6a85-575b-ad96-209d6c3d5a03",
+    "type": "CORRELATED_WITH",
+    "evidence": "Основанием для начала расследования является поступление в антимонопольный орган сведений о нарушении",
+    "metadata": {
+      "source_kz": "216-бап",
+      "target_kz": "217-бап"
+    }
+  },
+  {
+    "source_id": "cdd115e6-df8c-5477-bc93-6f8367e31791",
+    "target_id": "365b62df-7a08-5d6d-ae10-5da9506969de",
+    "type": "BASED_ON",
+    "evidence": "Основанием для начала расследования является поступление в антимонопольный орган сведений о нарушении",
+    "metadata": {
+      "source_kz": "216-бап",
+      "target_kz": "218-бап"
+    }
+  },
+  {
+    "source_id": "3ce7547f-6a85-575b-ad96-209d6c3d5a03",
+    "target_id": "cdd115e6-df8c-5477-bc93-6f8367e31791",
+    "type": "REFERENCES",
+    "evidence": "антимонопольный орган привлекает такое лицо в качестве объекта расследования в порядке, предусмотренном статьей 216 настоящего Кодекса",
+    "metadata": {
+      "source_kz": "217-бап",
+      "target_kz": "216-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 216"
+    }
+  },
+  {
+    "source_id": "365b62df-7a08-5d6d-ae10-5da9506969de",
+    "target_id": "cdd115e6-df8c-5477-bc93-6f8367e31791",
+    "type": "REFERENCES",
+    "evidence": "признаков нарушений законодательства Республики Казахстан в области защиты конкуренции, устанавливаемых в рамках рассмотрения сведений, предусмотренных пунктом 2 статьи 216 настоящего Кодекса",
+    "metadata": {
+      "source_kz": "218-бап",
+      "target_kz": "216-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 216"
+    }
+  },
+  {
+    "source_id": "365b62df-7a08-5d6d-ae10-5da9506969de",
+    "target_id": "afd45ef2-0ed8-57d5-a060-de3794220c4b",
+    "type": "CORRELATED_WITH",
+    "evidence": "Приказ о проведении расследования должен содержать: ... фамилию, имя и отчество ... должностного лица антимонопольного органа, уполномоченного на проведение расследования",
+    "metadata": {
+      "source_kz": "218-бап",
+      "target_kz": "221-бап"
+    }
+  },
+  {
+    "source_id": "e8956c8c-5273-5e80-8854-9c021091a44d",
+    "target_id": "004f2bc2-56ee-580d-8ae7-3faa63c0676b",
+    "type": "REFERENCES",
+    "evidence": "прекращении расследования нарушения законодательства Республики Казахстан в области защиты конкуренции по основаниям, предусмотренным статьей 223 настоящего Кодекса",
+    "metadata": {
+      "source_kz": "224-бап",
+      "target_kz": "223-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 223"
+    }
+  },
+  {
+    "source_id": "e8956c8c-5273-5e80-8854-9c021091a44d",
+    "target_id": "f444fc73-814a-550b-bc66-99ca797ba13a",
+    "type": "REFERENCES",
+    "evidence": "вынесении предписания об устранении нарушений законодательства Республики Казахстан в области защиты конкуренции",
+    "metadata": {
+      "source_kz": "224-бап",
+      "target_kz": "226-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 226"
+    }
+  },
+  {
+    "source_id": "b462244f-a0a7-5065-8799-8b7a1da56378",
+    "target_id": "f444fc73-814a-550b-bc66-99ca797ba13a",
+    "type": "CORRELATED_WITH",
+    "evidence": "Изъятие монопольного дохода производится в порядке, установленном Кодексом Республики Казахстан об административных правонарушениях",
+    "metadata": {
+      "source_kz": "225-бап",
+      "target_kz": "226-бап"
+    }
+  },
+  {
+    "source_id": "f444fc73-814a-550b-bc66-99ca797ba13a",
+    "target_id": "2c12df45-91d7-536d-9cd7-7d032dc63b0a",
+    "type": "MANIFESTED_IN",
+    "evidence": "Предписание оформляется на бланке строгой отчетности антимонопольного органа",
+    "metadata": {
+      "source_kz": "226-бап",
+      "target_kz": "227-бап"
+    }
+  },
+  {
+    "source_id": "2c12df45-91d7-536d-9cd7-7d032dc63b0a",
+    "target_id": "c0cc3e9e-1b18-589e-894d-cea0b95272ce",
+    "type": "CORRELATED_WITH",
+    "evidence": "Антимонопольный орган по собственной инициативе либо заявлению заинтересованного лица может пересмотреть предписание",
+    "metadata": {
+      "source_kz": "227-бап",
+      "target_kz": "228-бап"
+    }
+  },
+  {
+    "source_id": "c0cc3e9e-1b18-589e-894d-cea0b95272ce",
+    "target_id": "496e623d-b256-5bb1-b527-ef58ac8dc367",
+    "type": "CORRELATED_WITH",
+    "evidence": "Предписания, принятые территориальными подразделениями антимонопольного органа, могут быть проверены",
+    "metadata": {
+      "source_kz": "228-бап",
+      "target_kz": "229-бап"
+    }
+  },
+  {
+    "source_id": "496e623d-b256-5bb1-b527-ef58ac8dc367",
+    "target_id": "2361399c-1bdf-5003-8aa3-9147c27bb784",
+    "type": "CORRELATED_WITH",
+    "evidence": "Предписания антимонопольного органа могут быть обжалованы в суд",
+    "metadata": {
+      "source_kz": "229-бап",
+      "target_kz": "230-бап"
+    }
+  },
+  {
+    "source_id": "731ae6e4-c6b4-5a65-8ee7-96d7a8efc1c3",
+    "target_id": "f444fc73-814a-550b-bc66-99ca797ba13a",
+    "type": "MANIFESTED_IN",
+    "evidence": "антимонопольный орган в целях развития конкуренции вправе обратиться в суд с иском о принудительном разделении",
+    "metadata": {
+      "source_kz": "231-бап",
+      "target_kz": "226-бап"
+    }
+  },
+  {
+    "source_id": "0e788a84-9f51-559d-aa34-631c258820a6",
+    "target_id": "863c3ff1-b62a-58c4-8d1d-2f0dee8a0a81",
+    "type": "EXTENDS",
+    "evidence": "Государственная поддержка социального предпринимательства, кроме мер государственной поддержки частного предпринимательства, предусмотренных статьей 93 настоящего Кодекса, и мер государственной поддержки малого и среднего предпринимательства, предусмотренных статьей 232 настоящего Кодекса",
+    "metadata": {
+      "source_kz": "232-бап",
+      "target_kz": "232-1-бап"
+    }
+  },
+  {
+    "source_id": "863c3ff1-b62a-58c4-8d1d-2f0dee8a0a81",
+    "target_id": "0e788a84-9f51-559d-aa34-631c258820a6",
+    "type": "REFERENCES",
+    "evidence": "мер государственной поддержки малого и среднего предпринимательства, предусмотренных статьей 232 настоящего Кодекса",
+    "metadata": {
+      "source_kz": "232-1-бап",
+      "target_kz": "232-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 232"
+    }
+  },
+  {
+    "source_id": "2070fe9c-bc19-5afa-a8d1-459066e745d6",
+    "target_id": "0e788a84-9f51-559d-aa34-631c258820a6",
+    "type": "MANIFESTED_IN",
+    "evidence": "Бизнес-инкубатором является юридическое лицо, создаваемое для поддержки субъектов малого предпринимательства",
+    "metadata": {
+      "source_kz": "233-бап",
+      "target_kz": "232-бап"
+    }
+  },
+  {
+    "source_id": "a3dad5bc-76af-5bdb-9db0-26c2328984fe",
+    "target_id": "0e788a84-9f51-559d-aa34-631c258820a6",
+    "type": "MANIFESTED_IN",
+    "evidence": "Субъектам малого и среднего предпринимательства могут передаваться в доверительное управление или аренду не используемые более одного года объекты государственной собственности",
+    "metadata": {
+      "source_kz": "234-бап",
+      "target_kz": "232-бап"
+    }
+  },
+  {
+    "source_id": "72742c46-44b5-53dd-a6c4-0765a9d2174b",
+    "target_id": "85179e74-61b6-5a63-bca2-e0796f570027",
+    "type": "MANIFESTED_IN",
+    "evidence": "Государственная поддержка субъектов частного предпринимательства, осуществляющих сельскохозяйственную деятельность, производится посредством: ... развития кредитования в сфере агропромышленного комплекса и сельских территорий",
+    "metadata": {
+      "source_kz": "235-бап",
+      "target_kz": "236-бап"
+    }
+  },
+  {
+    "source_id": "712e3dbe-b9c2-5ea5-89de-7c0384ab87eb",
+    "target_id": "a27ddcac-e915-595b-adfe-f71eaf0e1bad",
+    "type": "CORRELATED_WITH",
+    "evidence": "Субсидирование агропромышленного комплекса осуществляется в качестве экономического стимулирования развития отраслей агропромышленного комплекса",
+    "metadata": {
+      "source_kz": "237-бап",
+      "target_kz": "240-бап"
+    }
+  },
+  {
+    "source_id": "712e3dbe-b9c2-5ea5-89de-7c0384ab87eb",
+    "target_id": "5f0eb788-6bc3-576b-92ff-c1d95353d737",
+    "type": "CORRELATED_WITH",
+    "evidence": "Субсидирование агропромышленного комплекса осуществляется по направлениям, предусмотренным Законом Республики Казахстан \"О государственном регулировании развития агропромышленного комплекса и сельских территорий\"",
+    "metadata": {
+      "source_kz": "237-бап",
+      "target_kz": "239-бап"
+    }
+  },
+  {
+    "source_id": "a27ddcac-e915-595b-adfe-f71eaf0e1bad",
+    "target_id": "712e3dbe-b9c2-5ea5-89de-7c0384ab87eb",
+    "type": "REFERENCES",
+    "evidence": "Государственная поддержка страхования в агропромышленном комплексе осуществляется в порядке, установленном Законом Республики Казахстан \"О государственном регулировании развития агропромышленного комплекса и сельских территорий\"",
+    "metadata": {
+      "source_kz": "240-бап",
+      "target_kz": "237-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 237"
+    }
+  },
+  {
+    "source_id": "58967943-2dfe-514b-83d8-17e754324588",
+    "target_id": "a6f10cf6-9ea5-5e74-bc4d-dc0fda7bf3df",
+    "type": "CORRELATED_WITH",
+    "evidence": "Крестьянские или фермерские хозяйства вправе применять упрощенный либо общеустановленный порядок исчисления и уплаты отдельных видов налогов в соответствии с Кодексом Республики Казахстан \"О налогах и других обязательных платежах в бюджет\" (Налоговый кодекс)",
+    "metadata": {
+      "source_kz": "241-бап",
+      "target_kz": "241-1-бап"
+    }
+  },
+  {
+    "source_id": "b11bce61-91ff-5fd4-9f4c-9de7409e0c63",
+    "target_id": "a6f10cf6-9ea5-5e74-bc4d-dc0fda7bf3df",
+    "type": "BASED_ON",
+    "evidence": "Целью государственной поддержки инновационной деятельности является создание благоприятных условий для введения в употребление нового или значительно улучшенного продукта (товара, работы или услуги), технологии или процесса",
+    "metadata": {
+      "source_kz": "241-2-бап",
+      "target_kz": "241-1-бап"
+    }
+  },
+  {
+    "source_id": "779b0303-8da8-59a6-84aa-9146418c2dbd",
+    "target_id": "b11bce61-91ff-5fd4-9f4c-9de7409e0c63",
+    "type": "MANIFESTED_IN",
+    "evidence": "К субъектам инновационной системы, участвующим в государственной поддержке инновационной деятельности, относятся национальный институт развития в области инновационного развития и иные юридические лица",
+    "metadata": {
+      "source_kz": "241-3-бап",
+      "target_kz": "241-2-бап"
+    }
+  },
+  {
+    "source_id": "518b251b-7d7d-5f00-802b-570bc5727959",
+    "target_id": "b11bce61-91ff-5fd4-9f4c-9de7409e0c63",
+    "type": "MANIFESTED_IN",
+    "evidence": "Государственная технологическая политика представляет собой систему экономических, организационных и правовых мер, осуществляемых государством и (или) субъектами инновационной деятельности",
+    "metadata": {
+      "source_kz": "241-4-бап",
+      "target_kz": "241-2-бап"
+    }
+  },
+  {
+    "source_id": "a0eeca6a-14bd-5255-94f1-1b5fcaab47d1",
+    "target_id": "518b251b-7d7d-5f00-802b-570bc5727959",
+    "type": "MANIFESTED_IN",
+    "evidence": "Для формирования и реализации государственной технологической политики и развития науки создаются технологические платформы",
+    "metadata": {
+      "source_kz": "241-5-бап",
+      "target_kz": "241-4-бап"
+    }
+  },
+  {
+    "source_id": "3c1a32b7-e498-5245-a90c-6f76d1a71b11",
+    "target_id": "b11bce61-91ff-5fd4-9f4c-9de7409e0c63",
+    "type": "MANIFESTED_IN",
+    "evidence": "Инструментами стимулирования инновационной активности являются информационно-пропагандистская поддержка инноваций и распространение знаний",
+    "metadata": {
+      "source_kz": "241-6-бап",
+      "target_kz": "241-2-бап"
+    }
+  },
+  {
+    "source_id": "33ff8c70-1650-5c11-997f-1b2ef0d25a96",
+    "target_id": "b11bce61-91ff-5fd4-9f4c-9de7409e0c63",
+    "type": "MANIFESTED_IN",
+    "evidence": "Меры государственной поддержки инновационной деятельности определяются настоящим Кодексом с учетом особенностей, определенных законами Республики Казахстан",
+    "metadata": {
+      "source_kz": "241-7-бап",
+      "target_kz": "241-2-бап"
+    }
+  },
+  {
+    "source_id": "1332eb13-d08c-5726-8b5a-046a31f1f40a",
+    "target_id": "33ff8c70-1650-5c11-997f-1b2ef0d25a96",
+    "type": "MANIFESTED_IN",
+    "evidence": "Софинансирование венчурных фондов осуществляется на конкурсной основе субъектами инновационной системы, участвующими в государственной поддержке инновационной деятельности",
+    "metadata": {
+      "source_kz": "241-8-бап",
+      "target_kz": "241-7-бап"
+    }
+  },
+  {
+    "source_id": "b9766676-9aeb-5c61-9bc7-e1222f47abde",
+    "target_id": "33ff8c70-1650-5c11-997f-1b2ef0d25a96",
+    "type": "MANIFESTED_IN",
+    "evidence": "Под инновационным грантом понимаются бюджетные средства, предоставляемые субъектам инновационной деятельности на безвозмездной основе для реализации их инновационных проектов",
+    "metadata": {
+      "source_kz": "241-9-бап",
+      "target_kz": "241-7-бап"
+    }
+  },
+  {
+    "source_id": "8843d050-abec-55cf-a7ef-1ebadaf049d8",
+    "target_id": "a6f10cf6-9ea5-5e74-bc4d-dc0fda7bf3df",
+    "type": "EXTENDS",
+    "evidence": "В целях апробирования инновационных проектов, требующих установления особого нормативного правового регулирования, может вводиться экспериментальный режим",
+    "metadata": {
+      "source_kz": "241-10-бап",
+      "target_kz": "241-1-бап"
+    }
+  },
+  {
+    "source_id": "13912eff-c010-5e18-94e3-77e8c700bbeb",
+    "target_id": "b11bce61-91ff-5fd4-9f4c-9de7409e0c63",
+    "type": "MANIFESTED_IN",
+    "evidence": "Уполномоченные органы в области государственной поддержки инновационной деятельности, углеводородов, добычи урана, твердых полезных ископаемых, государственного стимулирования промышленности и науки обеспечивают предоставление информации в области инновационного развития в \"Единое окно\" национальной инновационной системы",
+    "metadata": {
+      "source_kz": "241-11-бап",
+      "target_kz": "241-2-бап"
+    }
+  },
+  {
+    "source_id": "7765515c-7efc-5d9f-a5fd-e5222fed2266",
+    "target_id": "1ce28100-cb0f-55ae-9f73-c04c3fe19e7c",
+    "type": "BASED_ON",
+    "evidence": "Государственное стимулирование промышленности осуществляется в соответствии с настоящим Кодексом и Законом Республики Казахстан \"О промышленной политике\"",
+    "metadata": {
+      "source_kz": "272-1-бап",
+      "target_kz": "272-2-бап"
+    }
+  },
+  {
+    "source_id": "1ce28100-cb0f-55ae-9f73-c04c3fe19e7c",
+    "target_id": "91fcd23d-0cef-544c-8d1a-15407e642860",
+    "type": "MANIFESTED_IN",
+    "evidence": "Государственное стимулирование промышленности осуществляется посредством предоставления мер государственного стимулирования промышленности при реализации промышленной политики в соответствии с Законом Республики Казахстан \"О промышленной политике\"",
+    "metadata": {
+      "source_kz": "272-2-бап",
+      "target_kz": "272-3-бап"
+    }
+  },
+  {
+    "source_id": "be047921-89c3-5e85-ac90-d1e37e39af43",
+    "target_id": "34a830da-d96f-5751-b38d-c298954a8614",
+    "type": "BASED_ON",
+    "evidence": "Регулирование отношений, связанных с инвестициями в Республике Казахстан, и определение правовых и экономических основ стимулирования инвестиций, гарантирование защиты прав инвесторов при осуществлении инвестиций в Республике Казахстан, определение мер государственной поддержки инвестиций, порядка разрешения споров с участием инвесторов осуществляются настоящим Кодексом",
+    "metadata": {
+      "source_kz": "273-бап",
+      "target_kz": "274-бап"
+    }
+  },
+  {
+    "source_id": "34a830da-d96f-5751-b38d-c298954a8614",
+    "target_id": "8df39509-966f-5b40-9b19-57fe8c59a0fe",
+    "type": "BASED_ON",
+    "evidence": "Инвестициями являются все виды имущества (кроме товаров, предназначенных для личного потребления), включая предметы финансового лизинга с момента заключения договора лизинга, а также права на них, вкладываемые инвестором в уставный капитал юридического лица или увеличение долгосрочных активов",
+    "metadata": {
+      "source_kz": "274-бап",
+      "target_kz": "275-бап"
+    }
+  },
+  {
+    "source_id": "8df39509-966f-5b40-9b19-57fe8c59a0fe",
+    "target_id": "9df89fc7-290f-57a6-ab87-b15cac3edf11",
+    "type": "CORRELATED_WITH",
+    "evidence": "Инвесторы имеют право осуществлять инвестиции в любые объекты и виды предпринимательской деятельности, кроме случаев, предусмотренных законами Республики Казахстан",
+    "metadata": {
+      "source_kz": "275-бап",
+      "target_kz": "276-бап"
+    }
+  },
+  {
+    "source_id": "9df89fc7-290f-57a6-ab87-b15cac3edf11",
+    "target_id": "60d1f1ea-0c62-52bb-afdd-53e25737d210",
+    "type": "CORRELATED_WITH",
+    "evidence": "Инвестору предоставляется полная и безусловная защита прав и интересов",
+    "metadata": {
+      "source_kz": "276-бап",
+      "target_kz": "277-бап"
+    }
+  },
+  {
+    "source_id": "07c85ca0-8e36-51d5-9383-c8eebdf1f531",
+    "target_id": "530cc68a-1b8c-5a96-9e38-eda3172a22ce",
+    "type": "REFERENCES",
+    "evidence": "в порядке, предусмотренном статьей 282 настоящего Кодекса",
+    "metadata": {
+      "source_kz": "281-бап",
+      "target_kz": "282-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 282"
+    }
+  },
+  {
+    "source_id": "07c85ca0-8e36-51d5-9383-c8eebdf1f531",
+    "target_id": "6d44cfaf-c1c1-55c5-bd57-fd9f7b5aeaff",
+    "type": "CORRELATED_WITH",
+    "evidence": "сопровождение инвесторов по принципу \"одного окна\"",
+    "metadata": {
+      "source_kz": "281-бап",
+      "target_kz": "282-1-бап"
+    }
+  },
+  {
+    "source_id": "530cc68a-1b8c-5a96-9e38-eda3172a22ce",
+    "target_id": "6d44cfaf-c1c1-55c5-bd57-fd9f7b5aeaff",
+    "type": "CORRELATED_WITH",
+    "evidence": "сопровождение инвесторов по принципу \"одного окна\"",
+    "metadata": {
+      "source_kz": "282-бап",
+      "target_kz": "282-1-бап"
+    }
+  },
+  {
+    "source_id": "6d44cfaf-c1c1-55c5-bd57-fd9f7b5aeaff",
+    "target_id": "1004d5b1-125e-5720-8a49-fd435eabf46e",
+    "type": "CORRELATED_WITH",
+    "evidence": "национальная компания в области привлечения инвестиций и ее региональные представители и представительства",
+    "metadata": {
+      "source_kz": "282-1-бап",
+      "target_kz": "282-2-бап"
+    }
+  },
+  {
+    "source_id": "8aeffee0-aa0e-5590-88f4-2d8be4f5cad4",
+    "target_id": "97d414e5-ff1e-527e-a94e-012c80f46cff",
+    "type": "REFERENCES",
+    "evidence": "соглашения об инвестициях",
+    "metadata": {
+      "source_kz": "283-бап",
+      "target_kz": "283-1-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 283-1"
+    }
+  },
+  {
+    "source_id": "8aeffee0-aa0e-5590-88f4-2d8be4f5cad4",
+    "target_id": "179137d2-b70b-5890-a915-1f02e1d05fa4",
+    "type": "REFERENCES",
+    "evidence": "соглашения об инвестиционных обязательствах",
+    "metadata": {
+      "source_kz": "283-бап",
+      "target_kz": "283-2-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 283-2"
+    }
+  },
+  {
+    "source_id": "8aeffee0-aa0e-5590-88f4-2d8be4f5cad4",
+    "target_id": "79cab864-8adf-5193-9856-d3a47fe2d888",
+    "type": "REFERENCES",
+    "evidence": "упрощенного инвестиционного контракта",
+    "metadata": {
+      "source_kz": "283-бап",
+      "target_kz": "283-3-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 283-3"
+    }
+  },
+  {
+    "source_id": "8aeffee0-aa0e-5590-88f4-2d8be4f5cad4",
+    "target_id": "d2622e47-d0dd-5234-a3aa-12660e05095a",
+    "type": "REFERENCES",
+    "evidence": "преференции по налогам",
+    "metadata": {
+      "source_kz": "283-бап",
+      "target_kz": "283-4-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 283-4"
+    }
+  },
+  {
+    "source_id": "97d414e5-ff1e-527e-a94e-012c80f46cff",
+    "target_id": "d2622e47-d0dd-5234-a3aa-12660e05095a",
+    "type": "REFERENCES",
+    "evidence": "преференций по налогам, предусмотренных статьей 283-4 настоящего Кодекса",
+    "metadata": {
+      "source_kz": "283-1-бап",
+      "target_kz": "283-4-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 283-4"
+    }
+  },
+  {
+    "source_id": "179137d2-b70b-5890-a915-1f02e1d05fa4",
+    "target_id": "d2622e47-d0dd-5234-a3aa-12660e05095a",
+    "type": "CORRELATED_WITH",
+    "evidence": "стабильность налогового законодательства",
+    "metadata": {
+      "source_kz": "283-2-бап",
+      "target_kz": "283-4-бап"
+    }
+  },
+  {
+    "source_id": "79cab864-8adf-5193-9856-d3a47fe2d888",
+    "target_id": "609c8095-5819-5878-9d29-53250b3e1d19",
+    "type": "REFERENCES",
+    "evidence": "освобождение от обложения таможенными пошлинами",
+    "metadata": {
+      "source_kz": "283-3-бап",
+      "target_kz": "283-5-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 283-5"
+    }
+  },
+  {
+    "source_id": "97d414e5-ff1e-527e-a94e-012c80f46cff",
+    "target_id": "748d2875-3d7b-5ed7-87ff-750509cabd74",
+    "type": "CORRELATED_WITH",
+    "evidence": "инвестиционный проект",
+    "metadata": {
+      "source_kz": "283-1-бап",
+      "target_kz": "284-бап"
+    }
+  },
+  {
+    "source_id": "9a54f542-351a-50e4-b5fb-c82337ac8bac",
+    "target_id": "85bca316-85de-588a-8fc2-6c834762a14a",
+    "type": "CORRELATED_WITH",
+    "evidence": "условия предоставления инвестиционных преференций",
+    "metadata": {
+      "source_kz": "285-бап",
+      "target_kz": "286-бап"
+    }
+  },
+  {
+    "source_id": "07fb513d-3fdf-5f5a-a2c3-ac6c8de63e66",
+    "target_id": "609c8095-5819-5878-9d29-53250b3e1d19",
+    "type": "CORRELATED_WITH",
+    "evidence": "освобождение от обложения таможенными пошлинами",
+    "metadata": {
+      "source_kz": "287-бап",
+      "target_kz": "283-5-бап"
+    }
+  },
+  {
+    "source_id": "6bc0901c-81c0-5bc4-b982-0d5b3660b01b",
+    "target_id": "79cab864-8adf-5193-9856-d3a47fe2d888",
+    "type": "CORRELATED_WITH",
+    "evidence": "государственные натурные гранты",
+    "metadata": {
+      "source_kz": "288-бап",
+      "target_kz": "283-3-бап"
+    }
+  },
+  {
+    "source_id": "b6825c30-a81e-59b4-aee0-b575c71c5294",
+    "target_id": "d2622e47-d0dd-5234-a3aa-12660e05095a",
+    "type": "CORRELATED_WITH",
+    "evidence": "преференции по налогам",
+    "metadata": {
+      "source_kz": "290-бап",
+      "target_kz": "283-4-бап"
+    }
+  },
+  {
+    "source_id": "6e1fb435-cc7a-5100-aafc-91a0e21bf1e1",
+    "target_id": "47c7548d-0a21-5520-b587-622e4107caaf",
+    "type": "CORRELATED_WITH",
+    "evidence": "Заявка на предоставление инвестиционных преференций в рамках упрощенных инвестиционных контрактов",
+    "metadata": {
+      "source_kz": "292-бап",
+      "target_kz": "293-бап"
+    }
+  },
+  {
+    "source_id": "47c7548d-0a21-5520-b587-622e4107caaf",
+    "target_id": "0db14682-1a53-5ce9-97e0-ec46ef5a8a94",
+    "type": "CORRELATED_WITH",
+    "evidence": "упрощенный инвестиционный контракт",
+    "metadata": {
+      "source_kz": "293-бап",
+      "target_kz": "294-бап"
+    }
+  },
+  {
+    "source_id": "0db14682-1a53-5ce9-97e0-ec46ef5a8a94",
+    "target_id": "ef72818b-81b4-59c0-ac97-8d0b3671e893",
+    "type": "CORRELATED_WITH",
+    "evidence": "инвестиционный контракт",
+    "metadata": {
+      "source_kz": "294-бап",
+      "target_kz": "295-бап"
+    }
+  },
+  {
+    "source_id": "ef72818b-81b4-59c0-ac97-8d0b3671e893",
+    "target_id": "a3d7dca7-477a-56f1-96ef-b53fb3e1edba",
+    "type": "EXTENDS",
+    "evidence": "Статья 295-1. Заключение и расторжение специального инвестиционного контракта",
+    "metadata": {
+      "source_kz": "295-бап",
+      "target_kz": "295-1-бап"
+    }
+  },
+  {
+    "source_id": "ef72818b-81b4-59c0-ac97-8d0b3671e893",
+    "target_id": "24fbea43-841c-5d4c-b0fc-25a47450b682",
+    "type": "EXTENDS",
+    "evidence": "Статья 295-2. Заключение и прекращение соглашения об инвестиционных обязательствах",
+    "metadata": {
+      "source_kz": "295-бап",
+      "target_kz": "295-2-бап"
+    }
+  },
+  {
+    "source_id": "24fbea43-841c-5d4c-b0fc-25a47450b682",
+    "target_id": "fa0288e7-4dfd-56a8-a7db-3f2695f7ec02",
+    "type": "CORRELATED_WITH",
+    "evidence": "соглашение об инвестиционных обязательствах",
+    "metadata": {
+      "source_kz": "295-2-бап",
+      "target_kz": "295-3-бап"
+    }
+  },
+  {
+    "source_id": "2c49f3c2-ea86-5a51-9108-b039ae43515c",
+    "target_id": "57fa9158-2018-57c3-9ffd-f4cfeb2df227",
+    "type": "CORRELATED_WITH",
+    "evidence": "инвестиционный контракт",
+    "metadata": {
+      "source_kz": "296-бап",
+      "target_kz": "296-1-бап"
+    }
+  },
+  {
+    "source_id": "57fa9158-2018-57c3-9ffd-f4cfeb2df227",
+    "target_id": "f9c73cf7-a275-5265-853f-e245954ab932",
+    "type": "BASED_ON",
+    "evidence": "Контроль за соблюдением условий инвестиционных контрактов осуществляется уполномоченным органом по инвестициям в следующих формах",
+    "metadata": {
+      "source_kz": "296-1-бап",
+      "target_kz": "296-2-бап"
+    }
+  },
+  {
+    "source_id": "f9c73cf7-a275-5265-853f-e245954ab932",
+    "target_id": "16f886b1-a21a-5bf2-b980-ab7a3649b723",
+    "type": "CORRELATED_WITH",
+    "evidence": "инвестиционные преференции",
+    "metadata": {
+      "source_kz": "296-2-бап",
+      "target_kz": "296-3-бап"
+    }
+  },
+  {
+    "source_id": "834baba6-3d9b-5bd0-8d04-0d811cfc9b9a",
+    "target_id": "8f18f879-3899-516c-bbd7-c6bc576d8889",
+    "type": "MANIFESTED_IN",
+    "evidence": "меры защиты внутреннего рынка в виде специальных защитных, антидемпинговых и компенсационных мер",
+    "metadata": {
+      "source_kz": "297-бап",
+      "target_kz": "298-бап"
+    }
+  },
+  {
+    "source_id": "8f18f879-3899-516c-bbd7-c6bc576d8889",
+    "target_id": "3591d878-bfe9-527d-a0d3-2129d98b3975",
+    "type": "BASED_ON",
+    "evidence": "Специальной защитной мерой является... Антидемпинговой мерой является... Компенсационной мерой является...",
+    "metadata": {
+      "source_kz": "298-бап",
+      "target_kz": "299-бап"
+    }
+  },
+  {
+    "source_id": "01baca68-e98f-5c38-9674-3a2c7a688a58",
+    "target_id": "c280e4cd-e195-5cbd-83b9-37a1e6fbd899",
+    "type": "MANIFESTED_IN",
+    "evidence": "судебная защита",
+    "metadata": {
+      "source_kz": "300-бап",
+      "target_kz": "301-бап"
+    }
+  },
+  {
+    "source_id": "01baca68-e98f-5c38-9674-3a2c7a688a58",
+    "target_id": "9ad2329a-26a5-5478-82c0-0337648a7700",
+    "type": "MANIFESTED_IN",
+    "evidence": "досудебное урегулирование",
+    "metadata": {
+      "source_kz": "300-бап",
+      "target_kz": "302-бап"
+    }
+  },
+  {
+    "source_id": "01baca68-e98f-5c38-9674-3a2c7a688a58",
+    "target_id": "50b1eca5-2fd9-5303-9782-7e8f411d9450",
+    "type": "MANIFESTED_IN",
+    "evidence": "внесудебные формы защиты",
+    "metadata": {
+      "source_kz": "300-бап",
+      "target_kz": "303-бап"
+    }
+  },
+  {
+    "source_id": "50b1eca5-2fd9-5303-9782-7e8f411d9450",
+    "target_id": "db782b95-31c5-5b7d-b035-bc8f43cb8714",
+    "type": "MANIFESTED_IN",
+    "evidence": "в арбитраже",
+    "metadata": {
+      "source_kz": "303-бап",
+      "target_kz": "304-бап"
+    }
+  },
+  {
+    "source_id": "50b1eca5-2fd9-5303-9782-7e8f411d9450",
+    "target_id": "055560c4-1db1-5d41-9843-21c67da7eb84",
+    "type": "MANIFESTED_IN",
+    "evidence": "посредством применения медиации",
+    "metadata": {
+      "source_kz": "303-бап",
+      "target_kz": "305-бап"
+    }
+  },
+  {
+    "source_id": "50b1eca5-2fd9-5303-9782-7e8f411d9450",
+    "target_id": "e1decbca-a86b-57de-ade5-d989c9583b85",
+    "type": "MANIFESTED_IN",
+    "evidence": "в порядке партисипативной процедуры",
+    "metadata": {
+      "source_kz": "303-бап",
+      "target_kz": "306-бап"
+    }
+  },
+  {
+    "source_id": "01baca68-e98f-5c38-9674-3a2c7a688a58",
+    "target_id": "716d01f3-31a0-5e02-a751-e92d8e34b5a6",
+    "type": "MANIFESTED_IN",
+    "evidence": "Уполномоченный по защите прав предпринимателей Казахстана",
+    "metadata": {
+      "source_kz": "300-бап",
+      "target_kz": "307-бап"
+    }
+  },
+  {
+    "source_id": "716d01f3-31a0-5e02-a751-e92d8e34b5a6",
+    "target_id": "567c7e49-da13-5d47-a68e-73351338cc3a",
+    "type": "BASED_ON",
+    "evidence": "Деятельность Уполномоченного по защите прав предпринимателей Казахстана основывается на",
+    "metadata": {
+      "source_kz": "307-бап",
+      "target_kz": "308-бап"
+    }
+  },
+  {
+    "source_id": "716d01f3-31a0-5e02-a751-e92d8e34b5a6",
+    "target_id": "605ca4bb-e4a3-51eb-9563-838868ca4f41",
+    "type": "MANIFESTED_IN",
+    "evidence": "Функции Уполномоченного по защите прав предпринимателей Казахстана",
+    "metadata": {
+      "source_kz": "307-бап",
+      "target_kz": "309-бап"
+    }
+  },
+  {
+    "source_id": "716d01f3-31a0-5e02-a751-e92d8e34b5a6",
+    "target_id": "23f99919-20d2-59fb-bff1-54bb9b5a3ab2",
+    "type": "MANIFESTED_IN",
+    "evidence": "Обязанности Уполномоченного по защите прав предпринимателей Казахстана",
+    "metadata": {
+      "source_kz": "307-бап",
+      "target_kz": "310-бап"
+    }
+  },
+  {
+    "source_id": "716d01f3-31a0-5e02-a751-e92d8e34b5a6",
+    "target_id": "d8711fc9-d61a-57ff-aefd-ccea6010fdae",
+    "type": "MANIFESTED_IN",
+    "evidence": "Порядок рассмотрения обращений Уполномоченным по защите прав предпринимателей Казахстана",
+    "metadata": {
+      "source_kz": "307-бап",
+      "target_kz": "311-бап"
+    }
+  },
+  {
+    "source_id": "716d01f3-31a0-5e02-a751-e92d8e34b5a6",
+    "target_id": "64296982-8d85-5998-8474-c2e6015f5e06",
+    "type": "MANIFESTED_IN",
+    "evidence": "Назначение на должность и освобождение от должности Уполномоченного по защите прав предпринимателей Казахстана",
+    "metadata": {
+      "source_kz": "307-бап",
+      "target_kz": "312-бап"
+    }
+  },
+  {
+    "source_id": "716d01f3-31a0-5e02-a751-e92d8e34b5a6",
+    "target_id": "5b528a0c-676b-5f85-ad58-397e0d93c732",
+    "type": "MANIFESTED_IN",
+    "evidence": "Организация деятельности Уполномоченного по защите прав предпринимателей Казахстана",
+    "metadata": {
+      "source_kz": "307-бап",
+      "target_kz": "313-бап"
+    }
+  },
+  {
+    "source_id": "2c49f3c2-ea86-5a51-9108-b039ae43515c",
+    "target_id": "32a1fba4-d4b6-5043-a85a-7b78f8bdba44",
+    "type": "CORRELATED_WITH",
+    "evidence": "инвестиционный омбудсмен",
+    "metadata": {
+      "source_kz": "296-бап",
+      "target_kz": "314-бап"
+    }
+  },
+  {
+    "source_id": "32a1fba4-d4b6-5043-a85a-7b78f8bdba44",
+    "target_id": "f4f8ebf2-46e8-54ad-9bb9-230a2bff9e4e",
+    "type": "MANIFESTED_IN",
+    "evidence": "Функции инвестиционного омбудсмена",
+    "metadata": {
+      "source_kz": "314-бап",
+      "target_kz": "315-бап"
+    }
+  },
+  {
+    "source_id": "32a1fba4-d4b6-5043-a85a-7b78f8bdba44",
+    "target_id": "f729090a-ab5a-56ac-9229-78d81b7f128d",
+    "type": "MANIFESTED_IN",
+    "evidence": "Права и обязанности инвестиционного омбудсмена",
+    "metadata": {
+      "source_kz": "314-бап",
+      "target_kz": "316-бап"
+    }
+  },
+  {
+    "source_id": "32a1fba4-d4b6-5043-a85a-7b78f8bdba44",
+    "target_id": "f5ea322d-8884-5527-bc2f-d7865ed4e6ed",
+    "type": "MANIFESTED_IN",
+    "evidence": "Организация деятельности инвестиционного омбудсмена",
+    "metadata": {
+      "source_kz": "314-бап",
+      "target_kz": "317-бап"
+    }
+  },
+  {
+    "source_id": "01baca68-e98f-5c38-9674-3a2c7a688a58",
+    "target_id": "a1f46b30-d7c0-5cf4-8e0c-e888a144b6c1",
+    "type": "MANIFESTED_IN",
+    "evidence": "Обжалование",
+    "metadata": {
+      "source_kz": "300-бап",
+      "target_kz": "318-бап"
+    }
+  },
+  {
+    "source_id": "a1f46b30-d7c0-5cf4-8e0c-e888a144b6c1",
+    "target_id": "5c92ec0f-25f4-5921-9cdf-62140380f129",
+    "type": "EXTENDS",
+    "evidence": "Право на обжалование",
+    "metadata": {
+      "source_kz": "318-бап",
+      "target_kz": "319-бап"
+    }
+  },
+  {
+    "source_id": "0a13cf82-0613-561c-bffd-59b33008cd78",
+    "target_id": "74a9b837-6af3-50a5-9125-1dc931ab2de0",
+    "type": "CORRELATED_WITH",
+    "evidence": "Государственные органы и их должностные лица несут установленную законами Республики Казахстан ответственность",
+    "metadata": {
+      "source_kz": "320-бап",
+      "target_kz": "321-бап"
+    }
+  },
+  {
+    "source_id": "0a13cf82-0613-561c-bffd-59b33008cd78",
+    "target_id": "513a5059-802e-5770-8e93-fb44a03c8410",
+    "type": "CORRELATED_WITH",
+    "evidence": "Воспрепятствование законной предпринимательской деятельности влечет ответственность",
+    "metadata": {
+      "source_kz": "320-бап",
+      "target_kz": "322-бап"
+    }
+  },
+  {
+    "source_id": "74a9b837-6af3-50a5-9125-1dc931ab2de0",
+    "target_id": "513a5059-802e-5770-8e93-fb44a03c8410",
+    "type": "CORRELATED_WITH",
+    "evidence": "Государственные органы и их должностные лица в случае неисполнения или ненадлежащего исполнения своих служебных обязанностей",
+    "metadata": {
+      "source_kz": "321-бап",
+      "target_kz": "322-бап"
+    }
+  },
+  {
+    "source_id": "238bbae1-64eb-59f7-832b-3158d868929a",
+    "target_id": "ec7ff3d9-c798-58e3-888c-d9b41d54e7bd",
+    "type": "BASED_ON",
+    "evidence": "Нормы пунктов 3, 4 и 5 статьи 295, пункта 1 статьи 296-2 настоящего Кодекса",
+    "metadata": {
+      "source_kz": "323-бап",
+      "target_kz": "324-бап"
+    }
+  },
+  {
+    "source_id": "ec7ff3d9-c798-58e3-888c-d9b41d54e7bd",
+    "target_id": "238bbae1-64eb-59f7-832b-3158d868929a",
+    "type": "REFERENCES",
+    "evidence": "подпункта 2) части второй пункта 2 статьи 36 и подпункта 5) пункта 2 статьи 38 настоящего Кодекса",
+    "metadata": {
+      "source_kz": "324-бап",
+      "target_kz": "323-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 36, 38"
+    }
+  }
+]

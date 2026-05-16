@@ -1,0 +1,842 @@
+[
+  {
+    "source_id": "a9cdb79b-165e-565b-9962-46cc34aeb497",
+    "target_id": "e9bef268-dd82-58f3-8a73-af623b11ecdd",
+    "type": "BASED_ON",
+    "evidence": "Цифровое законодательство Республики Казахстан основывается на Конституции Республики Казахстан и состоит из настоящего Кодекса",
+    "metadata": {
+      "source_kz": "2-бап",
+      "target_kz": "1-бап"
+    }
+  },
+  {
+    "source_id": "3546de60-7beb-5f59-a915-94c9027bf62e",
+    "target_id": "a9cdb79b-165e-565b-9962-46cc34aeb497",
+    "type": "CORRELATED_WITH",
+    "evidence": "Целью цифрового законодательства Республики Казахстан является обеспечение устойчивого развития и функционирования цифровой среды",
+    "metadata": {
+      "source_kz": "3-бап",
+      "target_kz": "2-бап"
+    }
+  },
+  {
+    "source_id": "4024c06c-05b8-5929-a255-caf9309e2817",
+    "target_id": "3546de60-7beb-5f59-a915-94c9027bf62e",
+    "type": "MANIFESTED_IN",
+    "evidence": "Правовое регулирование общественных отношений в цифровой среде основывается на следующих основных принципах",
+    "metadata": {
+      "source_kz": "4-бап",
+      "target_kz": "3-бап"
+    }
+  },
+  {
+    "source_id": "d74dae92-c599-5da2-9407-0fd1902dd818",
+    "target_id": "4024c06c-05b8-5929-a255-caf9309e2817",
+    "type": "MANIFESTED_IN",
+    "evidence": "Права, свободы и законные интересы человека в цифровой среде признаются высшей ценностью",
+    "metadata": {
+      "source_kz": "5-бап",
+      "target_kz": "4-бап"
+    }
+  },
+  {
+    "source_id": "e4b7ded0-b036-5c12-a741-1e48e44595a1",
+    "target_id": "4024c06c-05b8-5929-a255-caf9309e2817",
+    "type": "MANIFESTED_IN",
+    "evidence": "Безопасность человека, общества и государства при применении цифровых технологий является неотъемлемым элементом устойчивого функционирования цифровой среды",
+    "metadata": {
+      "source_kz": "6-бап",
+      "target_kz": "4-бап"
+    }
+  },
+  {
+    "source_id": "20d63d19-1ada-5b70-9a50-0b8bb0cc1309",
+    "target_id": "4024c06c-05b8-5929-a255-caf9309e2817",
+    "type": "MANIFESTED_IN",
+    "evidence": "В Республике Казахстан обеспечивается свобода поиска, формирования, передачи, хранения и использования цифровых данных",
+    "metadata": {
+      "source_kz": "7-бап",
+      "target_kz": "4-бап"
+    }
+  },
+  {
+    "source_id": "569225dc-20e0-5f0f-a371-1064ef369a07",
+    "target_id": "4024c06c-05b8-5929-a255-caf9309e2817",
+    "type": "MANIFESTED_IN",
+    "evidence": "Создание, развитие и применение цифровых технологий осуществляются свободно",
+    "metadata": {
+      "source_kz": "8-бап",
+      "target_kz": "4-бап"
+    }
+  },
+  {
+    "source_id": "102b3246-2f19-53dd-962f-d402d49613ac",
+    "target_id": "4024c06c-05b8-5929-a255-caf9309e2817",
+    "type": "MANIFESTED_IN",
+    "evidence": "Регулирование общественных отношений в цифровой среде осуществляется с соблюдением баланса между частными и публичными интересами",
+    "metadata": {
+      "source_kz": "9-бап",
+      "target_kz": "4-бап"
+    }
+  },
+  {
+    "source_id": "2d97bcf7-8b7c-5c0a-8a20-35ee874bd5a1",
+    "target_id": "4024c06c-05b8-5929-a255-caf9309e2817",
+    "type": "MANIFESTED_IN",
+    "evidence": "Государство обеспечивает равный доступ граждан к цифровым технологиям, продуктам, услугам и возможностям в цифровой среде",
+    "metadata": {
+      "source_kz": "10-бап",
+      "target_kz": "4-бап"
+    }
+  },
+  {
+    "source_id": "12e05abe-0d08-5046-a806-968fbb3d5603",
+    "target_id": "4024c06c-05b8-5929-a255-caf9309e2817",
+    "type": "MANIFESTED_IN",
+    "evidence": "Государство участвует в цифровой среде в пределах, установленных настоящим Кодексом и законами Республики Казахстан",
+    "metadata": {
+      "source_kz": "11-бап",
+      "target_kz": "4-бап"
+    }
+  },
+  {
+    "source_id": "86c9adce-54b6-5d43-abd5-43f6bad97f05",
+    "target_id": "4024c06c-05b8-5929-a255-caf9309e2817",
+    "type": "MANIFESTED_IN",
+    "evidence": "Принцип технологической нейтральности правового регулирования предполагает равное отношение к различным цифровым технологиям",
+    "metadata": {
+      "source_kz": "12-бап",
+      "target_kz": "4-бап"
+    }
+  },
+  {
+    "source_id": "a4c8d70f-4bf8-58d8-a7ad-e4d67d7300f6",
+    "target_id": "4024c06c-05b8-5929-a255-caf9309e2817",
+    "type": "MANIFESTED_IN",
+    "evidence": "Создание, развитие и применение цифровых технологий осуществляются с соблюдением принципов уважения прав и достоинства человека",
+    "metadata": {
+      "source_kz": "13-бап",
+      "target_kz": "4-бап"
+    }
+  },
+  {
+    "source_id": "6775becd-e437-5bc8-a7ce-ff2172930bdd",
+    "target_id": "0d1201f1-6c52-5223-8491-429fe1bfaf42",
+    "type": "EXTENDS",
+    "evidence": "Уполномоченный орган в сфере цифровизации (далее -- уполномоченный орган) -- центральный исполнительный орган, осуществляющий руководство и межотраслевую координацию в сфере цифровизации",
+    "metadata": {
+      "source_kz": "14-бап",
+      "target_kz": "15-бап"
+    }
+  },
+  {
+    "source_id": "711e2985-6095-5f29-8b80-b616d95de2b1",
+    "target_id": "20d63d19-1ada-5b70-9a50-0b8bb0cc1309",
+    "type": "CORRELATED_WITH",
+    "evidence": "Цифровыми данными является информация, предоставленная в цифровой форме",
+    "metadata": {
+      "source_kz": "16-бап",
+      "target_kz": "7-бап"
+    }
+  },
+  {
+    "source_id": "cb33154a-cc33-5f55-a509-387f8a1a119c",
+    "target_id": "711e2985-6095-5f29-8b80-b616d95de2b1",
+    "type": "EXTENDS",
+    "evidence": "Открытыми данными являются цифровые данные, представленные в машиночитаемой форме",
+    "metadata": {
+      "source_kz": "17-бап",
+      "target_kz": "16-бап"
+    }
+  },
+  {
+    "source_id": "9ee9c4af-16ad-585e-a7a4-e4ff8af114ee",
+    "target_id": "711e2985-6095-5f29-8b80-b616d95de2b1",
+    "type": "EXTENDS",
+    "evidence": "Административными цифровыми данными признаются цифровые данные, формируемые государственными органами",
+    "metadata": {
+      "source_kz": "18-бап",
+      "target_kz": "16-бап"
+    }
+  },
+  {
+    "source_id": "01032fdb-4d8f-5444-a1f6-4a3b267cb91f",
+    "target_id": "9ee9c4af-16ad-585e-a7a4-e4ff8af114ee",
+    "type": "CORRELATED_WITH",
+    "evidence": "Национальный регистр -- цифровой ресурс, содержащий эталонные цифровые данные",
+    "metadata": {
+      "source_kz": "19-бап",
+      "target_kz": "18-бап"
+    }
+  },
+  {
+    "source_id": "4f396b71-e89b-52d4-b221-dd6709f4e2d5",
+    "target_id": "711e2985-6095-5f29-8b80-b616d95de2b1",
+    "type": "CORRELATED_WITH",
+    "evidence": "Цифровой объект -- обособленный элемент цифровой среды",
+    "metadata": {
+      "source_kz": "20-бап",
+      "target_kz": "16-бап"
+    }
+  },
+  {
+    "source_id": "2f5336f2-919b-5291-a518-7012a9c686dd",
+    "target_id": "4f396b71-e89b-52d4-b221-dd6709f4e2d5",
+    "type": "EXTENDS",
+    "evidence": "Цифровой записью признается обособленный цифровой объект",
+    "metadata": {
+      "source_kz": "21-бап",
+      "target_kz": "20-бап"
+    }
+  },
+  {
+    "source_id": "acdd306e-bc4a-57c4-b70f-ea7157ee2162",
+    "target_id": "4f396b71-e89b-52d4-b221-dd6709f4e2d5",
+    "type": "EXTENDS",
+    "evidence": "Цифровыми активами признаются цифровые объекты",
+    "metadata": {
+      "source_kz": "22-бап",
+      "target_kz": "20-бап"
+    }
+  },
+  {
+    "source_id": "29193cf8-09ec-572c-9647-001c4e35602a",
+    "target_id": "4f396b71-e89b-52d4-b221-dd6709f4e2d5",
+    "type": "EXTENDS",
+    "evidence": "Программное обеспечение -- цифровой объект",
+    "metadata": {
+      "source_kz": "23-бап",
+      "target_kz": "20-бап"
+    }
+  },
+  {
+    "source_id": "d52fab41-6a4a-5bd0-9b9f-dac951c1eca5",
+    "target_id": "4f396b71-e89b-52d4-b221-dd6709f4e2d5",
+    "type": "EXTENDS",
+    "evidence": "Цифровой ресурс -- совокупность упорядоченных цифровых данных, цифровых записей и программного обеспечения",
+    "metadata": {
+      "source_kz": "24-бап",
+      "target_kz": "20-бап"
+    }
+  },
+  {
+    "source_id": "6b701f08-a001-55d4-9039-272b331ce624",
+    "target_id": "4f396b71-e89b-52d4-b221-dd6709f4e2d5",
+    "type": "EXTENDS",
+    "evidence": "Объектом цифровой инфраструктуры признается совокупность материальных, технических и технологических средств",
+    "metadata": {
+      "source_kz": "25-бап",
+      "target_kz": "20-бап"
+    }
+  },
+  {
+    "source_id": "5c3d2ee1-77cd-5092-8684-596e0655fa0c",
+    "target_id": "4f396b71-e89b-52d4-b221-dd6709f4e2d5",
+    "type": "EXTENDS",
+    "evidence": "Распределенным цифровым объектом признается цифровой объект",
+    "metadata": {
+      "source_kz": "26-бап",
+      "target_kz": "20-бап"
+    }
+  },
+  {
+    "source_id": "4bc7b20c-8a75-597f-a3a0-3dd01f040bc3",
+    "target_id": "6b701f08-a001-55d4-9039-272b331ce624",
+    "type": "EXTENDS",
+    "evidence": "Центром обработки данных признается объект цифровой инфраструктуры",
+    "metadata": {
+      "source_kz": "27-бап",
+      "target_kz": "25-бап"
+    }
+  },
+  {
+    "source_id": "48605f1b-38c1-5b25-b220-943f19a37e2e",
+    "target_id": "4f396b71-e89b-52d4-b221-dd6709f4e2d5",
+    "type": "EXTENDS",
+    "evidence": "Цифровой системой является функционально связанный комплекс цифровых ресурсов",
+    "metadata": {
+      "source_kz": "28-бап",
+      "target_kz": "20-бап"
+    }
+  },
+  {
+    "source_id": "07802254-a4f0-5d90-bc2b-f7c6cbb67c71",
+    "target_id": "4f396b71-e89b-52d4-b221-dd6709f4e2d5",
+    "type": "EXTENDS",
+    "evidence": "Цифровая платформа -- цифровой объект",
+    "metadata": {
+      "source_kz": "29-бап",
+      "target_kz": "20-бап"
+    }
+  },
+  {
+    "source_id": "a686c8b1-5b2b-52cb-886d-59ae88048751",
+    "target_id": "4f396b71-e89b-52d4-b221-dd6709f4e2d5",
+    "type": "EXTENDS",
+    "evidence": "Продукт цифровых данных -- агрегированный, формализованный результат обработки цифровых данных",
+    "metadata": {
+      "source_kz": "30-бап",
+      "target_kz": "20-бап"
+    }
+  },
+  {
+    "source_id": "55e924f7-18e3-50c7-9a39-0c72cc198e26",
+    "target_id": "07802254-a4f0-5d90-bc2b-f7c6cbb67c71",
+    "type": "EXTENDS",
+    "evidence": "Платформа обмена и оборота продуктов цифровых данных -- цифровая платформа",
+    "metadata": {
+      "source_kz": "31-бап",
+      "target_kz": "29-бап"
+    }
+  },
+  {
+    "source_id": "fb981056-ffc5-5482-affc-1df28f65aeb2",
+    "target_id": "4f396b71-e89b-52d4-b221-dd6709f4e2d5",
+    "type": "EXTENDS",
+    "evidence": "Доверенными цифровыми объектами признаются цифровые объекты",
+    "metadata": {
+      "source_kz": "32-бап",
+      "target_kz": "20-бап"
+    }
+  },
+  {
+    "source_id": "1d6d6c32-3d49-5a42-b7b4-bbea4366119e",
+    "target_id": "fff74292-7687-5ecd-9f3f-38176eb8656c",
+    "type": "CORRELATED_WITH",
+    "evidence": "Критически важные цифровые объекты",
+    "metadata": {
+      "source_kz": "33-бап",
+      "target_kz": "34-бап"
+    }
+  },
+  {
+    "source_id": "78a7e5f7-6ab9-5d92-b17b-0b38b1df0648",
+    "target_id": "f58d3cb4-d726-5c7f-9464-42ddc4569d26",
+    "type": "MANIFESTED_IN",
+    "evidence": "субъекты цифровых данных",
+    "metadata": {
+      "source_kz": "36-бап",
+      "target_kz": "37-бап"
+    }
+  },
+  {
+    "source_id": "78a7e5f7-6ab9-5d92-b17b-0b38b1df0648",
+    "target_id": "cb517bbe-a8f6-5504-9abd-084800fbb16f",
+    "type": "MANIFESTED_IN",
+    "evidence": "собственники и (или) владельцы цифровых объектов",
+    "metadata": {
+      "source_kz": "36-бап",
+      "target_kz": "38-бап"
+    }
+  },
+  {
+    "source_id": "78a7e5f7-6ab9-5d92-b17b-0b38b1df0648",
+    "target_id": "49e5bf97-6d3c-541a-8f8a-01cc2c7674db",
+    "type": "MANIFESTED_IN",
+    "evidence": "пользователи цифровых объектов",
+    "metadata": {
+      "source_kz": "36-бап",
+      "target_kz": "39-бап"
+    }
+  },
+  {
+    "source_id": "f58d3cb4-d726-5c7f-9464-42ddc4569d26",
+    "target_id": "dc17b42e-fdb3-51fe-8b4d-1a7b86801553",
+    "type": "EXTENDS",
+    "evidence": "субъект цифровых данных обладает правом на защиту своих личных неимущественных прав",
+    "metadata": {
+      "source_kz": "37-бап",
+      "target_kz": "41-бап"
+    }
+  },
+  {
+    "source_id": "a18017d7-d45b-5c80-a3df-bb2e2203be83",
+    "target_id": "67296d9b-3c46-5989-bf2c-d935401af062",
+    "type": "BASED_ON",
+    "evidence": "цифровая аутентификация",
+    "metadata": {
+      "source_kz": "46-бап",
+      "target_kz": "47-бап"
+    }
+  },
+  {
+    "source_id": "a18017d7-d45b-5c80-a3df-bb2e2203be83",
+    "target_id": "24434715-545c-5b50-95ac-efc4973c62b1",
+    "type": "MANIFESTED_IN",
+    "evidence": "биометрическая аутентификация",
+    "metadata": {
+      "source_kz": "46-бап",
+      "target_kz": "48-бап"
+    }
+  },
+  {
+    "source_id": "14a16621-4a5c-535a-a4e7-6f54fc137d28",
+    "target_id": "a341840e-54e2-5ce2-9a74-340c3177209b",
+    "type": "BASED_ON",
+    "evidence": "средства электронной цифровой подписи",
+    "metadata": {
+      "source_kz": "49-бап",
+      "target_kz": "50-бап"
+    }
+  },
+  {
+    "source_id": "14a16621-4a5c-535a-a4e7-6f54fc137d28",
+    "target_id": "7b072c6a-cc00-5607-b72e-24b87b2c1ada",
+    "type": "BASED_ON",
+    "evidence": "ключи электронной цифровой подписи",
+    "metadata": {
+      "source_kz": "49-бап",
+      "target_kz": "51-бап"
+    }
+  },
+  {
+    "source_id": "825d26de-b4dd-5b4e-8119-d86eda1ea281",
+    "target_id": "c074a454-3ac5-586c-ad58-75255c3d657f",
+    "type": "CORRELATED_WITH",
+    "evidence": "удостоверяющий центр",
+    "metadata": {
+      "source_kz": "52-бап",
+      "target_kz": "53-бап"
+    }
+  },
+  {
+    "source_id": "825d26de-b4dd-5b4e-8119-d86eda1ea281",
+    "target_id": "a9a7ee57-b4ea-564b-b5ee-3da988a6a52d",
+    "type": "BASED_ON",
+    "evidence": "аккредитация удостоверяющего центра",
+    "metadata": {
+      "source_kz": "52-бап",
+      "target_kz": "54-бап"
+    }
+  },
+  {
+    "source_id": "825d26de-b4dd-5b4e-8119-d86eda1ea281",
+    "target_id": "31374cfa-1a3e-502d-978b-21e7acf4efca",
+    "type": "MANIFESTED_IN",
+    "evidence": "функции удостоверяющего центра",
+    "metadata": {
+      "source_kz": "52-бап",
+      "target_kz": "55-бап"
+    }
+  },
+  {
+    "source_id": "825d26de-b4dd-5b4e-8119-d86eda1ea281",
+    "target_id": "8e39ca90-6e5a-536f-8102-6fabeb421a50",
+    "type": "CAUSED_BY",
+    "evidence": "прекращение деятельности удостоверяющего центра",
+    "metadata": {
+      "source_kz": "52-бап",
+      "target_kz": "56-бап"
+    }
+  },
+  {
+    "source_id": "b8ee303f-7d7d-5623-b179-0ca2bb8659f5",
+    "target_id": "e217d7ee-5a2f-5dff-830f-66576bface36",
+    "type": "EXTENDS",
+    "evidence": "отзыв сертификата открытого ключа электронной цифровой подписи",
+    "metadata": {
+      "source_kz": "58-бап",
+      "target_kz": "59-бап"
+    }
+  },
+  {
+    "source_id": "b8ee303f-7d7d-5623-b179-0ca2bb8659f5",
+    "target_id": "6ea9dd62-7b6a-54fe-85e4-de2dc335a139",
+    "type": "EXTENDS",
+    "evidence": "отказ в выдаче сертификата открытого ключа электронной цифровой подписи",
+    "metadata": {
+      "source_kz": "58-бап",
+      "target_kz": "60-бап"
+    }
+  },
+  {
+    "source_id": "39f3b54f-fa29-586e-8254-471fcb1c5c11",
+    "target_id": "d210d365-e091-5fdd-bb32-919529e816ad",
+    "type": "CORRELATED_WITH",
+    "evidence": "электронная цифровая подпись",
+    "metadata": {
+      "source_kz": "61-бап",
+      "target_kz": "62-бап"
+    }
+  },
+  {
+    "source_id": "d210d365-e091-5fdd-bb32-919529e816ad",
+    "target_id": "fe723626-cdc6-521b-a22c-69b1aa4ad19e",
+    "type": "CORRELATED_WITH",
+    "evidence": "электронный документ",
+    "metadata": {
+      "source_kz": "62-бап",
+      "target_kz": "63-бап"
+    }
+  },
+  {
+    "source_id": "fe723626-cdc6-521b-a22c-69b1aa4ad19e",
+    "target_id": "4fada11f-f6fb-5de4-94c2-4963b42035ee",
+    "type": "CORRELATED_WITH",
+    "evidence": "цифровой документ",
+    "metadata": {
+      "source_kz": "63-бап",
+      "target_kz": "64-бап"
+    }
+  },
+  {
+    "source_id": "4fada11f-f6fb-5de4-94c2-4963b42035ee",
+    "target_id": "fe723626-cdc6-521b-a22c-69b1aa4ad19e",
+    "type": "REFERENCES",
+    "evidence": "сервис цифровых документов",
+    "metadata": {
+      "source_kz": "64-бап",
+      "target_kz": "63-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 63"
+    }
+  },
+  {
+    "source_id": "ab3f9c82-7b43-5dc8-8f69-31045eb62ad4",
+    "target_id": "d210d365-e091-5fdd-bb32-919529e816ad",
+    "type": "REFERENCES",
+    "evidence": "электронные документы",
+    "metadata": {
+      "source_kz": "65-бап",
+      "target_kz": "62-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 62"
+    }
+  },
+  {
+    "source_id": "0b549147-0f2f-555c-bd0f-e00a15fdd8e4",
+    "target_id": "8a323cff-acea-5f3b-ab67-523d192d61ff",
+    "type": "BASED_ON",
+    "evidence": "цифровая архитектура государства",
+    "metadata": {
+      "source_kz": "68-бап",
+      "target_kz": "69-бап"
+    }
+  },
+  {
+    "source_id": "8a323cff-acea-5f3b-ab67-523d192d61ff",
+    "target_id": "0b549147-0f2f-555c-bd0f-e00a15fdd8e4",
+    "type": "REFERENCES",
+    "evidence": "правилами формирования, развития и мониторинга цифровой архитектуры государства",
+    "metadata": {
+      "source_kz": "69-бап",
+      "target_kz": "68-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 68"
+    }
+  },
+  {
+    "source_id": "2403052f-8552-5f1a-a8de-c90f030ea35c",
+    "target_id": "0b549147-0f2f-555c-bd0f-e00a15fdd8e4",
+    "type": "BASED_ON",
+    "evidence": "цифровой архитектурой государства",
+    "metadata": {
+      "source_kz": "70-бап",
+      "target_kz": "68-бап"
+    }
+  },
+  {
+    "source_id": "60eac2b2-15f6-565d-9d19-221005da4052",
+    "target_id": "0b549147-0f2f-555c-bd0f-e00a15fdd8e4",
+    "type": "REFERENCES",
+    "evidence": "правилами формирования, развития и мониторинга цифровой архитектуры государства",
+    "metadata": {
+      "source_kz": "71-бап",
+      "target_kz": "68-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 68"
+    }
+  },
+  {
+    "source_id": "1ec53bc6-c661-5cbf-b2c6-6c5e4932c874",
+    "target_id": "0b549147-0f2f-555c-bd0f-e00a15fdd8e4",
+    "type": "MANIFESTED_IN",
+    "evidence": "формирование, развитие и мониторинг реализации цифровой архитектуры государства",
+    "metadata": {
+      "source_kz": "72-бап",
+      "target_kz": "68-бап"
+    }
+  },
+  {
+    "source_id": "7d38d199-245a-56cb-bd6c-e1cd82caa1e1",
+    "target_id": "8a323cff-acea-5f3b-ab67-523d192d61ff",
+    "type": "BASED_ON",
+    "evidence": "цифровые объекты \"цифрового правительства\"",
+    "metadata": {
+      "source_kz": "73-бап",
+      "target_kz": "69-бап"
+    }
+  },
+  {
+    "source_id": "2e7ca9af-4cfa-5558-92a7-d61985631cdd",
+    "target_id": "8d5566a9-669a-5a31-b9b9-d1fa5a3f42e9",
+    "type": "MANIFESTED_IN",
+    "evidence": "платформа \"цифрового правительства\"",
+    "metadata": {
+      "source_kz": "74-бап",
+      "target_kz": "82-бап"
+    }
+  },
+  {
+    "source_id": "2aa72ab0-e6fb-50f7-b12b-1ac8e7a4d5fe",
+    "target_id": "8a323cff-acea-5f3b-ab67-523d192d61ff",
+    "type": "MANIFESTED_IN",
+    "evidence": "веб-портал \"цифрового правительства\"",
+    "metadata": {
+      "source_kz": "75-бап",
+      "target_kz": "69-бап"
+    }
+  },
+  {
+    "source_id": "f6392c79-747e-51a5-a59f-340d064bffad",
+    "target_id": "8d5566a9-669a-5a31-b9b9-d1fa5a3f42e9",
+    "type": "CORRELATED_WITH",
+    "evidence": "инфраструктура \"цифрового правительства\"",
+    "metadata": {
+      "source_kz": "81-бап",
+      "target_kz": "82-бап"
+    }
+  },
+  {
+    "source_id": "1206d899-e479-55a3-a9cf-82cdc9ce2e39",
+    "target_id": "8d5566a9-669a-5a31-b9b9-d1fa5a3f42e9",
+    "type": "CORRELATED_WITH",
+    "evidence": "цифровые объекты \"цифрового правительства\"",
+    "metadata": {
+      "source_kz": "83-бап",
+      "target_kz": "82-бап"
+    }
+  },
+  {
+    "source_id": "52dd581f-ecc9-54a9-9796-e758093bbfa8",
+    "target_id": "7879b378-1a36-543c-9595-abf2d4ad7120",
+    "type": "EXTENDS",
+    "evidence": "жизненный цикл цифрового объекта \"цифрового правительства\"",
+    "metadata": {
+      "source_kz": "84-бап",
+      "target_kz": "85-бап"
+    }
+  },
+  {
+    "source_id": "7879b378-1a36-543c-9595-abf2d4ad7120",
+    "target_id": "52dd581f-ecc9-54a9-9796-e758093bbfa8",
+    "type": "BASED_ON",
+    "evidence": "жизненный цикл цифрового объекта",
+    "metadata": {
+      "source_kz": "85-бап",
+      "target_kz": "84-бап"
+    }
+  },
+  {
+    "source_id": "2f744eaa-c4ab-5b19-8aa6-ab88b5833b1e",
+    "target_id": "52dd581f-ecc9-54a9-9796-e758093bbfa8",
+    "type": "MANIFESTED_IN",
+    "evidence": "опытная эксплуатация и испытания",
+    "metadata": {
+      "source_kz": "86-бап",
+      "target_kz": "84-бап"
+    }
+  },
+  {
+    "source_id": "dbb7d1da-b1f1-5094-b0b4-e909e2a5bd15",
+    "target_id": "52dd581f-ecc9-54a9-9796-e758093bbfa8",
+    "type": "MANIFESTED_IN",
+    "evidence": "ввод в промышленную эксплуатацию",
+    "metadata": {
+      "source_kz": "87-бап",
+      "target_kz": "84-бап"
+    }
+  },
+  {
+    "source_id": "fa04be20-a345-54ec-89f0-da876c94c4e7",
+    "target_id": "c3bd9938-a2bb-51bc-b547-a4d2266c0894",
+    "type": "CORRELATED_WITH",
+    "evidence": "Модификация цифрового объекта \"цифрового правительства\"",
+    "metadata": {
+      "source_kz": "88-бап",
+      "target_kz": "89-бап"
+    }
+  },
+  {
+    "source_id": "c3bd9938-a2bb-51bc-b547-a4d2266c0894",
+    "target_id": "169f813d-c210-5569-89d2-70463021b6ca",
+    "type": "CORRELATED_WITH",
+    "evidence": "прекращение промышленной эксплуатации цифрового объекта \"цифрового правительства\"",
+    "metadata": {
+      "source_kz": "89-бап",
+      "target_kz": "90-бап"
+    }
+  },
+  {
+    "source_id": "169f813d-c210-5569-89d2-70463021b6ca",
+    "target_id": "a0f66aa2-b259-5f0e-8670-cdda365b436c",
+    "type": "CORRELATED_WITH",
+    "evidence": "цифрового объекта \"цифрового правительства\"",
+    "metadata": {
+      "source_kz": "90-бап",
+      "target_kz": "91-бап"
+    }
+  },
+  {
+    "source_id": "a0f66aa2-b259-5f0e-8670-cdda365b436c",
+    "target_id": "6198a416-b2b7-55aa-9ce1-8ff3b43fd0f3",
+    "type": "CORRELATED_WITH",
+    "evidence": "цифровые объекты \"цифрового правительства\"",
+    "metadata": {
+      "source_kz": "91-бап",
+      "target_kz": "92-бап"
+    }
+  },
+  {
+    "source_id": "6198a416-b2b7-55aa-9ce1-8ff3b43fd0f3",
+    "target_id": "7d86d889-4072-570f-bfd5-6ae513902ebe",
+    "type": "CORRELATED_WITH",
+    "evidence": "цифровые объекты",
+    "metadata": {
+      "source_kz": "92-бап",
+      "target_kz": "93-бап"
+    }
+  },
+  {
+    "source_id": "7d86d889-4072-570f-bfd5-6ae513902ebe",
+    "target_id": "3cd5004c-82a4-5ada-9119-4fba8fd1961f",
+    "type": "CORRELATED_WITH",
+    "evidence": "цифровизация",
+    "metadata": {
+      "source_kz": "93-бап",
+      "target_kz": "94-бап"
+    }
+  },
+  {
+    "source_id": "3cd5004c-82a4-5ada-9119-4fba8fd1961f",
+    "target_id": "96a6b221-8a60-5a2a-b90d-011c9e27e13c",
+    "type": "CORRELATED_WITH",
+    "evidence": "цифровизация",
+    "metadata": {
+      "source_kz": "94-бап",
+      "target_kz": "95-бап"
+    }
+  },
+  {
+    "source_id": "96a6b221-8a60-5a2a-b90d-011c9e27e13c",
+    "target_id": "4a514c20-c028-5cbf-8857-0f609d795b22",
+    "type": "CORRELATED_WITH",
+    "evidence": "цифровизация",
+    "metadata": {
+      "source_kz": "95-бап",
+      "target_kz": "96-бап"
+    }
+  },
+  {
+    "source_id": "4a514c20-c028-5cbf-8857-0f609d795b22",
+    "target_id": "bb9349cf-dafa-544a-9f17-9f89b32af3e3",
+    "type": "CORRELATED_WITH",
+    "evidence": "кибербезопасность",
+    "metadata": {
+      "source_kz": "96-бап",
+      "target_kz": "97-бап"
+    }
+  },
+  {
+    "source_id": "bb9349cf-dafa-544a-9f17-9f89b32af3e3",
+    "target_id": "cba863f3-b938-5cc0-a266-2556a42bb4b5",
+    "type": "CORRELATED_WITH",
+    "evidence": "защита цифровых объектов",
+    "metadata": {
+      "source_kz": "97-бап",
+      "target_kz": "98-бап"
+    }
+  },
+  {
+    "source_id": "cba863f3-b938-5cc0-a266-2556a42bb4b5",
+    "target_id": "770e2310-f66a-5678-b813-cb2e5009bf90",
+    "type": "CORRELATED_WITH",
+    "evidence": "кибербезопасность",
+    "metadata": {
+      "source_kz": "98-бап",
+      "target_kz": "99-бап"
+    }
+  },
+  {
+    "source_id": "770e2310-f66a-5678-b813-cb2e5009bf90",
+    "target_id": "9209453e-6ffe-5821-be80-0be426fc8c4e",
+    "type": "CORRELATED_WITH",
+    "evidence": "аудит цифровых объектов",
+    "metadata": {
+      "source_kz": "99-бап",
+      "target_kz": "100-бап"
+    }
+  },
+  {
+    "source_id": "9209453e-6ffe-5821-be80-0be426fc8c4e",
+    "target_id": "44a70ea8-1b0e-59e9-87a3-93d5339ac8d5",
+    "type": "CORRELATED_WITH",
+    "evidence": "цифровизация",
+    "metadata": {
+      "source_kz": "100-бап",
+      "target_kz": "101-бап"
+    }
+  },
+  {
+    "source_id": "44a70ea8-1b0e-59e9-87a3-93d5339ac8d5",
+    "target_id": "a22d1640-131f-5391-8113-ffceecd73a80",
+    "type": "CORRELATED_WITH",
+    "evidence": "международное сотрудничество в сфере цифровизации",
+    "metadata": {
+      "source_kz": "101-бап",
+      "target_kz": "102-бап"
+    }
+  },
+  {
+    "source_id": "a22d1640-131f-5391-8113-ffceecd73a80",
+    "target_id": "6785996e-a526-5d78-b2a9-25b40d744738",
+    "type": "CORRELATED_WITH",
+    "evidence": "международное сотрудничество в сфере цифровизации",
+    "metadata": {
+      "source_kz": "102-бап",
+      "target_kz": "103-бап"
+    }
+  },
+  {
+    "source_id": "6785996e-a526-5d78-b2a9-25b40d744738",
+    "target_id": "f1da0919-b025-5a39-899c-6a9e9a4ad67b",
+    "type": "CORRELATED_WITH",
+    "evidence": "цифровизация",
+    "metadata": {
+      "source_kz": "103-бап",
+      "target_kz": "104-бап"
+    }
+  },
+  {
+    "source_id": "f1da0919-b025-5a39-899c-6a9e9a4ad67b",
+    "target_id": "60b42653-e1fb-533a-bafd-f17ff39a3f56",
+    "type": "CORRELATED_WITH",
+    "evidence": "цифровое законодательство",
+    "metadata": {
+      "source_kz": "104-бап",
+      "target_kz": "105-бап"
+    }
+  },
+  {
+    "source_id": "60b42653-e1fb-533a-bafd-f17ff39a3f56",
+    "target_id": "1a269d10-8f21-5ef0-b8e0-045b73c10c6e",
+    "type": "CORRELATED_WITH",
+    "evidence": "цифровое законодательство",
+    "metadata": {
+      "source_kz": "105-бап",
+      "target_kz": "106-бап"
+    }
+  },
+  {
+    "source_id": "1a269d10-8f21-5ef0-b8e0-045b73c10c6e",
+    "target_id": "external_act_1",
+    "type": "REFERENCES",
+    "evidence": "Закон Республики Казахстан от 7 января 2003 года \"Об электронном документе и электронной цифровой подписи\"",
+    "metadata": {
+      "source_kz": "106-бап",
+      "target_kz": "сыртқы акт",
+      "ref_type": "external",
+      "target_label": "Закон Республики Казахстан от 7 января 2003 года \"Об электронном документе и электронной цифровой подписи\""
+    }
+  }
+]

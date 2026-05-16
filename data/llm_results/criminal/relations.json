@@ -1,0 +1,3518 @@
+[
+  {
+    "source_id": "b7355ecd-c8fc-5faa-a44b-d98c848a3e0a",
+    "target_id": "aa8c16b6-3a54-51c4-8c65-216f6a0d1584",
+    "type": "BASED_ON",
+    "evidence": "Настоящий Кодекс основывается на Конституции Республики Казахстан и общепризнанных принципах и нормах международного права.",
+    "metadata": {
+      "source_kz": "1-бап",
+      "target_kz": "2-бап"
+    }
+  },
+  {
+    "source_id": "b7355ecd-c8fc-5faa-a44b-d98c848a3e0a",
+    "target_id": "external",
+    "type": "REFERENCES",
+    "evidence": "Уголовно-процессуальный кодекс Республики Казахстан, Уголовно-исполнительный кодекс Республики Казахстан и Кодекс Республики Казахстан об административных правонарушениях",
+    "metadata": {
+      "source_kz": "1-бап",
+      "target_kz": "Қазақстан Республикасының Қылмыстық-процестік кодексі, Қазақстан Республикасының Қылмыстық-атқару кодексі және Қазақстан Республикасының Әкімшілік құқық бұзушылық туралы кодексі",
+      "ref_type": "internal",
+      "target_label": "УПК, УИК, КоАП"
+    }
+  },
+  {
+    "source_id": "aa8c16b6-3a54-51c4-8c65-216f6a0d1584",
+    "target_id": "24de9880-a5bb-5323-96d0-7cf45ea12622",
+    "type": "MANIFESTED_IN",
+    "evidence": "Для осуществления этих задач настоящий Кодекс устанавливает основание уголовной ответственности",
+    "metadata": {
+      "source_kz": "2-бап",
+      "target_kz": "4-бап"
+    }
+  },
+  {
+    "source_id": "24de9880-a5bb-5323-96d0-7cf45ea12622",
+    "target_id": "7f4c6951-da4b-521f-9f29-4f51ffdc62bb",
+    "type": "CORRELATED_WITH",
+    "evidence": "Единственным основанием уголовной ответственности является совершение уголовного правонарушения, то есть деяния, содержащего все признаки состава преступления либо уголовного проступка",
+    "metadata": {
+      "source_kz": "4-бап",
+      "target_kz": "10-бап"
+    }
+  },
+  {
+    "source_id": "90e26d91-ddfc-5eb3-bd73-755e87e1b2d7",
+    "target_id": "a4f83bd5-e838-517a-b7ab-2c09b297bedc",
+    "type": "EXTENDS",
+    "evidence": "Преступность и наказуемость деяния определяются законом, действовавшим во время совершения этого деяния.",
+    "metadata": {
+      "source_kz": "5-бап",
+      "target_kz": "6-бап"
+    }
+  },
+  {
+    "source_id": "23ff0298-7746-5a17-981b-9e975261600a",
+    "target_id": "b9aba9b8-dbd9-5edf-9acd-8f77b50f6d16",
+    "type": "CORRELATED_WITH",
+    "evidence": "Лицо, совершившее уголовное правонарушение на территории Республики Казахстан, подлежит ответственности по настоящему Кодексу.",
+    "metadata": {
+      "source_kz": "7-бап",
+      "target_kz": "8-бап"
+    }
+  },
+  {
+    "source_id": "b9aba9b8-dbd9-5edf-9acd-8f77b50f6d16",
+    "target_id": "99d00e76-2e94-5948-8ea6-1f82e7a6d80f",
+    "type": "CORRELATED_WITH",
+    "evidence": "Граждане Республики Казахстан, совершившие уголовное правонарушение на территории другого государства, не подлежат выдаче",
+    "metadata": {
+      "source_kz": "8-бап",
+      "target_kz": "9-бап"
+    }
+  },
+  {
+    "source_id": "7f4c6951-da4b-521f-9f29-4f51ffdc62bb",
+    "target_id": "b5965f56-b553-59e9-91a1-13f34df95fb4",
+    "type": "BASED_ON",
+    "evidence": "Уголовные правонарушения в зависимости от степени общественной опасности и наказуемости подразделяются на преступления и уголовные проступки.",
+    "metadata": {
+      "source_kz": "10-бап",
+      "target_kz": "11-бап"
+    }
+  },
+  {
+    "source_id": "b5965f56-b553-59e9-91a1-13f34df95fb4",
+    "target_id": "32e3719b-3fd0-5d83-ad6b-ef8c8be1ca62",
+    "type": "CORRELATED_WITH",
+    "evidence": "Преступления в зависимости от характера и степени общественной опасности подразделяются на преступления небольшой тяжести, преступления средней тяжести, тяжкие преступления и особо тяжкие преступления.",
+    "metadata": {
+      "source_kz": "11-бап",
+      "target_kz": "12-бап"
+    }
+  },
+  {
+    "source_id": "32e3719b-3fd0-5d83-ad6b-ef8c8be1ca62",
+    "target_id": "751a8deb-efb9-521f-8e9e-ee30ea685aa1",
+    "type": "CORRELATED_WITH",
+    "evidence": "Неоднократностью уголовных правонарушений признается совершение двух или более деяний, предусмотренных одной и той же статьей или частью статьи Особенной части настоящего Кодекса.",
+    "metadata": {
+      "source_kz": "12-бап",
+      "target_kz": "13-бап"
+    }
+  },
+  {
+    "source_id": "751a8deb-efb9-521f-8e9e-ee30ea685aa1",
+    "target_id": "4bae788e-82c0-54e2-a011-6e09ad6743b5",
+    "type": "CORRELATED_WITH",
+    "evidence": "Совокупностью уголовных правонарушений признается совершение двух или более деяний, предусмотренных различными статьями или частями статьи настоящего Кодекса",
+    "metadata": {
+      "source_kz": "13-бап",
+      "target_kz": "14-бап"
+    }
+  },
+  {
+    "source_id": "c494017a-c2a1-5e3f-8798-d45d52afe326",
+    "target_id": "86899bf6-ec8e-59a7-a17f-ad58ac7d64b6",
+    "type": "CORRELATED_WITH",
+    "evidence": "Уголовной ответственности подлежит вменяемое физическое лицо",
+    "metadata": {
+      "source_kz": "15-бап",
+      "target_kz": "16-бап"
+    }
+  },
+  {
+    "source_id": "c494017a-c2a1-5e3f-8798-d45d52afe326",
+    "target_id": "fc688b1b-0319-5e8f-ade2-9990972e0436",
+    "type": "REFERENCES",
+    "evidence": "вследствие отставания в психическом развитии, не связанном с психическим расстройством",
+    "metadata": {
+      "source_kz": "15-бап",
+      "target_kz": "17-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 17"
+    }
+  },
+  {
+    "source_id": "86899bf6-ec8e-59a7-a17f-ad58ac7d64b6",
+    "target_id": "fc688b1b-0319-5e8f-ade2-9990972e0436",
+    "type": "CORRELATED_WITH",
+    "evidence": "невменяемости",
+    "metadata": {
+      "source_kz": "16-бап",
+      "target_kz": "17-бап"
+    }
+  },
+  {
+    "source_id": "caddb040-a8d7-5922-93ab-a4b84881703f",
+    "target_id": "b5b76079-a1ae-52b5-8f3e-b3d561c8b1be",
+    "type": "MANIFESTED_IN",
+    "evidence": "Деяние, совершенное по неосторожности, признается уголовным правонарушением только в том случае, когда это специально предусмотрено соответствующей статьей Особенной части настоящего Кодекса.",
+    "metadata": {
+      "source_kz": "19-бап",
+      "target_kz": "20-бап"
+    }
+  },
+  {
+    "source_id": "caddb040-a8d7-5922-93ab-a4b84881703f",
+    "target_id": "edcec86a-8783-5be6-8b36-9991f6ce176d",
+    "type": "MANIFESTED_IN",
+    "evidence": "Деяние, совершенное по неосторожности, признается уголовным правонарушением только в том случае, когда это специально предусмотрено соответствующей статьей Особенной части настоящего Кодекса.",
+    "metadata": {
+      "source_kz": "19-бап",
+      "target_kz": "21-бап"
+    }
+  },
+  {
+    "source_id": "b5b76079-a1ae-52b5-8f3e-b3d561c8b1be",
+    "target_id": "edcec86a-8783-5be6-8b36-9991f6ce176d",
+    "type": "CORRELATED_WITH",
+    "evidence": "Уголовным правонарушением, совершенным умышленно, признается деяние, совершенное с прямым или косвенным умыслом.",
+    "metadata": {
+      "source_kz": "20-бап",
+      "target_kz": "21-бап"
+    }
+  },
+  {
+    "source_id": "2a3dc477-3d78-5b84-a024-3d61549fa38a",
+    "target_id": "b5b76079-a1ae-52b5-8f3e-b3d561c8b1be",
+    "type": "EXTENDS",
+    "evidence": "Если в результате совершения умышленного уголовного правонарушения причиняются тяжкие последствия, которые по закону влекут более строгое наказание и которые не охватывались умыслом лица",
+    "metadata": {
+      "source_kz": "22-бап",
+      "target_kz": "20-бап"
+    }
+  },
+  {
+    "source_id": "7da9d1b3-9889-5d5c-8bc7-533a7582bac8",
+    "target_id": "caddb040-a8d7-5922-93ab-a4b84881703f",
+    "type": "MANIFESTED_IN",
+    "evidence": "Деяние признается совершенным невиновно, если действия (бездействие) и наступившие общественно опасные последствия не охватывались умыслом лица",
+    "metadata": {
+      "source_kz": "23-бап",
+      "target_kz": "19-бап"
+    }
+  },
+  {
+    "source_id": "1bc9617a-56d0-59e6-b389-436671005dc0",
+    "target_id": "ab973a36-1689-5d93-b0ea-dfd34ea8c6b8",
+    "type": "CORRELATED_WITH",
+    "evidence": "Уголовная ответственность за приготовление к преступлению и покушение на преступление наступает по той же статье настоящего Кодекса, что и за оконченное преступление",
+    "metadata": {
+      "source_kz": "24-бап",
+      "target_kz": "25-бап"
+    }
+  },
+  {
+    "source_id": "2d81f165-b366-502b-88db-481d0a5340e9",
+    "target_id": "1bc9617a-56d0-59e6-b389-436671005dc0",
+    "type": "CORRELATED_WITH",
+    "evidence": "Добровольным отказом от уголовного правонарушения признается прекращение лицом приготовительных действий либо прекращение действия (бездействия), непосредственно направленного на совершение этого деяния",
+    "metadata": {
+      "source_kz": "26-бап",
+      "target_kz": "24-бап"
+    }
+  },
+  {
+    "source_id": "1c3a8111-ac2c-59af-81b9-23d6c532d010",
+    "target_id": "59c76e61-4f1d-52a3-aac5-b7685fdbc03e",
+    "type": "MANIFESTED_IN",
+    "evidence": "Соучастием в уголовном правонарушении признается умышленное совместное участие двух или более лиц в совершении умышленного уголовного правонарушения.",
+    "metadata": {
+      "source_kz": "27-бап",
+      "target_kz": "28-бап"
+    }
+  },
+  {
+    "source_id": "59c76e61-4f1d-52a3-aac5-b7685fdbc03e",
+    "target_id": "085c2c1d-57fe-542c-95a0-27dec5c90d85",
+    "type": "BASED_ON",
+    "evidence": "Ответственность организатора, подстрекателя и пособника наступает по статье, предусматривающей наказание за совершенное деяние, со ссылкой на статью 28 настоящего Кодекса",
+    "metadata": {
+      "source_kz": "28-бап",
+      "target_kz": "29-бап"
+    }
+  },
+  {
+    "source_id": "085c2c1d-57fe-542c-95a0-27dec5c90d85",
+    "target_id": "59c76e61-4f1d-52a3-aac5-b7685fdbc03e",
+    "type": "REFERENCES",
+    "evidence": "со ссылкой на статью 28 настоящего Кодекса",
+    "metadata": {
+      "source_kz": "29-бап",
+      "target_kz": "28-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 28"
+    }
+  },
+  {
+    "source_id": "f8690a8d-ae23-51f0-8d92-9124c217040a",
+    "target_id": "59c76e61-4f1d-52a3-aac5-b7685fdbc03e",
+    "type": "EXTENDS",
+    "evidence": "Эксцессом соучастника признается совершение лицом уголовного правонарушения, не охватывающегося умыслом других соучастников.",
+    "metadata": {
+      "source_kz": "30-бап",
+      "target_kz": "28-бап"
+    }
+  },
+  {
+    "source_id": "eadfb997-2147-5404-9532-53579f6a0697",
+    "target_id": "59c76e61-4f1d-52a3-aac5-b7685fdbc03e",
+    "type": "CORRELATED_WITH",
+    "evidence": "Уголовное правонарушение признается совершенным группой лиц, если в его совершении совместно участвовали два или более исполнителей без предварительного сговора.",
+    "metadata": {
+      "source_kz": "31-бап",
+      "target_kz": "28-бап"
+    }
+  },
+  {
+    "source_id": "157cef2e-1f62-52b4-ba34-3ed932c38385",
+    "target_id": "3814743d-3c34-59f3-8e72-5651bb3e371b",
+    "type": "CORRELATED_WITH",
+    "evidence": "Необходимой обороной признается правомерная защита личности и прав обороняющегося и других лиц",
+    "metadata": {
+      "source_kz": "32-бап",
+      "target_kz": "33-бап"
+    }
+  },
+  {
+    "source_id": "7bfaf99a-c207-5437-9e95-1646652cdeb7",
+    "target_id": "282b366c-0d8f-5633-9a93-7239a7bda046",
+    "type": "REFERENCES",
+    "evidence": "с учетом положений статьи 34 настоящего Кодекса",
+    "metadata": {
+      "source_kz": "37-бап",
+      "target_kz": "34-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 34"
+    }
+  },
+  {
+    "source_id": "b57e6c6d-58a5-5b07-a752-474874f01867",
+    "target_id": "55857831-0f74-527b-b272-fb260a4dd38c",
+    "type": "MANIFESTED_IN",
+    "evidence": "Наказание есть мера государственного принуждения, назначаемая по приговору суда.",
+    "metadata": {
+      "source_kz": "39-бап",
+      "target_kz": "40-бап"
+    }
+  },
+  {
+    "source_id": "55857831-0f74-527b-b272-fb260a4dd38c",
+    "target_id": "ada6bc45-b6e9-55d1-87d0-37b2e014f56a",
+    "type": "MANIFESTED_IN",
+    "evidence": "К лицу, признанному виновным в совершении уголовного правонарушения, наряду с основным наказанием могут применяться следующие дополнительные наказания: 1) конфискация имущества;",
+    "metadata": {
+      "source_kz": "40-бап",
+      "target_kz": "41-бап"
+    }
+  },
+  {
+    "source_id": "55857831-0f74-527b-b272-fb260a4dd38c",
+    "target_id": "e155dc4e-74e0-561b-a5f4-2c4c6031d72e",
+    "type": "MANIFESTED_IN",
+    "evidence": "К лицу, признанному виновным в совершении уголовного проступка, могут применяться следующие основные наказания: 2) исправительные работы;",
+    "metadata": {
+      "source_kz": "40-бап",
+      "target_kz": "42-бап"
+    }
+  },
+  {
+    "source_id": "55857831-0f74-527b-b272-fb260a4dd38c",
+    "target_id": "b9f33da0-3977-57c8-a01f-75888c8eb9e6",
+    "type": "MANIFESTED_IN",
+    "evidence": "К лицу, признанному виновным в совершении уголовного проступка, могут применяться следующие основные наказания: 3) привлечение к общественным работам;",
+    "metadata": {
+      "source_kz": "40-бап",
+      "target_kz": "43-бап"
+    }
+  },
+  {
+    "source_id": "55857831-0f74-527b-b272-fb260a4dd38c",
+    "target_id": "11b993b7-6a22-50c0-b370-ba82bc642f44",
+    "type": "MANIFESTED_IN",
+    "evidence": "К лицу, признанному виновным в совершении преступления, могут применяться следующие основные наказания: 3) ограничение свободы;",
+    "metadata": {
+      "source_kz": "40-бап",
+      "target_kz": "44-бап"
+    }
+  },
+  {
+    "source_id": "55857831-0f74-527b-b272-fb260a4dd38c",
+    "target_id": "dac23f85-78e2-556f-b348-3be21ec256c0",
+    "type": "MANIFESTED_IN",
+    "evidence": "К лицу, признанному виновным в совершении уголовного проступка, могут применяться следующие основные наказания: 4) арест;",
+    "metadata": {
+      "source_kz": "40-бап",
+      "target_kz": "45-бап"
+    }
+  },
+  {
+    "source_id": "ce95ccd8-6787-5084-be9f-bde1db6597c7",
+    "target_id": "8a0aa084-2982-5792-a276-fc282027751d",
+    "type": "CORRELATED_WITH",
+    "evidence": "лишение свободы",
+    "metadata": {
+      "source_kz": "46-бап",
+      "target_kz": "55-бап"
+    }
+  },
+  {
+    "source_id": "ce95ccd8-6787-5084-be9f-bde1db6597c7",
+    "target_id": "66648133-0e11-55c6-81b5-e8a3f0b63605",
+    "type": "CORRELATED_WITH",
+    "evidence": "пожизненное лишение свободы",
+    "metadata": {
+      "source_kz": "46-бап",
+      "target_kz": "56-бап"
+    }
+  },
+  {
+    "source_id": "ce95ccd8-6787-5084-be9f-bde1db6597c7",
+    "target_id": "fb17d261-868d-5821-add0-93419b5bf6d6",
+    "type": "CORRELATED_WITH",
+    "evidence": "совокупность преступлений",
+    "metadata": {
+      "source_kz": "46-бап",
+      "target_kz": "58-бап"
+    }
+  },
+  {
+    "source_id": "ce95ccd8-6787-5084-be9f-bde1db6597c7",
+    "target_id": "e7116588-3ea6-5097-8505-78f6c1d62d77",
+    "type": "CORRELATED_WITH",
+    "evidence": "совокупность приговоров",
+    "metadata": {
+      "source_kz": "46-бап",
+      "target_kz": "60-бап"
+    }
+  },
+  {
+    "source_id": "ce95ccd8-6787-5084-be9f-bde1db6597c7",
+    "target_id": "aeeaa30f-b851-5c50-89ae-4b2c818e7fe3",
+    "type": "CORRELATED_WITH",
+    "evidence": "рецидив преступлений",
+    "metadata": {
+      "source_kz": "46-бап",
+      "target_kz": "59-бап"
+    }
+  },
+  {
+    "source_id": "ce95ccd8-6787-5084-be9f-bde1db6597c7",
+    "target_id": "f9c36a7a-e033-556e-884c-88dc2b131c8b",
+    "type": "CORRELATED_WITH",
+    "evidence": "сложение сроков лишения свободы",
+    "metadata": {
+      "source_kz": "46-бап",
+      "target_kz": "61-бап"
+    }
+  },
+  {
+    "source_id": "ce95ccd8-6787-5084-be9f-bde1db6597c7",
+    "target_id": "82ff1604-45cd-512b-aca0-10ee727e3765",
+    "type": "CORRELATED_WITH",
+    "evidence": "зачет наказания",
+    "metadata": {
+      "source_kz": "46-бап",
+      "target_kz": "62-бап"
+    }
+  },
+  {
+    "source_id": "3415391a-aa9a-5223-b7da-94ce455cca31",
+    "target_id": "f9c36a7a-e033-556e-884c-88dc2b131c8b",
+    "type": "CORRELATED_WITH",
+    "evidence": "конфискация имущества",
+    "metadata": {
+      "source_kz": "48-бап",
+      "target_kz": "61-бап"
+    }
+  },
+  {
+    "source_id": "b2771028-a4fd-5cf4-b2b3-bad08357b2df",
+    "target_id": "f9c36a7a-e033-556e-884c-88dc2b131c8b",
+    "type": "CORRELATED_WITH",
+    "evidence": "лишение права занимать определенные должности",
+    "metadata": {
+      "source_kz": "50-бап",
+      "target_kz": "61-бап"
+    }
+  },
+  {
+    "source_id": "835b59da-3ab4-5cb3-8355-458f2964a7a1",
+    "target_id": "f9c36a7a-e033-556e-884c-88dc2b131c8b",
+    "type": "CORRELATED_WITH",
+    "evidence": "выдворение за пределы Республики Казахстан",
+    "metadata": {
+      "source_kz": "51-бап",
+      "target_kz": "61-бап"
+    }
+  },
+  {
+    "source_id": "a74c4c74-a576-526a-be53-f14645cf234d",
+    "target_id": "cb4de4e6-c196-54e0-92dd-398655c7dd34",
+    "type": "CORRELATED_WITH",
+    "evidence": "смягчающие обстоятельства",
+    "metadata": {
+      "source_kz": "52-бап",
+      "target_kz": "53-бап"
+    }
+  },
+  {
+    "source_id": "a74c4c74-a576-526a-be53-f14645cf234d",
+    "target_id": "ba3d19d8-6853-5d57-8bb9-f38d82b2672d",
+    "type": "CORRELATED_WITH",
+    "evidence": "отягчающие обстоятельства",
+    "metadata": {
+      "source_kz": "52-бап",
+      "target_kz": "54-бап"
+    }
+  },
+  {
+    "source_id": "a74c4c74-a576-526a-be53-f14645cf234d",
+    "target_id": "8a0aa084-2982-5792-a276-fc282027751d",
+    "type": "CORRELATED_WITH",
+    "evidence": "назначение более мягкого наказания",
+    "metadata": {
+      "source_kz": "52-бап",
+      "target_kz": "55-бап"
+    }
+  },
+  {
+    "source_id": "a74c4c74-a576-526a-be53-f14645cf234d",
+    "target_id": "fb17d261-868d-5821-add0-93419b5bf6d6",
+    "type": "CORRELATED_WITH",
+    "evidence": "совокупность уголовных правонарушений",
+    "metadata": {
+      "source_kz": "52-бап",
+      "target_kz": "58-бап"
+    }
+  },
+  {
+    "source_id": "a74c4c74-a576-526a-be53-f14645cf234d",
+    "target_id": "e7116588-3ea6-5097-8505-78f6c1d62d77",
+    "type": "CORRELATED_WITH",
+    "evidence": "совокупность приговоров",
+    "metadata": {
+      "source_kz": "52-бап",
+      "target_kz": "60-бап"
+    }
+  },
+  {
+    "source_id": "8a0aa084-2982-5792-a276-fc282027751d",
+    "target_id": "66648133-0e11-55c6-81b5-e8a3f0b63605",
+    "type": "REFERENCES",
+    "evidence": "статьи 56 настоящего Кодекса",
+    "metadata": {
+      "source_kz": "55-бап",
+      "target_kz": "56-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 56"
+    }
+  },
+  {
+    "source_id": "8a0aa084-2982-5792-a276-fc282027751d",
+    "target_id": "ce95ccd8-6787-5084-be9f-bde1db6597c7",
+    "type": "REFERENCES",
+    "evidence": "части 4-1 статьи 46 настоящего Кодекса",
+    "metadata": {
+      "source_kz": "55-бап",
+      "target_kz": "46-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 46"
+    }
+  },
+  {
+    "source_id": "66648133-0e11-55c6-81b5-e8a3f0b63605",
+    "target_id": "ce95ccd8-6787-5084-be9f-bde1db6597c7",
+    "type": "REFERENCES",
+    "evidence": "части 4-1 статьи 46 настоящего Кодекса",
+    "metadata": {
+      "source_kz": "56-бап",
+      "target_kz": "46-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 46"
+    }
+  },
+  {
+    "source_id": "66648133-0e11-55c6-81b5-e8a3f0b63605",
+    "target_id": "8a0aa084-2982-5792-a276-fc282027751d",
+    "type": "REFERENCES",
+    "evidence": "статьи 55 настоящего Кодекса",
+    "metadata": {
+      "source_kz": "56-бап",
+      "target_kz": "55-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 55"
+    }
+  },
+  {
+    "source_id": "fb17d261-868d-5821-add0-93419b5bf6d6",
+    "target_id": "f9c36a7a-e033-556e-884c-88dc2b131c8b",
+    "type": "CORRELATED_WITH",
+    "evidence": "сложение наказаний",
+    "metadata": {
+      "source_kz": "58-бап",
+      "target_kz": "61-бап"
+    }
+  },
+  {
+    "source_id": "e7116588-3ea6-5097-8505-78f6c1d62d77",
+    "target_id": "f9c36a7a-e033-556e-884c-88dc2b131c8b",
+    "type": "CORRELATED_WITH",
+    "evidence": "сложение наказаний",
+    "metadata": {
+      "source_kz": "60-бап",
+      "target_kz": "61-бап"
+    }
+  },
+  {
+    "source_id": "e7116588-3ea6-5097-8505-78f6c1d62d77",
+    "target_id": "fb17d261-868d-5821-add0-93419b5bf6d6",
+    "type": "REFERENCES",
+    "evidence": "правилам назначения наказания по совокупности уголовных правонарушений",
+    "metadata": {
+      "source_kz": "60-бап",
+      "target_kz": "58-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 58"
+    }
+  },
+  {
+    "source_id": "f9c36a7a-e033-556e-884c-88dc2b131c8b",
+    "target_id": "82ff1604-45cd-512b-aca0-10ee727e3765",
+    "type": "CORRELATED_WITH",
+    "evidence": "зачет наказания",
+    "metadata": {
+      "source_kz": "61-бап",
+      "target_kz": "62-бап"
+    }
+  },
+  {
+    "source_id": "a23c6ad9-b30f-5c96-a0a9-fe2150622cdf",
+    "target_id": "177abd50-5ffc-50fd-8d32-3847702ed8f0",
+    "type": "EXTENDS",
+    "evidence": "Статья 64. Отмена условного осуждения",
+    "metadata": {
+      "source_kz": "63-бап",
+      "target_kz": "64-бап"
+    }
+  },
+  {
+    "source_id": "a23c6ad9-b30f-5c96-a0a9-fe2150622cdf",
+    "target_id": "9ba3b139-33fb-57b0-b552-19ea3236df0d",
+    "type": "CORRELATED_WITH",
+    "evidence": "условное осуждение",
+    "metadata": {
+      "source_kz": "63-бап",
+      "target_kz": "72-бап"
+    }
+  },
+  {
+    "source_id": "a23c6ad9-b30f-5c96-a0a9-fe2150622cdf",
+    "target_id": "f991d762-4c7f-570e-a212-78084f93ff21",
+    "type": "CORRELATED_WITH",
+    "evidence": "условное осуждение",
+    "metadata": {
+      "source_kz": "63-бап",
+      "target_kz": "73-бап"
+    }
+  },
+  {
+    "source_id": "a23c6ad9-b30f-5c96-a0a9-fe2150622cdf",
+    "target_id": "6ea93d6f-9cbb-51a5-8a02-bf78be0204c6",
+    "type": "CORRELATED_WITH",
+    "evidence": "освобождение от уголовной ответственности",
+    "metadata": {
+      "source_kz": "63-бап",
+      "target_kz": "65-бап"
+    }
+  },
+  {
+    "source_id": "a23c6ad9-b30f-5c96-a0a9-fe2150622cdf",
+    "target_id": "003ee60b-cce5-5e78-aeed-ab3208ecc1cc",
+    "type": "CORRELATED_WITH",
+    "evidence": "освобождение от уголовной ответственности",
+    "metadata": {
+      "source_kz": "63-бап",
+      "target_kz": "68-бап"
+    }
+  },
+  {
+    "source_id": "a23c6ad9-b30f-5c96-a0a9-fe2150622cdf",
+    "target_id": "6f94d3a2-8fd8-5aa4-958a-a471dcb2d7c7",
+    "type": "CORRELATED_WITH",
+    "evidence": "освобождение от наказания",
+    "metadata": {
+      "source_kz": "63-бап",
+      "target_kz": "69-бап"
+    }
+  },
+  {
+    "source_id": "a23c6ad9-b30f-5c96-a0a9-fe2150622cdf",
+    "target_id": "2e201e6e-217c-5282-8088-3d65f852f7bc",
+    "type": "CORRELATED_WITH",
+    "evidence": "освобождение от уголовной ответственности",
+    "metadata": {
+      "source_kz": "63-бап",
+      "target_kz": "70-бап"
+    }
+  },
+  {
+    "source_id": "a23c6ad9-b30f-5c96-a0a9-fe2150622cdf",
+    "target_id": "053aa7e6-a6a5-59e6-a527-a91e3e96997d",
+    "type": "CORRELATED_WITH",
+    "evidence": "освобождение от уголовной ответственности",
+    "metadata": {
+      "source_kz": "63-бап",
+      "target_kz": "71-бап"
+    }
+  },
+  {
+    "source_id": "a23c6ad9-b30f-5c96-a0a9-fe2150622cdf",
+    "target_id": "b5d72b48-6ec8-5783-b327-f13e43ca0af1",
+    "type": "CORRELATED_WITH",
+    "evidence": "отсрочка отбывания наказания",
+    "metadata": {
+      "source_kz": "63-бап",
+      "target_kz": "74-бап"
+    }
+  },
+  {
+    "source_id": "a23c6ad9-b30f-5c96-a0a9-fe2150622cdf",
+    "target_id": "a109d552-28c5-572a-8c5a-0c2c1f63ce0d",
+    "type": "CORRELATED_WITH",
+    "evidence": "освобождение от наказания",
+    "metadata": {
+      "source_kz": "63-бап",
+      "target_kz": "75-бап"
+    }
+  },
+  {
+    "source_id": "a23c6ad9-b30f-5c96-a0a9-fe2150622cdf",
+    "target_id": "e5328f12-d55a-5e7a-aafb-89090b72f7db",
+    "type": "CORRELATED_WITH",
+    "evidence": "освобождение от наказания",
+    "metadata": {
+      "source_kz": "63-бап",
+      "target_kz": "76-бап"
+    }
+  },
+  {
+    "source_id": "a23c6ad9-b30f-5c96-a0a9-fe2150622cdf",
+    "target_id": "ca5b1eb8-ebab-555e-b0b1-a88bd7df7da0",
+    "type": "CORRELATED_WITH",
+    "evidence": "освобождение от отбывания наказания",
+    "metadata": {
+      "source_kz": "63-бап",
+      "target_kz": "77-бап"
+    }
+  },
+  {
+    "source_id": "a23c6ad9-b30f-5c96-a0a9-fe2150622cdf",
+    "target_id": "4c9e3d43-ec4b-5599-9ffa-25d1556851e0",
+    "type": "CORRELATED_WITH",
+    "evidence": "освобождение от уголовной ответственности",
+    "metadata": {
+      "source_kz": "63-бап",
+      "target_kz": "78-бап"
+    }
+  },
+  {
+    "source_id": "177abd50-5ffc-50fd-8d32-3847702ed8f0",
+    "target_id": "a23c6ad9-b30f-5c96-a0a9-fe2150622cdf",
+    "type": "BASED_ON",
+    "evidence": "условного осуждения",
+    "metadata": {
+      "source_kz": "64-бап",
+      "target_kz": "63-бап"
+    }
+  },
+  {
+    "source_id": "177abd50-5ffc-50fd-8d32-3847702ed8f0",
+    "target_id": "9ba3b139-33fb-57b0-b552-19ea3236df0d",
+    "type": "CORRELATED_WITH",
+    "evidence": "условно-досрочное освобождение",
+    "metadata": {
+      "source_kz": "64-бап",
+      "target_kz": "72-бап"
+    }
+  },
+  {
+    "source_id": "177abd50-5ffc-50fd-8d32-3847702ed8f0",
+    "target_id": "f991d762-4c7f-570e-a212-78084f93ff21",
+    "type": "CORRELATED_WITH",
+    "evidence": "замена неотбытой части наказания",
+    "metadata": {
+      "source_kz": "64-бап",
+      "target_kz": "73-бап"
+    }
+  },
+  {
+    "source_id": "6ea93d6f-9cbb-51a5-8a02-bf78be0204c6",
+    "target_id": "003ee60b-cce5-5e78-aeed-ab3208ecc1cc",
+    "type": "CORRELATED_WITH",
+    "evidence": "освобождение от уголовной ответственности",
+    "metadata": {
+      "source_kz": "65-бап",
+      "target_kz": "68-бап"
+    }
+  },
+  {
+    "source_id": "6ea93d6f-9cbb-51a5-8a02-bf78be0204c6",
+    "target_id": "2e201e6e-217c-5282-8088-3d65f852f7bc",
+    "type": "CORRELATED_WITH",
+    "evidence": "освобождение от уголовной ответственности",
+    "metadata": {
+      "source_kz": "65-бап",
+      "target_kz": "70-бап"
+    }
+  },
+  {
+    "source_id": "6ea93d6f-9cbb-51a5-8a02-bf78be0204c6",
+    "target_id": "053aa7e6-a6a5-59e6-a527-a91e3e96997d",
+    "type": "CORRELATED_WITH",
+    "evidence": "освобождение от уголовной ответственности",
+    "metadata": {
+      "source_kz": "65-бап",
+      "target_kz": "71-бап"
+    }
+  },
+  {
+    "source_id": "6ea93d6f-9cbb-51a5-8a02-bf78be0204c6",
+    "target_id": "4c9e3d43-ec4b-5599-9ffa-25d1556851e0",
+    "type": "CORRELATED_WITH",
+    "evidence": "освобождение от уголовной ответственности",
+    "metadata": {
+      "source_kz": "65-бап",
+      "target_kz": "78-бап"
+    }
+  },
+  {
+    "source_id": "860baaef-b753-5ef3-9f43-8e0426603814",
+    "target_id": "6ea93d6f-9cbb-51a5-8a02-bf78be0204c6",
+    "type": "CORRELATED_WITH",
+    "evidence": "освобождение от уголовной ответственности",
+    "metadata": {
+      "source_kz": "66-бап",
+      "target_kz": "65-бап"
+    }
+  },
+  {
+    "source_id": "dc2604f5-0cbe-5a6a-b209-a64a7ce12c34",
+    "target_id": "5e100e8e-1f11-598f-a4e5-72fe00d7c4ee",
+    "type": "CORRELATED_WITH",
+    "evidence": "процессуальное соглашение",
+    "metadata": {
+      "source_kz": "67-бап",
+      "target_kz": "67-1-бап"
+    }
+  },
+  {
+    "source_id": "dc2604f5-0cbe-5a6a-b209-a64a7ce12c34",
+    "target_id": "9ba3b139-33fb-57b0-b552-19ea3236df0d",
+    "type": "CORRELATED_WITH",
+    "evidence": "процессуальное соглашение",
+    "metadata": {
+      "source_kz": "67-бап",
+      "target_kz": "72-бап"
+    }
+  },
+  {
+    "source_id": "5e100e8e-1f11-598f-a4e5-72fe00d7c4ee",
+    "target_id": "dc2604f5-0cbe-5a6a-b209-a64a7ce12c34",
+    "type": "CORRELATED_WITH",
+    "evidence": "процессуальное соглашение",
+    "metadata": {
+      "source_kz": "67-1-бап",
+      "target_kz": "67-бап"
+    }
+  },
+  {
+    "source_id": "003ee60b-cce5-5e78-aeed-ab3208ecc1cc",
+    "target_id": "6ea93d6f-9cbb-51a5-8a02-bf78be0204c6",
+    "type": "CORRELATED_WITH",
+    "evidence": "освобождение от уголовной ответственности",
+    "metadata": {
+      "source_kz": "68-бап",
+      "target_kz": "65-бап"
+    }
+  },
+  {
+    "source_id": "003ee60b-cce5-5e78-aeed-ab3208ecc1cc",
+    "target_id": "2e201e6e-217c-5282-8088-3d65f852f7bc",
+    "type": "CORRELATED_WITH",
+    "evidence": "освобождение от уголовной ответственности",
+    "metadata": {
+      "source_kz": "68-бап",
+      "target_kz": "70-бап"
+    }
+  },
+  {
+    "source_id": "003ee60b-cce5-5e78-aeed-ab3208ecc1cc",
+    "target_id": "053aa7e6-a6a5-59e6-a527-a91e3e96997d",
+    "type": "CORRELATED_WITH",
+    "evidence": "освобождение от уголовной ответственности",
+    "metadata": {
+      "source_kz": "68-бап",
+      "target_kz": "71-бап"
+    }
+  },
+  {
+    "source_id": "003ee60b-cce5-5e78-aeed-ab3208ecc1cc",
+    "target_id": "4c9e3d43-ec4b-5599-9ffa-25d1556851e0",
+    "type": "CORRELATED_WITH",
+    "evidence": "освобождение от уголовной ответственности",
+    "metadata": {
+      "source_kz": "68-бап",
+      "target_kz": "78-бап"
+    }
+  },
+  {
+    "source_id": "6f94d3a2-8fd8-5aa4-958a-a471dcb2d7c7",
+    "target_id": "a23c6ad9-b30f-5c96-a0a9-fe2150622cdf",
+    "type": "CORRELATED_WITH",
+    "evidence": "освобождение от наказания",
+    "metadata": {
+      "source_kz": "69-бап",
+      "target_kz": "63-бап"
+    }
+  },
+  {
+    "source_id": "6f94d3a2-8fd8-5aa4-958a-a471dcb2d7c7",
+    "target_id": "f991d762-4c7f-570e-a212-78084f93ff21",
+    "type": "CORRELATED_WITH",
+    "evidence": "замена наказания",
+    "metadata": {
+      "source_kz": "69-бап",
+      "target_kz": "73-бап"
+    }
+  },
+  {
+    "source_id": "2e201e6e-217c-5282-8088-3d65f852f7bc",
+    "target_id": "6ea93d6f-9cbb-51a5-8a02-bf78be0204c6",
+    "type": "CORRELATED_WITH",
+    "evidence": "освобождение от уголовной ответственности",
+    "metadata": {
+      "source_kz": "70-бап",
+      "target_kz": "65-бап"
+    }
+  },
+  {
+    "source_id": "2e201e6e-217c-5282-8088-3d65f852f7bc",
+    "target_id": "003ee60b-cce5-5e78-aeed-ab3208ecc1cc",
+    "type": "CORRELATED_WITH",
+    "evidence": "освобождение от уголовной ответственности",
+    "metadata": {
+      "source_kz": "70-бап",
+      "target_kz": "68-бап"
+    }
+  },
+  {
+    "source_id": "2e201e6e-217c-5282-8088-3d65f852f7bc",
+    "target_id": "053aa7e6-a6a5-59e6-a527-a91e3e96997d",
+    "type": "CORRELATED_WITH",
+    "evidence": "освобождение от уголовной ответственности",
+    "metadata": {
+      "source_kz": "70-бап",
+      "target_kz": "71-бап"
+    }
+  },
+  {
+    "source_id": "2e201e6e-217c-5282-8088-3d65f852f7bc",
+    "target_id": "4c9e3d43-ec4b-5599-9ffa-25d1556851e0",
+    "type": "CORRELATED_WITH",
+    "evidence": "освобождение от уголовной ответственности",
+    "metadata": {
+      "source_kz": "70-бап",
+      "target_kz": "78-бап"
+    }
+  },
+  {
+    "source_id": "053aa7e6-a6a5-59e6-a527-a91e3e96997d",
+    "target_id": "ca5b1eb8-ebab-555e-b0b1-a88bd7df7da0",
+    "type": "CORRELATED_WITH",
+    "evidence": "срок давности",
+    "metadata": {
+      "source_kz": "71-бап",
+      "target_kz": "77-бап"
+    }
+  },
+  {
+    "source_id": "053aa7e6-a6a5-59e6-a527-a91e3e96997d",
+    "target_id": "6ea93d6f-9cbb-51a5-8a02-bf78be0204c6",
+    "type": "CORRELATED_WITH",
+    "evidence": "освобождение от уголовной ответственности",
+    "metadata": {
+      "source_kz": "71-бап",
+      "target_kz": "65-бап"
+    }
+  },
+  {
+    "source_id": "053aa7e6-a6a5-59e6-a527-a91e3e96997d",
+    "target_id": "003ee60b-cce5-5e78-aeed-ab3208ecc1cc",
+    "type": "CORRELATED_WITH",
+    "evidence": "освобождение от уголовной ответственности",
+    "metadata": {
+      "source_kz": "71-бап",
+      "target_kz": "68-бап"
+    }
+  },
+  {
+    "source_id": "053aa7e6-a6a5-59e6-a527-a91e3e96997d",
+    "target_id": "2e201e6e-217c-5282-8088-3d65f852f7bc",
+    "type": "CORRELATED_WITH",
+    "evidence": "освобождение от уголовной ответственности",
+    "metadata": {
+      "source_kz": "71-бап",
+      "target_kz": "70-бап"
+    }
+  },
+  {
+    "source_id": "053aa7e6-a6a5-59e6-a527-a91e3e96997d",
+    "target_id": "4c9e3d43-ec4b-5599-9ffa-25d1556851e0",
+    "type": "CORRELATED_WITH",
+    "evidence": "освобождение от уголовной ответственности",
+    "metadata": {
+      "source_kz": "71-бап",
+      "target_kz": "78-бап"
+    }
+  },
+  {
+    "source_id": "9ba3b139-33fb-57b0-b552-19ea3236df0d",
+    "target_id": "a23c6ad9-b30f-5c96-a0a9-fe2150622cdf",
+    "type": "CORRELATED_WITH",
+    "evidence": "условное осуждение",
+    "metadata": {
+      "source_kz": "72-бап",
+      "target_kz": "63-бап"
+    }
+  },
+  {
+    "source_id": "9ba3b139-33fb-57b0-b552-19ea3236df0d",
+    "target_id": "177abd50-5ffc-50fd-8d32-3847702ed8f0",
+    "type": "CORRELATED_WITH",
+    "evidence": "условно-досрочное освобождение",
+    "metadata": {
+      "source_kz": "72-бап",
+      "target_kz": "64-бап"
+    }
+  },
+  {
+    "source_id": "9ba3b139-33fb-57b0-b552-19ea3236df0d",
+    "target_id": "f991d762-4c7f-570e-a212-78084f93ff21",
+    "type": "CORRELATED_WITH",
+    "evidence": "замена неотбытой части наказания",
+    "metadata": {
+      "source_kz": "72-бап",
+      "target_kz": "73-бап"
+    }
+  },
+  {
+    "source_id": "9ba3b139-33fb-57b0-b552-19ea3236df0d",
+    "target_id": "dc2604f5-0cbe-5a6a-b209-a64a7ce12c34",
+    "type": "CORRELATED_WITH",
+    "evidence": "процессуальное соглашение",
+    "metadata": {
+      "source_kz": "72-бап",
+      "target_kz": "67-бап"
+    }
+  },
+  {
+    "source_id": "f991d762-4c7f-570e-a212-78084f93ff21",
+    "target_id": "9ba3b139-33fb-57b0-b552-19ea3236df0d",
+    "type": "CORRELATED_WITH",
+    "evidence": "замена неотбытой части наказания",
+    "metadata": {
+      "source_kz": "73-бап",
+      "target_kz": "72-бап"
+    }
+  },
+  {
+    "source_id": "f991d762-4c7f-570e-a212-78084f93ff21",
+    "target_id": "a23c6ad9-b30f-5c96-a0a9-fe2150622cdf",
+    "type": "CORRELATED_WITH",
+    "evidence": "условное осуждение",
+    "metadata": {
+      "source_kz": "73-бап",
+      "target_kz": "63-бап"
+    }
+  },
+  {
+    "source_id": "b5d72b48-6ec8-5783-b327-f13e43ca0af1",
+    "target_id": "a109d552-28c5-572a-8c5a-0c2c1f63ce0d",
+    "type": "CORRELATED_WITH",
+    "evidence": "отсрочка отбывания наказания",
+    "metadata": {
+      "source_kz": "74-бап",
+      "target_kz": "75-бап"
+    }
+  },
+  {
+    "source_id": "b5d72b48-6ec8-5783-b327-f13e43ca0af1",
+    "target_id": "e5328f12-d55a-5e7a-aafb-89090b72f7db",
+    "type": "CORRELATED_WITH",
+    "evidence": "отсрочка отбывания наказания",
+    "metadata": {
+      "source_kz": "74-бап",
+      "target_kz": "76-бап"
+    }
+  },
+  {
+    "source_id": "a109d552-28c5-572a-8c5a-0c2c1f63ce0d",
+    "target_id": "b5d72b48-6ec8-5783-b327-f13e43ca0af1",
+    "type": "CORRELATED_WITH",
+    "evidence": "отсрочка отбывания наказания",
+    "metadata": {
+      "source_kz": "75-бап",
+      "target_kz": "74-бап"
+    }
+  },
+  {
+    "source_id": "a109d552-28c5-572a-8c5a-0c2c1f63ce0d",
+    "target_id": "e5328f12-d55a-5e7a-aafb-89090b72f7db",
+    "type": "CORRELATED_WITH",
+    "evidence": "отсрочка отбывания наказания",
+    "metadata": {
+      "source_kz": "75-бап",
+      "target_kz": "76-бап"
+    }
+  },
+  {
+    "source_id": "e5328f12-d55a-5e7a-aafb-89090b72f7db",
+    "target_id": "b5d72b48-6ec8-5783-b327-f13e43ca0af1",
+    "type": "CORRELATED_WITH",
+    "evidence": "отсрочка отбывания наказания",
+    "metadata": {
+      "source_kz": "76-бап",
+      "target_kz": "74-бап"
+    }
+  },
+  {
+    "source_id": "e5328f12-d55a-5e7a-aafb-89090b72f7db",
+    "target_id": "a109d552-28c5-572a-8c5a-0c2c1f63ce0d",
+    "type": "CORRELATED_WITH",
+    "evidence": "отсрочка отбывания наказания",
+    "metadata": {
+      "source_kz": "76-бап",
+      "target_kz": "75-бап"
+    }
+  },
+  {
+    "source_id": "ca5b1eb8-ebab-555e-b0b1-a88bd7df7da0",
+    "target_id": "053aa7e6-a6a5-59e6-a527-a91e3e96997d",
+    "type": "CORRELATED_WITH",
+    "evidence": "срок давности",
+    "metadata": {
+      "source_kz": "77-бап",
+      "target_kz": "71-бап"
+    }
+  },
+  {
+    "source_id": "ca5b1eb8-ebab-555e-b0b1-a88bd7df7da0",
+    "target_id": "4c9e3d43-ec4b-5599-9ffa-25d1556851e0",
+    "type": "CORRELATED_WITH",
+    "evidence": "освобождение от наказания",
+    "metadata": {
+      "source_kz": "77-бап",
+      "target_kz": "78-бап"
+    }
+  },
+  {
+    "source_id": "4c9e3d43-ec4b-5599-9ffa-25d1556851e0",
+    "target_id": "6ea93d6f-9cbb-51a5-8a02-bf78be0204c6",
+    "type": "CORRELATED_WITH",
+    "evidence": "освобождение от уголовной ответственности",
+    "metadata": {
+      "source_kz": "78-бап",
+      "target_kz": "65-бап"
+    }
+  },
+  {
+    "source_id": "4c9e3d43-ec4b-5599-9ffa-25d1556851e0",
+    "target_id": "003ee60b-cce5-5e78-aeed-ab3208ecc1cc",
+    "type": "CORRELATED_WITH",
+    "evidence": "освобождение от уголовной ответственности",
+    "metadata": {
+      "source_kz": "78-бап",
+      "target_kz": "68-бап"
+    }
+  },
+  {
+    "source_id": "4c9e3d43-ec4b-5599-9ffa-25d1556851e0",
+    "target_id": "2e201e6e-217c-5282-8088-3d65f852f7bc",
+    "type": "CORRELATED_WITH",
+    "evidence": "освобождение от уголовной ответственности",
+    "metadata": {
+      "source_kz": "78-бап",
+      "target_kz": "70-бап"
+    }
+  },
+  {
+    "source_id": "4c9e3d43-ec4b-5599-9ffa-25d1556851e0",
+    "target_id": "053aa7e6-a6a5-59e6-a527-a91e3e96997d",
+    "type": "CORRELATED_WITH",
+    "evidence": "освобождение от уголовной ответственности",
+    "metadata": {
+      "source_kz": "78-бап",
+      "target_kz": "71-бап"
+    }
+  },
+  {
+    "source_id": "4c9e3d43-ec4b-5599-9ffa-25d1556851e0",
+    "target_id": "ca5b1eb8-ebab-555e-b0b1-a88bd7df7da0",
+    "type": "CORRELATED_WITH",
+    "evidence": "освобождение от наказания",
+    "metadata": {
+      "source_kz": "78-бап",
+      "target_kz": "77-бап"
+    }
+  },
+  {
+    "source_id": "071eee6b-1490-5837-806a-4553f40a5031",
+    "target_id": "261811e2-0616-5318-aa96-746f9baf85a5",
+    "type": "EXTENDS",
+    "evidence": "Для лиц, совершивших преступления до достижения возраста восемнадцати лет, сроки погашения судимости, предусмотренные статьей 79 настоящего Кодекса, сокращаются",
+    "metadata": {
+      "source_kz": "79-бап",
+      "target_kz": "89-бап"
+    }
+  },
+  {
+    "source_id": "398e8315-06b3-5e1c-bd23-4f616b4b4ce5",
+    "target_id": "f9a5b22c-7cd9-570a-a4ec-6a777236311b",
+    "type": "BASED_ON",
+    "evidence": "Несовершеннолетним, совершившим уголовное правонарушение, может быть назначено наказание",
+    "metadata": {
+      "source_kz": "80-бап",
+      "target_kz": "81-бап"
+    }
+  },
+  {
+    "source_id": "398e8315-06b3-5e1c-bd23-4f616b4b4ce5",
+    "target_id": "41d8d77e-1d87-5f7a-b6fe-27d1ea244801",
+    "type": "CORRELATED_WITH",
+    "evidence": "Несовершеннолетними, на которых распространяется действие настоящего раздела, признаются лица",
+    "metadata": {
+      "source_kz": "80-бап",
+      "target_kz": "82-бап"
+    }
+  },
+  {
+    "source_id": "398e8315-06b3-5e1c-bd23-4f616b4b4ce5",
+    "target_id": "6dc1befd-b42e-5d1c-9d8e-552a66ee8725",
+    "type": "CORRELATED_WITH",
+    "evidence": "Несовершеннолетним, совершившим уголовное правонарушение, может быть назначено наказание либо к ним могут быть применены принудительные меры воспитательного воздействия",
+    "metadata": {
+      "source_kz": "80-бап",
+      "target_kz": "83-бап"
+    }
+  },
+  {
+    "source_id": "f9a5b22c-7cd9-570a-a4ec-6a777236311b",
+    "target_id": "41d8d77e-1d87-5f7a-b6fe-27d1ea244801",
+    "type": "CORRELATED_WITH",
+    "evidence": "Видами наказаний, назначаемых несовершеннолетним, являются",
+    "metadata": {
+      "source_kz": "81-бап",
+      "target_kz": "82-бап"
+    }
+  },
+  {
+    "source_id": "6dc1befd-b42e-5d1c-9d8e-552a66ee8725",
+    "target_id": "870f75e3-d10c-5c28-9e77-f0ac9ff6670a",
+    "type": "REFERENCES",
+    "evidence": "При освобождении несовершеннолетнего от уголовной ответственности к нему применяются принудительные меры воспитательного воздействия",
+    "metadata": {
+      "source_kz": "83-бап",
+      "target_kz": "84-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 84"
+    }
+  },
+  {
+    "source_id": "870f75e3-d10c-5c28-9e77-f0ac9ff6670a",
+    "target_id": "b3a712c7-a5f2-53a2-a136-bc139f8581b5",
+    "type": "MANIFESTED_IN",
+    "evidence": "Несовершеннолетнему могут быть назначены судом следующие принудительные меры воспитательного воздействия",
+    "metadata": {
+      "source_kz": "84-бап",
+      "target_kz": "85-бап"
+    }
+  },
+  {
+    "source_id": "b3a712c7-a5f2-53a2-a136-bc139f8581b5",
+    "target_id": "870f75e3-d10c-5c28-9e77-f0ac9ff6670a",
+    "type": "REFERENCES",
+    "evidence": "Срок применения принудительных мер воспитательного воздействия, предусмотренных пунктами 2) и 4) части первой статьи 84 настоящего Кодекса",
+    "metadata": {
+      "source_kz": "85-бап",
+      "target_kz": "84-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 84"
+    }
+  },
+  {
+    "source_id": "cced503e-a30e-57c7-8adf-42ba89ea56a7",
+    "target_id": "8a5dff54-d88d-5d6b-b0d9-b86cf60010cf",
+    "type": "CORRELATED_WITH",
+    "evidence": "Лица, осужденные к лишению свободы, ограничению свободы или исправительным работам за совершение преступления в несовершеннолетнем возрасте",
+    "metadata": {
+      "source_kz": "86-бап",
+      "target_kz": "87-бап"
+    }
+  },
+  {
+    "source_id": "261811e2-0616-5318-aa96-746f9baf85a5",
+    "target_id": "071eee6b-1490-5837-806a-4553f40a5031",
+    "type": "REFERENCES",
+    "evidence": "Для лиц, совершивших преступления до достижения возраста восемнадцати лет, сроки погашения судимости, предусмотренные статьей 79 настоящего Кодекса, сокращаются",
+    "metadata": {
+      "source_kz": "89-бап",
+      "target_kz": "79-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 79"
+    }
+  },
+  {
+    "source_id": "dd1ad0c9-90ec-5e49-b204-2a090a86edc9",
+    "target_id": "2207b5e9-adcc-5264-b9fe-e901e38f7df0",
+    "type": "BASED_ON",
+    "evidence": "Принудительные меры медицинского характера могут быть назначены судом лицам",
+    "metadata": {
+      "source_kz": "91-бап",
+      "target_kz": "92-бап"
+    }
+  },
+  {
+    "source_id": "dd1ad0c9-90ec-5e49-b204-2a090a86edc9",
+    "target_id": "36473168-f010-56cb-b403-d16fc38b846a",
+    "type": "MANIFESTED_IN",
+    "evidence": "Принудительные меры медицинского характера могут быть назначены судом лицам",
+    "metadata": {
+      "source_kz": "91-бап",
+      "target_kz": "93-бап"
+    }
+  },
+  {
+    "source_id": "dd1ad0c9-90ec-5e49-b204-2a090a86edc9",
+    "target_id": "e1627990-0fff-59c1-bd55-71de89ee9127",
+    "type": "REFERENCES",
+    "evidence": "при наличии оснований, предусмотренных статьей 91 настоящего Кодекса",
+    "metadata": {
+      "source_kz": "94-бап",
+      "target_kz": "91-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 91"
+    }
+  },
+  {
+    "source_id": "dd1ad0c9-90ec-5e49-b204-2a090a86edc9",
+    "target_id": "e0c177ec-f6f3-5e5a-b36b-a3a17301b202",
+    "type": "REFERENCES",
+    "evidence": "при наличии оснований, предусмотренных статьей 91 настоящего Кодекса",
+    "metadata": {
+      "source_kz": "95-бап",
+      "target_kz": "91-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 91"
+    }
+  },
+  {
+    "source_id": "dd1ad0c9-90ec-5e49-b204-2a090a86edc9",
+    "target_id": "c331ff93-4d5c-5fc4-a01e-beb5b5a9ffc2",
+    "type": "REFERENCES",
+    "evidence": "В случае, предусмотренном пунктами 3) и 5) части первой статьи 91 настоящего Кодекса",
+    "metadata": {
+      "source_kz": "98-бап",
+      "target_kz": "91-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 91"
+    }
+  },
+  {
+    "source_id": "7cb1a58f-88aa-5273-9b02-3dca26c0bf30",
+    "target_id": "ef18ed43-93d3-5089-aaa3-ebc7433a880a",
+    "type": "REFERENCES",
+    "evidence": "принудительный платеж в виде фиксированной денежной суммы, установленной статьей 98-2 настоящего Кодекса",
+    "metadata": {
+      "source_kz": "98-1-бап",
+      "target_kz": "98-2-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 98-2"
+    }
+  },
+  {
+    "source_id": "d6e9bc94-e0f9-5568-822b-614a5426ba0b",
+    "target_id": "22fe0723-f0dd-5554-87ff-1a2b285ad9b9",
+    "type": "REFERENCES",
+    "evidence": "по части второй статьи 108-1, части второй статьи 109-1 настоящего Кодекса",
+    "metadata": {
+      "source_kz": "98-3-бап",
+      "target_kz": "108-1-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 108-1"
+    }
+  },
+  {
+    "source_id": "d6e9bc94-e0f9-5568-822b-614a5426ba0b",
+    "target_id": "f33f529f-a39a-5cfb-99b9-9b28a9960f82",
+    "type": "REFERENCES",
+    "evidence": "по части второй статьи 108-1, части второй статьи 109-1 настоящего Кодекса",
+    "metadata": {
+      "source_kz": "98-3-бап",
+      "target_kz": "109-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 109"
+    }
+  },
+  {
+    "source_id": "5b4e49ca-d063-5f05-8565-12e56aafdaf5",
+    "target_id": "125c9205-9e4b-53d3-90a7-5960b1a6b46e",
+    "type": "CORRELATED_WITH",
+    "evidence": "Убийство",
+    "metadata": {
+      "source_kz": "99-бап",
+      "target_kz": "100-бап"
+    }
+  },
+  {
+    "source_id": "5b4e49ca-d063-5f05-8565-12e56aafdaf5",
+    "target_id": "bb285878-0422-5b7b-8c7f-8b66df3794ce",
+    "type": "CORRELATED_WITH",
+    "evidence": "Убийство",
+    "metadata": {
+      "source_kz": "99-бап",
+      "target_kz": "101-бап"
+    }
+  },
+  {
+    "source_id": "5b4e49ca-d063-5f05-8565-12e56aafdaf5",
+    "target_id": "e260e3de-6da4-5eb5-bfaf-1a307f3d6150",
+    "type": "CORRELATED_WITH",
+    "evidence": "Убийство",
+    "metadata": {
+      "source_kz": "99-бап",
+      "target_kz": "102-бап"
+    }
+  },
+  {
+    "source_id": "5b4e49ca-d063-5f05-8565-12e56aafdaf5",
+    "target_id": "74b93c7d-76df-5387-bf78-178afb0224b9",
+    "type": "CORRELATED_WITH",
+    "evidence": "Убийство",
+    "metadata": {
+      "source_kz": "99-бап",
+      "target_kz": "103-бап"
+    }
+  },
+  {
+    "source_id": "5b4e49ca-d063-5f05-8565-12e56aafdaf5",
+    "target_id": "6dbeb1d8-e85f-5bc6-b3f9-1d6ff86c6c31",
+    "type": "CORRELATED_WITH",
+    "evidence": "Убийство",
+    "metadata": {
+      "source_kz": "99-бап",
+      "target_kz": "104-бап"
+    }
+  },
+  {
+    "source_id": "5b4e49ca-d063-5f05-8565-12e56aafdaf5",
+    "target_id": "f9e5691b-6b23-56ff-aef2-d347c4a1bb98",
+    "type": "CORRELATED_WITH",
+    "evidence": "Убийство",
+    "metadata": {
+      "source_kz": "99-бап",
+      "target_kz": "105-бап"
+    }
+  },
+  {
+    "source_id": "e03463b2-46e7-5443-b605-0bf27d93933d",
+    "target_id": "4a70b9be-bc27-5c2a-9215-ea618b81e35d",
+    "type": "CORRELATED_WITH",
+    "evidence": "Умышленное причинение тяжкого вреда здоровью",
+    "metadata": {
+      "source_kz": "106-бап",
+      "target_kz": "107-бап"
+    }
+  },
+  {
+    "source_id": "4a70b9be-bc27-5c2a-9215-ea618b81e35d",
+    "target_id": "22fe0723-f0dd-5554-87ff-1a2b285ad9b9",
+    "type": "CORRELATED_WITH",
+    "evidence": "Умышленное причинение средней тяжести вреда здоровью",
+    "metadata": {
+      "source_kz": "107-бап",
+      "target_kz": "108-1-бап"
+    }
+  },
+  {
+    "source_id": "22fe0723-f0dd-5554-87ff-1a2b285ad9b9",
+    "target_id": "f33f529f-a39a-5cfb-99b9-9b28a9960f82",
+    "type": "CORRELATED_WITH",
+    "evidence": "Умышленное причинение легкого вреда здоровью",
+    "metadata": {
+      "source_kz": "108-1-бап",
+      "target_kz": "109-бап"
+    }
+  },
+  {
+    "source_id": "26c19dbf-dd4c-5b4a-bc49-a335df552a6e",
+    "target_id": "8a19d8bf-cedb-542b-87b9-137d9a1db541",
+    "type": "CORRELATED_WITH",
+    "evidence": "Нанесение побоев или совершение иных насильственных действий, причинивших физическую боль",
+    "metadata": {
+      "source_kz": "109-1-бап",
+      "target_kz": "110-бап"
+    }
+  },
+  {
+    "source_id": "8a19d8bf-cedb-542b-87b9-137d9a1db541",
+    "target_id": "c1714ada-6dd9-5db0-9a30-a37b90730b9e",
+    "type": "CORRELATED_WITH",
+    "evidence": "Причинение физических или психических страданий путем насильственных действий",
+    "metadata": {
+      "source_kz": "110-бап",
+      "target_kz": "111-бап"
+    }
+  },
+  {
+    "source_id": "f9de9723-caa9-5845-b402-af68784fb856",
+    "target_id": "c13a4b4c-8c8f-58f1-87fb-527cf644f1c4",
+    "type": "CORRELATED_WITH",
+    "evidence": "Умышленное причинение тяжкого вреда здоровью, совершенное при превышении пределов необходимой обороны",
+    "metadata": {
+      "source_kz": "112-бап",
+      "target_kz": "113-бап"
+    }
+  },
+  {
+    "source_id": "85b34b74-7205-53e9-8860-19fb711341b5",
+    "target_id": "cd77d1ba-13c5-537c-9b30-fc75f9aaa058",
+    "type": "CORRELATED_WITH",
+    "evidence": "Причинение средней тяжести вреда здоровью по неосторожности",
+    "metadata": {
+      "source_kz": "114-бап",
+      "target_kz": "119-бап"
+    }
+  },
+  {
+    "source_id": "e4f1862f-0839-51a3-a5d0-d67c42ea5bb6",
+    "target_id": "b071ab27-4bb2-562f-8826-37dc1c444c32",
+    "type": "CORRELATED_WITH",
+    "evidence": "Изнасилование, то есть половое сношение с применением насилия",
+    "metadata": {
+      "source_kz": "120-бап",
+      "target_kz": "121-бап"
+    }
+  },
+  {
+    "source_id": "9ea9e4bd-2627-58f4-b5ed-5ac76de549d9",
+    "target_id": "00b98355-ab78-5407-b517-fc0dd56756f7",
+    "type": "CORRELATED_WITH",
+    "evidence": "Приставание сексуального характера к лицам, не достигшим шестнадцатилетнего возраста",
+    "metadata": {
+      "source_kz": "121-1-бап",
+      "target_kz": "122-бап"
+    }
+  },
+  {
+    "source_id": "cd39299e-b2f5-54ad-8c03-c2838a31d782",
+    "target_id": "bf9c8ea6-1ac8-5bfa-9d65-d75110567bab",
+    "type": "CORRELATED_WITH",
+    "evidence": "Похищение человека",
+    "metadata": {
+      "source_kz": "125-бап",
+      "target_kz": "126-бап"
+    }
+  },
+  {
+    "source_id": "6a4e563f-18b6-5f3e-9316-2932aa775284",
+    "target_id": "5f51914e-e49a-5aa5-b42a-418b60bed025",
+    "type": "CORRELATED_WITH",
+    "evidence": "Торговля людьми",
+    "metadata": {
+      "source_kz": "128-бап",
+      "target_kz": "116-бап"
+    }
+  },
+  {
+    "source_id": "0784399c-5243-5cf6-9a44-7efa1c9f04ed",
+    "target_id": "47d5f5a5-3c64-5cc9-8813-71e2bf73b4b3",
+    "type": "CORRELATED_WITH",
+    "evidence": "Вовлечение несовершеннолетнего в совершение уголовных правонарушений",
+    "metadata": {
+      "source_kz": "132-бап",
+      "target_kz": "133-бап"
+    }
+  },
+  {
+    "source_id": "1eb11fcf-e1fd-5b38-a2b4-c5b2b876dc8f",
+    "target_id": "2d1bfcca-a7f7-52b5-abeb-cb55d95f3e78",
+    "type": "CORRELATED_WITH",
+    "evidence": "Вовлечение несовершеннолетнего в занятие проституцией",
+    "metadata": {
+      "source_kz": "134-бап",
+      "target_kz": "135-бап"
+    }
+  },
+  {
+    "source_id": "1eb11fcf-e1fd-5b38-a2b4-c5b2b876dc8f",
+    "target_id": "101ecfb6-b6bf-5cbb-bdba-a578da37b2c2",
+    "type": "CORRELATED_WITH",
+    "evidence": "вовлечение несовершеннолетнего в занятие проституцией",
+    "metadata": {
+      "source_kz": "134-бап",
+      "target_kz": "144-бап"
+    }
+  },
+  {
+    "source_id": "2d1bfcca-a7f7-52b5-abeb-cb55d95f3e78",
+    "target_id": "27550a07-25a6-500b-8f22-fb2cb804ced4",
+    "type": "CORRELATED_WITH",
+    "evidence": "вывоз за пределы Республики Казахстан",
+    "metadata": {
+      "source_kz": "135-бап",
+      "target_kz": "143-бап"
+    }
+  },
+  {
+    "source_id": "cf1e2000-9280-5a7c-a7e7-7131245ca60f",
+    "target_id": "bcd62ded-9160-51a1-bf68-b7f0109a1192",
+    "type": "CORRELATED_WITH",
+    "evidence": "усыновление (удочерение)",
+    "metadata": {
+      "source_kz": "137-бап",
+      "target_kz": "138-бап"
+    }
+  },
+  {
+    "source_id": "e1c15f8b-54fb-5bf4-9622-c506422b4b80",
+    "target_id": "df45f042-a0fb-5800-a128-0ba91c54fe61",
+    "type": "CORRELATED_WITH",
+    "evidence": "неисполнение обязанностей по воспитанию несовершеннолетнего",
+    "metadata": {
+      "source_kz": "140-бап",
+      "target_kz": "141-бап"
+    }
+  },
+  {
+    "source_id": "12f1703f-49c8-5402-a167-3bb2ba2b6747",
+    "target_id": "cf1e2000-9280-5a7c-a7e7-7131245ca60f",
+    "type": "CORRELATED_WITH",
+    "evidence": "опека или попечительство",
+    "metadata": {
+      "source_kz": "142-бап",
+      "target_kz": "137-бап"
+    }
+  },
+  {
+    "source_id": "1b4a5b5f-5fdb-53fc-ba16-e8cae05e8061",
+    "target_id": "7ba47316-2b65-5c1d-b612-6e8f0dbecb40",
+    "type": "CORRELATED_WITH",
+    "evidence": "неприкосновенность частной жизни",
+    "metadata": {
+      "source_kz": "147-бап",
+      "target_kz": "148-бап"
+    }
+  },
+  {
+    "source_id": "81f56071-a694-5f92-bcab-f3a170f10c22",
+    "target_id": "180ce65a-211a-54bc-bb34-4d8d050d1639",
+    "type": "CORRELATED_WITH",
+    "evidence": "избирательные права",
+    "metadata": {
+      "source_kz": "150-бап",
+      "target_kz": "151-бап"
+    }
+  },
+  {
+    "source_id": "c6b22ec3-fe2c-54f3-941b-b5d88c73ba72",
+    "target_id": "105a732c-e1c7-576a-bc3c-a4f724d0f5ab",
+    "type": "CORRELATED_WITH",
+    "evidence": "трудовое законодательство",
+    "metadata": {
+      "source_kz": "152-бап",
+      "target_kz": "153-бап"
+    }
+  },
+  {
+    "source_id": "a468788b-9947-596e-bec8-06068e8135b8",
+    "target_id": "0bfb01f6-ad75-5b52-87a7-74dbc0c9da20",
+    "type": "CORRELATED_WITH",
+    "evidence": "агрессивная война",
+    "metadata": {
+      "source_kz": "160-бап",
+      "target_kz": "161-бап"
+    }
+  },
+  {
+    "source_id": "2a42be8b-2217-598f-83fa-fd497688e3bb",
+    "target_id": "c7a2bc93-a2a4-558f-a723-7c2e93ddb845",
+    "type": "CORRELATED_WITH",
+    "evidence": "оружие массового уничтожения",
+    "metadata": {
+      "source_kz": "162-бап",
+      "target_kz": "163-бап"
+    }
+  },
+  {
+    "source_id": "1eb11fcf-e1fd-5b38-a2b4-c5b2b876dc8f",
+    "target_id": "2d1bfcca-a7f7-52b5-abeb-cb55d95f3e78",
+    "type": "REFERENCES",
+    "evidence": "статьях 308 и 309 настоящего Кодекса",
+    "metadata": {
+      "source_kz": "134-бап",
+      "target_kz": "308-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 308"
+    }
+  },
+  {
+    "source_id": "1eb11fcf-e1fd-5b38-a2b4-c5b2b876dc8f",
+    "target_id": "2d1bfcca-a7f7-52b5-abeb-cb55d95f3e78",
+    "type": "REFERENCES",
+    "evidence": "статьях 308 и 309 настоящего Кодекса",
+    "metadata": {
+      "source_kz": "134-бап",
+      "target_kz": "309-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 309"
+    }
+  },
+  {
+    "source_id": "2d1bfcca-a7f7-52b5-abeb-cb55d95f3e78",
+    "target_id": "1eb11fcf-e1fd-5b38-a2b4-c5b2b876dc8f",
+    "type": "REFERENCES",
+    "evidence": "примечанием к статье 128 настоящего Кодекса",
+    "metadata": {
+      "source_kz": "135-бап",
+      "target_kz": "128-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 128"
+    }
+  },
+  {
+    "source_id": "16e85a90-37e6-5381-a0bc-94917a3586d1",
+    "target_id": "f32a2b28-492c-5b41-9aa4-c4e04dd819c3",
+    "type": "CORRELATED_WITH",
+    "evidence": "Нарушение законов и обычаев войны",
+    "metadata": {
+      "source_kz": "164-бап",
+      "target_kz": "165-бап"
+    }
+  },
+  {
+    "source_id": "16e85a90-37e6-5381-a0bc-94917a3586d1",
+    "target_id": "135dd758-98b8-5ada-a691-61afb8b8b9c3",
+    "type": "CORRELATED_WITH",
+    "evidence": "законов и обычаев войны",
+    "metadata": {
+      "source_kz": "164-бап",
+      "target_kz": "166-бап"
+    }
+  },
+  {
+    "source_id": "f32a2b28-492c-5b41-9aa4-c4e04dd819c3",
+    "target_id": "135dd758-98b8-5ada-a691-61afb8b8b9c3",
+    "type": "CORRELATED_WITH",
+    "evidence": "норм международного гуманитарного права",
+    "metadata": {
+      "source_kz": "165-бап",
+      "target_kz": "166-бап"
+    }
+  },
+  {
+    "source_id": "4cafff5f-f2b9-5371-a47f-a31360959ca5",
+    "target_id": "789c817c-fd97-5102-9ffc-86c2547c1e3a",
+    "type": "EXTENDS",
+    "evidence": "наемника",
+    "metadata": {
+      "source_kz": "170-бап",
+      "target_kz": "171-бап"
+    }
+  },
+  {
+    "source_id": "7a1df174-bb32-5b15-8cf7-17bb222b2873",
+    "target_id": "313545e4-746b-5e02-9f9e-3c20e64cc13a",
+    "type": "CORRELATED_WITH",
+    "evidence": "шпионаже",
+    "metadata": {
+      "source_kz": "175-бап",
+      "target_kz": "176-бап"
+    }
+  },
+  {
+    "source_id": "7a1df174-bb32-5b15-8cf7-17bb222b2873",
+    "target_id": "c0b4ce70-a077-5b72-8d7a-a9880c3a80b2",
+    "type": "CORRELATED_WITH",
+    "evidence": "государственных секретов",
+    "metadata": {
+      "source_kz": "175-бап",
+      "target_kz": "185-бап"
+    }
+  },
+  {
+    "source_id": "f7479a31-6086-5936-a59a-79434eed670c",
+    "target_id": "1c8e5f3d-d931-508d-82e0-0ec052c87d79",
+    "type": "CORRELATED_WITH",
+    "evidence": "насильственному изменению конституционного строя",
+    "metadata": {
+      "source_kz": "179-бап",
+      "target_kz": "180-бап"
+    }
+  },
+  {
+    "source_id": "f7479a31-6086-5936-a59a-79434eed670c",
+    "target_id": "a42c7b31-6c2a-5c66-8d07-e51350de0d4a",
+    "type": "CORRELATED_WITH",
+    "evidence": "насильственному захвату власти",
+    "metadata": {
+      "source_kz": "179-бап",
+      "target_kz": "181-бап"
+    }
+  },
+  {
+    "source_id": "dd107dd2-4464-5dd4-9ad2-f85170c0af5d",
+    "target_id": "e0bc6a6f-19da-5036-942c-499ef02eed86",
+    "type": "CORRELATED_WITH",
+    "evidence": "экстремистской группы",
+    "metadata": {
+      "source_kz": "182-бап",
+      "target_kz": "183-бап"
+    }
+  },
+  {
+    "source_id": "7bbc430e-db01-5838-a803-f70b58fae0e5",
+    "target_id": "23d292ce-28e2-5548-b7a5-9afafbc55dd1",
+    "type": "EXTENDS",
+    "evidence": "Кража",
+    "metadata": {
+      "source_kz": "188-бап",
+      "target_kz": "188-1-бап"
+    }
+  },
+  {
+    "source_id": "7bbc430e-db01-5838-a803-f70b58fae0e5",
+    "target_id": "44b74f4f-b03f-586a-9c37-c57df72f27cd",
+    "type": "CORRELATED_WITH",
+    "evidence": "хищение чужого имущества",
+    "metadata": {
+      "source_kz": "188-бап",
+      "target_kz": "191-бап"
+    }
+  },
+  {
+    "source_id": "7bbc430e-db01-5838-a803-f70b58fae0e5",
+    "target_id": "f90ff615-f921-5607-b8d8-3b4e6246c365",
+    "type": "CORRELATED_WITH",
+    "evidence": "хищение чужого имущества",
+    "metadata": {
+      "source_kz": "188-бап",
+      "target_kz": "192-бап"
+    }
+  },
+  {
+    "source_id": "b7705fe7-5cfc-578b-81c5-f860803b3390",
+    "target_id": "44b74f4f-b03f-586a-9c37-c57df72f27cd",
+    "type": "CORRELATED_WITH",
+    "evidence": "хищение чужого имущества",
+    "metadata": {
+      "source_kz": "190-бап",
+      "target_kz": "191-бап"
+    }
+  },
+  {
+    "source_id": "b7705fe7-5cfc-578b-81c5-f860803b3390",
+    "target_id": "f90ff615-f921-5607-b8d8-3b4e6246c365",
+    "type": "CORRELATED_WITH",
+    "evidence": "хищение чужого имущества",
+    "metadata": {
+      "source_kz": "190-бап",
+      "target_kz": "192-бап"
+    }
+  },
+  {
+    "source_id": "44b74f4f-b03f-586a-9c37-c57df72f27cd",
+    "target_id": "f90ff615-f921-5607-b8d8-3b4e6246c365",
+    "type": "CORRELATED_WITH",
+    "evidence": "хищение чужого имущества",
+    "metadata": {
+      "source_kz": "191-бап",
+      "target_kz": "192-бап"
+    }
+  },
+  {
+    "source_id": "305f72e8-a04d-508b-bb00-e146ada59592",
+    "target_id": "b7705fe7-5cfc-578b-81c5-f860803b3390",
+    "type": "CORRELATED_WITH",
+    "evidence": "хищение чужого имущества",
+    "metadata": {
+      "source_kz": "189-бап",
+      "target_kz": "190-бап"
+    }
+  },
+  {
+    "source_id": "c0b4ce70-a077-5b72-8d7a-a9880c3a80b2",
+    "target_id": "aa2f6c0e-b8bd-5017-bedd-38c4f767d642",
+    "type": "CORRELATED_WITH",
+    "evidence": "государственные секреты",
+    "metadata": {
+      "source_kz": "185-бап",
+      "target_kz": "186-бап"
+    }
+  },
+  {
+    "source_id": "1ae7c571-d35f-5723-9148-e92ec521ffc5",
+    "target_id": "aaa24f85-fbf3-5c89-8955-74144ac9e006",
+    "type": "CORRELATED_WITH",
+    "evidence": "Причинение имущественного ущерба собственнику или иному владельцу имущества путем обмана или злоупотребления доверием",
+    "metadata": {
+      "source_kz": "195-бап",
+      "target_kz": "196-бап"
+    }
+  },
+  {
+    "source_id": "44b2cd0b-2a67-5610-be29-c3f4b46fe143",
+    "target_id": "ef892bb7-85d4-57b1-951b-d1d16e683b46",
+    "type": "CORRELATED_WITH",
+    "evidence": "Незаконное использование объектов авторского и (или) смежных прав",
+    "metadata": {
+      "source_kz": "198-бап",
+      "target_kz": "199-бап"
+    }
+  },
+  {
+    "source_id": "400afeb1-31fc-5765-8746-80bb1b0e212c",
+    "target_id": "232ca762-d41a-5e62-aff6-bf017b49e20c",
+    "type": "CORRELATED_WITH",
+    "evidence": "Умышленное уничтожение или повреждение чужого имущества",
+    "metadata": {
+      "source_kz": "202-бап",
+      "target_kz": "204-бап"
+    }
+  },
+  {
+    "source_id": "a2159650-7791-59cb-a837-323e2684714d",
+    "target_id": "4ebd7ad5-d81a-5edd-9ffa-8a62a7d8801d",
+    "type": "CORRELATED_WITH",
+    "evidence": "Неправомерный доступ к охраняемой законом информации",
+    "metadata": {
+      "source_kz": "205-бап",
+      "target_kz": "206-бап"
+    }
+  },
+  {
+    "source_id": "4ebd7ad5-d81a-5edd-9ffa-8a62a7d8801d",
+    "target_id": "96cf559b-f2b5-541f-95a0-70ab0211f6ba",
+    "type": "CORRELATED_WITH",
+    "evidence": "Неправомерные уничтожение или модификация охраняемой законом информации",
+    "metadata": {
+      "source_kz": "206-бап",
+      "target_kz": "207-бап"
+    }
+  },
+  {
+    "source_id": "96cf559b-f2b5-541f-95a0-70ab0211f6ba",
+    "target_id": "e42615cd-6c2e-5f32-afdd-728e5785c0f6",
+    "type": "CORRELATED_WITH",
+    "evidence": "Нарушение работы объекта информатизации",
+    "metadata": {
+      "source_kz": "207-бап",
+      "target_kz": "208-бап"
+    }
+  },
+  {
+    "source_id": "e42615cd-6c2e-5f32-afdd-728e5785c0f6",
+    "target_id": "f7a26296-bc5b-5ece-b79a-ae3265786c9b",
+    "type": "CORRELATED_WITH",
+    "evidence": "Неправомерное завладение информацией",
+    "metadata": {
+      "source_kz": "208-бап",
+      "target_kz": "209-бап"
+    }
+  },
+  {
+    "source_id": "bcf7baf7-6a06-5b2e-8217-c3fc6b422504",
+    "target_id": "eca4c53f-0d60-5a57-bbdf-61fbe72afebe",
+    "type": "CORRELATED_WITH",
+    "evidence": "Создание, использование или распространение вредоносных компьютерных программ",
+    "metadata": {
+      "source_kz": "210-бап",
+      "target_kz": "211-бап"
+    }
+  },
+  {
+    "source_id": "eca4c53f-0d60-5a57-bbdf-61fbe72afebe",
+    "target_id": "8022c331-cc73-54e5-9f0b-947e9fdcb947",
+    "type": "CORRELATED_WITH",
+    "evidence": "Неправомерное распространение электронных информационных ресурсов ограниченного доступа",
+    "metadata": {
+      "source_kz": "211-бап",
+      "target_kz": "212-бап"
+    }
+  },
+  {
+    "source_id": "86e55619-5d79-5250-a1a8-e9e9d42d8da9",
+    "target_id": "9d44abe7-37ed-5bb1-9953-491f2f1040bf",
+    "type": "CORRELATED_WITH",
+    "evidence": "Незаконное предпринимательство",
+    "metadata": {
+      "source_kz": "214-бап",
+      "target_kz": "214-1-бап"
+    }
+  },
+  {
+    "source_id": "9d44abe7-37ed-5bb1-9953-491f2f1040bf",
+    "target_id": "56a103cd-1cf5-5ff5-a7e6-509ca6b9ab07",
+    "type": "CORRELATED_WITH",
+    "evidence": "Незаконная банковская, микрофинансовая деятельность",
+    "metadata": {
+      "source_kz": "214-1-бап",
+      "target_kz": "214-2-бап"
+    }
+  },
+  {
+    "source_id": "61413ac4-3973-5911-bc0a-ed8d07a62569",
+    "target_id": "789c04e5-7445-5521-b711-24329a913388",
+    "type": "EXTENDS",
+    "evidence": "Реклама финансовой (инвестиционной) пирамиды",
+    "metadata": {
+      "source_kz": "217-бап",
+      "target_kz": "217-1-бап"
+    }
+  },
+  {
+    "source_id": "6ba36af0-eb98-59f5-adaa-411cf451a2e2",
+    "target_id": "e00f29bc-c90c-5656-9a45-d7f1af300847",
+    "type": "CORRELATED_WITH",
+    "evidence": "легализация (отмывание) денег и (или) иного имущества",
+    "metadata": {
+      "source_kz": "218-бап",
+      "target_kz": "218-1-бап"
+    }
+  },
+  {
+    "source_id": "b911c9ef-fa7f-53e6-a923-ffa155600bee",
+    "target_id": "ab9740b2-6f7a-5a51-acc7-a4871a36403b",
+    "type": "CORRELATED_WITH",
+    "evidence": "проспект выпуска облигаций",
+    "metadata": {
+      "source_kz": "220-бап",
+      "target_kz": "224-бап"
+    }
+  },
+  {
+    "source_id": "2e41c2e9-2eba-522c-8870-679f5a2da7fc",
+    "target_id": "da160e79-db82-585f-bf5e-4ff41b4d5955",
+    "type": "CORRELATED_WITH",
+    "evidence": "заведомо ложных сведений",
+    "metadata": {
+      "source_kz": "225-бап",
+      "target_kz": "226-бап"
+    }
+  },
+  {
+    "source_id": "153168be-c2d7-5dad-afb4-3db7695bcb30",
+    "target_id": "2e41c2e9-2eba-522c-8870-679f5a2da7fc",
+    "type": "CORRELATED_WITH",
+    "evidence": "представление заведомо ложных сведений",
+    "metadata": {
+      "source_kz": "227-бап",
+      "target_kz": "225-бап"
+    }
+  },
+  {
+    "source_id": "70bc9287-c56b-5dc8-9082-88e390bcd08f",
+    "target_id": "12ff0468-d846-5f03-9d72-dcb30ebf006c",
+    "type": "CORRELATED_WITH",
+    "evidence": "операций с ценными бумагами",
+    "metadata": {
+      "source_kz": "228-бап",
+      "target_kz": "229-бап"
+    }
+  },
+  {
+    "source_id": "12ff0468-d846-5f03-9d72-dcb30ebf006c",
+    "target_id": "ce4104eb-f453-5af7-8f3e-331764dd665e",
+    "type": "CORRELATED_WITH",
+    "evidence": "рынке ценных бумаг",
+    "metadata": {
+      "source_kz": "229-бап",
+      "target_kz": "230-бап"
+    }
+  },
+  {
+    "source_id": "500a519f-5846-5964-9299-76e6b792f202",
+    "target_id": "fc1f8065-ba27-5a0f-83cb-1b351457860e",
+    "type": "CORRELATED_WITH",
+    "evidence": "поддельных денег или ценных бумаг",
+    "metadata": {
+      "source_kz": "231-бап",
+      "target_kz": "232-бап"
+    }
+  },
+  {
+    "source_id": "fc1f8065-ba27-5a0f-83cb-1b351457860e",
+    "target_id": "c1a85d5a-feff-56a2-b4a5-0a5af52dccc9",
+    "type": "CORRELATED_WITH",
+    "evidence": "платежных карточек",
+    "metadata": {
+      "source_kz": "232-бап",
+      "target_kz": "232-1-бап"
+    }
+  },
+  {
+    "source_id": "ae23f45a-3913-5d7d-9a28-4e4334b6578e",
+    "target_id": "8e28ab4f-84d7-5b40-b521-2b577000774f",
+    "type": "CORRELATED_WITH",
+    "evidence": "таможенную границу",
+    "metadata": {
+      "source_kz": "234-бап",
+      "target_kz": "236-бап"
+    }
+  },
+  {
+    "source_id": "a9587b3f-e68a-5512-8357-77dac940026e",
+    "target_id": "e3e3ed12-15b4-5136-939b-7e3ac96f3912",
+    "type": "CORRELATED_WITH",
+    "evidence": "Неправомерные действия при реабилитации и банкротстве",
+    "metadata": {
+      "source_kz": "237-бап",
+      "target_kz": "238-бап"
+    }
+  },
+  {
+    "source_id": "a9587b3f-e68a-5512-8357-77dac940026e",
+    "target_id": "801a3f15-12c5-56a7-ae18-8e4dbdbd01d3",
+    "type": "CORRELATED_WITH",
+    "evidence": "Неправомерные действия при реабилитации и банкротстве",
+    "metadata": {
+      "source_kz": "237-бап",
+      "target_kz": "239-бап"
+    }
+  },
+  {
+    "source_id": "e3e3ed12-15b4-5136-939b-7e3ac96f3912",
+    "target_id": "801a3f15-12c5-56a7-ae18-8e4dbdbd01d3",
+    "type": "CORRELATED_WITH",
+    "evidence": "Преднамеренное банкротство",
+    "metadata": {
+      "source_kz": "238-бап",
+      "target_kz": "239-бап"
+    }
+  },
+  {
+    "source_id": "e3e3ed12-15b4-5136-939b-7e3ac96f3912",
+    "target_id": "5219a5de-6af6-5aff-ab84-037666bc0fef",
+    "type": "CORRELATED_WITH",
+    "evidence": "Преднамеренное банкротство",
+    "metadata": {
+      "source_kz": "238-бап",
+      "target_kz": "240-бап"
+    }
+  },
+  {
+    "source_id": "801a3f15-12c5-56a7-ae18-8e4dbdbd01d3",
+    "target_id": "5219a5de-6af6-5aff-ab84-037666bc0fef",
+    "type": "CORRELATED_WITH",
+    "evidence": "Доведение до неплатежеспособности",
+    "metadata": {
+      "source_kz": "239-бап",
+      "target_kz": "240-бап"
+    }
+  },
+  {
+    "source_id": "5e508735-3a96-59d8-9c4e-8d1ea9662286",
+    "target_id": "d42d515a-f0a2-54e6-826b-0cdb4779678f",
+    "type": "CORRELATED_WITH",
+    "evidence": "Уклонение от уплаты налога",
+    "metadata": {
+      "source_kz": "244-бап",
+      "target_kz": "245-бап"
+    }
+  },
+  {
+    "source_id": "5b8f7dde-9534-5e80-bc7d-0ad659acd3f9",
+    "target_id": "65459a6b-a0ff-54a8-876a-b97f411855bc",
+    "type": "CORRELATED_WITH",
+    "evidence": "Злоупотребление полномочиями",
+    "metadata": {
+      "source_kz": "250-бап",
+      "target_kz": "251-бап"
+    }
+  },
+  {
+    "source_id": "65459a6b-a0ff-54a8-876a-b97f411855bc",
+    "target_id": "74ba5877-d59b-57c3-bfcd-aabf5354fdbd",
+    "type": "CORRELATED_WITH",
+    "evidence": "Злоупотребление полномочиями частным нотариусом",
+    "metadata": {
+      "source_kz": "251-бап",
+      "target_kz": "252-бап"
+    }
+  },
+  {
+    "source_id": "4f93fafe-0836-58ba-be0e-e31fc664de98",
+    "target_id": "7dbabb01-ed2a-526a-9e9f-b26e421ea359",
+    "type": "CORRELATED_WITH",
+    "evidence": "Акт терроризма",
+    "metadata": {
+      "source_kz": "255-бап",
+      "target_kz": "256-бап"
+    }
+  },
+  {
+    "source_id": "4f93fafe-0836-58ba-be0e-e31fc664de98",
+    "target_id": "babb680f-a6cd-5090-b4e4-2f80f6902828",
+    "type": "CORRELATED_WITH",
+    "evidence": "Акт терроризма",
+    "metadata": {
+      "source_kz": "255-бап",
+      "target_kz": "257-бап"
+    }
+  },
+  {
+    "source_id": "7dbabb01-ed2a-526a-9e9f-b26e421ea359",
+    "target_id": "babb680f-a6cd-5090-b4e4-2f80f6902828",
+    "type": "CORRELATED_WITH",
+    "evidence": "Пропаганда терроризма",
+    "metadata": {
+      "source_kz": "256-бап",
+      "target_kz": "257-бап"
+    }
+  },
+  {
+    "source_id": "babb680f-a6cd-5090-b4e4-2f80f6902828",
+    "target_id": "cd43e036-3179-546a-a7c7-24779c9d54d0",
+    "type": "CORRELATED_WITH",
+    "evidence": "Создание, руководство террористической группой",
+    "metadata": {
+      "source_kz": "257-бап",
+      "target_kz": "258-бап"
+    }
+  },
+  {
+    "source_id": "cd43e036-3179-546a-a7c7-24779c9d54d0",
+    "target_id": "54373312-47a5-5207-a2f0-deec22fea8cf",
+    "type": "CORRELATED_WITH",
+    "evidence": "Финансирование террористической или экстремистской деятельности",
+    "metadata": {
+      "source_kz": "258-бап",
+      "target_kz": "259-бап"
+    }
+  },
+  {
+    "source_id": "54373312-47a5-5207-a2f0-deec22fea8cf",
+    "target_id": "d3923865-ae98-5950-84e2-00cd3da38044",
+    "type": "CORRELATED_WITH",
+    "evidence": "Вербовка или подготовка либо вооружение лиц",
+    "metadata": {
+      "source_kz": "259-бап",
+      "target_kz": "260-бап"
+    }
+  },
+  {
+    "source_id": "7db60987-1f09-54c5-9d5f-6425788ba391",
+    "target_id": "7196e881-ac59-59c5-aa76-fb8449f1e74a",
+    "type": "CORRELATED_WITH",
+    "evidence": "преступной группой",
+    "metadata": {
+      "source_kz": "261-бап",
+      "target_kz": "262-бап"
+    }
+  },
+  {
+    "source_id": "7196e881-ac59-59c5-aa76-fb8449f1e74a",
+    "target_id": "0e51307a-84d1-5ec2-8513-377bbef7b366",
+    "type": "CORRELATED_WITH",
+    "evidence": "преступной организацией",
+    "metadata": {
+      "source_kz": "262-бап",
+      "target_kz": "263-бап"
+    }
+  },
+  {
+    "source_id": "7196e881-ac59-59c5-aa76-fb8449f1e74a",
+    "target_id": "2ed93a4d-f206-52a0-afd1-a824193a3717",
+    "type": "EXTENDS",
+    "evidence": "транснациональной организованной группы",
+    "metadata": {
+      "source_kz": "262-бап",
+      "target_kz": "264-бап"
+    }
+  },
+  {
+    "source_id": "0e51307a-84d1-5ec2-8513-377bbef7b366",
+    "target_id": "851726b8-d6d0-5059-8f9e-0821f4f805ed",
+    "type": "EXTENDS",
+    "evidence": "транснационального преступного сообщества",
+    "metadata": {
+      "source_kz": "263-бап",
+      "target_kz": "265-бап"
+    }
+  },
+  {
+    "source_id": "2e737c64-b96d-5624-9dcf-831be36166b3",
+    "target_id": "7196e881-ac59-59c5-aa76-fb8449f1e74a",
+    "type": "REFERENCES",
+    "evidence": "организованной группы, преступной организации, преступного сообщества, транснациональной организованной группы, транснациональной преступной организации, транснационального преступного сообщества или банды",
+    "metadata": {
+      "source_kz": "266-бап",
+      "target_kz": "262-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 262"
+    }
+  },
+  {
+    "source_id": "fa78e086-7aee-591b-9584-94f2bb36ca95",
+    "target_id": "7196e881-ac59-59c5-aa76-fb8449f1e74a",
+    "type": "CORRELATED_WITH",
+    "evidence": "устойчивой вооруженной группы (банды)",
+    "metadata": {
+      "source_kz": "268-бап",
+      "target_kz": "262-бап"
+    }
+  },
+  {
+    "source_id": "c86404db-75de-5d91-be2f-840ba6ac8bcb",
+    "target_id": "7db60987-1f09-54c5-9d5f-6425788ba391",
+    "type": "CORRELATED_WITH",
+    "evidence": "преступной группой",
+    "metadata": {
+      "source_kz": "269-бап",
+      "target_kz": "261-бап"
+    }
+  },
+  {
+    "source_id": "4b3fa004-335a-5187-b3b5-822aca5bb0df",
+    "target_id": "7db60987-1f09-54c5-9d5f-6425788ba391",
+    "type": "CORRELATED_WITH",
+    "evidence": "преступной группой",
+    "metadata": {
+      "source_kz": "270-бап",
+      "target_kz": "261-бап"
+    }
+  },
+  {
+    "source_id": "0f758073-43c0-5115-9197-f235faa5da68",
+    "target_id": "7db60987-1f09-54c5-9d5f-6425788ba391",
+    "type": "CORRELATED_WITH",
+    "evidence": "преступной группой",
+    "metadata": {
+      "source_kz": "271-бап",
+      "target_kz": "261-бап"
+    }
+  },
+  {
+    "source_id": "c3a9c5df-348e-5bb1-96b6-dbbcd59b69c3",
+    "target_id": "de50ea90-9200-5819-b436-b2d400c34a9f",
+    "type": "CORRELATED_WITH",
+    "evidence": "радиоактивных веществ, радиоактивных отходов или ядерных материалов",
+    "metadata": {
+      "source_kz": "283-бап",
+      "target_kz": "284-бап"
+    }
+  },
+  {
+    "source_id": "c3a9c5df-348e-5bb1-96b6-dbbcd59b69c3",
+    "target_id": "5f1ee25e-ffbf-5038-aedf-12131ad79ce2",
+    "type": "CORRELATED_WITH",
+    "evidence": "радиоактивных веществ, радиоактивных отходов или ядерных материалов",
+    "metadata": {
+      "source_kz": "283-бап",
+      "target_kz": "285-бап"
+    }
+  },
+  {
+    "source_id": "de50ea90-9200-5819-b436-b2d400c34a9f",
+    "target_id": "5f1ee25e-ffbf-5038-aedf-12131ad79ce2",
+    "type": "CORRELATED_WITH",
+    "evidence": "радиоактивных веществ, радиоактивных отходов, ядерных материалов",
+    "metadata": {
+      "source_kz": "284-бап",
+      "target_kz": "285-бап"
+    }
+  },
+  {
+    "source_id": "53275e2c-42ce-5e31-8e46-cc54d126cc68",
+    "target_id": "f8a1fbd1-e457-5f48-86f9-671174056af3",
+    "type": "CORRELATED_WITH",
+    "evidence": "огнестрельного оружия",
+    "metadata": {
+      "source_kz": "286-бап",
+      "target_kz": "287-бап"
+    }
+  },
+  {
+    "source_id": "f8a1fbd1-e457-5f48-86f9-671174056af3",
+    "target_id": "a95b46bf-075a-5943-9b98-3aa6dfd6223b",
+    "type": "CORRELATED_WITH",
+    "evidence": "огнестрельного оружия",
+    "metadata": {
+      "source_kz": "287-бап",
+      "target_kz": "288-бап"
+    }
+  },
+  {
+    "source_id": "f8a1fbd1-e457-5f48-86f9-671174056af3",
+    "target_id": "85877db3-27a9-5930-b112-64ca4240e062",
+    "type": "CORRELATED_WITH",
+    "evidence": "огнестрельного оружия",
+    "metadata": {
+      "source_kz": "287-бап",
+      "target_kz": "289-бап"
+    }
+  },
+  {
+    "source_id": "c676139f-c2c3-58aa-b280-206fde299989",
+    "target_id": "a97ced5e-e6b0-52f1-8af9-2b4949ca81b1",
+    "type": "CORRELATED_WITH",
+    "evidence": "Ненадлежащее исполнение своих обязанностей лицом, которому была поручена охрана огнестрельного оружия, боеприпасов, взрывчатых веществ или взрывных устройств, если это повлекло их хищение",
+    "metadata": {
+      "source_kz": "290-бап",
+      "target_kz": "291-бап"
+    }
+  },
+  {
+    "source_id": "a97ced5e-e6b0-52f1-8af9-2b4949ca81b1",
+    "target_id": "1405c60c-d318-5ba8-b7ad-712f5a4f7919",
+    "type": "CORRELATED_WITH",
+    "evidence": "Хищение либо вымогательство наркотических средств, психотропных веществ, их аналогов",
+    "metadata": {
+      "source_kz": "291-бап",
+      "target_kz": "298-бап"
+    }
+  },
+  {
+    "source_id": "381d9ee7-d3dd-574d-a951-ea61142a6b20",
+    "target_id": "cad314cd-599b-514c-8694-efd18545203c",
+    "type": "CORRELATED_WITH",
+    "evidence": "Незаконные изготовление, переработка, приобретение, хранение, перевозка без цели сбыта наркотических средств, психотропных веществ, их аналогов",
+    "metadata": {
+      "source_kz": "296-бап",
+      "target_kz": "297-бап"
+    }
+  },
+  {
+    "source_id": "cad314cd-599b-514c-8694-efd18545203c",
+    "target_id": "4d60bb34-2e21-5368-bf12-f6d6646e573a",
+    "type": "CORRELATED_WITH",
+    "evidence": "Незаконные приобретение, хранение, перевозка в целях сбыта, пересылка либо сбыт наркотических средств, психотропных веществ, их аналогов",
+    "metadata": {
+      "source_kz": "297-бап",
+      "target_kz": "297-1-бап"
+    }
+  },
+  {
+    "source_id": "1405c60c-d318-5ba8-b7ad-712f5a4f7919",
+    "target_id": "a97ced5e-e6b0-52f1-8af9-2b4949ca81b1",
+    "type": "CORRELATED_WITH",
+    "evidence": "Хищение либо вымогательство наркотических средств, психотропных веществ, их аналогов",
+    "metadata": {
+      "source_kz": "298-бап",
+      "target_kz": "291-бап"
+    }
+  },
+  {
+    "source_id": "7f802ace-b1f7-5ae8-95ef-d710dae1ee50",
+    "target_id": "381d9ee7-d3dd-574d-a951-ea61142a6b20",
+    "type": "CORRELATED_WITH",
+    "evidence": "Склонение к потреблению наркотических средств, психотропных веществ, их аналогов",
+    "metadata": {
+      "source_kz": "299-бап",
+      "target_kz": "296-бап"
+    }
+  },
+  {
+    "source_id": "d3f71ef9-1bd7-5aec-91b9-8bba2a7a4b99",
+    "target_id": "cad314cd-599b-514c-8694-efd18545203c",
+    "type": "CORRELATED_WITH",
+    "evidence": "Пропаганда или незаконная реклама наркотических средств, психотропных веществ или их аналогов, прекурсоров",
+    "metadata": {
+      "source_kz": "299-1-бап",
+      "target_kz": "297-бап"
+    }
+  },
+  {
+    "source_id": "afed71c0-2ec1-53ab-87ac-2cf1609f1b0a",
+    "target_id": "381d9ee7-d3dd-574d-a951-ea61142a6b20",
+    "type": "CORRELATED_WITH",
+    "evidence": "Посев или выращивание запрещенных к возделыванию растений или культивирование сортов конопли, мака или других растений, содержащих наркотические вещества",
+    "metadata": {
+      "source_kz": "300-бап",
+      "target_kz": "296-бап"
+    }
+  },
+  {
+    "source_id": "43535425-e372-5994-a681-b7475eded7d8",
+    "target_id": "381d9ee7-d3dd-574d-a951-ea61142a6b20",
+    "type": "CORRELATED_WITH",
+    "evidence": "Незаконные изготовление, переработка, приобретение, хранение, перевозка, пересылка прекурсоров, сильнодействующих, а также ядовитых веществ",
+    "metadata": {
+      "source_kz": "301-бап",
+      "target_kz": "296-бап"
+    }
+  },
+  {
+    "source_id": "75fafe87-edce-5f33-aec1-676163fbb5a8",
+    "target_id": "381d9ee7-d3dd-574d-a951-ea61142a6b20",
+    "type": "CORRELATED_WITH",
+    "evidence": "Организация или содержание притонов для потребления наркотических средств, психотропных веществ, их аналогов",
+    "metadata": {
+      "source_kz": "302-бап",
+      "target_kz": "296-бап"
+    }
+  },
+  {
+    "source_id": "f1c709bf-b223-5304-a5d9-38aa63ad601e",
+    "target_id": "381d9ee7-d3dd-574d-a951-ea61142a6b20",
+    "type": "CORRELATED_WITH",
+    "evidence": "Нарушение правил обращения с наркотическими средствами, психотропными веществами, их аналогами, прекурсорами, ядовитыми или сильнодействующими веществами",
+    "metadata": {
+      "source_kz": "303-бап",
+      "target_kz": "296-бап"
+    }
+  },
+  {
+    "source_id": "cb094523-e3c0-53d7-9ca7-734a0c951444",
+    "target_id": "c8e43ac5-a38a-5433-87c2-dd8028b95b6c",
+    "type": "CORRELATED_WITH",
+    "evidence": "Вовлечение в занятие проституцией, оказание иных услуг сексуального характера",
+    "metadata": {
+      "source_kz": "308-бап",
+      "target_kz": "309-бап"
+    }
+  },
+  {
+    "source_id": "c8e43ac5-a38a-5433-87c2-dd8028b95b6c",
+    "target_id": "cb094523-e3c0-53d7-9ca7-734a0c951444",
+    "type": "CORRELATED_WITH",
+    "evidence": "Организация или содержание притонов для занятия проституцией, оказания иных услуг сексуального характера и сводничество",
+    "metadata": {
+      "source_kz": "309-бап",
+      "target_kz": "308-бап"
+    }
+  },
+  {
+    "source_id": "ca79a012-aa56-5cf9-af31-7eec3a4c76c4",
+    "target_id": "6776aac4-baa0-52ff-8b70-c31a1f677499",
+    "type": "CORRELATED_WITH",
+    "evidence": "Незаконное распространение порнографических материалов или предметов",
+    "metadata": {
+      "source_kz": "311-бап",
+      "target_kz": "312-бап"
+    }
+  },
+  {
+    "source_id": "645e00be-1cc9-53e3-b63f-539f43536c7c",
+    "target_id": "9e7224ea-9811-5a97-a2f0-803ce075208b",
+    "type": "CORRELATED_WITH",
+    "evidence": "Пропаганда самоубийства",
+    "metadata": {
+      "source_kz": "313-1-бап",
+      "target_kz": "314-бап"
+    }
+  },
+  {
+    "source_id": "dc5c58c9-82e4-595b-a262-e3e685072b7d",
+    "target_id": "de470909-8ed4-5c91-b051-930dd24d86ee",
+    "type": "CORRELATED_WITH",
+    "evidence": "медицинским или фармацевтическим работником",
+    "metadata": {
+      "source_kz": "317-бап",
+      "target_kz": "318-бап"
+    }
+  },
+  {
+    "source_id": "dc5c58c9-82e4-595b-a262-e3e685072b7d",
+    "target_id": "89ccc92b-bb18-50c8-936f-ce94de8a302b",
+    "type": "CORRELATED_WITH",
+    "evidence": "медицинским или фармацевтическим работником",
+    "metadata": {
+      "source_kz": "317-бап",
+      "target_kz": "320-бап"
+    }
+  },
+  {
+    "source_id": "dc5c58c9-82e4-595b-a262-e3e685072b7d",
+    "target_id": "456cbd3c-b03a-5781-b429-ccf8b2515854",
+    "type": "CORRELATED_WITH",
+    "evidence": "медицинским или фармацевтическим работником",
+    "metadata": {
+      "source_kz": "317-бап",
+      "target_kz": "321-бап"
+    }
+  },
+  {
+    "source_id": "dc5c58c9-82e4-595b-a262-e3e685072b7d",
+    "target_id": "4eb5a5a6-b8ce-56b2-bb56-13113dd381f6",
+    "type": "CORRELATED_WITH",
+    "evidence": "медицинским или фармацевтическим работником",
+    "metadata": {
+      "source_kz": "317-бап",
+      "target_kz": "322-бап"
+    }
+  },
+  {
+    "source_id": "d3974d60-29a1-557c-bf45-d8798c6d85be",
+    "target_id": "dc5c58c9-82e4-595b-a262-e3e685072b7d",
+    "type": "CORRELATED_WITH",
+    "evidence": "медицинским или фармацевтическим работником",
+    "metadata": {
+      "source_kz": "319-бап",
+      "target_kz": "317-бап"
+    }
+  },
+  {
+    "source_id": "89ccc92b-bb18-50c8-936f-ce94de8a302b",
+    "target_id": "dc5c58c9-82e4-595b-a262-e3e685072b7d",
+    "type": "CORRELATED_WITH",
+    "evidence": "медицинским или фармацевтическим работником",
+    "metadata": {
+      "source_kz": "320-бап",
+      "target_kz": "317-бап"
+    }
+  },
+  {
+    "source_id": "456cbd3c-b03a-5781-b429-ccf8b2515854",
+    "target_id": "dc5c58c9-82e4-595b-a262-e3e685072b7d",
+    "type": "CORRELATED_WITH",
+    "evidence": "медицинским работником",
+    "metadata": {
+      "source_kz": "321-бап",
+      "target_kz": "317-бап"
+    }
+  },
+  {
+    "source_id": "4eb5a5a6-b8ce-56b2-bb56-13113dd381f6",
+    "target_id": "dc5c58c9-82e4-595b-a262-e3e685072b7d",
+    "type": "CORRELATED_WITH",
+    "evidence": "медицинской или фармацевтической деятельностью",
+    "metadata": {
+      "source_kz": "322-бап",
+      "target_kz": "317-бап"
+    }
+  },
+  {
+    "source_id": "954b1d3e-2f87-53f4-a6d3-5686db9562ce",
+    "target_id": "4eb5a5a6-b8ce-56b2-bb56-13113dd381f6",
+    "type": "CORRELATED_WITH",
+    "evidence": "фальсифицированных лекарственных средств",
+    "metadata": {
+      "source_kz": "323-бап",
+      "target_kz": "322-бап"
+    }
+  },
+  {
+    "source_id": "cb4488d2-e0b6-5d3f-881e-f44e1dc2ae1e",
+    "target_id": "92856d5c-766b-50e6-a471-84001a29c89a",
+    "type": "CORRELATED_WITH",
+    "evidence": "экологических требований",
+    "metadata": {
+      "source_kz": "324-бап",
+      "target_kz": "325-бап"
+    }
+  },
+  {
+    "source_id": "cb4488d2-e0b6-5d3f-881e-f44e1dc2ae1e",
+    "target_id": "ea415e5f-af22-5e3f-a056-273c4a3dd9dd",
+    "type": "CORRELATED_WITH",
+    "evidence": "экологических требований",
+    "metadata": {
+      "source_kz": "324-бап",
+      "target_kz": "326-бап"
+    }
+  },
+  {
+    "source_id": "cb4488d2-e0b6-5d3f-881e-f44e1dc2ae1e",
+    "target_id": "16e3b351-04af-5712-b8a9-1a852baf9269",
+    "type": "CORRELATED_WITH",
+    "evidence": "экологических требований",
+    "metadata": {
+      "source_kz": "324-бап",
+      "target_kz": "329-бап"
+    }
+  },
+  {
+    "source_id": "cb4488d2-e0b6-5d3f-881e-f44e1dc2ae1e",
+    "target_id": "ebfbb58b-1b5b-5718-9743-07a0767d846d",
+    "type": "CORRELATED_WITH",
+    "evidence": "экологических требований",
+    "metadata": {
+      "source_kz": "324-бап",
+      "target_kz": "330-бап"
+    }
+  },
+  {
+    "source_id": "cb4488d2-e0b6-5d3f-881e-f44e1dc2ae1e",
+    "target_id": "160e06a1-f8df-5ea6-b7a9-fac065f33500",
+    "type": "CORRELATED_WITH",
+    "evidence": "экологических требований",
+    "metadata": {
+      "source_kz": "324-бап",
+      "target_kz": "332-бап"
+    }
+  },
+  {
+    "source_id": "cb4488d2-e0b6-5d3f-881e-f44e1dc2ae1e",
+    "target_id": "e537425c-e6d4-53e3-934b-0c6a27f6811b",
+    "type": "CORRELATED_WITH",
+    "evidence": "экологических требований",
+    "metadata": {
+      "source_kz": "324-бап",
+      "target_kz": "333-бап"
+    }
+  },
+  {
+    "source_id": "92856d5c-766b-50e6-a471-84001a29c89a",
+    "target_id": "ea415e5f-af22-5e3f-a056-273c4a3dd9dd",
+    "type": "CORRELATED_WITH",
+    "evidence": "экологических требований",
+    "metadata": {
+      "source_kz": "325-бап",
+      "target_kz": "326-бап"
+    }
+  },
+  {
+    "source_id": "92856d5c-766b-50e6-a471-84001a29c89a",
+    "target_id": "4fc79324-e91b-52b4-a67f-8dbc696c1709",
+    "type": "CORRELATED_WITH",
+    "evidence": "экологических требований",
+    "metadata": {
+      "source_kz": "325-бап",
+      "target_kz": "328-бап"
+    }
+  },
+  {
+    "source_id": "92856d5c-766b-50e6-a471-84001a29c89a",
+    "target_id": "160e06a1-f8df-5ea6-b7a9-fac065f33500",
+    "type": "CORRELATED_WITH",
+    "evidence": "экологических требований",
+    "metadata": {
+      "source_kz": "325-бап",
+      "target_kz": "332-бап"
+    }
+  },
+  {
+    "source_id": "ea415e5f-af22-5e3f-a056-273c4a3dd9dd",
+    "target_id": "4fc79324-e91b-52b4-a67f-8dbc696c1709",
+    "type": "CORRELATED_WITH",
+    "evidence": "экологических требований",
+    "metadata": {
+      "source_kz": "326-бап",
+      "target_kz": "328-бап"
+    }
+  },
+  {
+    "source_id": "ea415e5f-af22-5e3f-a056-273c4a3dd9dd",
+    "target_id": "160e06a1-f8df-5ea6-b7a9-fac065f33500",
+    "type": "CORRELATED_WITH",
+    "evidence": "экологических требований",
+    "metadata": {
+      "source_kz": "326-бап",
+      "target_kz": "332-бап"
+    }
+  },
+  {
+    "source_id": "4fc79324-e91b-52b4-a67f-8dbc696c1709",
+    "target_id": "16e3b351-04af-5712-b8a9-1a852baf9269",
+    "type": "CORRELATED_WITH",
+    "evidence": "загрязнение",
+    "metadata": {
+      "source_kz": "328-бап",
+      "target_kz": "329-бап"
+    }
+  },
+  {
+    "source_id": "4fc79324-e91b-52b4-a67f-8dbc696c1709",
+    "target_id": "ebfbb58b-1b5b-5718-9743-07a0767d846d",
+    "type": "CORRELATED_WITH",
+    "evidence": "загрязнение",
+    "metadata": {
+      "source_kz": "328-бап",
+      "target_kz": "330-бап"
+    }
+  },
+  {
+    "source_id": "16e3b351-04af-5712-b8a9-1a852baf9269",
+    "target_id": "ebfbb58b-1b5b-5718-9743-07a0767d846d",
+    "type": "CORRELATED_WITH",
+    "evidence": "загрязнение",
+    "metadata": {
+      "source_kz": "329-бап",
+      "target_kz": "330-бап"
+    }
+  },
+  {
+    "source_id": "160e06a1-f8df-5ea6-b7a9-fac065f33500",
+    "target_id": "e537425c-e6d4-53e3-934b-0c6a27f6811b",
+    "type": "CORRELATED_WITH",
+    "evidence": "экологических требований",
+    "metadata": {
+      "source_kz": "332-бап",
+      "target_kz": "333-бап"
+    }
+  },
+  {
+    "source_id": "e537425c-e6d4-53e3-934b-0c6a27f6811b",
+    "target_id": "3785b562-366e-5a28-b5a1-c944d6809385",
+    "type": "CORRELATED_WITH",
+    "evidence": "недр",
+    "metadata": {
+      "source_kz": "333-бап",
+      "target_kz": "334-бап"
+    }
+  },
+  {
+    "source_id": "a8336311-9d45-5cdd-9a1f-db2fb42f8934",
+    "target_id": "fa13bbdf-34fa-5dc1-bb67-9b7f0412a69c",
+    "type": "CORRELATED_WITH",
+    "evidence": "рыбных ресурсов",
+    "metadata": {
+      "source_kz": "335-бап",
+      "target_kz": "336-бап"
+    }
+  },
+  {
+    "source_id": "88e053ae-c8b8-52ce-868e-4f51fb4604b3",
+    "target_id": "4bd555d2-ab7b-5e9e-813d-b2072a8b4199",
+    "type": "REFERENCES",
+    "evidence": "статьями 345, 345-1 и 346 настоящего Кодекса",
+    "metadata": {
+      "source_kz": "347-бап",
+      "target_kz": "345-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 345"
+    }
+  },
+  {
+    "source_id": "88e053ae-c8b8-52ce-868e-4f51fb4604b3",
+    "target_id": "34bc365d-0b6e-5ff9-a1fd-11471b8adafb",
+    "type": "REFERENCES",
+    "evidence": "статьями 345, 345-1 и 346 настоящего Кодекса",
+    "metadata": {
+      "source_kz": "347-бап",
+      "target_kz": "345-1-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 345-1"
+    }
+  },
+  {
+    "source_id": "88e053ae-c8b8-52ce-868e-4f51fb4604b3",
+    "target_id": "f4d3a678-1bd2-5cb4-9399-1cbbed3df297",
+    "type": "REFERENCES",
+    "evidence": "статьями 345, 345-1 и 346 настоящего Кодекса",
+    "metadata": {
+      "source_kz": "347-бап",
+      "target_kz": "346-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 346"
+    }
+  },
+  {
+    "source_id": "b310c3d0-1199-5ece-b849-3374a129cb28",
+    "target_id": "86002af0-1d33-59cb-bcac-319b0f5ca3dc",
+    "type": "CORRELATED_WITH",
+    "evidence": "Незаконное обращение с редкими и находящимися под угрозой исчезновения, а также запрещенными к пользованию видами растений или животных",
+    "metadata": {
+      "source_kz": "339-бап",
+      "target_kz": "339-1-бап"
+    }
+  },
+  {
+    "source_id": "3f32ea57-f131-5bfe-be72-476d70192be6",
+    "target_id": "99dc754d-35cb-5ec9-ab03-66220e8a94d2",
+    "type": "CORRELATED_WITH",
+    "evidence": "Незаконная охота",
+    "metadata": {
+      "source_kz": "337-бап",
+      "target_kz": "338-бап"
+    }
+  },
+  {
+    "source_id": "3f32ea57-f131-5bfe-be72-476d70192be6",
+    "target_id": "b310c3d0-1199-5ece-b849-3374a129cb28",
+    "type": "CORRELATED_WITH",
+    "evidence": "Незаконная охота",
+    "metadata": {
+      "source_kz": "337-бап",
+      "target_kz": "339-бап"
+    }
+  },
+  {
+    "source_id": "3f32ea57-f131-5bfe-be72-476d70192be6",
+    "target_id": "86002af0-1d33-59cb-bcac-319b0f5ca3dc",
+    "type": "CORRELATED_WITH",
+    "evidence": "Незаконная охота",
+    "metadata": {
+      "source_kz": "337-бап",
+      "target_kz": "339-1-бап"
+    }
+  },
+  {
+    "source_id": "3f32ea57-f131-5bfe-be72-476d70192be6",
+    "target_id": "76f64998-20f5-5492-81f6-cd6bde88ed74",
+    "type": "CORRELATED_WITH",
+    "evidence": "особо охраняемых природных территориях",
+    "metadata": {
+      "source_kz": "337-бап",
+      "target_kz": "342-бап"
+    }
+  },
+  {
+    "source_id": "99dc754d-35cb-5ec9-ab03-66220e8a94d2",
+    "target_id": "b310c3d0-1199-5ece-b849-3374a129cb28",
+    "type": "CORRELATED_WITH",
+    "evidence": "животного мира",
+    "metadata": {
+      "source_kz": "338-бап",
+      "target_kz": "339-бап"
+    }
+  },
+  {
+    "source_id": "e86682f0-9945-51f7-b75d-634f2ef0d466",
+    "target_id": "3b24cf91-b15e-5649-b252-227c01bff991",
+    "type": "CORRELATED_WITH",
+    "evidence": "уничтожение или повреждение деревьев и кустарников",
+    "metadata": {
+      "source_kz": "341-бап",
+      "target_kz": "340-бап"
+    }
+  },
+  {
+    "source_id": "dcf44e7f-6a3c-59bd-88ef-c373e4907cf5",
+    "target_id": "5a5cb871-d197-57a5-96d0-b8d53e23185d",
+    "type": "CORRELATED_WITH",
+    "evidence": "повреждение или разрушение трубопроводов",
+    "metadata": {
+      "source_kz": "355-бап",
+      "target_kz": "356-бап"
+    }
+  },
+  {
+    "source_id": "4bd555d2-ab7b-5e9e-813d-b2072a8b4199",
+    "target_id": "34bc365d-0b6e-5ff9-a1fd-11471b8adafb",
+    "type": "EXTENDS",
+    "evidence": "в состоянии алкогольного, наркотического и (или) токсикоманического опьянения",
+    "metadata": {
+      "source_kz": "345-бап",
+      "target_kz": "345-1-бап"
+    }
+  },
+  {
+    "source_id": "f4d3a678-1bd2-5cb4-9399-1cbbed3df297",
+    "target_id": "34bc365d-0b6e-5ff9-a1fd-11471b8adafb",
+    "type": "EXTENDS",
+    "evidence": "лицом, лишенным права управления транспортными средствами и находящимся в состоянии алкогольного, наркотического и (или) токсикоманического опьянения",
+    "metadata": {
+      "source_kz": "346-бап",
+      "target_kz": "345-1-бап"
+    }
+  },
+  {
+    "source_id": "1e486e9c-d786-5150-b145-bd9820dfe5a9",
+    "target_id": "17f3e4fc-cc81-5eae-8e39-ed15d8c761cb",
+    "type": "CORRELATED_WITH",
+    "evidence": "Неоказание капитаном судна помощи терпящим бедствие",
+    "metadata": {
+      "source_kz": "357-бап",
+      "target_kz": "358-бап"
+    }
+  },
+  {
+    "source_id": "17f3e4fc-cc81-5eae-8e39-ed15d8c761cb",
+    "target_id": "a383baf9-94f9-5873-a87b-bff6f8f65867",
+    "type": "CORRELATED_WITH",
+    "evidence": "Управление воздушным, морским, речным или маломерным судном лицом, находящимся в состоянии алкогольного, наркотического и (или) токсикоманического опьянения",
+    "metadata": {
+      "source_kz": "358-бап",
+      "target_kz": "359-бап"
+    }
+  },
+  {
+    "source_id": "dcec3b2d-5839-5dd7-a37b-95676e0dea66",
+    "target_id": "8618812f-5cf7-5bbf-a592-16aafe679722",
+    "type": "CORRELATED_WITH",
+    "evidence": "Злоупотребление должностными полномочиями",
+    "metadata": {
+      "source_kz": "361-бап",
+      "target_kz": "362-бап"
+    }
+  },
+  {
+    "source_id": "dcec3b2d-5839-5dd7-a37b-95676e0dea66",
+    "target_id": "f0506ad5-ff0a-5332-8f4d-7c42497e6ce4",
+    "type": "CORRELATED_WITH",
+    "evidence": "Злоупотребление должностными полномочиями",
+    "metadata": {
+      "source_kz": "361-бап",
+      "target_kz": "364-бап"
+    }
+  },
+  {
+    "source_id": "dcec3b2d-5839-5dd7-a37b-95676e0dea66",
+    "target_id": "b8e4bc43-c07f-5c78-90cb-7f73c103fb5e",
+    "type": "CORRELATED_WITH",
+    "evidence": "Злоупотребление должностными полномочиями",
+    "metadata": {
+      "source_kz": "361-бап",
+      "target_kz": "365-бап"
+    }
+  },
+  {
+    "source_id": "dcec3b2d-5839-5dd7-a37b-95676e0dea66",
+    "target_id": "823f783d-06f4-56a4-94a2-205870b1166d",
+    "type": "CORRELATED_WITH",
+    "evidence": "Злоупотребление должностными полномочиями",
+    "metadata": {
+      "source_kz": "361-бап",
+      "target_kz": "369-бап"
+    }
+  },
+  {
+    "source_id": "dcec3b2d-5839-5dd7-a37b-95676e0dea66",
+    "target_id": "43882355-faa2-5400-91a7-022380556c43",
+    "type": "CORRELATED_WITH",
+    "evidence": "Злоупотребление должностными полномочиями",
+    "metadata": {
+      "source_kz": "361-бап",
+      "target_kz": "370-бап"
+    }
+  },
+  {
+    "source_id": "e3f6cc7a-fbef-5b95-88cd-9e457a794b56",
+    "target_id": "c25d6ad9-fbd3-5da6-a884-a39b20907ef8",
+    "type": "CORRELATED_WITH",
+    "evidence": "Получение взятки",
+    "metadata": {
+      "source_kz": "366-бап",
+      "target_kz": "367-бап"
+    }
+  },
+  {
+    "source_id": "e3f6cc7a-fbef-5b95-88cd-9e457a794b56",
+    "target_id": "2752f42f-9493-5e68-bad9-794244162693",
+    "type": "CORRELATED_WITH",
+    "evidence": "Получение взятки",
+    "metadata": {
+      "source_kz": "366-бап",
+      "target_kz": "368-бап"
+    }
+  },
+  {
+    "source_id": "c25d6ad9-fbd3-5da6-a884-a39b20907ef8",
+    "target_id": "2752f42f-9493-5e68-bad9-794244162693",
+    "type": "CORRELATED_WITH",
+    "evidence": "Дача взятки",
+    "metadata": {
+      "source_kz": "367-бап",
+      "target_kz": "368-бап"
+    }
+  },
+  {
+    "source_id": "c25d6ad9-fbd3-5da6-a884-a39b20907ef8",
+    "target_id": "e3f6cc7a-fbef-5b95-88cd-9e457a794b56",
+    "type": "REFERENCES",
+    "evidence": "статьи 366 настоящего Кодекса",
+    "metadata": {
+      "source_kz": "367-бап",
+      "target_kz": "366-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 366"
+    }
+  },
+  {
+    "source_id": "321606ae-860d-5319-abbf-36914ab947e8",
+    "target_id": "43882355-faa2-5400-91a7-022380556c43",
+    "type": "EXTENDS",
+    "evidence": "Бездействие по службе лица, занимающего ответственную государственную должность",
+    "metadata": {
+      "source_kz": "370-1-бап",
+      "target_kz": "370-бап"
+    }
+  },
+  {
+    "source_id": "73269789-032c-579d-bf9b-71e92e9365d0",
+    "target_id": "321606ae-860d-5319-abbf-36914ab947e8",
+    "type": "CORRELATED_WITH",
+    "evidence": "Отказ или уклонение сотрудника правоохранительного или специального государственного органа от исполнения обязанностей службы",
+    "metadata": {
+      "source_kz": "370-2-бап",
+      "target_kz": "370-1-бап"
+    }
+  },
+  {
+    "source_id": "51c86a2b-bcba-5050-bd87-91b044880f07",
+    "target_id": "5a04ed33-8462-598a-a926-a30cdc42951d",
+    "type": "CORRELATED_WITH",
+    "evidence": "Публичное оскорбление и иное посягательство на честь и достоинство Первого Президента Республики Казахстан -- Елбасы",
+    "metadata": {
+      "source_kz": "373-бап",
+      "target_kz": "374-бап"
+    }
+  },
+  {
+    "source_id": "51c86a2b-bcba-5050-bd87-91b044880f07",
+    "target_id": "24677a53-79b9-58f2-bd19-7006b35b2eb3",
+    "type": "CORRELATED_WITH",
+    "evidence": "Публичное оскорбление и иное посягательство на честь и достоинство Первого Президента Республики Казахстан -- Елбасы",
+    "metadata": {
+      "source_kz": "373-бап",
+      "target_kz": "375-бап"
+    }
+  },
+  {
+    "source_id": "24677a53-79b9-58f2-bd19-7006b35b2eb3",
+    "target_id": "380c658e-e8b0-5c9c-b096-a1d44e03da2b",
+    "type": "CORRELATED_WITH",
+    "evidence": "Посягательство на честь и достоинство Президента Республики Казахстан и воспрепятствование его деятельности",
+    "metadata": {
+      "source_kz": "375-бап",
+      "target_kz": "376-бап"
+    }
+  },
+  {
+    "source_id": "dfecbf4d-0fb5-553e-a842-f0cc56bf5cce",
+    "target_id": "7110f518-22ff-5d4e-8f7f-e1c4276081df",
+    "type": "CORRELATED_WITH",
+    "evidence": "Оскорбление представителя власти при исполнении им своих служебных обязанностей",
+    "metadata": {
+      "source_kz": "378-бап",
+      "target_kz": "379-бап"
+    }
+  },
+  {
+    "source_id": "58c49deb-034e-5283-8170-577fb8e856bf",
+    "target_id": "60defd62-8ab6-5845-97e7-2d448104bae6",
+    "type": "EXTENDS",
+    "evidence": "Угроза или насильственные действия в отношении представителя власти",
+    "metadata": {
+      "source_kz": "380-бап",
+      "target_kz": "380-1-бап"
+    }
+  },
+  {
+    "source_id": "58c49deb-034e-5283-8170-577fb8e856bf",
+    "target_id": "60007aab-28fb-5122-b080-533cd61af382",
+    "type": "CORRELATED_WITH",
+    "evidence": "Применение насилия в отношении представителя власти",
+    "metadata": {
+      "source_kz": "380-бап",
+      "target_kz": "380-2-бап"
+    }
+  },
+  {
+    "source_id": "50343dba-91c9-5461-a4f4-cd60161dedf7",
+    "target_id": "58c49deb-034e-5283-8170-577fb8e856bf",
+    "type": "CORRELATED_WITH",
+    "evidence": "Угроза или применение насилия в отношении медицинского работника",
+    "metadata": {
+      "source_kz": "380-3-бап",
+      "target_kz": "380-бап"
+    }
+  },
+  {
+    "source_id": "86913de6-f75d-534a-aa2f-276ed3a51df8",
+    "target_id": "a5caca3b-1b3e-5c71-8c5b-e88c9f6ed854",
+    "type": "CORRELATED_WITH",
+    "evidence": "Приобретение или сбыт официальных документов",
+    "metadata": {
+      "source_kz": "383-бап",
+      "target_kz": "384-бап"
+    }
+  },
+  {
+    "source_id": "fbcc7bf1-d160-50d0-af87-c4ca1967e155",
+    "target_id": "a5caca3b-1b3e-5c71-8c5b-e88c9f6ed854",
+    "type": "CORRELATED_WITH",
+    "evidence": "Подделка, изготовление или сбыт поддельных документов, штампов, печатей",
+    "metadata": {
+      "source_kz": "385-бап",
+      "target_kz": "384-бап"
+    }
+  },
+  {
+    "source_id": "b40bb86f-3dba-5e00-93b5-dd2a99371f16",
+    "target_id": "ee03cf21-9e2f-5e30-90d2-5757b35a02cb",
+    "type": "EXTENDS",
+    "evidence": "Уклонение от призыва на воинскую службу",
+    "metadata": {
+      "source_kz": "387-бап",
+      "target_kz": "388-бап"
+    }
+  },
+  {
+    "source_id": "ee03cf21-9e2f-5e30-90d2-5757b35a02cb",
+    "target_id": "edbcb569-b746-5698-9c1b-7102497c8fda",
+    "type": "CORRELATED_WITH",
+    "evidence": "Уклонение от призыва по мобилизации",
+    "metadata": {
+      "source_kz": "388-бап",
+      "target_kz": "388-1-бап"
+    }
+  },
+  {
+    "source_id": "2826ce7b-600e-51f9-80fa-d6d068bcdd30",
+    "target_id": "90949bc1-8fcf-5920-83b8-4c73dc6548f7",
+    "type": "CORRELATED_WITH",
+    "evidence": "Незаконное пересечение Государственной границы",
+    "metadata": {
+      "source_kz": "392-бап",
+      "target_kz": "394-бап"
+    }
+  },
+  {
+    "source_id": "90949bc1-8fcf-5920-83b8-4c73dc6548f7",
+    "target_id": "fd1ef4f3-ab9f-51cb-ac0f-67aeda4383e7",
+    "type": "CORRELATED_WITH",
+    "evidence": "Организация незаконной миграции",
+    "metadata": {
+      "source_kz": "394-бап",
+      "target_kz": "395-бап"
+    }
+  },
+  {
+    "source_id": "ecb6ee4a-c634-564a-8f00-8608abf3ac64",
+    "target_id": "e2ff109d-cd64-5cbb-b1e2-f4d7d92b05ac",
+    "type": "CORRELATED_WITH",
+    "evidence": "Руководство запрещенной забастовкой",
+    "metadata": {
+      "source_kz": "401-бап",
+      "target_kz": "402-бап"
+    }
+  },
+  {
+    "source_id": "8ece2ba6-2fe8-5d0e-81a0-bb266598d35e",
+    "target_id": "c1afea4b-9933-5195-a16c-f7c1fb234bc3",
+    "type": "CORRELATED_WITH",
+    "evidence": "Незаконное вмешательство членов общественных объединений",
+    "metadata": {
+      "source_kz": "403-бап",
+      "target_kz": "404-бап"
+    }
+  },
+  {
+    "source_id": "b279a750-c6c7-5917-a180-f9279fd9cc89",
+    "target_id": "5130e0b0-9c91-5483-91fd-1d648976e869",
+    "type": "CORRELATED_WITH",
+    "evidence": "Организация деятельности общественного или религиозного объединения либо иной организации",
+    "metadata": {
+      "source_kz": "405-бап",
+      "target_kz": "406-бап"
+    }
+  },
+  {
+    "source_id": "e2a3277a-d5f8-52f1-9125-951f8fb37786",
+    "target_id": "fe87c411-c7f5-5621-be60-346b5844dadd",
+    "type": "CORRELATED_WITH",
+    "evidence": "Вмешательство в какой бы то ни было форме в деятельность суда в целях воспрепятствования осуществлению правосудия",
+    "metadata": {
+      "source_kz": "407-бап",
+      "target_kz": "408-бап"
+    }
+  },
+  {
+    "source_id": "fe87c411-c7f5-5621-be60-346b5844dadd",
+    "target_id": "574710c8-2913-5008-ac79-85f985ad0a4f",
+    "type": "CORRELATED_WITH",
+    "evidence": "Посягательство на жизнь судьи Конституционного Суда Республики Казахстан, судьи, присяжного заседателя, прокурора",
+    "metadata": {
+      "source_kz": "408-бап",
+      "target_kz": "409-бап"
+    }
+  },
+  {
+    "source_id": "574710c8-2913-5008-ac79-85f985ad0a4f",
+    "target_id": "a5972b65-1fe4-54a5-9e01-7eed365f99f1",
+    "type": "CORRELATED_WITH",
+    "evidence": "Угроза убийством, причинением вреда здоровью, повреждением или уничтожением имущества в отношении судьи Конституционного Суда Республики Казахстан, судьи, присяжного заседателя",
+    "metadata": {
+      "source_kz": "409-бап",
+      "target_kz": "410-бап"
+    }
+  },
+  {
+    "source_id": "a5972b65-1fe4-54a5-9e01-7eed365f99f1",
+    "target_id": "0fbb4277-e182-52aa-be78-af19a2fc8dc8",
+    "type": "CORRELATED_WITH",
+    "evidence": "Неуважение к Конституционному Суду Республики Казахстан, суду, выразившееся в оскорблении участников конституционного производства",
+    "metadata": {
+      "source_kz": "410-бап",
+      "target_kz": "411-бап"
+    }
+  },
+  {
+    "source_id": "23a7ddf6-2fc9-5ec3-97cb-afcbfe5d3b5c",
+    "target_id": "281d04a1-ceda-5ee8-8729-aeff16d2e13a",
+    "type": "CORRELATED_WITH",
+    "evidence": "Привлечение заведомо невиновного к уголовной ответственности",
+    "metadata": {
+      "source_kz": "412-бап",
+      "target_kz": "412-1-бап"
+    }
+  },
+  {
+    "source_id": "76b245c2-20ba-5872-884a-ac851407b68a",
+    "target_id": "889309c2-a9fc-5ea0-989a-b0830589fd86",
+    "type": "CORRELATED_WITH",
+    "evidence": "Заведомо незаконное освобождение от уголовной ответственности",
+    "metadata": {
+      "source_kz": "413-бап",
+      "target_kz": "414-бап"
+    }
+  },
+  {
+    "source_id": "ef9457e5-5359-50a7-a134-0230e2f7fc8a",
+    "target_id": "7b12c649-baf2-5bf1-b2c9-b13c1081367b",
+    "type": "CORRELATED_WITH",
+    "evidence": "Принуждение подозреваемого, обвиняемого, потерпевшего, свидетеля к даче показаний",
+    "metadata": {
+      "source_kz": "415-бап",
+      "target_kz": "416-бап"
+    }
+  },
+  {
+    "source_id": "7b12c649-baf2-5bf1-b2c9-b13c1081367b",
+    "target_id": "3ddd397f-c195-5e07-acf3-c090b4c3c1e8",
+    "type": "CORRELATED_WITH",
+    "evidence": "Фальсификация доказательств по гражданскому делу",
+    "metadata": {
+      "source_kz": "416-бап",
+      "target_kz": "418-бап"
+    }
+  },
+  {
+    "source_id": "52d07c2c-3bf9-55ac-abd8-660baaa55c26",
+    "target_id": "3ddd397f-c195-5e07-acf3-c090b4c3c1e8",
+    "type": "CORRELATED_WITH",
+    "evidence": "Провокация коммерческого подкупа либо взяточничества",
+    "metadata": {
+      "source_kz": "417-бап",
+      "target_kz": "418-бап"
+    }
+  },
+  {
+    "source_id": "292b8892-2cc6-5bcf-bc60-f3e1ab6a1de8",
+    "target_id": "f2adc5c2-ae9a-5d06-8ef9-c97e6386e7e6",
+    "type": "CORRELATED_WITH",
+    "evidence": "Заведомо ложный донос о совершении преступления",
+    "metadata": {
+      "source_kz": "419-бап",
+      "target_kz": "420-бап"
+    }
+  },
+  {
+    "source_id": "f2adc5c2-ae9a-5d06-8ef9-c97e6386e7e6",
+    "target_id": "5aa1da6b-2e93-5233-96ca-d58905aa375e",
+    "type": "CORRELATED_WITH",
+    "evidence": "Заведомо ложные показания свидетеля, потерпевшего",
+    "metadata": {
+      "source_kz": "420-бап",
+      "target_kz": "421-бап"
+    }
+  },
+  {
+    "source_id": "5aa1da6b-2e93-5233-96ca-d58905aa375e",
+    "target_id": "f2aa4830-7702-5137-a591-f0b6a79084d3",
+    "type": "CORRELATED_WITH",
+    "evidence": "Отказ свидетеля или потерпевшего от дачи показаний",
+    "metadata": {
+      "source_kz": "421-бап",
+      "target_kz": "422-бап"
+    }
+  },
+  {
+    "source_id": "7e20f0e0-a31b-5466-a79a-d3bfde69ffea",
+    "target_id": "097138d9-dd90-5de7-a88b-0fa77663cc0b",
+    "type": "CORRELATED_WITH",
+    "evidence": "Разглашение данных досудебного производства или закрытого судебного разбирательства",
+    "metadata": {
+      "source_kz": "423-бап",
+      "target_kz": "424-бап"
+    }
+  },
+  {
+    "source_id": "9c9e3593-12d6-52f1-b251-1c6022efe189",
+    "target_id": "49bfa834-66d8-5f50-9a3a-778c1f5108aa",
+    "type": "CORRELATED_WITH",
+    "evidence": "Незаконные действия в отношении имущества, подвергнутого описи или аресту либо подлежащего конфискации",
+    "metadata": {
+      "source_kz": "425-бап",
+      "target_kz": "426-бап"
+    }
+  },
+  {
+    "source_id": "49bfa834-66d8-5f50-9a3a-778c1f5108aa",
+    "target_id": "9d1376b3-8196-56eb-afad-8a1b54c5b827",
+    "type": "CORRELATED_WITH",
+    "evidence": "Побег из мест лишения свободы, из-под ареста или из-под стражи",
+    "metadata": {
+      "source_kz": "426-бап",
+      "target_kz": "427-бап"
+    }
+  },
+  {
+    "source_id": "9d1376b3-8196-56eb-afad-8a1b54c5b827",
+    "target_id": "4671e831-4313-5855-8c47-5437084d8813",
+    "type": "CORRELATED_WITH",
+    "evidence": "Уклонение от отбывания наказания в виде лишения свободы",
+    "metadata": {
+      "source_kz": "427-бап",
+      "target_kz": "428-бап"
+    }
+  },
+  {
+    "source_id": "4671e831-4313-5855-8c47-5437084d8813",
+    "target_id": "09c84315-52e1-54f5-a81d-e178b6989db3",
+    "type": "CORRELATED_WITH",
+    "evidence": "Неповиновение законным требованиям администрации учреждений уголовно-исполнительной (пенитенциарной) системы",
+    "metadata": {
+      "source_kz": "428-бап",
+      "target_kz": "428-1-бап"
+    }
+  },
+  {
+    "source_id": "09c84315-52e1-54f5-a81d-e178b6989db3",
+    "target_id": "4688603f-232e-5127-8884-3b501a35adea",
+    "type": "CORRELATED_WITH",
+    "evidence": "Умышленное уничтожение или повреждение системы видеонаблюдения",
+    "metadata": {
+      "source_kz": "428-1-бап",
+      "target_kz": "429-бап"
+    }
+  },
+  {
+    "source_id": "27d84cd5-0e88-581d-8481-37ef4a7fb0dd",
+    "target_id": "29fa70b0-9639-5d72-9525-b8030dbd67c0",
+    "type": "CORRELATED_WITH",
+    "evidence": "Неисполнение вступивших в законную силу приговора, решения суда или иного судебного акта либо исполнительного документа",
+    "metadata": {
+      "source_kz": "430-бап",
+      "target_kz": "431-бап"
+    }
+  },
+  {
+    "source_id": "f72f08df-3211-554d-a1e0-d3ebe4ffe089",
+    "target_id": "83085571-05a0-5324-b322-6a16d928d88a",
+    "type": "CORRELATED_WITH",
+    "evidence": "Укрывательство преступления",
+    "metadata": {
+      "source_kz": "432-бап",
+      "target_kz": "433-бап"
+    }
+  },
+  {
+    "source_id": "83085571-05a0-5324-b322-6a16d928d88a",
+    "target_id": "90c71828-0c18-5e89-9499-5a32a858ff11",
+    "type": "CORRELATED_WITH",
+    "evidence": "Укрытие уголовного правонарушения",
+    "metadata": {
+      "source_kz": "433-бап",
+      "target_kz": "434-бап"
+    }
+  },
+  {
+    "source_id": "779b7cfb-b944-54f4-aa8b-eeebd3e7e76c",
+    "target_id": "795093a7-e4bd-5500-b1f9-fbc4620dc38e",
+    "type": "CORRELATED_WITH",
+    "evidence": "Неповиновение или иное неисполнение приказа",
+    "metadata": {
+      "source_kz": "437-бап",
+      "target_kz": "438-бап"
+    }
+  },
+  {
+    "source_id": "795093a7-e4bd-5500-b1f9-fbc4620dc38e",
+    "target_id": "b2a5dace-4e43-5952-9bec-f5571b20fec0",
+    "type": "CORRELATED_WITH",
+    "evidence": "Сопротивление начальнику или принуждение его к нарушению служебных обязанностей",
+    "metadata": {
+      "source_kz": "438-бап",
+      "target_kz": "439-бап"
+    }
+  },
+  {
+    "source_id": "82f55517-fea6-5d08-9458-db993140d599",
+    "target_id": "e96f007f-96ab-5078-beef-17482a9cf6a9",
+    "type": "CORRELATED_WITH",
+    "evidence": "Самовольное оставление части или места службы",
+    "metadata": {
+      "source_kz": "441-бап",
+      "target_kz": "442-бап"
+    }
+  },
+  {
+    "source_id": "009b7166-d4e2-519f-a7ee-3995b9a2d5b6",
+    "target_id": "2cf5b59c-6cb9-5d6d-ac72-d79c8ee7db46",
+    "type": "CORRELATED_WITH",
+    "evidence": "Злоупотребление властью",
+    "metadata": {
+      "source_kz": "450-бап",
+      "target_kz": "451-бап"
+    }
+  },
+  {
+    "source_id": "2cf5b59c-6cb9-5d6d-ac72-d79c8ee7db46",
+    "target_id": "a73c9d4b-471d-57be-b4f1-d7a04ca67f8f",
+    "type": "CORRELATED_WITH",
+    "evidence": "Превышение власти",
+    "metadata": {
+      "source_kz": "451-бап",
+      "target_kz": "452-бап"
+    }
+  },
+  {
+    "source_id": "a73c9d4b-471d-57be-b4f1-d7a04ca67f8f",
+    "target_id": "af0c424f-bffe-566e-800d-9bfc90ddc818",
+    "type": "CORRELATED_WITH",
+    "evidence": "Бездействие власти",
+    "metadata": {
+      "source_kz": "452-бап",
+      "target_kz": "452-1-бап"
+    }
+  },
+  {
+    "source_id": "014b9012-60a2-5d9f-900c-6a7b8b27ac89",
+    "target_id": "01a8d412-c647-5693-a4d4-a0634a7c32a3",
+    "type": "CORRELATED_WITH",
+    "evidence": "Умышленное уничтожение или повреждение военного имущества",
+    "metadata": {
+      "source_kz": "459-бап",
+      "target_kz": "460-бап"
+    }
+  },
+  {
+    "source_id": "6926e908-4503-5562-9910-070aae2b0eb0",
+    "target_id": "a6cab5fb-1ff0-5dd6-9d91-66add2e2e14b",
+    "type": "CORRELATED_WITH",
+    "evidence": "вождение военных кораблей",
+    "metadata": {
+      "source_kz": "466-бап",
+      "target_kz": "465-бап"
+    }
+  },
+  {
+    "source_id": "8be330df-f42a-5b3e-ae91-78eff7e355a5",
+    "target_id": "a6cab5fb-1ff0-5dd6-9d91-66add2e2e14b",
+    "type": "REFERENCES",
+    "evidence": "статья 45",
+    "metadata": {
+      "source_kz": "467-бап",
+      "target_kz": "45-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 45"
+    }
+  },
+  {
+    "source_id": "8be330df-f42a-5b3e-ae91-78eff7e355a5",
+    "target_id": "6926e908-4503-5562-9910-070aae2b0eb0",
+    "type": "REFERENCES",
+    "evidence": "статья 48",
+    "metadata": {
+      "source_kz": "467-бап",
+      "target_kz": "48-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 48"
+    }
+  }
+]

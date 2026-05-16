@@ -1,0 +1,1752 @@
+[
+  {
+    "source_id": "08d05484-7d4b-5a54-a1ea-4cf2669bbdad",
+    "target_id": "3e9735da-f275-5939-a2de-18828d4dee25",
+    "type": "BASED_ON",
+    "evidence": "Трудовое законодательство Республики Казахстан основывается на Конституции Республики Казахстан и состоит из настоящего Кодекса",
+    "metadata": {
+      "source_kz": "2-бап",
+      "target_kz": "1-бап"
+    }
+  },
+  {
+    "source_id": "6122e8f2-9b41-52a2-8401-1916fa63d900",
+    "target_id": "08d05484-7d4b-5a54-a1ea-4cf2669bbdad",
+    "type": "BASED_ON",
+    "evidence": "Целью трудового законодательства Республики Казахстан является правовое регулирование трудовых отношений",
+    "metadata": {
+      "source_kz": "3-бап",
+      "target_kz": "2-бап"
+    }
+  },
+  {
+    "source_id": "749990b7-732e-50b5-b177-f2661879313e",
+    "target_id": "6122e8f2-9b41-52a2-8401-1916fa63d900",
+    "type": "MANIFESTED_IN",
+    "evidence": "Принципами трудового законодательства Республики Казахстан являются",
+    "metadata": {
+      "source_kz": "4-бап",
+      "target_kz": "3-бап"
+    }
+  },
+  {
+    "source_id": "4fe6f434-ee8e-52c1-b160-0371c2b5c533",
+    "target_id": "749990b7-732e-50b5-b177-f2661879313e",
+    "type": "MANIFESTED_IN",
+    "evidence": "Каждый имеет право свободно выбирать труд",
+    "metadata": {
+      "source_kz": "5-бап",
+      "target_kz": "4-бап"
+    }
+  },
+  {
+    "source_id": "e5c2ed6a-64d8-5ba6-b99a-5c906917eb79",
+    "target_id": "749990b7-732e-50b5-b177-f2661879313e",
+    "type": "MANIFESTED_IN",
+    "evidence": "Запрещение дискриминации в сфере труда",
+    "metadata": {
+      "source_kz": "6-бап",
+      "target_kz": "4-бап"
+    }
+  },
+  {
+    "source_id": "7df92a49-2f89-5000-93d9-222a0d03e9ba",
+    "target_id": "749990b7-732e-50b5-b177-f2661879313e",
+    "type": "MANIFESTED_IN",
+    "evidence": "Принудительный труд запрещен",
+    "metadata": {
+      "source_kz": "7-бап",
+      "target_kz": "4-бап"
+    }
+  },
+  {
+    "source_id": "167bceb4-67a0-5114-a444-802165c70661",
+    "target_id": "3e9735da-f275-5939-a2de-18828d4dee25",
+    "type": "BASED_ON",
+    "evidence": "Настоящий Кодекс регулирует отношения",
+    "metadata": {
+      "source_kz": "8-бап",
+      "target_kz": "1-бап"
+    }
+  },
+  {
+    "source_id": "07b5f4a2-3e50-5585-b02d-5502a9c3fab1",
+    "target_id": "3e9735da-f275-5939-a2de-18828d4dee25",
+    "type": "REFERENCES",
+    "evidence": "Минимальный размер месячной заработной платы, продолжительность ежедневной работы (рабочей смены), основной оплачиваемый ежегодный трудовой отпуск являются минимальными социальными стандартами в сфере труда в соответствии с Законом Республики Казахстан \"О минимальных социальных стандартах и их гарантиях\"",
+    "metadata": {
+      "source_kz": "9-бап",
+      "target_kz": "1-бап",
+      "ref_type": "external",
+      "target_label": "Закон Республики Казахстан \"О минимальных социальных стандартах и их гарантиях\""
+    }
+  },
+  {
+    "source_id": "bbbaee65-a772-500f-bf03-9cf47c04cfc6",
+    "target_id": "3e9735da-f275-5939-a2de-18828d4dee25",
+    "type": "BASED_ON",
+    "evidence": "Трудовые отношения, а также иные отношения, непосредственно связанные с трудовыми, регулируются трудовым договором, актом работодателя, соглашением и коллективным договором",
+    "metadata": {
+      "source_kz": "10-бап",
+      "target_kz": "1-бап"
+    }
+  },
+  {
+    "source_id": "c861c45e-df7a-5d90-a242-c2cd4fe9a92f",
+    "target_id": "bbbaee65-a772-500f-bf03-9cf47c04cfc6",
+    "type": "MANIFESTED_IN",
+    "evidence": "Работодатель издает акты в пределах своей компетенции в соответствии с настоящим Кодексом и иными нормативными правовыми актами Республики Казахстан, трудовым договором, соглашениями, коллективным договором",
+    "metadata": {
+      "source_kz": "11-бап",
+      "target_kz": "10-бап"
+    }
+  },
+  {
+    "source_id": "de514b42-bdd2-5eb2-b08d-c8d842dd8e9a",
+    "target_id": "c861c45e-df7a-5d90-a242-c2cd4fe9a92f",
+    "type": "EXTENDS",
+    "evidence": "Работодатель в случаях, предусмотренных соглашениями, коллективным договором, издает акты с учетом мнения представителей работников",
+    "metadata": {
+      "source_kz": "12-бап",
+      "target_kz": "11-бап"
+    }
+  },
+  {
+    "source_id": "d318b8d2-7794-572b-8f72-d5ec1df0a963",
+    "target_id": "3e9735da-f275-5939-a2de-18828d4dee25",
+    "type": "CORRELATED_WITH",
+    "evidence": "Установленный настоящим Кодексом, трудовым или коллективным договором, соглашениями срок определяется календарной датой",
+    "metadata": {
+      "source_kz": "13-бап",
+      "target_kz": "1-бап"
+    }
+  },
+  {
+    "source_id": "8ccb6a5d-6c87-5ff2-9692-480aa1d14477",
+    "target_id": "08d05484-7d4b-5a54-a1ea-4cf2669bbdad",
+    "type": "BASED_ON",
+    "evidence": "Лица, виновные в нарушении трудового законодательства Республики Казахстан, несут ответственность в соответствии с законами Республики Казахстан",
+    "metadata": {
+      "source_kz": "14-бап",
+      "target_kz": "2-бап"
+    }
+  },
+  {
+    "source_id": "47ec35cc-69a4-5c7b-ac63-af523ac9794c",
+    "target_id": "08d05484-7d4b-5a54-a1ea-4cf2669bbdad",
+    "type": "BASED_ON",
+    "evidence": "Правительство Республики Казахстан разрабатывает основные направления и обеспечивает реализацию государственной политики в области труда, безопасности и охраны труда",
+    "metadata": {
+      "source_kz": "15-бап",
+      "target_kz": "2-бап"
+    }
+  },
+  {
+    "source_id": "50d561a3-1164-5dae-8a47-26a0282d55ed",
+    "target_id": "42a2c8b8-1be7-5f53-95f7-e2ee8068e8e2",
+    "type": "CORRELATED_WITH",
+    "evidence": "Уполномоченный государственный орган по труду: ... организует государственный контроль за соблюдением трудового законодательства Республики Казахстан",
+    "metadata": {
+      "source_kz": "16-бап",
+      "target_kz": "17-бап"
+    }
+  },
+  {
+    "source_id": "50d561a3-1164-5dae-8a47-26a0282d55ed",
+    "target_id": "7f175bb4-a006-555a-bcfd-457685ac63f3",
+    "type": "CORRELATED_WITH",
+    "evidence": "Уполномоченный государственный орган по труду: ... осуществляет методическое руководство и координацию местных исполнительных органов в области регулирования трудовых отношений",
+    "metadata": {
+      "source_kz": "16-бап",
+      "target_kz": "18-бап"
+    }
+  },
+  {
+    "source_id": "42a2c8b8-1be7-5f53-95f7-e2ee8068e8e2",
+    "target_id": "50d561a3-1164-5dae-8a47-26a0282d55ed",
+    "type": "BASED_ON",
+    "evidence": "Территориальное подразделение: ... осуществляет государственный контроль за соблюдением трудового законодательства Республики Казахстан",
+    "metadata": {
+      "source_kz": "17-бап",
+      "target_kz": "16-бап"
+    }
+  },
+  {
+    "source_id": "aa4c055d-f2e4-516c-9f4b-7e06278ac9bb",
+    "target_id": "1222ff0e-5abe-5a43-93d6-274f4553e441",
+    "type": "CORRELATED_WITH",
+    "evidence": "Интересы работников в пределах делегированных им полномочий представляют органы профессиональных союзов",
+    "metadata": {
+      "source_kz": "20-бап",
+      "target_kz": "20-1-бап"
+    }
+  },
+  {
+    "source_id": "df5ed21f-20df-5a8f-876e-2c2ca2f4aaf6",
+    "target_id": "b22bcaab-2061-5380-a5d0-1db63c998c5c",
+    "type": "CORRELATED_WITH",
+    "evidence": "Субъектами трудовых отношений являются работник и работодатель.",
+    "metadata": {
+      "source_kz": "19-бап",
+      "target_kz": "21-бап"
+    }
+  },
+  {
+    "source_id": "f4d66af9-5277-56e5-bfda-0632b59341ac",
+    "target_id": "2d970e76-6167-52ee-8ed5-f4e2b5f2ff7b",
+    "type": "CORRELATED_WITH",
+    "evidence": "Работник имеет право на: ... заключение, изменение, дополнение, прекращение трудового договора",
+    "metadata": {
+      "source_kz": "22-бап",
+      "target_kz": "23-бап"
+    }
+  },
+  {
+    "source_id": "622dffc8-2be9-536a-bc15-31e4d2c04e4a",
+    "target_id": "b22bcaab-2061-5380-a5d0-1db63c998c5c",
+    "type": "CORRELATED_WITH",
+    "evidence": "По трудовому договору работник обязуется лично выполнять работу (трудовую функцию)",
+    "metadata": {
+      "source_kz": "24-бап",
+      "target_kz": "21-бап"
+    }
+  },
+  {
+    "source_id": "dc4a5ed4-174e-5cc3-ab6d-6ff6a7b51624",
+    "target_id": "63b99cf3-88bd-5ae0-b2ff-eff846a57471",
+    "type": "CORRELATED_WITH",
+    "evidence": "Запрещается нарушение равенства прав и возможностей при заключении трудового договора.",
+    "metadata": {
+      "source_kz": "25-бап",
+      "target_kz": "26-бап"
+    }
+  },
+  {
+    "source_id": "5e2cf8a1-1258-5538-a4e4-9e40f06541e5",
+    "target_id": "622dffc8-2be9-536a-bc15-31e4d2c04e4a",
+    "type": "CORRELATED_WITH",
+    "evidence": "Отличительными признаками трудового договора от иных видов договоров является наличие в нем одного из следующих условий",
+    "metadata": {
+      "source_kz": "27-бап",
+      "target_kz": "24-бап"
+    }
+  },
+  {
+    "source_id": "71c3a067-c972-57b3-9bc7-b5c3368a09db",
+    "target_id": "33e02202-a1ef-55dc-8a09-618dbba09bfb",
+    "type": "CORRELATED_WITH",
+    "evidence": "По соглашению сторон в трудовой договор могут включаться и иные условия, не противоречащие законодательству Республики Казахстан.",
+    "metadata": {
+      "source_kz": "28-бап",
+      "target_kz": "29-бап"
+    }
+  },
+  {
+    "source_id": "71c3a067-c972-57b3-9bc7-b5c3368a09db",
+    "target_id": "ed847119-a2c5-57af-ac93-08a92f955336",
+    "type": "CORRELATED_WITH",
+    "evidence": "срок трудового договора",
+    "metadata": {
+      "source_kz": "28-бап",
+      "target_kz": "30-бап"
+    }
+  },
+  {
+    "source_id": "71c3a067-c972-57b3-9bc7-b5c3368a09db",
+    "target_id": "7b67372e-ae16-5b8c-b888-45a892b20ced",
+    "type": "CORRELATED_WITH",
+    "evidence": "заключение трудового договора",
+    "metadata": {
+      "source_kz": "28-бап",
+      "target_kz": "31-бап"
+    }
+  },
+  {
+    "source_id": "71c3a067-c972-57b3-9bc7-b5c3368a09db",
+    "target_id": "bb6b70df-1ea7-5022-b0bd-ef37a98e51a1",
+    "type": "CORRELATED_WITH",
+    "evidence": "заключение трудового договора",
+    "metadata": {
+      "source_kz": "28-бап",
+      "target_kz": "32-бап"
+    }
+  },
+  {
+    "source_id": "71c3a067-c972-57b3-9bc7-b5c3368a09db",
+    "target_id": "55d00c6d-8ef1-5ace-b572-8eb1a9a52b1c",
+    "type": "CORRELATED_WITH",
+    "evidence": "изменения и дополнения в трудовой договор",
+    "metadata": {
+      "source_kz": "28-бап",
+      "target_kz": "33-бап"
+    }
+  },
+  {
+    "source_id": "71c3a067-c972-57b3-9bc7-b5c3368a09db",
+    "target_id": "6fe943a8-9282-548d-9ca0-6236d7388862",
+    "type": "BASED_ON",
+    "evidence": "Прием на работу оформляется актом работодателя, издаваемым на основании заключенного трудового договора.",
+    "metadata": {
+      "source_kz": "28-бап",
+      "target_kz": "34-бап"
+    }
+  },
+  {
+    "source_id": "71c3a067-c972-57b3-9bc7-b5c3368a09db",
+    "target_id": "b24d6ded-04a2-5857-a124-cb3c2fa5c673",
+    "type": "CORRELATED_WITH",
+    "evidence": "При заключении трудового договора в трудовом договоре может быть установлено условие об испытательном сроке",
+    "metadata": {
+      "source_kz": "28-бап",
+      "target_kz": "36-бап"
+    }
+  },
+  {
+    "source_id": "71c3a067-c972-57b3-9bc7-b5c3368a09db",
+    "target_id": "15dd086f-7f9f-5aa9-b134-8573de5f5fe5",
+    "type": "CORRELATED_WITH",
+    "evidence": "изменение работы (трудовой функции) работника",
+    "metadata": {
+      "source_kz": "28-бап",
+      "target_kz": "38-бап"
+    }
+  },
+  {
+    "source_id": "71c3a067-c972-57b3-9bc7-b5c3368a09db",
+    "target_id": "77b6d8bb-cdaf-53b5-b0c1-62cc760ed3bf",
+    "type": "CORRELATED_WITH",
+    "evidence": "изменение условий труда",
+    "metadata": {
+      "source_kz": "28-бап",
+      "target_kz": "46-бап"
+    }
+  },
+  {
+    "source_id": "71c3a067-c972-57b3-9bc7-b5c3368a09db",
+    "target_id": "3d1ab5d3-85a0-54f3-9477-f94ad9037e7b",
+    "type": "CORRELATED_WITH",
+    "evidence": "порядок изменения и прекращения трудового договора",
+    "metadata": {
+      "source_kz": "28-бап",
+      "target_kz": "49-бап"
+    }
+  },
+  {
+    "source_id": "ed847119-a2c5-57af-ac93-08a92f955336",
+    "target_id": "bc47e4e5-ace7-5b60-add7-aeb6ec93e0c7",
+    "type": "CORRELATED_WITH",
+    "evidence": "истечение срока трудового договора",
+    "metadata": {
+      "source_kz": "30-бап",
+      "target_kz": "51-бап"
+    }
+  },
+  {
+    "source_id": "ed847119-a2c5-57af-ac93-08a92f955336",
+    "target_id": "c243bf52-812c-5190-b36d-4051377a77b4",
+    "type": "CORRELATED_WITH",
+    "evidence": "достижение работником пенсионного возраста",
+    "metadata": {
+      "source_kz": "30-бап",
+      "target_kz": "52-бап"
+    }
+  },
+  {
+    "source_id": "55d00c6d-8ef1-5ace-b572-8eb1a9a52b1c",
+    "target_id": "15dd086f-7f9f-5aa9-b134-8573de5f5fe5",
+    "type": "CORRELATED_WITH",
+    "evidence": "внесение изменений и дополнений в трудовой договор, в том числе при переводе на другую работу",
+    "metadata": {
+      "source_kz": "33-бап",
+      "target_kz": "38-бап"
+    }
+  },
+  {
+    "source_id": "55d00c6d-8ef1-5ace-b572-8eb1a9a52b1c",
+    "target_id": "6fe943a8-9282-548d-9ca0-6236d7388862",
+    "type": "BASED_ON",
+    "evidence": "Прием на работу оформляется актом работодателя, издаваемым на основании заключенного трудового договора.",
+    "metadata": {
+      "source_kz": "33-бап",
+      "target_kz": "34-бап"
+    }
+  },
+  {
+    "source_id": "b24d6ded-04a2-5857-a124-cb3c2fa5c673",
+    "target_id": "b26cb38c-54e2-5e2d-b34c-a34c3b4c181c",
+    "type": "EXTENDS",
+    "evidence": "При отрицательном результате работы работника в период испытательного срока работодатель вправе расторгнуть с ним трудовой договор",
+    "metadata": {
+      "source_kz": "36-бап",
+      "target_kz": "37-бап"
+    }
+  },
+  {
+    "source_id": "15dd086f-7f9f-5aa9-b134-8573de5f5fe5",
+    "target_id": "22ceb9bd-ca72-56ce-9a70-245a2fb5b5ee",
+    "type": "MANIFESTED_IN",
+    "evidence": "перевод в другую местность вместе с работодателем",
+    "metadata": {
+      "source_kz": "38-бап",
+      "target_kz": "39-бап"
+    }
+  },
+  {
+    "source_id": "15dd086f-7f9f-5aa9-b134-8573de5f5fe5",
+    "target_id": "8e94f899-25fa-53fd-9502-09bc2f7f5a3e",
+    "type": "MANIFESTED_IN",
+    "evidence": "Временный перевод на другую работу в случае производственной необходимости",
+    "metadata": {
+      "source_kz": "38-бап",
+      "target_kz": "41-бап"
+    }
+  },
+  {
+    "source_id": "15dd086f-7f9f-5aa9-b134-8573de5f5fe5",
+    "target_id": "e87e248d-45ea-5cd4-bf35-902f46893057",
+    "type": "MANIFESTED_IN",
+    "evidence": "Временный перевод на другую работу в случае простоя",
+    "metadata": {
+      "source_kz": "38-бап",
+      "target_kz": "42-бап"
+    }
+  },
+  {
+    "source_id": "15dd086f-7f9f-5aa9-b134-8573de5f5fe5",
+    "target_id": "b637da88-9802-5551-9034-7a44b0f98058",
+    "type": "MANIFESTED_IN",
+    "evidence": "Временный перевод на другую работу по состоянию здоровья",
+    "metadata": {
+      "source_kz": "38-бап",
+      "target_kz": "43-бап"
+    }
+  },
+  {
+    "source_id": "15dd086f-7f9f-5aa9-b134-8573de5f5fe5",
+    "target_id": "0f2a2804-a1b1-5fd4-9934-a462af442314",
+    "type": "MANIFESTED_IN",
+    "evidence": "Временный перевод на другую работу беременных женщин",
+    "metadata": {
+      "source_kz": "38-бап",
+      "target_kz": "44-бап"
+    }
+  },
+  {
+    "source_id": "15dd086f-7f9f-5aa9-b134-8573de5f5fe5",
+    "target_id": "8e16b5e6-635b-52fc-aee9-e937926d0902",
+    "type": "CORRELATED_WITH",
+    "evidence": "перемещение работника на другое рабочее место",
+    "metadata": {
+      "source_kz": "38-бап",
+      "target_kz": "45-бап"
+    }
+  },
+  {
+    "source_id": "22ceb9bd-ca72-56ce-9a70-245a2fb5b5ee",
+    "target_id": "3d1ab5d3-85a0-54f3-9477-f94ad9037e7b",
+    "type": "REFERENCES",
+    "evidence": "подпункту 1) пункта 1 статьи 58 настоящего Кодекса",
+    "metadata": {
+      "source_kz": "39-бап",
+      "target_kz": "58-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 58"
+    }
+  },
+  {
+    "source_id": "b637da88-9802-5551-9034-7a44b0f98058",
+    "target_id": "3d1ab5d3-85a0-54f3-9477-f94ad9037e7b",
+    "type": "REFERENCES",
+    "evidence": "подпункту 3) пункта 1 статьи 58 настоящего Кодекса",
+    "metadata": {
+      "source_kz": "43-бап",
+      "target_kz": "58-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 58"
+    }
+  },
+  {
+    "source_id": "77b6d8bb-cdaf-53b5-b0c1-62cc760ed3bf",
+    "target_id": "3d1ab5d3-85a0-54f3-9477-f94ad9037e7b",
+    "type": "REFERENCES",
+    "evidence": "подпункту 2) пункта 1 статьи 58 настоящего Кодекса",
+    "metadata": {
+      "source_kz": "46-бап",
+      "target_kz": "58-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 58"
+    }
+  },
+  {
+    "source_id": "8e94f899-25fa-53fd-9502-09bc2f7f5a3e",
+    "target_id": "e87e248d-45ea-5cd4-bf35-902f46893057",
+    "type": "CORRELATED_WITH",
+    "evidence": "временный перевод на другую работу",
+    "metadata": {
+      "source_kz": "41-бап",
+      "target_kz": "42-бап"
+    }
+  },
+  {
+    "source_id": "8e94f899-25fa-53fd-9502-09bc2f7f5a3e",
+    "target_id": "b637da88-9802-5551-9034-7a44b0f98058",
+    "type": "CORRELATED_WITH",
+    "evidence": "временный перевод на другую работу",
+    "metadata": {
+      "source_kz": "41-бап",
+      "target_kz": "43-бап"
+    }
+  },
+  {
+    "source_id": "8e94f899-25fa-53fd-9502-09bc2f7f5a3e",
+    "target_id": "0f2a2804-a1b1-5fd4-9934-a462af442314",
+    "type": "CORRELATED_WITH",
+    "evidence": "временный перевод на другую работу",
+    "metadata": {
+      "source_kz": "41-бап",
+      "target_kz": "44-бап"
+    }
+  },
+  {
+    "source_id": "8e94f899-25fa-53fd-9502-09bc2f7f5a3e",
+    "target_id": "dff49aec-b0f4-5d4a-b2e3-4124ed693db0",
+    "type": "REFERENCES",
+    "evidence": "статьей 127 настоящего Кодекса",
+    "metadata": {
+      "source_kz": "41-бап",
+      "target_kz": "127-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 127"
+    }
+  },
+  {
+    "source_id": "3d1ab5d3-85a0-54f3-9477-f94ad9037e7b",
+    "target_id": "18b5ad6f-1296-5171-8799-d5fffe999b8e",
+    "type": "MANIFESTED_IN",
+    "evidence": "расторжение трудового договора по соглашению сторон",
+    "metadata": {
+      "source_kz": "49-бап",
+      "target_kz": "50-бап"
+    }
+  },
+  {
+    "source_id": "3d1ab5d3-85a0-54f3-9477-f94ad9037e7b",
+    "target_id": "bc47e4e5-ace7-5b60-add7-aeb6ec93e0c7",
+    "type": "MANIFESTED_IN",
+    "evidence": "истечение срока трудового договора",
+    "metadata": {
+      "source_kz": "49-бап",
+      "target_kz": "51-бап"
+    }
+  },
+  {
+    "source_id": "3d1ab5d3-85a0-54f3-9477-f94ad9037e7b",
+    "target_id": "c243bf52-812c-5190-b36d-4051377a77b4",
+    "type": "MANIFESTED_IN",
+    "evidence": "расторжение трудового договора по инициативе работодателя",
+    "metadata": {
+      "source_kz": "49-бап",
+      "target_kz": "52-бап"
+    }
+  },
+  {
+    "source_id": "6eeda547-320a-5943-8ecc-d2f31394b443",
+    "target_id": "7194463c-f6a9-5a54-9dcd-91af8e23b82c",
+    "type": "CORRELATED_WITH",
+    "evidence": "Работодатель при расторжении трудового договора по основаниям, предусмотренным подпунктами 1) и 2) пункта 1 статьи 52 настоящего Кодекса",
+    "metadata": {
+      "source_kz": "53-бап",
+      "target_kz": "54-бап"
+    }
+  },
+  {
+    "source_id": "6eeda547-320a-5943-8ecc-d2f31394b443",
+    "target_id": "437d4e88-bb49-5538-aa13-e6a3d21349f6",
+    "type": "REFERENCES",
+    "evidence": "Расторжение трудового договора по основаниям, предусмотренным подпунктами 8), 9), 10), 11), 12), 14), 15), 16), 17) и 18) пункта 1 статьи 52 настоящего Кодекса, производится с соблюдением порядка применения дисциплинарного взыскания, предусмотренного статьей 65, и требований статьи 66 настоящего Кодекса.",
+    "metadata": {
+      "source_kz": "53-бап",
+      "target_kz": "64-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 64"
+    }
+  },
+  {
+    "source_id": "6eeda547-320a-5943-8ecc-d2f31394b443",
+    "target_id": "24d0cfa4-43af-50bd-b318-2d6137b7606d",
+    "type": "REFERENCES",
+    "evidence": "Расторжение трудового договора по основаниям, предусмотренным подпунктами 8), 9), 10), 11), 12), 14), 15), 16), 17) и 18) пункта 1 статьи 52 настоящего Кодекса, производится с соблюдением порядка применения дисциплинарного взыскания, предусмотренного статьей 65, и требований статьи 66 настоящего Кодекса.",
+    "metadata": {
+      "source_kz": "53-бап",
+      "target_kz": "65-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 65"
+    }
+  },
+  {
+    "source_id": "6eeda547-320a-5943-8ecc-d2f31394b443",
+    "target_id": "43a35621-0970-50dd-b862-a2a6e6bb14d6",
+    "type": "REFERENCES",
+    "evidence": "Расторжение трудового договора по основаниям, предусмотренным подпунктами 8), 9), 10), 11), 12), 14), 15), 16), 17) и 18) пункта 1 статьи 52 настоящего Кодекса, производится с соблюдением порядка применения дисциплинарного взыскания, предусмотренного статьей 65, и требований статьи 66 настоящего Кодекса.",
+    "metadata": {
+      "source_kz": "53-бап",
+      "target_kz": "66-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 66"
+    }
+  },
+  {
+    "source_id": "7194463c-f6a9-5a54-9dcd-91af8e23b82c",
+    "target_id": "6eeda547-320a-5943-8ecc-d2f31394b443",
+    "type": "CORRELATED_WITH",
+    "evidence": "Не допускается расторжение трудового договора по инициативе работодателя в период временной нетрудоспособности и пребывания работника в отпуске, за исключением случаев, предусмотренных подпунктами 1), 18), 20) и 23) пункта 1, пунктом 1-1статьи 52 настоящего Кодекса.",
+    "metadata": {
+      "source_kz": "54-бап",
+      "target_kz": "53-бап"
+    }
+  },
+  {
+    "source_id": "437d4e88-bb49-5538-aa13-e6a3d21349f6",
+    "target_id": "6eeda547-320a-5943-8ecc-d2f31394b443",
+    "type": "REFERENCES",
+    "evidence": "расторжение трудового договора по инициативе работодателя по основаниям, предусмотренным подпунктами 8), 9), 10), 11), 12), 14), 15), 16), 17) и 18) пункта 1 статьи 52 настоящего Кодекса.",
+    "metadata": {
+      "source_kz": "64-бап",
+      "target_kz": "53-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 53"
+    }
+  },
+  {
+    "source_id": "24d0cfa4-43af-50bd-b318-2d6137b7606d",
+    "target_id": "43a35621-0970-50dd-b862-a2a6e6bb14d6",
+    "type": "REFERENCES",
+    "evidence": "При наложении дисциплинарного взыскания первым руководителем национального управляющего холдинга в случаях, предусмотренных законами Республики Казахстан, применяются положения настоящей статьи и статьи 66 настоящего Кодекса.",
+    "metadata": {
+      "source_kz": "65-бап",
+      "target_kz": "66-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 66"
+    }
+  },
+  {
+    "source_id": "43a35621-0970-50dd-b862-a2a6e6bb14d6",
+    "target_id": "24d0cfa4-43af-50bd-b318-2d6137b7606d",
+    "type": "REFERENCES",
+    "evidence": "за исключением случаев, предусмотренных пунктом 4 статьи 65 настоящего Кодекса",
+    "metadata": {
+      "source_kz": "66-бап",
+      "target_kz": "65-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 65"
+    }
+  },
+  {
+    "source_id": "43a35621-0970-50dd-b862-a2a6e6bb14d6",
+    "target_id": "fba34abd-9ab7-5554-98ae-24c866e382b2",
+    "type": "REFERENCES",
+    "evidence": "В случаях, предусмотренных статьей 176 настоящего Кодекса",
+    "metadata": {
+      "source_kz": "66-бап",
+      "target_kz": "176-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 176"
+    }
+  },
+  {
+    "source_id": "fe145966-0704-5b48-8f11-962365eeec53",
+    "target_id": "127eb048-865c-5f42-a3c2-3d7b1fbd945b",
+    "type": "REFERENCES",
+    "evidence": "не должна превышать норму продолжительности ежедневной работы, установленную пунктом 4 статьи 71 настоящего Кодекса",
+    "metadata": {
+      "source_kz": "68-бап",
+      "target_kz": "71-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 71"
+    }
+  },
+  {
+    "source_id": "4fe51a7a-f976-5452-8602-c18082bf6058",
+    "target_id": "f9461ac6-90f0-52c4-808e-c81505bc055b",
+    "type": "REFERENCES",
+    "evidence": "за исключением случаев, предусмотренных статьей 86 настоящего Кодекса.",
+    "metadata": {
+      "source_kz": "73-бап",
+      "target_kz": "86-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 86"
+    }
+  },
+  {
+    "source_id": "74aed4a2-8a19-5d98-847b-f509ea2c6be8",
+    "target_id": "8aae1a97-99f2-5e63-a3a2-6fee08b1294f",
+    "type": "REFERENCES",
+    "evidence": "подпунктами 1) и 4) пункта 2 статьи 77 настоящего Кодекса",
+    "metadata": {
+      "source_kz": "78-бап",
+      "target_kz": "77-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 77"
+    }
+  },
+  {
+    "source_id": "6a908e5d-b004-5731-8f65-047ea1a43e31",
+    "target_id": "88b17af2-671a-5c24-b34f-abe544505593",
+    "type": "REFERENCES",
+    "evidence": "пунктом 5 статьи 84 настоящего Кодекса",
+    "metadata": {
+      "source_kz": "85-бап",
+      "target_kz": "84-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 84"
+    }
+  },
+  {
+    "source_id": "6a908e5d-b004-5731-8f65-047ea1a43e31",
+    "target_id": "0c2cd472-1f48-53ef-bd62-6316d5967f9c",
+    "type": "REFERENCES",
+    "evidence": "статьей 86 настоящего Кодекса",
+    "metadata": {
+      "source_kz": "85-бап",
+      "target_kz": "86-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 86"
+    }
+  },
+  {
+    "source_id": "6a908e5d-b004-5731-8f65-047ea1a43e31",
+    "target_id": "c6237348-b1e6-5edc-b6bb-3a9a4395111f",
+    "type": "REFERENCES",
+    "evidence": "статье 109 настоящего Кодекса",
+    "metadata": {
+      "source_kz": "85-бап",
+      "target_kz": "109-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 109"
+    }
+  },
+  {
+    "source_id": "52b53326-a1de-56b4-99ba-c4554cc64b5a",
+    "target_id": "8aae1a97-99f2-5e63-a3a2-6fee08b1294f",
+    "type": "REFERENCES",
+    "evidence": "частью второй пункта 2 статьи 75 настоящего Кодекса",
+    "metadata": {
+      "source_kz": "103-бап",
+      "target_kz": "75-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 75"
+    }
+  },
+  {
+    "source_id": "8aae1a97-99f2-5e63-a3a2-6fee08b1294f",
+    "target_id": "74aed4a2-8a19-5d98-847b-f509ea2c6be8",
+    "type": "CORRELATED_WITH",
+    "evidence": "Сверхурочные работы",
+    "metadata": {
+      "source_kz": "77-бап",
+      "target_kz": "78-бап"
+    }
+  },
+  {
+    "source_id": "74aed4a2-8a19-5d98-847b-f509ea2c6be8",
+    "target_id": "5c25160d-4ed7-5b6e-99d4-1f2c52991fe6",
+    "type": "CORRELATED_WITH",
+    "evidence": "сверхурочные работы",
+    "metadata": {
+      "source_kz": "78-бап",
+      "target_kz": "108-бап"
+    }
+  },
+  {
+    "source_id": "88b17af2-671a-5c24-b34f-abe544505593",
+    "target_id": "6a908e5d-b004-5731-8f65-047ea1a43e31",
+    "type": "CORRELATED_WITH",
+    "evidence": "выходные дни",
+    "metadata": {
+      "source_kz": "84-бап",
+      "target_kz": "85-бап"
+    }
+  },
+  {
+    "source_id": "6a908e5d-b004-5731-8f65-047ea1a43e31",
+    "target_id": "0c2cd472-1f48-53ef-bd62-6316d5967f9c",
+    "type": "CORRELATED_WITH",
+    "evidence": "работа в выходные и праздничные дни",
+    "metadata": {
+      "source_kz": "85-бап",
+      "target_kz": "86-бап"
+    }
+  },
+  {
+    "source_id": "69a72bab-13b3-5611-8957-784cc105a3e1",
+    "target_id": "dcc488d5-053d-5850-887a-28a1582ce6ff",
+    "type": "CORRELATED_WITH",
+    "evidence": "оплачиваемые ежегодные трудовые отпуска",
+    "metadata": {
+      "source_kz": "87-бап",
+      "target_kz": "88-бап"
+    }
+  },
+  {
+    "source_id": "69a72bab-13b3-5611-8957-784cc105a3e1",
+    "target_id": "16fa24bb-bfef-5fe3-954f-e22b749ff5d9",
+    "type": "CORRELATED_WITH",
+    "evidence": "дополнительный оплачиваемый ежегодный трудовой отпуск",
+    "metadata": {
+      "source_kz": "87-бап",
+      "target_kz": "89-бап"
+    }
+  },
+  {
+    "source_id": "dcc488d5-053d-5850-887a-28a1582ce6ff",
+    "target_id": "16fa24bb-bfef-5fe3-954f-e22b749ff5d9",
+    "type": "CORRELATED_WITH",
+    "evidence": "оплачиваемый ежегодный трудовой отпуск",
+    "metadata": {
+      "source_kz": "88-бап",
+      "target_kz": "89-бап"
+    }
+  },
+  {
+    "source_id": "313cf1d6-b910-5cc5-8559-ca83ec9fb265",
+    "target_id": "dcc488d5-053d-5850-887a-28a1582ce6ff",
+    "type": "CORRELATED_WITH",
+    "evidence": "продолжительность оплачиваемого ежегодного трудового отпуска",
+    "metadata": {
+      "source_kz": "90-бап",
+      "target_kz": "88-бап"
+    }
+  },
+  {
+    "source_id": "50d1fddd-5b55-5ad1-99e1-6d0986bb8d1f",
+    "target_id": "dcc488d5-053d-5850-887a-28a1582ce6ff",
+    "type": "CORRELATED_WITH",
+    "evidence": "оплачиваемый ежегодный трудовой отпуск",
+    "metadata": {
+      "source_kz": "91-бап",
+      "target_kz": "88-бап"
+    }
+  },
+  {
+    "source_id": "6c885bcc-37fd-5e8e-9bee-d5e6b1206d32",
+    "target_id": "dcc488d5-053d-5850-887a-28a1582ce6ff",
+    "type": "CORRELATED_WITH",
+    "evidence": "оплачиваемый ежегодный трудовой отпуск",
+    "metadata": {
+      "source_kz": "92-бап",
+      "target_kz": "88-бап"
+    }
+  },
+  {
+    "source_id": "5696ca39-dfd1-5a07-82be-39a20563fdc4",
+    "target_id": "6c885bcc-37fd-5e8e-9bee-d5e6b1206d32",
+    "type": "CORRELATED_WITH",
+    "evidence": "оплачиваемые ежегодные трудовые отпуска",
+    "metadata": {
+      "source_kz": "93-бап",
+      "target_kz": "92-бап"
+    }
+  },
+  {
+    "source_id": "637d89c0-c4e8-5492-9571-c75bcb0c0499",
+    "target_id": "6c885bcc-37fd-5e8e-9bee-d5e6b1206d32",
+    "type": "CORRELATED_WITH",
+    "evidence": "оплачиваемый ежегодный трудовой отпуск",
+    "metadata": {
+      "source_kz": "94-бап",
+      "target_kz": "92-бап"
+    }
+  },
+  {
+    "source_id": "fcbadfd3-345c-5124-a215-6845dc37cf49",
+    "target_id": "6c885bcc-37fd-5e8e-9bee-d5e6b1206d32",
+    "type": "CORRELATED_WITH",
+    "evidence": "оплачиваемый ежегодный трудовой отпуск",
+    "metadata": {
+      "source_kz": "95-бап",
+      "target_kz": "92-бап"
+    }
+  },
+  {
+    "source_id": "ec59fa83-a1be-5a47-acf5-15b3e96f8840",
+    "target_id": "6c885bcc-37fd-5e8e-9bee-d5e6b1206d32",
+    "type": "CORRELATED_WITH",
+    "evidence": "оплачиваемый ежегодный трудовой отпуск",
+    "metadata": {
+      "source_kz": "96-бап",
+      "target_kz": "92-бап"
+    }
+  },
+  {
+    "source_id": "ed8de5c2-5eb0-51a1-a472-68f2eb12df43",
+    "target_id": "69a72bab-13b3-5611-8957-784cc105a3e1",
+    "type": "CORRELATED_WITH",
+    "evidence": "отпуск без сохранения заработной платы",
+    "metadata": {
+      "source_kz": "97-бап",
+      "target_kz": "87-бап"
+    }
+  },
+  {
+    "source_id": "8eb11de9-ccd4-5062-a388-f5b8ab25a50b",
+    "target_id": "69a72bab-13b3-5611-8957-784cc105a3e1",
+    "type": "CORRELATED_WITH",
+    "evidence": "учебный отпуск",
+    "metadata": {
+      "source_kz": "98-бап",
+      "target_kz": "87-бап"
+    }
+  },
+  {
+    "source_id": "d24e325e-0bb9-553f-ade6-75573ab19719",
+    "target_id": "69a72bab-13b3-5611-8957-784cc105a3e1",
+    "type": "CORRELATED_WITH",
+    "evidence": "отпуска в связи с беременностью и рождением ребенка",
+    "metadata": {
+      "source_kz": "99-бап",
+      "target_kz": "87-бап"
+    }
+  },
+  {
+    "source_id": "201105e0-7145-5f9b-b4ae-d04e7ca0b6b7",
+    "target_id": "69a72bab-13b3-5611-8957-784cc105a3e1",
+    "type": "CORRELATED_WITH",
+    "evidence": "отпуск без сохранения заработной платы по уходу за ребенком",
+    "metadata": {
+      "source_kz": "100-бап",
+      "target_kz": "87-бап"
+    }
+  },
+  {
+    "source_id": "87154190-01b1-57c8-9bb0-a2d5a2d6fdb6",
+    "target_id": "52b53326-a1de-56b4-99ba-c4554cc64b5a",
+    "type": "CORRELATED_WITH",
+    "evidence": "минимальный размер месячной заработной платы",
+    "metadata": {
+      "source_kz": "102-бап",
+      "target_kz": "103-бап"
+    }
+  },
+  {
+    "source_id": "87154190-01b1-57c8-9bb0-a2d5a2d6fdb6",
+    "target_id": "ca2363fe-900f-51e2-897d-59a8bb74e0d0",
+    "type": "CORRELATED_WITH",
+    "evidence": "минимальный размер месячной заработной платы",
+    "metadata": {
+      "source_kz": "102-бап",
+      "target_kz": "104-бап"
+    }
+  },
+  {
+    "source_id": "87154190-01b1-57c8-9bb0-a2d5a2d6fdb6",
+    "target_id": "5c25160d-4ed7-5b6e-99d4-1f2c52991fe6",
+    "type": "CORRELATED_WITH",
+    "evidence": "оплату за работу в сверхурочное время",
+    "metadata": {
+      "source_kz": "102-бап",
+      "target_kz": "108-бап"
+    }
+  },
+  {
+    "source_id": "87154190-01b1-57c8-9bb0-a2d5a2d6fdb6",
+    "target_id": "c6237348-b1e6-5edc-b6bb-3a9a4395111f",
+    "type": "CORRELATED_WITH",
+    "evidence": "оплату за работу в праздничные и выходные дни",
+    "metadata": {
+      "source_kz": "102-бап",
+      "target_kz": "109-бап"
+    }
+  },
+  {
+    "source_id": "52b53326-a1de-56b4-99ba-c4554cc64b5a",
+    "target_id": "ca2363fe-900f-51e2-897d-59a8bb74e0d0",
+    "type": "CORRELATED_WITH",
+    "evidence": "минимальный размер месячной заработной платы",
+    "metadata": {
+      "source_kz": "103-бап",
+      "target_kz": "104-бап"
+    }
+  },
+  {
+    "source_id": "60ad0fa8-67c0-5602-9b32-f56ac3695873",
+    "target_id": "16fa24bb-bfef-5fe3-954f-e22b749ff5d9",
+    "type": "CORRELATED_WITH",
+    "evidence": "тяжелые работы, работы с вредными и (или) опасными условиями труда",
+    "metadata": {
+      "source_kz": "105-бап",
+      "target_kz": "89-бап"
+    }
+  },
+  {
+    "source_id": "5c25160d-4ed7-5b6e-99d4-1f2c52991fe6",
+    "target_id": "8aae1a97-99f2-5e63-a3a2-6fee08b1294f",
+    "type": "CORRELATED_WITH",
+    "evidence": "сверхурочная работа",
+    "metadata": {
+      "source_kz": "108-бап",
+      "target_kz": "77-бап"
+    }
+  },
+  {
+    "source_id": "c6237348-b1e6-5edc-b6bb-3a9a4395111f",
+    "target_id": "6a908e5d-b004-5731-8f65-047ea1a43e31",
+    "type": "CORRELATED_WITH",
+    "evidence": "работа в праздничные и выходные дни",
+    "metadata": {
+      "source_kz": "109-бап",
+      "target_kz": "85-бап"
+    }
+  },
+  {
+    "source_id": "fa7f2336-a399-50aa-bae0-af4db4b6c33f",
+    "target_id": "c8212e94-cc6b-5715-96c7-7f83699d85f2",
+    "type": "CORRELATED_WITH",
+    "evidence": "оплата труда",
+    "metadata": {
+      "source_kz": "110-бап",
+      "target_kz": "111-бап"
+    }
+  },
+  {
+    "source_id": "fa7f2336-a399-50aa-bae0-af4db4b6c33f",
+    "target_id": "09d9b7c1-97f4-5533-9f90-83e161f33d89",
+    "type": "REFERENCES",
+    "evidence": "в соответствии со статьей 109 настоящего Кодекса",
+    "metadata": {
+      "source_kz": "110-бап",
+      "target_kz": "109-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 109"
+    }
+  },
+  {
+    "source_id": "09d9b7c1-97f4-5533-9f90-83e161f33d89",
+    "target_id": "b1c63817-cc74-5221-a8c7-943510abeae6",
+    "type": "CORRELATED_WITH",
+    "evidence": "средняя заработная плата",
+    "metadata": {
+      "source_kz": "113-бап",
+      "target_kz": "114-бап"
+    }
+  },
+  {
+    "source_id": "09d9b7c1-97f4-5533-9f90-83e161f33d89",
+    "target_id": "84a1c5fb-1fdb-5d78-ba0f-6908a563122d",
+    "type": "CORRELATED_WITH",
+    "evidence": "удержаний",
+    "metadata": {
+      "source_kz": "113-бап",
+      "target_kz": "115-бап"
+    }
+  },
+  {
+    "source_id": "1cec578a-55b4-5232-9d16-9244b862ccf2",
+    "target_id": "d6944867-c4c3-5cc7-ba3c-9c765b5bed4c",
+    "type": "EXTENDS",
+    "evidence": "Дуальное обучение",
+    "metadata": {
+      "source_kz": "118-бап",
+      "target_kz": "119-бап"
+    }
+  },
+  {
+    "source_id": "1cec578a-55b4-5232-9d16-9244b862ccf2",
+    "target_id": "266ce624-a1d3-5709-bb76-5ad9ca799053",
+    "type": "BASED_ON",
+    "evidence": "договор обучения",
+    "metadata": {
+      "source_kz": "118-бап",
+      "target_kz": "116-бап"
+    }
+  },
+  {
+    "source_id": "d6944867-c4c3-5cc7-ba3c-9c765b5bed4c",
+    "target_id": "266ce624-a1d3-5709-bb76-5ad9ca799053",
+    "type": "BASED_ON",
+    "evidence": "договор о дуальном обучении",
+    "metadata": {
+      "source_kz": "119-бап",
+      "target_kz": "116-бап"
+    }
+  },
+  {
+    "source_id": "6277627a-f251-572f-8a78-9e37f9a00d59",
+    "target_id": "183edd64-32cb-5d13-9b66-e8a561666bfe",
+    "type": "MANIFESTED_IN",
+    "evidence": "Материальная ответственность стороны трудового договора",
+    "metadata": {
+      "source_kz": "120-бап",
+      "target_kz": "121-бап"
+    }
+  },
+  {
+    "source_id": "6277627a-f251-572f-8a78-9e37f9a00d59",
+    "target_id": "c0d01e5b-1ff0-58e1-a76a-c6be529f0edc",
+    "type": "MANIFESTED_IN",
+    "evidence": "Материальная ответственность стороны трудового договора",
+    "metadata": {
+      "source_kz": "120-бап",
+      "target_kz": "122-бап"
+    }
+  },
+  {
+    "source_id": "6277627a-f251-572f-8a78-9e37f9a00d59",
+    "target_id": "26214ce7-4a1c-5662-bb71-811f2acb880a",
+    "type": "MANIFESTED_IN",
+    "evidence": "Материальная ответственность стороны трудового договора",
+    "metadata": {
+      "source_kz": "120-бап",
+      "target_kz": "123-бап"
+    }
+  },
+  {
+    "source_id": "9ff5cd92-3445-565f-bc27-a67cb6739ddc",
+    "target_id": "2627cd0d-4387-5b9b-b4a7-72a9f4d16431",
+    "type": "EXTENDS",
+    "evidence": "воинскую службу",
+    "metadata": {
+      "source_kz": "124-бап",
+      "target_kz": "124-1-бап"
+    }
+  },
+  {
+    "source_id": "9ff5cd92-3445-565f-bc27-a67cb6739ddc",
+    "target_id": "a3bfa5d5-a209-5b3e-981c-090beb0bb19d",
+    "type": "EXTENDS",
+    "evidence": "государственных или общественных обязанностей",
+    "metadata": {
+      "source_kz": "124-бап",
+      "target_kz": "124-2-бап"
+    }
+  },
+  {
+    "source_id": "a6c1b220-3c66-5ce5-8db6-4b6e03648898",
+    "target_id": "b070e852-02b6-501b-b7f5-7cbb4710f587",
+    "type": "CORRELATED_WITH",
+    "evidence": "сохраняются место работы (должность) и средняя заработная плата",
+    "metadata": {
+      "source_kz": "125-бап",
+      "target_kz": "126-1-бап"
+    }
+  },
+  {
+    "source_id": "75d5b67c-707f-5867-bb7d-d82948cca888",
+    "target_id": "b0bd5dda-56c3-5f3e-9e71-bc0f97b20f78",
+    "type": "EXTENDS",
+    "evidence": "донором",
+    "metadata": {
+      "source_kz": "126-бап",
+      "target_kz": "126-2-бап"
+    }
+  },
+  {
+    "source_id": "37c26f5a-b645-5623-9433-22f3e8d462eb",
+    "target_id": "da57a1c2-f5c7-5561-992a-c7cb3ba0f27a",
+    "type": "CORRELATED_WITH",
+    "evidence": "командировки",
+    "metadata": {
+      "source_kz": "127-бап",
+      "target_kz": "130-бап"
+    }
+  },
+  {
+    "source_id": "4d6f4e82-87c9-598a-8b6b-12716f261088",
+    "target_id": "09d9b7c1-97f4-5533-9f90-83e161f33d89",
+    "type": "CORRELATED_WITH",
+    "evidence": "компенсационные выплаты",
+    "metadata": {
+      "source_kz": "131-бап",
+      "target_kz": "113-бап"
+    }
+  },
+  {
+    "source_id": "b7fb2587-26af-554f-8b79-3a0269968700",
+    "target_id": "987bbf40-cfc5-5971-92ae-b3c11bd5669d",
+    "type": "CORRELATED_WITH",
+    "evidence": "временной нетрудоспособности",
+    "metadata": {
+      "source_kz": "133-бап",
+      "target_kz": "134-бап"
+    }
+  },
+  {
+    "source_id": "b7fb2587-26af-554f-8b79-3a0269968700",
+    "target_id": "ac368e8f-1997-57a7-bc3e-78d00fc44d5f",
+    "type": "CORRELATED_WITH",
+    "evidence": "социальное пособие по временной нетрудоспособности",
+    "metadata": {
+      "source_kz": "133-бап",
+      "target_kz": "137-1-бап"
+    }
+  },
+  {
+    "source_id": "987bbf40-cfc5-5971-92ae-b3c11bd5669d",
+    "target_id": "ac368e8f-1997-57a7-bc3e-78d00fc44d5f",
+    "type": "CORRELATED_WITH",
+    "evidence": "сезонных работ",
+    "metadata": {
+      "source_kz": "134-бап",
+      "target_kz": "137-1-бап"
+    }
+  },
+  {
+    "source_id": "8d7c32f6-3936-5094-a266-ff4981cffe3d",
+    "target_id": "249e7097-f3e9-5670-95c3-cd453d9f00d1",
+    "type": "CORRELATED_WITH",
+    "evidence": "рабочее время и время отдыха",
+    "metadata": {
+      "source_kz": "135-бап",
+      "target_kz": "138-бап"
+    }
+  },
+  {
+    "source_id": "f619ccc3-9f99-54ce-9404-057557bb18f7",
+    "target_id": "d04dba1a-7666-5b96-8d9a-ae0320b32b6d",
+    "type": "CORRELATED_WITH",
+    "evidence": "домашние работники",
+    "metadata": {
+      "source_kz": "136-бап",
+      "target_kz": "137-бап"
+    }
+  },
+  {
+    "source_id": "ac368e8f-1997-57a7-bc3e-78d00fc44d5f",
+    "target_id": "249e7097-f3e9-5670-95c3-cd453d9f00d1",
+    "type": "CORRELATED_WITH",
+    "evidence": "принимающая сторона",
+    "metadata": {
+      "source_kz": "137-1-бап",
+      "target_kz": "138-бап"
+    }
+  },
+  {
+    "source_id": "7bf2c11d-ec75-5c7a-836a-94b4aac10afe",
+    "target_id": "68889ce7-ec17-55f6-9eb1-adb879f54c5a",
+    "type": "CORRELATED_WITH",
+    "evidence": "государственных служащих",
+    "metadata": {
+      "source_kz": "139-бап",
+      "target_kz": "143-бап"
+    }
+  },
+  {
+    "source_id": "a413dc82-e616-5402-a0a9-e2f97282e2a3",
+    "target_id": "7bf2c11d-ec75-5c7a-836a-94b4aac10afe",
+    "type": "CORRELATED_WITH",
+    "evidence": "трудовой договор",
+    "metadata": {
+      "source_kz": "140-бап",
+      "target_kz": "139-бап"
+    }
+  },
+  {
+    "source_id": "6f583baa-1aa8-50e3-9316-a1b0d5137fd0",
+    "target_id": "9a47bb9e-f7c3-5cd2-af00-27d3b1d35806",
+    "type": "CORRELATED_WITH",
+    "evidence": "особенности регулирования труда",
+    "metadata": {
+      "source_kz": "141-бап",
+      "target_kz": "142-бап"
+    }
+  },
+  {
+    "source_id": "68889ce7-ec17-55f6-9eb1-adb879f54c5a",
+    "target_id": "6e91b973-b162-5790-a051-71b19e29e3cf",
+    "type": "CORRELATED_WITH",
+    "evidence": "особые условия труда",
+    "metadata": {
+      "source_kz": "143-бап",
+      "target_kz": "144-бап"
+    }
+  },
+  {
+    "source_id": "94d63fdf-4823-5394-b9ac-67d5b2b65379",
+    "target_id": "7bf2c11d-ec75-5c7a-836a-94b4aac10afe",
+    "type": "CORRELATED_WITH",
+    "evidence": "противодействии коррупции",
+    "metadata": {
+      "source_kz": "143-1-бап",
+      "target_kz": "139-бап"
+    }
+  },
+  {
+    "source_id": "37a4f907-8f47-5fcc-ad07-7e063f1146c0",
+    "target_id": "b9ca848f-0a94-504c-bf0b-771710ccf840",
+    "type": "CORRELATED_WITH",
+    "evidence": "особые условия назначения на должность",
+    "metadata": {
+      "source_kz": "145-бап",
+      "target_kz": "145-1-бап"
+    }
+  },
+  {
+    "source_id": "743482eb-7c5b-5d12-ad70-8e64c8ea152b",
+    "target_id": "db0cdbad-c563-5662-8e46-6d665f104c52",
+    "type": "CORRELATED_WITH",
+    "evidence": "Труд работников, занятых по трудовому договору у индивидуального предпринимателя или юридического лица, осуществляющего деятельность с применением интернет-платформ и (или) мобильного приложения платформенной занятости, регулируется в соответствии с настоящим Кодексом с учетом особенностей, установленных настоящей статьей, трудовым договором и актом работодателя.",
+    "metadata": {
+      "source_kz": "146-1-бап",
+      "target_kz": "147-бап"
+    }
+  },
+  {
+    "source_id": "db0cdbad-c563-5662-8e46-6d665f104c52",
+    "target_id": "3c95ffc1-02de-55f9-9ce6-a8cd4f5d3125",
+    "type": "MANIFESTED_IN",
+    "evidence": "Социальное партнерство обеспечивается в форме взаимодействия сторон посредством органов социального партнерства: 1) на республиканском уровне -- республиканской трехсторонней комиссией по социальному партнерству и регулированию социальных и трудовых отношений (далее -- республиканская комиссия); 2) на отраслевом уровне -- отраслевыми комиссиями по социальному партнерству и регулированию социальных и трудовых отношений (далее -- отраслевая комиссия); 3) на региональном (областном, городском, районном) уровне -- областными, городскими, районными комиссиями по социальному партнерству и регулированию социальных и трудовых отношений (далее -- региональная комиссия); 4) на уровне организаций в форме коллективных договоров, устанавливающих конкретные взаимные обязательства в сфере труда между представителями работников и работодателем на основе законодательства Республики Казахстан.",
+    "metadata": {
+      "source_kz": "147-бап",
+      "target_kz": "148-бап"
+    }
+  },
+  {
+    "source_id": "db0cdbad-c563-5662-8e46-6d665f104c52",
+    "target_id": "f7100dad-f50d-504e-863a-d16607d96c83",
+    "type": "MANIFESTED_IN",
+    "evidence": "Сторонами социального партнерства являются государство в лице соответствующих исполнительных органов, работники и работодатели в лице их представителей, уполномоченных в установленном порядке.",
+    "metadata": {
+      "source_kz": "147-бап",
+      "target_kz": "152-бап"
+    }
+  },
+  {
+    "source_id": "db0cdbad-c563-5662-8e46-6d665f104c52",
+    "target_id": "f1635471-a8ea-5d1d-ac54-8cea65b32481",
+    "type": "MANIFESTED_IN",
+    "evidence": "Социальное партнерство в Республике Казахстан направлено на решение следующих задач: 1) создание эффективного механизма регулирования социальных, трудовых и связанных с ними экономических отношений; 2) содействие обеспечению социальной стабильности и общественного согласия на основе объективного учета интересов всех слоев общества; 3) содействие в обеспечении гарантий прав работников в сфере труда, осуществлении их социальной защиты; 4) содействие процессу консультаций и переговоров между сторонами социального партнерства на всех уровнях; 5) содействие разрешению коллективных трудовых споров; 6) выработка предложений по реализации государственной политики в области социально-трудовых отношений.",
+    "metadata": {
+      "source_kz": "147-бап",
+      "target_kz": "153-бап"
+    }
+  },
+  {
+    "source_id": "3c95ffc1-02de-55f9-9ce6-a8cd4f5d3125",
+    "target_id": "db0cdbad-c563-5662-8e46-6d665f104c52",
+    "type": "BASED_ON",
+    "evidence": "Республиканская, отраслевая и региональные комиссии являются постоянно действующими органами по обеспечению согласования интересов сторон социального партнерства путем проведения консультаций и переговоров, которые оформляются соответствующими решениями, обязательными для исполнения сторонами.",
+    "metadata": {
+      "source_kz": "148-бап",
+      "target_kz": "147-бап"
+    }
+  },
+  {
+    "source_id": "2fb1e744-abd0-5d44-9b42-efc31cda4286",
+    "target_id": "3534afe6-47ec-53e8-8c10-d31a02d5175e",
+    "type": "EXTENDS",
+    "evidence": "Инициатором переговоров по разработке, содержанию, заключению, изменению, дополнению соглашения вправе выступать любая из сторон социального партнерства.",
+    "metadata": {
+      "source_kz": "149-бап",
+      "target_kz": "150-бап"
+    }
+  },
+  {
+    "source_id": "3534afe6-47ec-53e8-8c10-d31a02d5175e",
+    "target_id": "672bd8ba-e4b1-54ba-bc38-56cbfd6ad9e9",
+    "type": "CAUSED_BY",
+    "evidence": "Подписанные сторонами отраслевые, региональные соглашения с приложениями в десятидневный срок направляются для уведомительной регистрации.",
+    "metadata": {
+      "source_kz": "150-бап",
+      "target_kz": "151-бап"
+    }
+  },
+  {
+    "source_id": "f7100dad-f50d-504e-863a-d16607d96c83",
+    "target_id": "f1635471-a8ea-5d1d-ac54-8cea65b32481",
+    "type": "MANIFESTED_IN",
+    "evidence": "На республиканском уровне заключается генеральное соглашение между Правительством Республики Казахстан, республиканскими объединениями (ассоциациями, союзами) работодателей и республиканскими объединениями (ассоциациями, союзами) профессиональных союзов.",
+    "metadata": {
+      "source_kz": "152-бап",
+      "target_kz": "153-бап"
+    }
+  },
+  {
+    "source_id": "f1635471-a8ea-5d1d-ac54-8cea65b32481",
+    "target_id": "284d21f3-75b5-55de-a2de-aea5bbf95f9f",
+    "type": "CAUSED_BY",
+    "evidence": "Соглашения должны включать в себя положения: 1) о сроке действия; 2) о порядке контроля за исполнением; 3) о порядке внесения изменений и дополнений в соглашение; 4) об ответственности сторон в случае невыполнения взятых на себя обязательств.",
+    "metadata": {
+      "source_kz": "153-бап",
+      "target_kz": "154-бап"
+    }
+  },
+  {
+    "source_id": "284d21f3-75b5-55de-a2de-aea5bbf95f9f",
+    "target_id": "39540934-50ae-5549-a0b0-f9a422d591cc",
+    "type": "MANIFESTED_IN",
+    "evidence": "Контроль за выполнением соглашений осуществляют стороны социального партнерства.",
+    "metadata": {
+      "source_kz": "154-бап",
+      "target_kz": "155-бап"
+    }
+  },
+  {
+    "source_id": "548c3fe7-95c1-5778-a934-56d27d7fc92c",
+    "target_id": "383ac377-d163-5678-a7ea-70a03b56237b",
+    "type": "EXTENDS",
+    "evidence": "Сторонами коллективного договора являются работодатель и работники в лице их представителей, уполномоченных в установленном порядке.",
+    "metadata": {
+      "source_kz": "156-бап",
+      "target_kz": "157-бап"
+    }
+  },
+  {
+    "source_id": "383ac377-d163-5678-a7ea-70a03b56237b",
+    "target_id": "3f35e204-078f-5236-b745-7ca7328ce663",
+    "type": "CAUSED_BY",
+    "evidence": "Содержание и структура коллективного договора определяются сторонами в соответствии с заключенными генеральным, отраслевыми и региональными соглашениями.",
+    "metadata": {
+      "source_kz": "157-бап",
+      "target_kz": "158-бап"
+    }
+  },
+  {
+    "source_id": "58a2c024-4946-5f23-8f3d-d17ea79dea55",
+    "target_id": "a9421540-3ee9-537c-ae8f-14aa887ee1ca",
+    "type": "EXTENDS",
+    "evidence": "Индивидуальные трудовые споры рассматриваются согласительными комиссиями, за исключением споров, возникающих между работодателем и работником субъекта микропредпринимательства, некоммерческой организации с численностью работников не более пятнадцати человек, домашним работником, единоличным исполнительным органом юридического лица, руководителем исполнительного органа юридического лица, а также другими членами коллегиального исполнительного органа юридического лица, а по неурегулированным вопросам либо неисполнению решения согласительной комиссии -- судами.",
+    "metadata": {
+      "source_kz": "159-бап",
+      "target_kz": "160-бап"
+    }
+  },
+  {
+    "source_id": "a9421540-3ee9-537c-ae8f-14aa887ee1ca",
+    "target_id": "a78ab5e3-8e72-57cf-8206-7173714055b5",
+    "type": "CAUSED_BY",
+    "evidence": "По спорам о восстановлении на работе -- один месяц со дня вручения или направления по почте заказным письмом с уведомлением о вручении копии акта работодателя о прекращении трудового договора в согласительную комиссию, а для обращения в суд -- два месяца со дня вручения или направления по почте заказным письмом с уведомлением о вручении копии решения согласительной комиссии при обращении по неурегулированным спорам либо при неисполнении ее решения стороной трудового договора.",
+    "metadata": {
+      "source_kz": "160-бап",
+      "target_kz": "161-бап"
+    }
+  },
+  {
+    "source_id": "f6d5f670-03ae-5f8e-8529-4436fc007506",
+    "target_id": "b26e00d9-292e-5a4c-9944-d90b87c08370",
+    "type": "BASED_ON",
+    "evidence": "В настоящей главе используются следующие понятия: 1) трудовой арбитраж -- временно действующий орган, создаваемый сторонами коллективного трудового спора с привлечением уполномоченных лиц для разрешения трудового спора при недостижении соглашения в примирительной комиссии; 2) забастовка -- полное или частичное прекращение работы в целях удовлетворения социально-экономических и профессиональных требований работников в коллективном трудовом споре с работодателем; 3) примирительная комиссия -- орган, создаваемый по соглашению между работодателем и работниками (их представителями) для урегулирования коллективного трудового спора путем примирения сторон; 4) примирительные процедуры -- последовательное рассмотрение коллективного трудового спора первоначально в примирительной комиссии, а при недостижении согласия в ней -- в трудовом арбитраже, а также по взаимному согласию сторон с применением процедуры медиации.",
+    "metadata": {
+      "source_kz": "162-бап",
+      "target_kz": "163-бап"
+    }
+  },
+  {
+    "source_id": "ae8cf253-9294-5780-964f-e548c5ea20cf",
+    "target_id": "9d6674ab-f671-527d-a444-f984a1ca776e",
+    "type": "MANIFESTED_IN",
+    "evidence": "рассматриваются работодателем (объединением (ассоциацией, союзом) работодателей) при невозможности разрешения -- в примирительной комиссии",
+    "metadata": {
+      "source_kz": "164-бап",
+      "target_kz": "165-бап"
+    }
+  },
+  {
+    "source_id": "ae8cf253-9294-5780-964f-e548c5ea20cf",
+    "target_id": "bfbded8c-81b7-518b-91db-47bccca38d4f",
+    "type": "MANIFESTED_IN",
+    "evidence": "при недостижении соглашения в ней -- трудовым арбитражем",
+    "metadata": {
+      "source_kz": "164-бап",
+      "target_kz": "166-бап"
+    }
+  },
+  {
+    "source_id": "ae8cf253-9294-5780-964f-e548c5ea20cf",
+    "target_id": "4fc4b40f-3ae4-52cf-a276-739c6fe10b8f",
+    "type": "MANIFESTED_IN",
+    "evidence": "На любой из стадий рассмотрения коллективного трудового спора стороны могут обратиться к посреднику.",
+    "metadata": {
+      "source_kz": "164-бап",
+      "target_kz": "167-бап"
+    }
+  },
+  {
+    "source_id": "9d6674ab-f671-527d-a444-f984a1ca776e",
+    "target_id": "bfbded8c-81b7-518b-91db-47bccca38d4f",
+    "type": "CAUSED_BY",
+    "evidence": "При недостижении соглашения в примирительной комиссии ее работа прекращается, а для разрешения спора создается трудовой арбитраж.",
+    "metadata": {
+      "source_kz": "165-бап",
+      "target_kz": "166-бап"
+    }
+  },
+  {
+    "source_id": "bfbded8c-81b7-518b-91db-47bccca38d4f",
+    "target_id": "dd661894-ab2e-500d-9134-fe33fa88eaac",
+    "type": "REFERENCES",
+    "evidence": "за исключением случаев, предусмотренных пунктом 1 статьи 176 настоящего Кодекса",
+    "metadata": {
+      "source_kz": "166-бап",
+      "target_kz": "176-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 176"
+    }
+  },
+  {
+    "source_id": "382b2751-fd8a-53fe-9837-592bdbd1e121",
+    "target_id": "4f3f757c-c233-5ca9-b369-15bdeb685cbf",
+    "type": "MANIFESTED_IN",
+    "evidence": "Работодатель, объединение (ассоциация, союз) работодателей (их представители) должны быть письменно предупреждены уполномоченным работниками органом, указанным в пункте 3 статьи 171 настоящего Кодекса, о начале забастовки",
+    "metadata": {
+      "source_kz": "171-бап",
+      "target_kz": "172-бап"
+    }
+  },
+  {
+    "source_id": "382b2751-fd8a-53fe-9837-592bdbd1e121",
+    "target_id": "f8eea0d4-794d-54e0-b313-3cd8bfd596d0",
+    "type": "MANIFESTED_IN",
+    "evidence": "Забастовку возглавляет уполномоченный работниками (их представителями) орган (забастовочный комитет).",
+    "metadata": {
+      "source_kz": "171-бап",
+      "target_kz": "173-бап"
+    }
+  },
+  {
+    "source_id": "382b2751-fd8a-53fe-9837-592bdbd1e121",
+    "target_id": "dd661894-ab2e-500d-9134-fe33fa88eaac",
+    "type": "CORRELATED_WITH",
+    "evidence": "Работники могут принять решение о проведении забастовки",
+    "metadata": {
+      "source_kz": "171-бап",
+      "target_kz": "176-бап"
+    }
+  },
+  {
+    "source_id": "dd661894-ab2e-500d-9134-fe33fa88eaac",
+    "target_id": "dba2f4ba-72f1-5dba-abeb-6896a6b00a73",
+    "type": "CAUSED_BY",
+    "evidence": "При признании судом забастовки незаконной работодатель может привлечь к дисциплинарной ответственности работников",
+    "metadata": {
+      "source_kz": "176-бап",
+      "target_kz": "177-бап"
+    }
+  },
+  {
+    "source_id": "b1096ec2-5a3d-51cb-9a2c-dc5b22d0d162",
+    "target_id": "28568ab4-fd8a-532c-88b3-e487f22e3627",
+    "type": "MANIFESTED_IN",
+    "evidence": "Государственное регулирование в области безопасности и охраны труда включает: ... разработку и принятие нормативных правовых актов Республики Казахстан и нормативно-технической документации в области безопасности и охраны труда",
+    "metadata": {
+      "source_kz": "179-бап",
+      "target_kz": "180-бап"
+    }
+  },
+  {
+    "source_id": "28568ab4-fd8a-532c-88b3-e487f22e3627",
+    "target_id": "5cd5f945-ca21-5ec4-9f51-ffd24e4a1cf2",
+    "type": "MANIFESTED_IN",
+    "evidence": "Требования по безопасности и охране труда устанавливаются нормативными правовыми актами Республики Казахстан",
+    "metadata": {
+      "source_kz": "180-бап",
+      "target_kz": "181-бап"
+    }
+  },
+  {
+    "source_id": "5cd5f945-ca21-5ec4-9f51-ffd24e4a1cf2",
+    "target_id": "022502c7-a612-58cd-abc7-911acde89426",
+    "type": "CORRELATED_WITH",
+    "evidence": "Работник имеет право на: ... рабочее место, оборудованное в соответствии с требованиями по безопасности и охране труда",
+    "metadata": {
+      "source_kz": "181-бап",
+      "target_kz": "182-бап"
+    }
+  },
+  {
+    "source_id": "022502c7-a612-58cd-abc7-911acde89426",
+    "target_id": "d0e4848e-34e7-505a-84de-0b8f85193179",
+    "type": "MANIFESTED_IN",
+    "evidence": "проводить с участием представителей работников периодическую, не реже чем один раз в пять лет, аттестацию производственных объектов по условиям труда",
+    "metadata": {
+      "source_kz": "182-бап",
+      "target_kz": "183-бап"
+    }
+  },
+  {
+    "source_id": "04eff737-1ba8-57ee-9510-8597949697d0",
+    "target_id": "2a2b0126-1ccd-5a03-a52b-3f972cd96853",
+    "type": "CORRELATED_WITH",
+    "evidence": "Работник направляющей стороны имеет право на: ... рабочее место, оборудованное в соответствии с требованиями по безопасности и охране труда, у принимающей стороны",
+    "metadata": {
+      "source_kz": "181-1-бап",
+      "target_kz": "182-1-бап"
+    }
+  },
+  {
+    "source_id": "800dca2b-89bf-5dd8-8ffe-c3eabb168ec1",
+    "target_id": "5bac26ce-69cb-5d98-9777-0601e678313e",
+    "type": "BASED_ON",
+    "evidence": "Расследованию в соответствии с настоящим Кодексом подлежат случаи повреждения здоровья работников",
+    "metadata": {
+      "source_kz": "187-бап",
+      "target_kz": "186-бап"
+    }
+  },
+  {
+    "source_id": "40cf21c5-b15d-5d00-8d58-96590f705b13",
+    "target_id": "800dca2b-89bf-5dd8-8ffe-c3eabb168ec1",
+    "type": "EXTENDS",
+    "evidence": "Принимающая сторона обязана: 1) организовать оказание первой медицинской помощи пострадавшему работнику направляющей стороны",
+    "metadata": {
+      "source_kz": "187-1-бап",
+      "target_kz": "187-бап"
+    }
+  },
+  {
+    "source_id": "292253a4-3c45-5a56-a99b-bb620463a388",
+    "target_id": "5bac26ce-69cb-5d98-9777-0601e678313e",
+    "type": "BASED_ON",
+    "evidence": "Расследование несчастных случаев, связанных с трудовой деятельностью, за исключением случаев, подлежащих специальному расследованию, проводится комиссией",
+    "metadata": {
+      "source_kz": "188-бап",
+      "target_kz": "186-бап"
+    }
+  },
+  {
+    "source_id": "01ce27e0-ccc6-5a3b-bf0c-088943f76d0c",
+    "target_id": "292253a4-3c45-5a56-a99b-bb620463a388",
+    "type": "EXTENDS",
+    "evidence": "Расследование несчастных случаев, связанных с трудовой деятельностью работников направляющей стороны, за исключением случаев, подлежащих специальному расследованию, проводится комиссией, создаваемой актом принимающей стороны",
+    "metadata": {
+      "source_kz": "188-1-бап",
+      "target_kz": "188-бап"
+    }
+  },
+  {
+    "source_id": "229c0f60-1c60-5bc6-908a-6f1a90271554",
+    "target_id": "5bac26ce-69cb-5d98-9777-0601e678313e",
+    "type": "MANIFESTED_IN",
+    "evidence": "Срок расследования несчастного случая, связанного с трудовой деятельностью, не должен превышать десять рабочих дней со дня создания комиссии.",
+    "metadata": {
+      "source_kz": "189-бап",
+      "target_kz": "186-бап"
+    }
+  },
+  {
+    "source_id": "c3692787-b1d3-5fd1-8d52-ca26c006725d",
+    "target_id": "5bac26ce-69cb-5d98-9777-0601e678313e",
+    "type": "MANIFESTED_IN",
+    "evidence": "Каждый несчастный случай, связанный с трудовой деятельностью и вызвавший у работника (работников) потерю трудоспособности в соответствии с медицинским заключением (рекомендацией), подлежит расследованию.",
+    "metadata": {
+      "source_kz": "190-бап",
+      "target_kz": "186-бап"
+    }
+  },
+  {
+    "source_id": "bd27637b-2e5a-5b17-8162-d9e4abd4a9b9",
+    "target_id": "4940dcfb-5ef9-58dd-b8ec-e865acc6ea42",
+    "type": "CORRELATED_WITH",
+    "evidence": "Государственный контроль за соблюдением трудового законодательства Республики Казахстан осуществляют государственные инспекторы труда.",
+    "metadata": {
+      "source_kz": "191-бап",
+      "target_kz": "192-бап"
+    }
+  },
+  {
+    "source_id": "eb125e2e-e212-5b64-ba6f-f9aad74ffaf8",
+    "target_id": "bd27637b-2e5a-5b17-8162-d9e4abd4a9b9",
+    "type": "MANIFESTED_IN",
+    "evidence": "При осуществлении государственного контроля за соблюдением трудового законодательства Республики Казахстан государственные инспекторы труда имеют право",
+    "metadata": {
+      "source_kz": "193-бап",
+      "target_kz": "191-бап"
+    }
+  },
+  {
+    "source_id": "009b8094-6422-5b33-a10a-73fffc25d06a",
+    "target_id": "bd27637b-2e5a-5b17-8162-d9e4abd4a9b9",
+    "type": "MANIFESTED_IN",
+    "evidence": "Государственные инспекторы труда обязаны: 1) осуществлять контроль за соблюдением трудового законодательства Республики Казахстан",
+    "metadata": {
+      "source_kz": "194-бап",
+      "target_kz": "191-бап"
+    }
+  },
+  {
+    "source_id": "4d8d7422-b7a3-5ccb-92f1-9b72727bf8fc",
+    "target_id": "42df03ca-6fc1-5f77-b0a4-f3250cd994f3",
+    "type": "REFERENCES",
+    "evidence": "с учетом требований пункта 3 статьи 198 настоящего Кодекса",
+    "metadata": {
+      "source_kz": "195-бап",
+      "target_kz": "198-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 198"
+    }
+  },
+  {
+    "source_id": "4d8d7422-b7a3-5ccb-92f1-9b72727bf8fc",
+    "target_id": "42df03ca-6fc1-5f77-b0a4-f3250cd994f3",
+    "type": "REFERENCES",
+    "evidence": "подпунктом 6) статьи 193 настоящего Кодекса",
+    "metadata": {
+      "source_kz": "195-бап",
+      "target_kz": "193-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 193"
+    }
+  },
+  {
+    "source_id": "42df03ca-6fc1-5f77-b0a4-f3250cd994f3",
+    "target_id": "4d8d7422-b7a3-5ccb-92f1-9b72727bf8fc",
+    "type": "REFERENCES",
+    "evidence": "акты нижестоящего государственного инспектора труда",
+    "metadata": {
+      "source_kz": "198-бап",
+      "target_kz": "195-бап",
+      "ref_type": "internal",
+      "target_label": "Статья 195"
+    }
+  },
+  {
+    "source_id": "a543bff9-dbe1-5893-8c37-28344ee968c3",
+    "target_id": "4d8d7422-b7a3-5ccb-92f1-9b72727bf8fc",
+    "type": "REFERENCES",
+    "evidence": "в соответствии с Предпринимательским кодексом Республики Казахстан",
+    "metadata": {
+      "source_kz": "200-бап",
+      "target_kz": "Кәсіпкерлік кодексі",
+      "ref_type": "external",
+      "target_label": "Предпринимательский кодекс РК"
+    }
+  },
+  {
+    "source_id": "c1ba093a-d601-53e9-91d6-f69364043695",
+    "target_id": "211aeef6-db07-57b2-bf6f-51a36dd2a75c",
+    "type": "CORRELATED_WITH",
+    "evidence": "Внутренний контроль по безопасности и охране труда",
+    "metadata": {
+      "source_kz": "201-бап",
+      "target_kz": "202-бап"
+    }
+  },
+  {
+    "source_id": "211aeef6-db07-57b2-bf6f-51a36dd2a75c",
+    "target_id": "c1ba093a-d601-53e9-91d6-f69364043695",
+    "type": "MANIFESTED_IN",
+    "evidence": "В целях осуществления внутреннего контроля за соблюдением требований безопасности и охраны труда",
+    "metadata": {
+      "source_kz": "202-бап",
+      "target_kz": "201-бап"
+    }
+  },
+  {
+    "source_id": "5d3d1668-7e80-589a-8fdb-e33e169c0708",
+    "target_id": "c1ba093a-d601-53e9-91d6-f69364043695",
+    "type": "CORRELATED_WITH",
+    "evidence": "безопасности и охране труда",
+    "metadata": {
+      "source_kz": "203-бап",
+      "target_kz": "201-бап"
+    }
+  },
+  {
+    "source_id": "5d3d1668-7e80-589a-8fdb-e33e169c0708",
+    "target_id": "211aeef6-db07-57b2-bf6f-51a36dd2a75c",
+    "type": "CORRELATED_WITH",
+    "evidence": "технических инспекторов по охране труда",
+    "metadata": {
+      "source_kz": "203-бап",
+      "target_kz": "202-бап"
+    }
+  }
+]
