@@ -1,42 +1,6 @@
-"""
-merge_bilingual.py
+"""merge_bilingual.py
 ==================
-Aligns and merges paired Russian/Kazakh legal JSON files from parser.py output.
-Preserves ALL fields from both languages as nested bilingual objects.
-
-Input  : data/structured/<prefix>_ru.json  +  data/structured/<prefix>_kz.json
-Output : data/merged/<prefix>_merged.json
-
-Merged record schema
---------------------
-{
-  "article_id" : "<ru_id if present, else kz_id>",
-  "number"     : "<article number -- alignment key>",
-  "source"     : "both" | "ru_only" | "kz_only",
-
-  "title"      : {"ru": "Статья 1. ...", "kz": "1-бап. ..."},
-  "section"    : {"ru": "Раздел 1. ...", "kz": "1-бөлім. ..."},
-  "chapter"    : {"ru": "Глава 1. ...",  "kz": "1-тарау. ..."},
-  "paragraph"  : {"ru": "Параграф 1.",   "kz": "1-параграф."},
-  "hierarchy"  : {"ru": "Раздел 1. / Глава 1.", "kz": "1-бөлім. / 1-тарау."},
-  "context"    : {"ru": "<Russian article text>", "kz": "<Kazakh article text>"}
-}
-
-All values may be null when the article exists in only one language.
-
-Alignment key: "number" field (article number).
-  - O(1) lookup via dict built from KZ file.
-  - Articles missing in one language get null for all missing-language values.
-
-Usage
------
-    python merge_bilingual.py
-    python merge_bilingual.py --input data/structured --output data/merged
-    python merge_bilingual.py --verbose
-    python merge_bilingual.py --key number
-
-Constraints: stdlib only (json, pathlib, argparse, logging).
-"""
+Aligns and merges paired Russian/Kazakh legal JSON files from parser.py output."""
 
 from __future__ import annotations
 
@@ -47,9 +11,6 @@ import sys
 from pathlib import Path
 from typing import Any
 
-# ---------------------------------------------------------------------------
-# Logging
-# ---------------------------------------------------------------------------
 
 logging.basicConfig(
     level=logging.INFO,
@@ -59,10 +20,6 @@ logging.basicConfig(
 )
 logger = logging.getLogger("merge_bilingual")
 
-
-# ---------------------------------------------------------------------------
-# Bilingual fields — each becomes a nested {"ru": ..., "kz": ...} object
-# ---------------------------------------------------------------------------
 
 BILINGUAL_FIELDS: list[str] = [
     "title",
@@ -74,11 +31,8 @@ BILINGUAL_FIELDS: list[str] = [
 ]
 
 
-# ---------------------------------------------------------------------------
-# I/O helpers
-# ---------------------------------------------------------------------------
-
 def _load_json(path: Path) -> list[dict[str, Any]]:
+    """Function _load_json."""
     try:
         with path.open(encoding="utf-8") as fh:
             data = json.load(fh)
@@ -104,16 +58,8 @@ def _save_json(obj: list[dict[str, Any]], path: Path) -> None:
         raise RuntimeError(f"Cannot save {path}: {exc}") from exc
 
 
-# ---------------------------------------------------------------------------
-# Pairing
-# ---------------------------------------------------------------------------
-
 def _find_pairs(input_dir: Path) -> list[tuple[str, Path, Path]]:
-    """
-    Scan input_dir for *_ru.json / *_kz.json pairs.
-    Returns [(prefix, ru_path, kz_path), ...].
-    Unpaired files are logged as warnings and skipped.
-    """
+    """Scan input_dir for *_ru.json / *_kz.json pairs."""
     ru_files: dict[str, Path] = {}
     kz_files: dict[str, Path] = {}
 
@@ -139,19 +85,12 @@ def _find_pairs(input_dir: Path) -> list[tuple[str, Path, Path]]:
     return pairs
 
 
-# ---------------------------------------------------------------------------
-# Alignment helpers
-# ---------------------------------------------------------------------------
-
 def _build_index(
     records: list[dict[str, Any]],
     key_field: str,
     lang: str,
 ) -> dict[str, dict[str, Any]]:
-    """
-    Build {key_value: record} map for O(1) lookup.
-    Duplicate keys: last record wins, warning logged.
-    """
+    """Build {key_value: record} map for O(1) lookup."""
     index: dict[str, dict[str, Any]] = {}
     for rec in records:
         k = rec.get(key_field)
@@ -177,10 +116,7 @@ def _build_bilingual_fields(
     ru_rec: dict[str, Any] | None,
     kz_rec: dict[str, Any] | None,
 ) -> dict[str, Any]:
-    """
-    Build all bilingual field objects from RU and KZ records.
-    Each field becomes: {"ru": <ru_value>, "kz": <kz_value>}.
-    """
+    """Build all bilingual field objects from RU and KZ records."""
     return {
         field: {
             "ru": _extract_lang(ru_rec, field),
@@ -190,10 +126,6 @@ def _build_bilingual_fields(
     }
 
 
-# ---------------------------------------------------------------------------
-# Merge logic
-# ---------------------------------------------------------------------------
-
 def _merge_pair(
     prefix: str,
     ru_path: Path,
@@ -201,9 +133,7 @@ def _merge_pair(
     key_field: str,
     verbose: bool,
 ) -> list[dict[str, Any]]:
-    """
-    Align RU and KZ records by key_field and produce fully bilingual merged list.
-    """
+    """Align RU and KZ records by key_field and produce fully bilingual merged list."""
     ru_records = _load_json(ru_path)
     kz_records = _load_json(kz_path)
 
@@ -214,7 +144,6 @@ def _merge_pair(
     seen_kz_keys: set[str] = set()
     matched = ru_only = 0
 
-    # --- Iterate RU as primary, attach KZ ---
     for ru_rec in ru_records:
         k = str(ru_rec.get(key_field, ""))
         kz_rec = kz_index.get(k) if k else None
@@ -237,7 +166,6 @@ def _merge_pair(
         record.update(_build_bilingual_fields(ru_rec, kz_rec))
         merged.append(record)
 
-    # --- KZ articles with no RU counterpart ---
     kz_only = 0
     for k, kz_rec in kz_index.items():
         if k in seen_kz_keys:
@@ -261,16 +189,13 @@ def _merge_pair(
     return merged
 
 
-# ---------------------------------------------------------------------------
-# Entry point
-# ---------------------------------------------------------------------------
-
 def run(
     input_dir: Path,
     output_dir: Path,
     key_field: str = "number",
     verbose: bool = False,
 ) -> None:
+    """Function run."""
     if not input_dir.is_dir():
         logger.error("Input directory not found: %s", input_dir)
         sys.exit(1)
@@ -304,6 +229,7 @@ def run(
 
 
 def parse_args() -> argparse.Namespace:
+    """Function parse_args."""
     p = argparse.ArgumentParser(
         description="Align and merge RU/KZ legal JSON pairs (all fields, bilingual).",
         formatter_class=argparse.ArgumentDefaultsHelpFormatter,

@@ -1,41 +1,6 @@
-#!/usr/bin/env python3
-"""
-graph_builder.py  —  Neo4j Legal Knowledge Graph Builder
+"""graph_builder.py  —  Neo4j Legal Knowledge Graph Builder
 =========================================================
-Three-stage pipeline for Kazakhstani legislation (RU + KZ, bilingual).
-
-  Stage 1  Parse & Merge
-    Reads  data/merged/<codex>_merged.json
-           data/llm_results/<codex>/keywords.json
-           data/llm_results/<codex>/relations.json
-    Writes data/hierarchical_graph_base/final_hierarchy_and_keywords.json
-           data/hierarchical_graph_base/final_horizontal_relations.json
-
-  Stage 2  Build Hierarchy in Neo4j
-    (:Code)-[:CONTAINS]->(:Section)-[:CONTAINS]->(:Chapter)
-           -[:CONTAINS]->(:Paragraph)-[:CONTAINS]->(:Article)
-    Missing levels are skipped; chain adapts automatically per article.
-
-  Stage 3  Keywords & Horizontal Relations
-    (:Article)-[:HAS_KEYWORD]->(:Keyword)
-    (:Article)-[:BASED_ON|CAUSED_BY|CORRELATED_WITH|
-                 EXTENDS|MANIFESTED_IN|REFERENCES]->(:Article)
-
-Requirements:
-    pip install neo4j python-dotenv
-
-.env:
-    NEO4J_URI      = bolt://localhost:7687
-    NEO4J_USER     = neo4j
-    NEO4J_PASSWORD = your_password
-    NEO4J_DATABASE = neo4j          # optional, default neo4j
-
-Usage:
-    python graph_builder.py               # all stages
-    python graph_builder.py --stage 1     # stage 1 only
-    python graph_builder.py --stage 2 3   # stages 2 and 3
-    python graph_builder.py --data-root ./data --env .env
-"""
+Three-stage pipeline for Kazakhstani legislation (RU + KZ, bilingual)."""
 
 from __future__ import annotations
 
@@ -53,10 +18,6 @@ from dotenv import load_dotenv
 from neo4j import GraphDatabase, Driver
 
 
-# ---------------------------------------------------------------------------
-# Logging
-# ---------------------------------------------------------------------------
-
 logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s | %(levelname)-8s | %(message)s",
@@ -65,10 +26,6 @@ logging.basicConfig(
 )
 logger = logging.getLogger("graph_builder")
 
-
-# ---------------------------------------------------------------------------
-# Constants
-# ---------------------------------------------------------------------------
 
 BATCH_SIZE = 500
 
@@ -81,7 +38,6 @@ RELATION_TYPES: list[str] = [
     "REFERENCES",
 ]
 
-# Display names (ru, kz) for each codex prefix
 CODEX_NAMES: dict[str, tuple[str, str]] = {
     "admin_offenses":  (
         "Кодекс об административных правонарушениях",
@@ -182,10 +138,6 @@ CODEX_NAMES: dict[str, tuple[str, str]] = {
 }
 
 
-# ---------------------------------------------------------------------------
-# Utility helpers
-# ---------------------------------------------------------------------------
-
 def _make_id(*parts: str) -> str:
     """Deterministic 16-char ID from arbitrary string parts."""
     key = "||".join(p or "" for p in parts)
@@ -200,11 +152,13 @@ def _batched(iterable, n: int) -> Iterator[list]:
 
 
 def _load_json(path: Path) -> Any:
+    """Function _load_json."""
     with path.open(encoding="utf-8") as f:
         return json.load(f)
 
 
 def _save_json(obj: Any, path: Path, label: str = "") -> None:
+    """Function _save_json."""
     path.parent.mkdir(parents=True, exist_ok=True)
     tmp = path.with_suffix(".tmp")
     with tmp.open("w", encoding="utf-8") as f:
@@ -215,22 +169,19 @@ def _save_json(obj: Any, path: Path, label: str = "") -> None:
 
 
 def _neo4j_driver(cfg: dict) -> Driver:
+    """Function _neo4j_driver."""
     return GraphDatabase.driver(
         cfg["uri"],
         auth=(cfg["user"], cfg["password"]),
     )
 
 
-# ---------------------------------------------------------------------------
-# STAGE 1 — Parse hierarchy and merge all data
-# ---------------------------------------------------------------------------
-
 def stage1(merged_dir: Path, llm_dir: Path, graph_dir: Path) -> None:
+    """Function stage1."""
     logger.info("=" * 60)
     logger.info("STAGE 1  Parse & Merge")
     logger.info("=" * 60)
 
-    # Discover matched codex pairs
     merged_prefixes = {
         p.stem.removesuffix("_merged")
         for p in merged_dir.glob("*_merged.json")
@@ -245,8 +196,6 @@ def stage1(merged_dir: Path, llm_dir: Path, graph_dir: Path) -> None:
         logger.warning("LLM-only (no merged file): %s", sorted(only_llm))
     logger.info("Processing %d codex pair(s): %s", len(codexes), ", ".join(codexes))
 
-    # ---- Accumulators ----
-    # seen_struct: node_id → structural node record (Code/Section/Chapter/Paragraph)
     seen_struct: dict[str, dict] = {}
     all_articles: list[dict]     = []
     all_relations: list[dict]    = []
@@ -259,7 +208,6 @@ def stage1(merged_dir: Path, llm_dir: Path, graph_dir: Path) -> None:
         name_ru, name_kz = CODEX_NAMES.get(prefix, (prefix, prefix))
         code_id = _make_id("code", prefix)
 
-        # ---- Code node ----
         if code_id not in seen_struct:
             seen_struct[code_id] = dict(
                 id=code_id, label="Code",
@@ -269,10 +217,6 @@ def stage1(merged_dir: Path, llm_dir: Path, graph_dir: Path) -> None:
             )
             stats["codes"] += 1
 
-        # ---- Load keywords ----
-        # Supported formats:
-        #   dict: {article_id: {ru:[...], kz:[...]}, ...}   <- actual format
-        #   list: [[article_id, {ru:[...], kz:[...]}], ...]  <- fallback
         kw_map: dict[str, dict] = {}
         kw_path = llm_dir / prefix / "keywords.json"
         if kw_path.exists():
@@ -286,7 +230,6 @@ def stage1(merged_dir: Path, llm_dir: Path, graph_dir: Path) -> None:
         else:
             logger.warning("  [%s] keywords.json not found", prefix)
 
-        # ---- Load relations ----
         rel_path = llm_dir / prefix / "relations.json"
         if rel_path.exists():
             for rel in _load_json(rel_path):
@@ -302,14 +245,13 @@ def stage1(merged_dir: Path, llm_dir: Path, graph_dir: Path) -> None:
         else:
             logger.warning("  [%s] relations.json not found", prefix)
 
-        # ---- Load merged articles ----
         articles = _load_json(merged_dir / f"{prefix}_merged.json")
 
         for art in articles:
             art_id = art["article_id"]
 
-            # Bilingual field helpers
             def _bi(field: str, lang: str) -> str | None:
+                """Function _bi."""
                 return (art.get(field) or {}).get(lang)
 
             section_ru = _bi("section",   "ru")
@@ -323,7 +265,6 @@ def stage1(merged_dir: Path, llm_dir: Path, graph_dir: Path) -> None:
             body_ru    = _bi("context",   "ru")
             body_kz    = _bi("context",   "kz")
 
-            # ---- Section node ----
             section_id: str | None = None
             if section_ru:
                 section_id = _make_id("section", prefix, section_ru)
@@ -335,7 +276,6 @@ def stage1(merged_dir: Path, llm_dir: Path, graph_dir: Path) -> None:
                     )
                     stats["sections"] += 1
 
-            # ---- Chapter node ----
             chapter_id: str | None = None
             if chapter_ru:
                 chapter_id = _make_id("chapter", prefix, chapter_ru)
@@ -349,7 +289,6 @@ def stage1(merged_dir: Path, llm_dir: Path, graph_dir: Path) -> None:
                     )
                     stats["chapters"] += 1
 
-            # ---- Paragraph node ----
             para_id: str | None = None
             if para_ru:
                 para_id = _make_id("paragraph", prefix, para_ru)
@@ -367,7 +306,6 @@ def stage1(merged_dir: Path, llm_dir: Path, graph_dir: Path) -> None:
                     )
                     stats["paragraphs"] += 1
 
-            # ---- Article parent (closest non-null ancestor) ----
             art_parent_id = para_id or chapter_id or section_id or code_id
             art_parent_label = (
                 "Paragraph" if para_id    else
@@ -376,7 +314,6 @@ def stage1(merged_dir: Path, llm_dir: Path, graph_dir: Path) -> None:
                 "Code"
             )
 
-            # ---- Keywords — pair ru/kz by index ----
             kw_entry = kw_map.get(art_id, {})
             kw_ru: list[str] = kw_entry.get("ru") or []
             kw_kz: list[str] = kw_entry.get("kz") or []
@@ -386,7 +323,6 @@ def stage1(merged_dir: Path, llm_dir: Path, graph_dir: Path) -> None:
                     "text_ru": ru_text,
                     "text_kz": kw_kz[i] if i < len(kw_kz) else None,
                 })
-            # kz surplus (shouldn't happen, but guard)
             for j in range(len(kw_ru), len(kw_kz)):
                 keywords.append({"text_ru": None, "text_kz": kw_kz[j]})
             stats["keywords"] += len(keywords)
@@ -406,7 +342,6 @@ def stage1(merged_dir: Path, llm_dir: Path, graph_dir: Path) -> None:
             ))
             stats["articles"] += 1
 
-    # ---- Save outputs ----
     _save_json(
         {"structural_nodes": list(seen_struct.values()), "articles": all_articles},
         graph_dir / "final_hierarchy_and_keywords.json",
@@ -421,10 +356,6 @@ def stage1(merged_dir: Path, llm_dir: Path, graph_dir: Path) -> None:
         stats["relations"], stats["rel_duped"],
     )
 
-
-# ---------------------------------------------------------------------------
-# STAGE 2 — Build hierarchical graph in Neo4j
-# ---------------------------------------------------------------------------
 
 def _create_constraints(session, labels: list[str]) -> None:
     """Create unique constraints for each node label (Neo4j 4.4+ syntax)."""
@@ -461,6 +392,7 @@ def _merge_contains(session, parent_label: str, child_label: str, rows: list[dic
 
 
 def stage2(graph_dir: Path, neo4j_cfg: dict) -> None:
+    """Function stage2."""
     logger.info("=" * 60)
     logger.info("STAGE 2  Build Hierarchy in Neo4j")
     logger.info("=" * 60)
@@ -474,7 +406,6 @@ def stage2(graph_dir: Path, neo4j_cfg: dict) -> None:
     structural_nodes: list[dict] = raw["structural_nodes"]
     articles: list[dict]         = raw["articles"]
 
-    # Bucket structural nodes by label
     by_label: dict[str, list[dict]] = {
         lbl: [] for lbl in ("Code", "Section", "Chapter", "Paragraph")
     }
@@ -490,13 +421,11 @@ def stage2(graph_dir: Path, neo4j_cfg: dict) -> None:
     try:
         with driver.session(database=db) as session:
 
-            # ---- Constraints ----
             _create_constraints(
                 session,
                 ["Code", "Section", "Chapter", "Paragraph", "Article"],
             )
 
-            # ---- Pass 1: MERGE all structural nodes ----
             for label in ("Code", "Section", "Chapter", "Paragraph"):
                 nodes = by_label[label]
                 if not nodes:
@@ -507,13 +436,11 @@ def stage2(graph_dir: Path, neo4j_cfg: dict) -> None:
                     _merge_nodes(session, label, batch, extra)
                 stats[label] = len(nodes)
 
-            # ---- Pass 2: MERGE [:CONTAINS] for structural nodes ----
             for label in ("Section", "Chapter", "Paragraph"):
                 nodes = by_label[label]
                 if not nodes:
                     continue
                 logger.info("  Linking %d %s → parent...", len(nodes), label)
-                # Group by parent_label because Cypher label must be static
                 by_parent: dict[str, list[dict]] = {}
                 for n in nodes:
                     by_parent.setdefault(n["parent_label"], []).append(n)
@@ -521,7 +448,6 @@ def stage2(graph_dir: Path, neo4j_cfg: dict) -> None:
                     for batch in _batched(rows, BATCH_SIZE):
                         _merge_contains(session, parent_label, label, batch)
 
-            # ---- Pass 3: MERGE Article nodes ----
             logger.info("  Merging %d Article nodes...", len(articles))
             for batch in _batched(articles, BATCH_SIZE):
                 session.run(
@@ -538,7 +464,6 @@ def stage2(graph_dir: Path, neo4j_cfg: dict) -> None:
                 )
             stats["Article"] = len(articles)
 
-            # ---- Pass 4: MERGE [:CONTAINS] for Articles ----
             logger.info("  Linking %d Articles → parent...", len(articles))
             by_parent_art: dict[str, list[dict]] = {}
             for art in articles:
@@ -558,11 +483,8 @@ def stage2(graph_dir: Path, neo4j_cfg: dict) -> None:
     )
 
 
-# ---------------------------------------------------------------------------
-# STAGE 3 — Keywords & Horizontal Relations
-# ---------------------------------------------------------------------------
-
 def stage3(graph_dir: Path, neo4j_cfg: dict) -> None:
+    """Function stage3."""
     logger.info("=" * 60)
     logger.info("STAGE 3  Keywords & Horizontal Relations")
     logger.info("=" * 60)
@@ -587,14 +509,11 @@ def stage3(graph_dir: Path, neo4j_cfg: dict) -> None:
     try:
         with driver.session(database=db) as session:
 
-            # ---- Index on Keyword.text_ru for fast lookups ----
             session.run(
                 "CREATE INDEX keyword_text_ru IF NOT EXISTS "
                 "FOR (n:Keyword) ON (n.text_ru)"
             )
 
-            # ---- Keywords ----
-            # Each keyword becomes its own node (unique context per article).
             kw_rows: list[dict] = []
             for art in articles:
                 art_id = art["id"]
@@ -617,8 +536,6 @@ def stage3(graph_dir: Path, neo4j_cfg: dict) -> None:
                 kw_total += len(batch)
             logger.info("  Keywords imported: %d", kw_total)
 
-            # ---- Horizontal relations ----
-            # Fetch known article IDs to skip dangling refs
             logger.info("  Fetching known Article IDs from graph...")
             known_ids: set[str] = {
                 rec["id"]
@@ -626,7 +543,6 @@ def stage3(graph_dir: Path, neo4j_cfg: dict) -> None:
             }
             logger.info("  Known articles in graph: %d", len(known_ids))
 
-            # Group by relation type (static label in Cypher)
             by_type: dict[str, list[dict]] = {t: [] for t in RELATION_TYPES}
             for rel in relations:
                 rtype = rel.get("type")
@@ -649,7 +565,7 @@ def stage3(graph_dir: Path, neo4j_cfg: dict) -> None:
                     "evidence":     rel.get("evidence") or "",
                     "source_kz":    meta.get("source_kz"),
                     "target_kz":    meta.get("target_kz"),
-                    "ref_type":     meta.get("ref_type"),      # internal / external
+                    "ref_type":     meta.get("ref_type"),
                     "target_label": meta.get("target_label"),
                 })
 
@@ -683,11 +599,8 @@ def stage3(graph_dir: Path, neo4j_cfg: dict) -> None:
     )
 
 
-# ---------------------------------------------------------------------------
-# CLI
-# ---------------------------------------------------------------------------
-
 def _parse_args() -> argparse.Namespace:
+    """Function _parse_args."""
     p = argparse.ArgumentParser(
         description="Build a Neo4j legal knowledge graph from merged legislation data.",
         formatter_class=argparse.ArgumentDefaultsHelpFormatter,
@@ -712,6 +625,7 @@ def _parse_args() -> argparse.Namespace:
 
 
 def main() -> None:
+    """Function main."""
     args = _parse_args()
     load_dotenv(args.env)
 

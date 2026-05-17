@@ -1,4 +1,5 @@
 from __future__ import annotations
+"""Parses bilingual (RU/KZ) Kazakh legal Markdown files into structured article JSON."""
 import argparse, json, logging, re, sys
 from pathlib import Path
 from typing import Any
@@ -9,6 +10,7 @@ from tqdm import tqdm
 class _TqdmLoggingHandler(logging.StreamHandler):
     """Pipes log messages through tqdm.write() so progress bars aren't broken."""
     def emit(self, record: logging.LogRecord) -> None:
+        """Function emit."""
         try:
             tqdm.write(self.format(record), file=sys.stdout, end='\n')
             self.flush()
@@ -37,6 +39,7 @@ _RE_MSP   = re.compile(r"  +")
 
 
 def strip_markdown(text):
+    """Function strip_markdown."""
     if not text:
         return ""
     t = text.replace("\xa0", " ")
@@ -50,6 +53,7 @@ def strip_markdown(text):
 
 
 def bare(block):
+    """Function bare."""
     first = block.splitlines()[0].strip()
     first = _RE_ATX.sub("", first)
     first = first.replace("\xa0", " ")
@@ -60,32 +64,26 @@ def bare(block):
     return first.strip()
 
 
-# Article: RU  (C or S-Cyrillic + tatya + number)
 _ART_RU = re.compile(
     r"^[СC]татья\s+([\d]+(?:-[\d]+)*)[\.\s]",
     re.I | re.U,
 )
-# Article: KZ  (number + -bap)
 _ART_KZ = re.compile(
     r"^([\d]+(?:-[\d]+)*)-(?:бап|баn|бабы|баптың)[\.\s]?",
     re.I | re.U,
 )
-# Paragraph: KZ  N-paragraf
 _PAR_KZ = re.compile(
     r"^[\d][\d\-]*-параграф[\.\s]",
     re.I | re.U,
 )
-# Paragraph: RU  Paragraf N  or  sign N
 _PAR_RU = re.compile(
     r"^(?:§\s*\d+|Параграф\s+\d+)",
     re.I | re.U,
 )
-# Section: RAZDEL / BOLIM
 _SEC = re.compile(
     r"\b(?:РАЗДЕЛ|Б[ӨО]Л[І2Ii]М)\b",
     re.I | re.U,
 )
-# Chapter: Glava / tarau
 _CH = re.compile(
     r"\b(?:Глава|тарау)\b",
     re.I | re.U,
@@ -93,6 +91,7 @@ _CH = re.compile(
 
 
 def classify(b):
+    """Function classify."""
     m = _ART_RU.match(b)
     if m: return "article", m.group(1)
     m = _ART_KZ.match(b)
@@ -104,10 +103,12 @@ def classify(b):
 
 
 def make_uuid(*parts):
+    """Function make_uuid."""
     return str(uuid5(NAMESPACE_X500, "|".join(str(p) for p in parts)))
 
 
 def parse_lang_and_code(filename):
+    """Function parse_lang_and_code."""
     stem = Path(filename).stem
     if stem.endswith("_ru"): return stem[:-3], "ru"
     if stem.endswith("_kz"): return stem[:-3], "kz"
@@ -115,6 +116,7 @@ def parse_lang_and_code(filename):
 
 
 def preprocess_md(path):
+    """Function preprocess_md."""
     try:
         text = path.read_text(encoding="utf-8", errors="replace")
     except OSError as e:
@@ -152,11 +154,13 @@ def preprocess_md(path):
 
 
 def parse_blocks(blocks, code_name, lang):
+    """Function parse_blocks."""
     articles = []
     hier = {"section": None, "chapter": None, "paragraph": None}
     cur  = None
 
     def flush():
+        """Function flush."""
         nonlocal cur
         if cur is not None:
             articles.append(cur)
@@ -204,6 +208,7 @@ def parse_blocks(blocks, code_name, lang):
 
 
 def _save_json(data, path):
+    """Function _save_json."""
     tmp = path.with_suffix(".tmp")
     try:
         with tmp.open("w", encoding="utf-8") as fh:
@@ -216,6 +221,7 @@ def _save_json(data, path):
 
 
 def process_file(path, output_dir):
+    """Function process_file."""
     code_name, lang = parse_lang_and_code(path.name)
     blocks   = preprocess_md(path)
     articles = parse_blocks(blocks, code_name, lang)
@@ -224,6 +230,7 @@ def process_file(path, output_dir):
 
 
 def run(input_dir, output_dir, single_file=None):
+    """Function run."""
     output_dir.mkdir(parents=True, exist_ok=True)
     md_files = [input_dir / single_file] if single_file else sorted(input_dir.glob("*.md"))
     if not md_files:
@@ -243,6 +250,7 @@ def run(input_dir, output_dir, single_file=None):
 
 
 def parse_args():
+    """Function parse_args."""
     p = argparse.ArgumentParser(
         description="Parse Kazakh legal .md files into structured article JSON.")
     p.add_argument("--input",  "-i", type=Path, default=DEFAULT_INPUT_DIR)

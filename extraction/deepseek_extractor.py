@@ -1,37 +1,7 @@
-"""
-deepseek_extractor.py
+"""deepseek_extractor.py
 =====================
 Extracts bilingual keywords and typed legal relationships from article text
-using the DeepSeek API (OpenAI-compatible) with Pydantic-validated JSON output.
-
-Output format
--------------
-keywords.json  -- {article_id: {"ru": [...], "kz": [...]}, ...}
-relations.json -- [{source_id (RU), target_id (RU), type, evidence,
-                    metadata: {source_kz, target_kz, ref_type?, target_label?}}]
-
-Error handling
---------------
-Type 1 (empty keyword list): correction turn -- model asked to fill empty arrays.
-  Articles without KZ text are flagged; model instructed to translate from RU.
-Type 2 (finish_reason=length): auto-split -- batch halved recursively until fits.
-Type 3 (missing required fields): invalid relations filtered before Pydantic.
-
-Token budget
-------------
-deepseek-chat max output = 8192 tokens (hard limit).
-Per article: ~386 tokens. Safe batch: 15 articles (leaves ~2400 token headroom).
-MAX_ARTICLES_PER_BATCH=15 + MAX_CHARS_PER_BATCH=60000 (dual guard).
-
-Usage
------
-  python deepseek_extractor.py                        # all 24 files
-  python deepseek_extractor.py --max-articles 5       # smoke-test
-  python deepseek_extractor.py --dry-run              # batch plan only
-  python deepseek_extractor.py --input data/merged/family_merged.json
-
-Environment: copy .env.example -> .env, set DEEPSEEK_API_KEY.
-"""
+using the DeepSeek API (OpenAI-compatible) with Pydantic-validated JSON output."""
 
 from __future__ import annotations
 
@@ -68,10 +38,6 @@ except ImportError:
     sys.exit(1)
 
 
-# ---------------------------------------------------------------------------
-# Logging
-# ---------------------------------------------------------------------------
-
 logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s | %(levelname)-8s | %(message)s",
@@ -81,30 +47,19 @@ logging.basicConfig(
 logger = logging.getLogger("deepseek_extractor")
 
 
-# ---------------------------------------------------------------------------
-# Constants
-# ---------------------------------------------------------------------------
-
 DEEPSEEK_BASE_URL = "https://api.deepseek.com"
 DEEPSEEK_MODEL    = "deepseek-chat"
 MAX_RETRIES       = 3
 RETRY_DELAY_SEC   = 5
 
-# deepseek-chat hard output limit = 8192 tokens. Do NOT increase for this model.
 MAX_TOKENS = 8192
 
-# Primary guard: output token budget. 15 arts * 386 tok/art + 50 overhead = ~5840 tok.
 MAX_ARTICLES_PER_BATCH = 15
 
-# Secondary guard: input character budget (RU+KZ combined).
 MAX_CHARS_PER_BATCH = 60_000
 
-KW_SOFT_CAP = 20  # max keywords per language (trim, never reject)
+KW_SOFT_CAP = 20
 
-
-# ---------------------------------------------------------------------------
-# Pydantic schema
-# ---------------------------------------------------------------------------
 
 ALLOWED_RELATION_TYPES = Literal[
     "CAUSED_BY",
@@ -131,7 +86,7 @@ def _trim_kw(v: list) -> list:
 
 
 class BilingualKeywords(BaseModel):
-    """Keyword lists in both languages. Both MUST be non-empty (graph node validity)."""
+    """Keyword lists in both languages."""
     ru: list[str] = Field(
         ..., min_length=1,
         description="5-15 legal terms in Russian (lowercase). Max 20. REQUIRED.",
@@ -144,10 +99,12 @@ class BilingualKeywords(BaseModel):
     @field_validator("ru", "kz", mode="before")
     @classmethod
     def _trim(cls, v: list) -> list:
+        """Function _trim."""
         return _trim_kw(v)
 
 
 class ArticleKeywords(BaseModel):
+    """Class ArticleKeywords."""
     article_id: str = Field(..., description="Exact id from input article header.")
     keywords: BilingualKeywords = Field(
         ..., description='{"ru": [...], "kz": [...]}. Both lists REQUIRED.',
@@ -155,6 +112,7 @@ class ArticleKeywords(BaseModel):
 
 
 class RelationMetadata(BaseModel):
+    """Class RelationMetadata."""
     source_kz: str | None = Field(default=None,
         description="Kazakh label for source node (e.g. '45-bap').")
     target_kz: str | None = Field(default=None,
@@ -166,6 +124,7 @@ class RelationMetadata(BaseModel):
 
 
 class Relation(BaseModel):
+    """Class Relation."""
     source_id: str = Field(..., description="Exact id of source article.")
     target_id: str = Field(..., description="Exact id of target article or external act.")
     type: ALLOWED_RELATION_TYPES = Field(..., description="Semantic relationship type.")
@@ -178,6 +137,7 @@ class Relation(BaseModel):
 
     @model_validator(mode="after")
     def _validate(self) -> "Relation":
+        """Function _validate."""
         if self.type == "REFERENCES" and self.metadata.ref_type is None:
             raise ValueError("metadata.ref_type required when type='REFERENCES'.")
         if self.type != "REFERENCES":
@@ -190,65 +150,13 @@ class Relation(BaseModel):
 
 
 class ExtractionResult(BaseModel):
+    """Class ExtractionResult."""
     keywords:  list[ArticleKeywords] = Field(..., description="Bilingual keywords per article.")
     relations: list[Relation]        = Field(..., description="Typed relationships.")
 
 
-# ---------------------------------------------------------------------------
-# System prompt
-# ---------------------------------------------------------------------------
-
 SYSTEM_PROMPT = """\
-You are a senior legal analyst specialising in Kazakhstani legislation.
-Each article is provided with text_ru (Russian) and/or text_kz (Kazakh).
-You MUST produce BILINGUAL output for EVERY article.
-
-=== TASK ===
-For each article:
-1. Extract 5-15 legal keywords in Russian (from text_ru, lowercase). REQUIRED, never empty.
-2. Extract 5-15 legal keywords in Kazakh (from text_kz, lowercase). REQUIRED, never empty.
-   If text_kz is absent or empty: translate the Russian legal terms into Kazakh.
-   An empty keyword list is INVALID and will be rejected. Max 20 per language.
-3. Identify typed relationships between articles in this batch only.
-
-=== RELATIONSHIP TYPES (use ONLY these exact strings) ===
-  CAUSED_BY, BASED_ON, MANIFESTED_IN, CORRELATED_WITH, EXTENDS, REFERENCES
-
-=== OUTPUT FORMAT ===
-Return ONLY valid JSON. No markdown, no prose.
-
-{
-  "keywords": [
-    {
-      "article_id": "<exact id from input>",
-      "keywords": {"ru": ["term1", "term2"], "kz": ["term1", "term2"]}
-    }
-  ],
-  "relations": [
-    {
-      "source_id": "<exact id>", "target_id": "<exact id or external act>",
-      "type": "CORRELATED_WITH", "evidence": "<verbatim substring>",
-      "metadata": {"source_kz": "45-bap", "target_kz": "12-bap"}
-    },
-    {
-      "source_id": "<id>", "target_id": "<id>",
-      "type": "REFERENCES", "evidence": "<verbatim citation>",
-      "metadata": {"source_kz": "46-bap", "target_kz": "100-bap",
-                   "ref_type": "internal", "target_label": "Statya 100"}
-    }
-  ]
-}
-
-=== RULES ===
-1. article_id / source_id / target_id must be EXACT copies of "id:" from input.
-2. "ru" and "kz" keyword arrays are REQUIRED and must NEVER be empty [].
-3. REFERENCES: ref_type and target_label are REQUIRED in metadata.
-4. Other types: do NOT include ref_type or target_label.
-5. source_kz and target_kz must be provided for EVERY relation.
-6. evidence must be a verbatim substring from the source text_ru or text_kz.
-7. Omit a relation if confidence < 90%%. Return "relations": [] if none.
-8. Do NOT output anything outside the JSON object.
-"""
+You are a senior legal analyst specialising in Kazakhstani legislation."""
 
 CORRECTION_PROMPT = """\
 The following articles have EMPTY keyword arrays, which is invalid (every graph node \
@@ -256,25 +164,20 @@ needs keywords in both languages):
 
 {problems}
 
-Please return the COMPLETE corrected JSON with all empty arrays filled.
-For articles without Kazakh text: translate the Russian legal terms into Kazakh.
-Rules: min 5 keywords per array, max 20, lowercase, source language.
-"""
+Please return the COMPLETE corrected JSON with all empty arrays filled."""
 
-
-# ---------------------------------------------------------------------------
-# DeepSeek client
-# ---------------------------------------------------------------------------
 
 class DeepSeekExtractor:
     """Sends article batches to DeepSeek; returns validated ExtractionResult."""
 
     def __init__(self, api_key: str, model: str = DEEPSEEK_MODEL) -> None:
+        """Function __init__."""
         self._client = OpenAI(api_key=api_key, base_url=DEEPSEEK_BASE_URL)
         self._model  = model
         self._schema = ExtractionResult.model_json_schema()
 
     def _build_messages(self, user_text: str) -> list[dict[str, str]]:
+        """Function _build_messages."""
         return [
             {"role": "system", "content": SYSTEM_PROMPT},
             {"role": "user",   "content": user_text},
@@ -311,10 +214,7 @@ class DeepSeekExtractor:
 
     @staticmethod
     def _filter_relations(raw_obj: dict) -> dict:
-        """
-        Type 3 fix: drop relations missing required fields BEFORE Pydantic validation.
-        This prevents one malformed relation from failing the entire batch.
-        """
+        """Type 3 fix: drop relations missing required fields BEFORE Pydantic validation."""
         REQUIRED = {"source_id", "target_id", "type", "evidence"}
         original = raw_obj.get("relations", [])
         valid = [r for r in original if REQUIRED.issubset(r.keys())]
@@ -329,12 +229,8 @@ class DeepSeekExtractor:
         raw_obj: dict,
         messages: list[dict],
     ) -> dict:
-        """
-        Type 1 fix: if any article has empty ru or kz keyword list,
-        send a correction turn asking the model to fill them.
-        The original JSON is passed back as the assistant turn so the model
-        knows exactly what to fix.
-        """
+        """Type 1 fix: if any article has empty ru or kz keyword list,
+        send a correction turn asking the model to fill them."""
         problems: list[str] = []
         for kw in raw_obj.get("keywords", []):
             art_id = kw.get("article_id", "?")
@@ -345,7 +241,7 @@ class DeepSeekExtractor:
                 problems.append(f"  - article '{art_id}': 'kz' is empty []")
 
         if not problems:
-            return raw_obj  # nothing to fix
+            return raw_obj
 
         logger.warning(
             "  Empty keyword lists detected (%d). Sending correction turn ...",
@@ -365,7 +261,6 @@ class DeepSeekExtractor:
                 logger.warning("  Correction turn failed (length/empty). Keeping original.")
                 return raw_obj
             fixed_obj = self._parse_raw(raw_fixed)
-            # Merge: only update articles that were broken
             broken_ids = {
                 kw.get("article_id")
                 for kw in raw_obj.get("keywords", [])
@@ -389,12 +284,7 @@ class DeepSeekExtractor:
         return raw_obj
 
     def extract(self, user_text: str) -> ExtractionResult:
-        """
-        Call DeepSeek with retries; return validated ExtractionResult.
-        Applies correction turn for empty keyword lists (Type 1).
-        Filters incomplete relations before validation (Type 3).
-        Raises RuntimeError with 'finish_reason=length' for auto-split (Type 2).
-        """
+        """Call DeepSeek with retries; return validated ExtractionResult."""
         messages  = self._build_messages(user_text)
         last_exc: Exception | None = None
 
@@ -412,7 +302,6 @@ class DeepSeekExtractor:
                     else:
                         raise
 
-                # Type 2: truncated output -- unrecoverable with same batch
                 if finish_reason == "length":
                     raise RuntimeError(
                         "finish_reason='length': output truncated. "
@@ -424,10 +313,8 @@ class DeepSeekExtractor:
 
                 raw_obj = self._parse_raw(raw)
 
-                # Type 1: correction turn for empty keyword lists
                 raw_obj = self._correction_turn(raw_obj, messages)
 
-                # Type 3: filter relations with missing required fields
                 raw_obj = self._filter_relations(raw_obj)
 
                 result = ExtractionResult.model_validate(raw_obj)
@@ -437,7 +324,7 @@ class DeepSeekExtractor:
 
             except RuntimeError as exc:
                 if "finish_reason='length'" in str(exc):
-                    raise   # propagate immediately for auto-split
+                    raise
                 logger.warning("  Runtime error on attempt %d: %s", attempt, exc)
                 last_exc = exc
             except (APIConnectionError, APITimeoutError) as exc:
@@ -462,19 +349,12 @@ class DeepSeekExtractor:
         raise RuntimeError(f"All {MAX_RETRIES} attempts failed. Last: {last_exc}")
 
 
-# ---------------------------------------------------------------------------
-# Auto-split extraction
-# ---------------------------------------------------------------------------
-
 def _extract_with_autosplit(
     extractor: DeepSeekExtractor,
     batch: list[dict[str, str]],
 ) -> list[ExtractionResult]:
-    """
-    Type 2 fix: if batch causes finish_reason='length', split in half and
-    retry each sub-batch recursively until it fits or reaches single article.
-    Returns list of ExtractionResult (one per successful sub-batch).
-    """
+    """Type 2 fix: if batch causes finish_reason='length', split in half and
+    retry each sub-batch recursively until it fits or reaches single article."""
     try:
         return [extractor.extract(format_batch(batch))]
     except RuntimeError as exc:
@@ -495,15 +375,8 @@ def _extract_with_autosplit(
         return left + right
 
 
-# ---------------------------------------------------------------------------
-# Article loading & batching
-# ---------------------------------------------------------------------------
-
 def load_articles(path: Path, json_field: str | None) -> list[dict[str, str]]:
-    """
-    Load full-text articles from *_merged.json or plain .txt.
-    Loads context_ru and context_kz separately; flags articles missing KZ text.
-    """
+    """Load full-text articles from *_merged.json or plain .txt."""
     if path.suffix == ".json":
         records = json.loads(path.read_text(encoding="utf-8"))
         if not isinstance(records, list):
@@ -537,11 +410,7 @@ def load_articles(path: Path, json_field: str | None) -> list[dict[str, str]]:
 
 
 def format_batch(articles: list[dict[str, str]]) -> str:
-    """
-    Render bilingual article dicts into user-message string.
-    Articles without KZ text are explicitly flagged so the model knows
-    it must translate RU terms into KZ instead of leaving kz=[].
-    """
+    """Render bilingual article dicts into user-message string."""
     parts: list[str] = []
     for a in articles:
         lines = ["### ARTICLE", f"id: {a['id']}", f"number: {a['number']}"]
@@ -568,10 +437,8 @@ def batch_articles(
     max_chars: int = MAX_CHARS_PER_BATCH,
     max_per_batch: int = MAX_ARTICLES_PER_BATCH,
 ) -> list[list[dict[str, str]]]:
-    """
-    Group articles bounded by BOTH max_per_batch (output tokens) AND
-    max_chars combined RU+KZ (input tokens). Whichever is hit first.
-    """
+    """Group articles bounded by BOTH max_per_batch (output tokens) AND
+    max_chars combined RU+KZ (input tokens)."""
     batches: list[list[dict[str, str]]] = []
     current: list[dict[str, str]] = []
     current_chars = 0
@@ -594,12 +461,8 @@ def batch_articles(
     return batches
 
 
-# ---------------------------------------------------------------------------
-# Output helpers
-# ---------------------------------------------------------------------------
-
 def _atomic_write(obj: Any, path: Path) -> None:
-    """Atomic write (.tmp -> rename). Creates parent dir if needed."""
+    """Atomic write (.tmp -> rename)."""
     path.parent.mkdir(parents=True, exist_ok=True)
     tmp = path.with_suffix(".tmp")
     try:
@@ -612,6 +475,7 @@ def _atomic_write(obj: Any, path: Path) -> None:
 
 
 def _load_checkpoint(path: Path) -> dict:
+    """Function _load_checkpoint."""
     if path.exists():
         try:
             return json.loads(path.read_text(encoding="utf-8"))
@@ -621,12 +485,9 @@ def _load_checkpoint(path: Path) -> dict:
 
 
 def _save_checkpoint(kw_acc: dict, rel_acc: list, path: Path) -> None:
+    """Function _save_checkpoint."""
     _atomic_write({"keywords": kw_acc, "relations": rel_acc}, path)
 
-
-# ---------------------------------------------------------------------------
-# Per-file processing
-# ---------------------------------------------------------------------------
 
 def process_file(
     input_path: Path,
@@ -638,10 +499,7 @@ def process_file(
     max_articles_per_batch: int,
     dry_run: bool,
 ) -> dict[str, int]:
-    """
-    Process one *_merged.json with incremental checkpointing and auto-split.
-    Checkpoint saved after every batch -- crash-safe.
-    """
+    """Process one *_merged.json with incremental checkpointing and auto-split."""
     articles = load_articles(input_path, json_field)
     if max_articles:
         articles = articles[:max_articles]
@@ -689,7 +547,6 @@ def process_file(
                     i, len(batches), len(batch),
                     ", ".join(ids_p[:4]), " ..." if len(ids_p) > 4 else "")
 
-        # Auto-split handles Type 2 (length) internally
         results = _extract_with_autosplit(extractor, batch)
 
         for result in results:
@@ -722,11 +579,8 @@ def process_file(
     }
 
 
-# ---------------------------------------------------------------------------
-# CLI
-# ---------------------------------------------------------------------------
-
 def _parse() -> argparse.Namespace:
+    """Function _parse."""
     p = argparse.ArgumentParser(
         description=(
             "Extract bilingual keywords & typed relations from legal articles via DeepSeek.\n"
@@ -761,6 +615,7 @@ def _parse() -> argparse.Namespace:
 
 
 def main() -> None:
+    """Function main."""
     args = _parse()
     if args.verbose:
         logging.getLogger().setLevel(logging.DEBUG)

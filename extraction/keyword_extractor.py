@@ -1,51 +1,6 @@
-"""
-keyword_extractor.py
+"""keyword_extractor.py
 ====================
-Hybrid BM25Plus + KeyBERT keyword extraction for bilingual (RU/KZ) legal texts.
-No LLM. Pure statistical + semantic signal.
-
-Quality-first design decisions
---------------------------------
-BM25:
-  • BM25Plus (delta=0.5) instead of Okapi — avoids zero-score on absent terms,
-    handles the long legal articles characteristic of this corpus.
-  • Sublinear TF scaling: 1 + log(tf) — dampens term-frequency explosion
-    in verbose articles (Civil Code articles can be 5 000+ chars).
-  • Title-boost: title tokens count 3× in TF — surface article topics reliably.
-  • Two-level IDF:
-      local  — per-code IDF (what makes this article unique within Criminal Code?)
-      global — corpus-wide IDF (penalises legal boilerplate shared across codes)
-    FinalBM25 = 0.6 × local_score + 0.4 × global_score
-
-KeyBERT:
-  • paraphrase-multilingual-mpnet-base-v2 by default (better quality than MiniLM;
-    ~2× slower, ~2× better precision for legal terminology).
-    Fallback to MiniLM-L12-v2 if GPU OOM or user preference.
-  • Extract separately from RU text and KZ text, then merge — cross-lingual
-    consensus: a term appearing in both languages gets a 1.25× score boost.
-  • use_mmr=True + diversity=0.72 — avoids repetitive synonym clusters.
-  • ngram_range=(1, 3) — captures both atomic terms and multi-word legal phrases.
-
-Hybrid fusion:
-  FinalScore = α × BM25_norm + β × KeyBERT_sim
-  Default α=0.30, β=0.70 — semantic signal dominates for legal domain precision.
-  Per-article min-max normalisation with IQR-robust outlier clipping.
-
-Bonus post-processing:
-  • Legal citation extractor: Статья N / N-бап pulled via regex → always a keyword.
-  • Stopword filter: language-aware (RU + KZ sets, NLTK augmentation if installed).
-
-Input  : ./data/merged/*_merged.json          (24 files)
-Output : ./data/with_keywords_merged/*.json   (24 files, one per code)
-
-Usage
------
-  python keyword_extractor.py                                  # full run
-  python keyword_extractor.py --max-articles 50               # smoke test
-  python keyword_extractor.py --model paraphrase-multilingual-MiniLM-L12-v2
-  python keyword_extractor.py --alpha 0.4 --beta 0.6
-  python keyword_extractor.py --no-fp16                       # force FP32
-"""
+Hybrid BM25Plus + KeyBERT keyword extraction for bilingual (RU/KZ) legal texts."""
 
 from __future__ import annotations
 
@@ -80,10 +35,10 @@ except ImportError as _err:
     sys.exit(1)
 
 
-# ── Logging ───────────────────────────────────────────────────────────────────
-
 class _TqdmHandler(logging.StreamHandler):
+    """Class _TqdmHandler."""
     def emit(self, record: logging.LogRecord) -> None:
+        """Function emit."""
         try:
             tqdm.write(self.format(record), file=sys.stdout, end="\n")
             self.flush()
@@ -99,8 +54,6 @@ logging.basicConfig(
 )
 logger = logging.getLogger("keyword_extractor")
 
-
-# ── Stopwords (language-aware) ────────────────────────────────────────────────
 
 _SW_RU: frozenset[str] = frozenset({
     "статья", "пункт", "подпункт", "часть", "раздел", "глава", "параграф",
@@ -139,15 +92,14 @@ _SW_KZ: frozenset[str] = frozenset({
 
 _SW_ALL: frozenset[str] = _SW_RU | _SW_KZ
 
-# Optional NLTK augmentation
 try:
-    import nltk  # type: ignore
+    import nltk
     try:
-        from nltk.corpus import stopwords as _nltk_sw  # type: ignore
+        from nltk.corpus import stopwords as _nltk_sw
         _SW_RU = _SW_RU | frozenset(_nltk_sw.words("russian"))
     except LookupError:
         nltk.download("stopwords", quiet=True)
-        from nltk.corpus import stopwords as _nltk_sw  # type: ignore
+        from nltk.corpus import stopwords as _nltk_sw
         _SW_RU = _SW_RU | frozenset(_nltk_sw.words("russian"))
 except Exception:
     pass
@@ -157,6 +109,7 @@ _TOKEN_RE = re.compile(r"[а-яёА-ЯЁa-zA-ZәіңғүұқөһӘІҢҒҮҰҚӨ
 
 
 def _lang(text: str) -> str:
+    """Function _lang."""
     if not text:
         return "ru"
     kz = sum(1 for c in text if c in _KZ_CHARS)
@@ -164,13 +117,12 @@ def _lang(text: str) -> str:
 
 
 def _tokenize(text: str, lang: str = "auto") -> list[str]:
+    """Function _tokenize."""
     if lang == "auto":
         lang = _lang(text)
     sw = _SW_KZ if lang == "kz" else _SW_RU
     return [t for t in _TOKEN_RE.findall(text.lower()) if t not in sw]
 
-
-# ── Legal citation extractor ──────────────────────────────────────────────────
 
 _CITE_RU = re.compile(
     r"стать[яеию]\s+([\d]+(?:-[\d]+)*)",
@@ -183,7 +135,7 @@ _CITE_KZ = re.compile(
 
 
 def _extract_citations(text: str) -> list[str]:
-    """Return normalised citation strings: ['статья 5', '14-бап', ...]"""
+    """Return normalised citation strings: ['статья 5', '14-бап', ...]."""
     results: list[str] = []
     for m in _CITE_RU.finditer(text):
         results.append(f"статья {m.group(1)}")
@@ -192,45 +144,39 @@ def _extract_citations(text: str) -> list[str]:
     return results
 
 
-# ── Configuration ─────────────────────────────────────────────────────────────
-
 @dataclass
 class Config:
+    """Class Config."""
     input_dir:  str = "data/merged"
     output_dir: str = "data/with_keywords_merged"
 
-    # BM25Plus
-    bm25_k1:          float = 1.5    # term saturation (1.2–2.0 typical)
-    bm25_b:           float = 0.75   # length normalisation
-    bm25_delta:       float = 0.5    # BM25+ smoothing — the key difference from Okapi
-    bm25_min_len:     int   = 3      # minimum token length kept
-    bm25_top_n:       int   = 30     # candidates from BM25 before fusion
-    local_weight:     float = 0.6    # weight of per-code IDF vs global IDF
+    bm25_k1:          float = 1.5
+    bm25_b:           float = 0.75
+    bm25_delta:       float = 0.5
+    bm25_min_len:     int   = 3
+    bm25_top_n:       int   = 30
+    local_weight:     float = 0.6
     global_weight:    float = 0.4
 
-    # KeyBERT
     kb_model:     str   = "paraphrase-multilingual-mpnet-base-v2"
-    kb_top_n:     int   = 20         # candidates from KeyBERT before fusion
+    kb_top_n:     int   = 20
     kb_ngram:     tuple = (1, 3)
-    kb_diversity: float = 0.72       # MMR diversity (0=greedy, 1=max-diverse)
-    kb_batch:     int   = 32         # articles per GPU batch
-    kb_max_chars: int   = 2000       # truncation for KeyBERT (covers most articles)
+    kb_diversity: float = 0.72
+    kb_batch:     int   = 32
+    kb_max_chars: int   = 2000
     use_fp16:     bool  = True
 
-    # Hybrid fusion
-    alpha:    float = 0.30   # BM25 weight
-    beta:     float = 0.70   # KeyBERT weight
-    final_n:  int   = 25     # keywords kept per article after fusion
-    cross_lingual_boost: float = 1.25  # boost when term found in both RU and KZ
+    alpha:    float = 0.30
+    beta:     float = 0.70
+    final_n:  int   = 25
+    cross_lingual_boost: float = 1.25
 
-    # Runtime
-    max_articles: int = 0    # 0 = all
+    max_articles: int = 0
 
-
-# ── Data loading ──────────────────────────────────────────────────────────────
 
 @dataclass
 class Article:
+    """Class Article."""
     article_id: str
     number:     str
     title_ru:   str
@@ -242,15 +188,17 @@ class Article:
     _combined:  str = field(default="", init=False, repr=False)
 
     def __post_init__(self) -> None:
+        """Function __post_init__."""
         self._combined = " ".join(p for p in (self.context_ru, self.context_kz) if p)
 
     @property
     def combined_text(self) -> str:
+        """Function combined_text."""
         return self._combined
 
 
 def load_file(path: Path) -> tuple[str, list[Article]]:
-    """Load one *_merged.json → (code_name, [Article,...])"""
+    """Load one *_merged.json → (code_name, [Article,...])."""
     code_name = path.stem.replace("_merged", "")
     records = json.loads(path.read_text(encoding="utf-8"))
     articles = [
@@ -269,15 +217,11 @@ def load_file(path: Path) -> tuple[str, list[Article]]:
     return code_name, articles
 
 
-# ── BM25Plus with sublinear TF + title boost ──────────────────────────────────
-
 class BM25Index:
-    """
-    BM25Plus index with:
+    """BM25Plus index with:
       - sublinear TF scaling: tf_scaled = 1 + log(1 + raw_tf)
       - title boost: title tokens appear 3× in TF computation
-      - per-article scored dict via smoothed TF-IDF
-    """
+      - per-article scored dict via smoothed TF-IDF."""
 
     def __init__(
         self,
@@ -285,23 +229,21 @@ class BM25Index:
         cfg: Config,
         label: str = "",
     ) -> None:
+        """Function __init__."""
         self._cfg   = cfg
         self._n     = len(articles)
         label_str   = f"[{label}] " if label else ""
 
-        # Build boosted token lists
         tokenized: list[list[str]] = []
         for art in articles:
             lang   = _lang(art.context_ru or art.context_kz or "")
             body   = _tokenize(art.combined_text, lang)
             title  = _tokenize(art.title_ru + " " + art.title_kz, lang)
-            # Title tokens appear 3× to boost their TF
             tokenized.append(body + title * 3)
 
         self._bm25      = BM25Plus(tokenized, k1=cfg.bm25_k1, b=cfg.bm25_b, delta=cfg.bm25_delta)
         self._tokenized = tokenized
 
-        # Smoothed TF-IDF per article
         df: dict[str, int] = defaultdict(int)
         for toks in tokenized:
             for t in set(toks):
@@ -315,8 +257,8 @@ class BM25Index:
                 raw_tf[t] += 1
             scores: dict[str, float] = {}
             for term, cnt in raw_tf.items():
-                tf  = 1.0 + math.log(1.0 + cnt / doc_len)   # sublinear
-                idf = math.log((self._n + 1) / (df[term] + 1)) + 1.0  # smoothed
+                tf  = 1.0 + math.log(1.0 + cnt / doc_len)
+                idf = math.log((self._n + 1) / (df[term] + 1)) + 1.0
                 scores[term] = tf * idf
             self._tfidf.append(scores)
 
@@ -329,16 +271,13 @@ class BM25Index:
         return {t: s for t, s in self._tfidf[idx].items() if len(t) >= min_len}
 
 
-# ── KeyBERT stage ─────────────────────────────────────────────────────────────
-
 class KeyBERTStage:
-    """
-    Batched KeyBERT with:
+    """Batched KeyBERT with:
       - separate extraction for RU and KZ text
-      - cross-lingual consensus boost (terms in both → +25%)
-    """
+      - cross-lingual consensus boost (terms in both → +25%)."""
 
     def __init__(self, cfg: Config) -> None:
+        """Function __init__."""
         device = "cuda" if torch.cuda.is_available() else "cpu"
         logger.info("Loading KeyBERT model '%s' on %s …", cfg.kb_model, device)
         try:
@@ -370,7 +309,6 @@ class KeyBERTStage:
                 use_mmr    = True,
                 diversity  = cfg.kb_diversity,
             )
-            # Single string → list[tuple]; list → list[list[tuple]]
             if chunk and not isinstance(raw[0], list):
                 raw = [raw]
             results.extend(raw)
@@ -379,11 +317,9 @@ class KeyBERTStage:
     def extract_bilingual(
         self, articles: list[Article]
     ) -> list[dict[str, list[tuple[str, float]]]]:
-        """
-        For each article return:
+        """For each article return:
           {"ru": [(phrase, score),...], "kz": [...], "merged": [...]}
-        merged applies cross-lingual boost.
-        """
+        merged applies cross-lingual boost."""
         ru_texts = [art.context_ru[:self._cfg.kb_max_chars] for art in articles]
         kz_texts = [art.context_kz[:self._cfg.kb_max_chars] for art in articles]
 
@@ -396,11 +332,9 @@ class KeyBERTStage:
         combined: list[dict[str, list[tuple[str, float]]]] = []
 
         for ru_kws, kz_kws in zip(ru_res, kz_res):
-            # Build score maps
             ru_map: dict[str, float] = {kw.lower(): s for kw, s in ru_kws}
             kz_map: dict[str, float] = {kw.lower(): s for kw, s in kz_kws}
 
-            # Union with cross-lingual boost for shared terms/cognates
             all_terms = set(ru_map) | set(kz_map)
             merged_map: dict[str, float] = {}
             for term in all_terms:
@@ -423,20 +357,15 @@ class KeyBERTStage:
         return combined
 
 
-# ── Hybrid scorer ─────────────────────────────────────────────────────────────
-
 class HybridScorer:
-    """
-    FinalScore = α × BM25_norm + β × KeyBERT_sim
+    """FinalScore = α × BM25_norm + β × KeyBERT_sim
 
     BM25_norm uses IQR-robust clipping before min-max to handle outliers:
       values above Q75 + 1.5*IQR are clipped → prevents one dominant term
-      from collapsing all others to near-zero.
-
-    Two-level BM25: FinalBM25 = local_w × local_score + global_w × global_score
-    """
+      from collapsing all others to near-zero."""
 
     def __init__(self, cfg: Config) -> None:
+        """Function __init__."""
         if abs(cfg.alpha + cfg.beta - 1.0) > 1e-6:
             raise ValueError(f"alpha + beta must equal 1.0, got {cfg.alpha + cfg.beta}")
         self._cfg = cfg
@@ -456,15 +385,15 @@ class HybridScorer:
 
     def fuse(
         self,
-        local_bm25:  dict[str, float],    # {term: tfidf} within-code
-        global_bm25: dict[str, float],    # {term: tfidf} corpus-wide
-        kb_merged:   list[tuple[str, float]],  # [(phrase, sim)]
+        local_bm25:  dict[str, float],
+        global_bm25: dict[str, float],
+        kb_merged:   list[tuple[str, float]],
         stopwords:   frozenset[str],
         citations:   list[str],
     ) -> list[tuple[str, float]]:
+        """Function fuse."""
         cfg = self._cfg
 
-        # Combine two BM25 levels
         all_terms = set(local_bm25) | set(global_bm25)
         combined_bm25 = {
             t: cfg.local_weight  * local_bm25.get(t, 0.0)
@@ -473,13 +402,11 @@ class HybridScorer:
         }
         bm25_norm = self._robust_norm(combined_bm25)
 
-        # KeyBERT: already in [0, 1], expand multi-word phrases
         kb_map: dict[str, float] = {}
         for phrase, sim in kb_merged:
             p = phrase.lower().strip()
             if p and p not in stopwords:
                 kb_map[p] = max(kb_map.get(p, 0.0), float(sim))
-                # Index individual words at 80% score so they can combine with BM25
                 for word in p.split():
                     if len(word) >= 3 and word not in stopwords:
                         kb_map[word] = max(kb_map.get(word, 0.0), float(sim) * 0.80)
@@ -498,7 +425,6 @@ class HybridScorer:
         scored.sort(key=lambda x: x[1], reverse=True)
         result = scored[: cfg.final_n]
 
-        # Prepend citation keywords with max score (always preserve)
         seen = {t for t, _ in result}
         for cite in citations:
             c = cite.lower().strip()
@@ -509,10 +435,9 @@ class HybridScorer:
         return result
 
 
-# ── Output serialisation ──────────────────────────────────────────────────────
-
 def _to_record(art: Article, scored: list[tuple[str, float]],
                bm25_top: list[str], kb_top: list[str]) -> dict[str, Any]:
+    """Function _to_record."""
     return {
         "article_id":       art.article_id,
         "number":           art.number,
@@ -530,6 +455,7 @@ def _to_record(art: Article, scored: list[tuple[str, float]],
 
 
 def _save(obj: Any, path: Path) -> None:
+    """Function _save."""
     path.parent.mkdir(parents=True, exist_ok=True)
     tmp = path.with_suffix(".tmp")
     try:
@@ -541,9 +467,8 @@ def _save(obj: Any, path: Path) -> None:
         raise RuntimeError(f"Cannot save {path}: {exc}") from exc
 
 
-# ── Main pipeline ─────────────────────────────────────────────────────────────
-
 def run(cfg: Config) -> None:
+    """Function run."""
     t0        = time.perf_counter()
     input_dir = Path(cfg.input_dir)
     out_dir   = Path(cfg.output_dir)
@@ -561,10 +486,9 @@ def run(cfg: Config) -> None:
     logger.info("Input : %s (%d files)", input_dir, len(files))
     logger.info("Output: %s", out_dir)
 
-    # ── Load ALL articles for global BM25 index ───────────────────────────────
     logger.info("Loading all articles for global BM25 index …")
     all_articles: list[Article] = []
-    file_slices:  list[tuple[str, int, int]] = []   # (code, start, end)
+    file_slices:  list[tuple[str, int, int]] = []
 
     for f in files:
         code_name, arts = load_file(f)
@@ -578,16 +502,13 @@ def run(cfg: Config) -> None:
 
     logger.info("Loaded %d articles total.", len(all_articles))
 
-    # ── Global BM25Plus index ─────────────────────────────────────────────────
     logger.info("Building global BM25Plus index …")
     global_idx = BM25Index(all_articles, cfg, label="global")
 
-    # ── KeyBERT (single GPU pass over all articles) ───────────────────────────
     kb_stage = KeyBERTStage(cfg)
     logger.info("Running bilingual KeyBERT extraction (%d articles) …", len(all_articles))
     kb_results = kb_stage.extract_bilingual(all_articles)
 
-    # ── Per-file processing ───────────────────────────────────────────────────
     scorer = HybridScorer(cfg)
     total_keywords = 0
     failed = 0
@@ -596,7 +517,6 @@ def run(cfg: Config) -> None:
         arts    = all_articles[start:end]
         n_local = len(arts)
 
-        # Local BM25Plus index (within-code IDF — discriminative keywords)
         local_idx = BM25Index(arts, cfg, label=code_name)
 
         records: list[dict[str, Any]] = []
@@ -612,13 +532,10 @@ def run(cfg: Config) -> None:
             global_bm25 = global_idx.scored(global_i)
             kb_merged   = kb_res["merged"]
 
-            # Legal citation extraction (Статья N, N-бап)
             citations = _extract_citations(art.context_ru + " " + art.context_kz)
 
-            # Top-N from BM25 for debug field (sorted by local score)
             bm25_top = sorted(local_bm25, key=local_bm25.get, reverse=True)[: cfg.bm25_top_n]
 
-            # Top-N from KeyBERT for debug field
             kb_top = [kw for kw, _ in kb_merged[: cfg.kb_top_n]]
 
             try:
@@ -650,9 +567,8 @@ def run(cfg: Config) -> None:
     )
 
 
-# ── CLI ───────────────────────────────────────────────────────────────────────
-
 def _parse() -> argparse.Namespace:
+    """Function _parse."""
     p = argparse.ArgumentParser(
         description="Hybrid BM25Plus + KeyBERT keyword extractor for bilingual legal texts.",
         formatter_class=argparse.ArgumentDefaultsHelpFormatter,
