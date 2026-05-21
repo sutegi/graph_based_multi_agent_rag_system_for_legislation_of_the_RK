@@ -1,12 +1,9 @@
-"""
-Conversation session — tracks turn history for multi-turn LLM context.
-"""
+"""Conversation session — tracks turn history for multi-turn LLM context."""
 from __future__ import annotations
 
 from dataclasses import dataclass, field
 from typing import NamedTuple
 
-# Maximum number of past turns kept in context (oldest are evicted first).
 MAX_HISTORY: int = 6
 
 
@@ -29,22 +26,19 @@ class Session:
             self.history = self.history[-MAX_HISTORY:]
 
     def format_for_llm(self) -> str:
-        """
-        Compact history string for injection into LLM prompts.
-        Returns an empty string when there is no history yet.
-        """
+        """Return compact history string for LLM prompt injection; empty string if no history."""
         if not self.history:
             return ""
         lines = ["История разговора:"]
         for i, turn in enumerate(self.history, 1):
             lines.append(f"В{i}: {turn.question}")
-            # Truncate long answers to avoid token bloat
             short = turn.answer[:250] + ("…" if len(turn.answer) > 250 else "")
             lines.append(f"О{i}: {short}")
         return "\n".join(lines)
 
     @property
     def turn_count(self) -> int:
+        """Return number of completed turns in the current session."""
         return len(self.history)
 
     def clear(self) -> None:

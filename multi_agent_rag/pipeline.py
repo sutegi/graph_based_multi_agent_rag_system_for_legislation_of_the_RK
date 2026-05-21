@@ -1,18 +1,4 @@
-"""
-Three-phase RAG pipeline  —  no LangGraph dependency.
-
-  Phase 1 — UNDERSTAND  : LLM intent analysis  →  IntentResult
-  Phase 2 — RETRIEVE    : Weighted BM25 + graph enrichment  →  RetrievalResult
-  Phase 3 — ANSWER      : LLM answer synthesis  →  AnswerResult
-
-  Optional retry:
-    If confidence < CONFIDENCE_THRESHOLD a second attempt is made with
-    the codex filter removed (broader corpus).  The attempt with the
-    higher confidence score is returned.
-
-Public API:
-    result = await run(question, session)   →  PipelineResult
-"""
+"""Three-phase RAG pipeline: intent analysis → retrieval → answer synthesis."""
 from __future__ import annotations
 
 import time
@@ -24,10 +10,10 @@ from .retriever import RetrievalResult, retrieve
 from .session import Session
 
 
-# ── Result type ───────────────────────────────────────────────────────────────
-
 @dataclass
 class PipelineResult:
+    """Full output of one pipeline run including intent, retrieval, and answer."""
+
     question: str
     intent: IntentResult
     retrieval: RetrievalResult
@@ -37,25 +23,18 @@ class PipelineResult:
 
     @property
     def is_low_confidence(self) -> bool:
+        """Return True if answer confidence is below the configured threshold."""
         return self.answer.confidence < CONFIDENCE_THRESHOLD
 
 
-# ── Pipeline ──────────────────────────────────────────────────────────────────
-
 async def run(question: str, session: Session) -> PipelineResult:
-    """
-    Execute the full pipeline for *question* given conversation *session*.
-
-    Always returns a PipelineResult.  Never raises.
-    """
+    """Execute the full pipeline for question given session. Always returns. Never raises."""
     t0          = time.monotonic()
     history_ctx = session.format_for_llm()
 
-    # ── Phase 1: UNDERSTAND ───────────────────────────────────────────────────
     logger.info("Pipeline ▶ phase 1 — intent analysis")
     intent = await analyse_intent(question, history_ctx=history_ctx)
 
-    # Short-circuit: clearly not a legal question
     if not intent.is_legal_question:
         off_topic = AnswerResult(
             answer=(
@@ -74,14 +53,12 @@ async def run(question: str, session: Session) -> PipelineResult:
             elapsed_ms=elapsed,
         )
 
-    # ── Phase 2: RETRIEVE ─────────────────────────────────────────────────────
     logger.info(
         "Pipeline ▶ phase 2 — retrieval  codexes=%s  kws=%d",
         intent.codex_slugs, len(intent.keywords),
     )
     retrieval = await retrieve(intent)
 
-    # ── Phase 3: ANSWER ───────────────────────────────────────────────────────
     logger.info("Pipeline ▶ phase 3 — answer synthesis")
     answer = await synthesise_answer(
         question,
@@ -91,7 +68,6 @@ async def run(question: str, session: Session) -> PipelineResult:
 
     retried = False
 
-    # ── Optional retry with broader search ────────────────────────────────────
     if answer.confidence < CONFIDENCE_THRESHOLD and MAX_RETRIES > 0:
         logger.info(
             "Pipeline ↩ retry — conf %.2f < threshold %.2f — dropping codex filter",
@@ -99,7 +75,6 @@ async def run(question: str, session: Session) -> PipelineResult:
         )
         retried = True
 
-        # Drop codex filter → search across the entire corpus
         broad_intent = IntentResult(
             language=intent.language,
             is_legal_question=True,
@@ -113,7 +88,6 @@ async def run(question: str, session: Session) -> PipelineResult:
             history_ctx=history_ctx,
         )
 
-        # Keep whichever attempt produced higher confidence
         if broad_answer.confidence >= answer.confidence:
             retrieval = broad_retrieval
             answer    = broad_answer
@@ -128,7 +102,6 @@ async def run(question: str, session: Session) -> PipelineResult:
         answer.confidence, retried, elapsed,
     )
 
-    # Persist this turn to session history
     session.add(question, answer.answer, answer.confidence)
 
     return PipelineResult(

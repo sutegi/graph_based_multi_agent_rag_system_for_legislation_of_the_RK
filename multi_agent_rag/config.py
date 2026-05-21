@@ -1,9 +1,4 @@
-"""
-Configuration for the Kazakhstan Legal RAG system.
-
-All tunables, codex definitions, and shared prompts live here.
-"""
-
+"""Configuration — environment, constants, codex registry, and system prompt."""
 from __future__ import annotations
 
 import logging
@@ -13,12 +8,8 @@ from pathlib import Path
 
 from dotenv import load_dotenv
 
-# ── Environment ───────────────────────────────────────────────────────────────
-
 _ENV = Path(__file__).parent.parent / ".env"
 load_dotenv(_ENV if _ENV.exists() else None)
-
-# ── Logging ───────────────────────────────────────────────────────────────────
 
 logging.basicConfig(
     level=logging.INFO,
@@ -28,51 +19,30 @@ logging.basicConfig(
 )
 logger = logging.getLogger("legal_rag")
 
-# ── LLM (DeepSeek via OpenAI-compatible API) ──────────────────────────────────
-
 DEEPSEEK_API_KEY: str  = os.getenv("DEEPSEEK_API_KEY", "")
 DEEPSEEK_BASE_URL: str = os.getenv("DEEPSEEK_BASE_URL", "https://api.deepseek.com/v1")
 DEEPSEEK_MODEL: str    = os.getenv("DEEPSEEK_MODEL", "deepseek-chat")
 
-LLM_TIMEOUT: int       = 60    # seconds per call
-LLM_MAX_RETRIES: int   = 2     # retry on transient errors
-
-# ── Neo4j ─────────────────────────────────────────────────────────────────────
+LLM_TIMEOUT: int     = 60
+LLM_MAX_RETRIES: int = 2
 
 NEO4J_URI:      str = os.getenv("NEO4J_URI",      "bolt://localhost:7687")
 NEO4J_USER:     str = os.getenv("NEO4J_USER",     "neo4j")
 NEO4J_PASSWORD: str = os.getenv("NEO4J_PASSWORD", "")
 NEO4J_DATABASE: str = os.getenv("NEO4J_DATABASE", "neo4j")
 
-# ── Retrieval ─────────────────────────────────────────────────────────────────
-
-# Base BM25 result limit per keyword. Actual limit = round(BASE × (0.5 + weight)).
 TOP_K_BASE: int          = 10
-# Maximum codex slugs to filter by (avoids combinatorial explosion).
 MAX_CODEX_FILTERS: int   = 3
-# How many top-scored articles to expand via graph traversal.
 GRAPH_SEED: int          = 8
-# Maximum graph traversal depth.
 GRAPH_DEPTH: int         = 1
-# Limit on graph neighbours per seed article.
 GRAPH_LIMIT: int         = 5
-# Score decay applied to graph-discovered articles.
 GRAPH_DECAY: float       = 0.75
-# Maximum top-weighted keywords used for definition lookup.
 DEFINITION_KW_COUNT: int = 3
-# Definition results per term.
 DEFINITION_TOP_K: int    = 5
-# Maximum characters of context passed to the answer LLM.
 CONTEXT_MAX_CHARS: int   = 18_000
 
-# ── Pipeline ──────────────────────────────────────────────────────────────────
-
-CONFIDENCE_THRESHOLD: float = 0.55   # below this, one retry is attempted
-MAX_RETRIES: int            = 1      # max additional attempts after first
-
-# ── Kazakhstan legal codexes ──────────────────────────────────────────────────
-# Keys are the codex_prefix values stored on Article nodes in Neo4j.
-# Values are (Russian name, Kazakh name).
+CONFIDENCE_THRESHOLD: float = 0.55
+MAX_RETRIES: int            = 1
 
 LEGAL_CODEXES: dict[str, tuple[str, str]] = {
     "admin_offenses":  ("Кодекс об административных правонарушениях",          "Әкімшілік құқық бұзушылықтар туралы кодекс"),
@@ -101,22 +71,11 @@ LEGAL_CODEXES: dict[str, tuple[str, str]] = {
     "water":           ("Водный кодекс",                                       "Су кодексі"),
 }
 
-# Derived: Russian name → slug (for display)
 CODEX_RU: dict[str, str] = {v[0]: k for k, v in LEGAL_CODEXES.items()}
 
-# ── Codex name resolution ─────────────────────────────────────────────────────
 
 def resolve_codex(name: str) -> list[str]:
-    """Map a partial Russian or Kazakh codex name to validated slug(s).
-
-    Case-insensitive substring match against both language names.
-    Returns [] if no match.
-
-    Examples:
-        resolve_codex("Трудовой кодекс")   → ["labor"]
-        resolve_codex("Гражданский")       → ["civil_general", "civil_special", "civil_proc"]
-        resolve_codex("Уголовный")         → ["criminal", "criminal_proc", "criminal_exec"]
-    """
+    """Return codex slug(s) matching a partial Russian or Kazakh name (case-insensitive)."""
     if not name:
         return []
     needle = name.strip().lower()
@@ -128,11 +87,9 @@ def resolve_codex(name: str) -> list[str]:
 
 
 def validate_codex_slugs(slugs: list[str]) -> list[str]:
-    """Return only slugs that exist in LEGAL_CODEXES (drop LLM hallucinations)."""
+    """Filter out any slugs not present in LEGAL_CODEXES."""
     return [s for s in (slugs or []) if s in LEGAL_CODEXES]
 
-
-# ── System prompt ─────────────────────────────────────────────────────────────
 
 SYSTEM_PROMPT: str = (
     "Вы — точный правовой аналитик, специализирующийся исключительно на законодательстве "

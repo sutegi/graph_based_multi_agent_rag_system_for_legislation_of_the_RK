@@ -1,12 +1,4 @@
-"""
-LLM layer — structured JSON in, typed dataclasses out.
-
-All OpenAI-compatible API calls live here.  No business logic.
-
-Two public coroutines:
-    analyse_intent(question, history_ctx)  →  IntentResult
-    synthesise_answer(question, context, history_ctx)  →  AnswerResult
-"""
+"""LLM layer — intent analysis and answer synthesis via DeepSeek."""
 from __future__ import annotations
 
 import asyncio
@@ -29,12 +21,11 @@ from .config import (
     validate_codex_slugs,
 )
 
-# ── Client singleton ──────────────────────────────────────────────────────────
-
 _client: AsyncOpenAI | None = None
 
 
 def get_client() -> AsyncOpenAI:
+    """Return the shared OpenAI-compatible client, creating it on first call."""
     global _client
     if _client is None:
         _client = AsyncOpenAI(
@@ -46,14 +37,12 @@ def get_client() -> AsyncOpenAI:
     return _client
 
 
-# ── Data structures ───────────────────────────────────────────────────────────
-
 @dataclass
 class Keyword:
-    """One search keyword with an LLM-assigned importance weight."""
+    """Search keyword with an LLM-assigned importance weight (0.1–1.0)."""
 
     text: str
-    weight: float  # 0.1 – 1.0, descending in IntentResult.keywords
+    weight: float
 
     def __repr__(self) -> str:
         return f"Keyword({self.text!r}, w={self.weight:.2f})"
@@ -61,12 +50,12 @@ class Keyword:
 
 @dataclass
 class IntentResult:
-    """Output of intent analysis: language, codex slugs, ranked keywords."""
+    """Parsed output of intent analysis: language, codex slugs, and ranked keywords."""
 
-    language: str            # "ru" | "kz" | "mixed"
+    language: str
     is_legal_question: bool
-    codex_slugs: list[str]   # validated slugs from LEGAL_CODEXES, may be empty
-    keywords: list[Keyword]  # sorted by weight descending (highest first)
+    codex_slugs: list[str]
+    keywords: list[Keyword]
     raw: dict = field(default_factory=dict, repr=False)
 
 
@@ -82,27 +71,20 @@ class Citation:
 
 @dataclass
 class AnswerResult:
-    """Output of answer synthesis: text, citations, confidence."""
+    """Parsed output of answer synthesis: text, citations, and confidence score."""
 
     answer: str
     citations: list[Citation]
-    confidence: float  # 0.0 – 1.0
+    confidence: float
     raw: dict = field(default_factory=dict, repr=False)
 
-
-# ── Shared LLM call ───────────────────────────────────────────────────────────
 
 async def _chat_json(
     messages: list[dict[str, str]],
     *,
     temperature: float = 0.1,
 ) -> dict[str, Any]:
-    """
-    Single DeepSeek call in JSON mode.
-
-    Strips markdown code-fences if the model wraps the JSON.
-    Raises on network/API error or JSON parse failure.
-    """
+    """Call the LLM in JSON mode and return the parsed response dict."""
     client = get_client()
     resp = await asyncio.wait_for(
         client.chat.completions.create(
@@ -114,20 +96,14 @@ async def _chat_json(
         timeout=LLM_TIMEOUT,
     )
     raw: str = (resp.choices[0].message.content or "{}").strip()
-
-    # Strip possible ``` fences
     if raw.startswith("```"):
         lines = raw.splitlines()
-        # drop first line (```json or ```) and last ``` line
         inner = lines[1:]
         if inner and inner[-1].strip() == "```":
             inner = inner[:-1]
         raw = "\n".join(inner).strip()
-
     return json.loads(raw)
 
-
-# ── Intent analysis ───────────────────────────────────────────────────────────
 
 _VALID_SLUGS = ", ".join(sorted(LEGAL_CODEXES.keys()))
 
@@ -166,12 +142,7 @@ async def analyse_intent(
     question: str,
     history_ctx: str = "",
 ) -> IntentResult:
-    """
-    Classify the question: language, legal domain, codex slugs, ranked keywords.
-
-    Never raises — on any failure returns a safe minimal IntentResult so
-    retrieval can still proceed.
-    """
+    """Classify the question and extract codex slugs and ranked keywords. Never raises."""
     user_msg = _INTENT_PROMPT.format(
         codex_list=_VALID_SLUGS,
         history=history_ctx,
@@ -193,15 +164,12 @@ async def analyse_intent(
             keywords=[Keyword(text=question[:80].strip(), weight=1.0)],
         )
 
-    # ── language ─────────────────────────────────────────────────────────────
     language = str(data.get("language") or "ru").lower().strip()
     if language not in ("ru", "kz", "mixed"):
         language = "ru"
 
-    # ── is_legal_question ─────────────────────────────────────────────────────
     is_legal = bool(data.get("is_legal_question", True))
 
-    # ── codex_slugs ───────────────────────────────────────────────────────────
     raw_slugs: list = data.get("codex_slugs") or []
     validated: list[str] = []
     for item in raw_slugs:
@@ -211,9 +179,7 @@ async def analyse_intent(
         if item in LEGAL_CODEXES:
             validated.append(item)
         else:
-            # LLM may have returned a Russian codex name instead of a slug
             validated.extend(resolve_codex(item))
-    # deduplicate while preserving order, then validate
     seen_set: set[str] = set()
     deduped: list[str] = []
     for s in validated:
@@ -222,11 +188,9 @@ async def analyse_intent(
             deduped.append(s)
     validated = validate_codex_slugs(deduped)
 
-    # ── keywords ──────────────────────────────────────────────────────────────
     raw_kws: list = data.get("keywords") or []
     keywords: list[Keyword] = []
     seen_kw: set[str] = set()
-
     for item in raw_kws:
         if not isinstance(item, dict):
             continue
@@ -234,18 +198,14 @@ async def analyse_intent(
         if not text or text.lower() in seen_kw:
             continue
         seen_kw.add(text.lower())
-
         try:
             weight = float(item.get("weight") or 0.5)
         except (TypeError, ValueError):
             weight = 0.5
-        weight = max(0.1, min(1.0, weight))
-        keywords.append(Keyword(text=text, weight=weight))
+        keywords.append(Keyword(text=text, weight=max(0.1, min(1.0, weight))))
 
-    # Ensure descending order
     keywords.sort(key=lambda k: k.weight, reverse=True)
 
-    # Fallback: use trimmed question text
     if not keywords:
         keywords = [Keyword(text=question[:80].strip(), weight=1.0)]
 
@@ -263,8 +223,6 @@ async def analyse_intent(
         raw=data,
     )
 
-
-# ── Answer synthesis ──────────────────────────────────────────────────────────
 
 _ANSWER_PROMPT = """\
 Ответь на юридический вопрос, используя ТОЛЬКО приведённый ниже контекст.
@@ -310,11 +268,7 @@ async def synthesise_answer(
     context_text: str,
     history_ctx: str = "",
 ) -> AnswerResult:
-    """
-    Generate a cited, structured answer from retrieved context.
-
-    Never raises — on any failure returns a low-confidence error answer.
-    """
+    """Generate a cited answer from retrieved context. Never raises."""
     if not context_text.strip():
         return AnswerResult(
             answer=(
@@ -346,16 +300,13 @@ async def synthesise_answer(
             confidence=0.0,
         )
 
-    # ── answer text ───────────────────────────────────────────────────────────
     answer = str(data.get("answer") or "").strip()
     if not answer:
         answer = "Не удалось сформировать ответ на основе предоставленного контекста."
 
-    # ── citations ─────────────────────────────────────────────────────────────
     raw_cits: list = data.get("citations") or []
     citations: list[Citation] = []
     seen_cit: set[str] = set()
-
     for c in raw_cits:
         if not isinstance(c, dict):
             continue
@@ -370,27 +321,20 @@ async def synthesise_answer(
             name_ru=str(c.get("name_ru") or ""),
         ))
 
-    # ── confidence ────────────────────────────────────────────────────────────
     try:
         confidence = float(data.get("confidence") or 0.5)
     except (TypeError, ValueError):
         confidence = 0.5
     confidence = max(0.0, min(1.0, confidence))
 
-    # Structural cap: penalise answers with too few citations
     if not citations:
         confidence = min(confidence, 0.35)
     elif len(citations) == 1:
         confidence = min(confidence, 0.65)
-
-    # Penalise "insufficient" answers regardless of LLM self-report
     if answer.startswith("НЕДОСТАТОЧНО"):
         confidence = min(confidence, 0.35)
 
-    logger.info(
-        "Answer: conf=%.2f  citations=%d  answer_len=%d",
-        confidence, len(citations), len(answer),
-    )
+    logger.info("Answer: conf=%.2f  citations=%d  answer_len=%d", confidence, len(citations), len(answer))
 
     return AnswerResult(
         answer=answer,

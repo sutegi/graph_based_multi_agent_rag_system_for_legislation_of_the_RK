@@ -1,9 +1,4 @@
-"""
-Async Neo4j client — all raw Cypher lives here.
-
-Exposes module-level async functions backed by a shared driver singleton.
-No business logic belongs here.
-"""
+"""Async Neo4j client — all raw Cypher queries live here."""
 from __future__ import annotations
 
 from typing import Any
@@ -11,8 +6,6 @@ from typing import Any
 from neo4j import AsyncGraphDatabase, AsyncDriver
 
 from .config import NEO4J_DATABASE, NEO4J_PASSWORD, NEO4J_URI, NEO4J_USER, logger
-
-# ── Driver singleton ──────────────────────────────────────────────────────────
 
 _driver: AsyncDriver | None = None
 
@@ -40,7 +33,7 @@ async def close_driver() -> None:
 
 
 async def ping() -> bool:
-    """Return True if Neo4j is reachable and responsive."""
+    """Return True if Neo4j is reachable."""
     try:
         driver = await get_driver()
         async with driver.session(database=NEO4J_DATABASE) as s:
@@ -51,23 +44,12 @@ async def ping() -> bool:
         return False
 
 
-# ── BM25 fulltext search ──────────────────────────────────────────────────────
-
 async def bm25_search(
     query: str,
     limit: int = 10,
     codex_slugs: list[str] | None = None,
 ) -> list[dict[str, Any]]:
-    """
-    BM25 fulltext search over Article nodes (index: article_fulltext_ru).
-
-    If *codex_slugs* is non-empty, a server-side WHERE clause restricts
-    results to those codexes — avoids Python-side post-filtering and
-    the associated null-value crashes.
-
-    Returns list of dicts:
-        {id, codex_prefix, number, name_ru, name_kz, body_ru, score}
-    """
+    """BM25 fulltext search over Articles; filters by codex at DB level when slugs are given."""
     driver = await get_driver()
 
     if codex_slugs:
@@ -106,31 +88,18 @@ async def bm25_search(
         async with driver.session(database=NEO4J_DATABASE) as session:
             result = await session.run(cypher, params)
             records = await result.data()
-        logger.debug(
-            "BM25 '%s' (slugs=%s) → %d hits", query[:40], codex_slugs, len(records)
-        )
+        logger.debug("BM25 '%s' (slugs=%s) → %d hits", query[:40], codex_slugs, len(records))
         return records
     except Exception as exc:
         logger.error("BM25 search failed for '%s': %s", query[:40], exc)
         return []
 
 
-# ── Graph neighbour traversal ─────────────────────────────────────────────────
-
 async def graph_neighbours(
     seed_ids: list[str],
     limit: int = 40,
 ) -> list[dict[str, Any]]:
-    """
-    One-hop undirected traversal across all horizontal relation types.
-
-    Articles already in *seed_ids* are excluded from results.
-    Sorted by edge_count descending (articles connected to multiple seeds rank first).
-
-    Returns list of dicts:
-        {id, codex_prefix, number, name_ru, name_kz, body_ru,
-         parents (list[str]), edge_count (int)}
-    """
+    """One-hop undirected traversal from seed articles across all relation types."""
     if not seed_ids:
         return []
 
@@ -161,31 +130,18 @@ async def graph_neighbours(
         async with driver.session(database=NEO4J_DATABASE) as session:
             result = await session.run(cypher, params)
             records = await result.data()
-        logger.debug(
-            "Graph neighbours: %d seeds → %d results", len(seed_ids), len(records)
-        )
+        logger.debug("Graph neighbours: %d seeds → %d results", len(seed_ids), len(records))
         return records
     except Exception as exc:
         logger.error("Graph traversal failed: %s", exc)
         return []
 
 
-# ── Definition lookup ─────────────────────────────────────────────────────────
-
 async def fetch_definitions(
     keyword: str,
     top_k: int = 5,
 ) -> list[dict[str, Any]]:
-    """
-    Look up legal-term definitions via Keyword → HAS_DEFINITION → Definition.
-
-    Matches *keyword* case-insensitively against Keyword.text_ru and
-    Keyword.text_kz, then returns linked Definition nodes.
-
-    Returns list of dicts:
-        {keyword, keyword_kz, definition_ru, definition_kz}
-    All fields are strings (never None).
-    """
+    """Look up legal-term definitions via Keyword → HAS_DEFINITION → Definition."""
     driver = await get_driver()
     cypher = (
         "MATCH (k:Keyword) "

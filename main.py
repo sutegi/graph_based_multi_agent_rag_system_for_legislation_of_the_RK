@@ -1,15 +1,4 @@
-"""
-Kazakhstan Legal AI Assistant — real-time chat interface.
-
-Usage (PowerShell):
-    python main.py
-
-Commands (type during chat):
-    /help   — available commands
-    /clear  — clear conversation history
-    /stats  — retrieval statistics for the last query
-    /quit   — exit
-"""
+"""Kazakhstan Legal AI Assistant — real-time Rich terminal chat interface."""
 from __future__ import annotations
 
 import asyncio
@@ -29,11 +18,7 @@ from multi_agent_rag.config import LEGAL_CODEXES
 from multi_agent_rag.database import ping
 from multi_agent_rag.pipeline import PipelineResult
 
-# ── Console ───────────────────────────────────────────────────────────────────
-
 console = Console(highlight=False)
-
-# ── Static text ───────────────────────────────────────────────────────────────
 
 _BANNER = """\
 [bold cyan]\
@@ -60,13 +45,11 @@ _HELP = """\
   Многоходовой диалог: история последних {:d} вопросов передаётся в LLM
 """.format(len(LEGAL_CODEXES), 6)
 
-# ── Session-level state ───────────────────────────────────────────────────────
-
 _last_result: PipelineResult | None = None
 
-# ── Rendering helpers ─────────────────────────────────────────────────────────
 
 def _conf_colour(conf: float) -> str:
+    """Return Rich colour name corresponding to the confidence level."""
     if conf >= 0.75:
         return "bright_green"
     if conf >= 0.45:
@@ -75,13 +58,12 @@ def _conf_colour(conf: float) -> str:
 
 
 def _answer_panel(result: PipelineResult) -> Panel:
-    conf    = result.answer.confidence
-    colour  = _conf_colour(conf)
-    s       = result.retrieval.stats
+    """Build the main answer Rich Panel with confidence and timing metadata."""
+    conf   = result.answer.confidence
+    colour = _conf_colour(conf)
+    s      = result.retrieval.stats
 
-    meta: list[str] = [
-        f"[{colour}]уверенность {conf:.0%}[/{colour}]",
-    ]
+    meta: list[str] = [f"[{colour}]уверенность {conf:.0%}[/{colour}]"]
     if result.retried:
         meta.append("[yellow]↩ расширенный поиск[/yellow]")
     meta.append(f"[dim]{result.elapsed_ms} мс[/dim]")
@@ -101,6 +83,7 @@ def _answer_panel(result: PipelineResult) -> Panel:
 
 
 def _citations_table(result: PipelineResult) -> Table | None:
+    """Return a Rich Table of cited articles, or None if no citations."""
     cits = result.answer.citations
     if not cits:
         return None
@@ -113,9 +96,9 @@ def _citations_table(result: PipelineResult) -> Table | None:
         border_style="dim",
         padding=(0, 1),
     )
-    tbl.add_column("Кодекс",   style="cyan",        no_wrap=True, max_width=42)
+    tbl.add_column("Кодекс",   style="cyan",       no_wrap=True, max_width=42)
     tbl.add_column("Статья",   style="bold white",  no_wrap=True)
-    tbl.add_column("Название", style="white",        max_width=55)
+    tbl.add_column("Название", style="white",       max_width=55)
 
     seen: set[str] = set()
     for c in cits:
@@ -130,6 +113,7 @@ def _citations_table(result: PipelineResult) -> Table | None:
 
 
 def _stats_table(result: PipelineResult) -> Table:
+    """Return a Rich Table with detailed retrieval statistics for the last query."""
     tbl = Table(
         title="Статистика последнего запроса",
         box=box.SIMPLE_HEAD,
@@ -143,7 +127,7 @@ def _stats_table(result: PipelineResult) -> Table:
     s      = result.retrieval.stats
     intent = result.intent
 
-    tbl.add_row("Язык вопроса",     intent.language)
+    tbl.add_row("Язык вопроса",    intent.language)
     tbl.add_row(
         "Кодексы",
         ", ".join(intent.codex_slugs) if intent.codex_slugs else "(авто — без фильтра)",
@@ -152,20 +136,20 @@ def _stats_table(result: PipelineResult) -> Table:
         "Ключевые слова",
         "  ".join(f"{k.text}({k.weight:.1f})" for k in intent.keywords[:6]),
     )
-    tbl.add_row("BM25 хитов",        str(s.get("bm25_hits",           "—")))
-    tbl.add_row("Граф-соседей",      str(s.get("graph_hits",           "—")))
-    tbl.add_row("Всего кандидатов",  str(s.get("total_candidates",     "—")))
-    tbl.add_row("В контексте LLM",   str(s.get("included_in_context",  "—")))
-    tbl.add_row("Определений",       str(s.get("definitions_found",    "—")))
-    tbl.add_row("Уверенность",       f"{result.answer.confidence:.0%}")
-    tbl.add_row("Расш. поиск",       "да" if result.retried else "нет")
-    tbl.add_row("Время",             f"{result.elapsed_ms} мс")
+    tbl.add_row("BM25 хитов",       str(s.get("bm25_hits",           "—")))
+    tbl.add_row("Граф-соседей",     str(s.get("graph_hits",           "—")))
+    tbl.add_row("Всего кандидатов", str(s.get("total_candidates",     "—")))
+    tbl.add_row("В контексте LLM",  str(s.get("included_in_context",  "—")))
+    tbl.add_row("Определений",      str(s.get("definitions_found",    "—")))
+    tbl.add_row("Уверенность",      f"{result.answer.confidence:.0%}")
+    tbl.add_row("Расш. поиск",      "да" if result.retried else "нет")
+    tbl.add_row("Время",            f"{result.elapsed_ms} мс")
 
     return tbl
 
 
 def _intent_hint(result: PipelineResult) -> str:
-    """One-line summary of detected codexes + top keywords for the dim hint line."""
+    """Return a one-line summary of detected codexes and top keywords."""
     parts: list[str] = []
     if result.intent.codex_slugs:
         names = [
@@ -179,10 +163,8 @@ def _intent_hint(result: PipelineResult) -> str:
     return "  |  ".join(parts)
 
 
-# ── Processing ────────────────────────────────────────────────────────────────
-
 async def _process(question: str, session: Session) -> None:
-    """Run pipeline behind a Rich spinner, then render the result."""
+    """Run the RAG pipeline behind a Rich spinner and render the result to console."""
     global _last_result
 
     with Live(
@@ -208,12 +190,10 @@ async def _process(question: str, session: Session) -> None:
     console.print()
 
 
-# ── Main loop ─────────────────────────────────────────────────────────────────
-
 async def main() -> None:
+    """Entry point — verify DB connection, then run the interactive chat loop."""
     console.print(_BANNER)
 
-    # Connectivity check
     console.print("[dim]Подключение к Neo4j…[/dim]", end=" ")
     if await ping():
         console.print("[bright_green]✓ подключено[/bright_green]\n")
@@ -236,7 +216,6 @@ async def main() -> None:
         if not raw:
             continue
 
-        # ── Commands ──────────────────────────────────────────────────────────
         if raw.startswith("/"):
             cmd = raw.lower().split()[0]
 
@@ -265,7 +244,6 @@ async def main() -> None:
                 )
             continue
 
-        # ── Legal question ────────────────────────────────────────────────────
         try:
             await _process(raw, session)
         except KeyboardInterrupt:
