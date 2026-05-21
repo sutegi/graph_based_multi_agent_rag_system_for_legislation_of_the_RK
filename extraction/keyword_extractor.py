@@ -1,6 +1,4 @@
-"""keyword_extractor.py
-====================
-Hybrid BM25Plus + KeyBERT keyword extraction for bilingual (RU/KZ) legal texts."""
+"""Hybrid BM25Plus + KeyBERT keyword extraction for bilingual legal texts."""
 
 from __future__ import annotations
 

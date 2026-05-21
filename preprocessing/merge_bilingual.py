@@ -1,6 +1,4 @@
-"""merge_bilingual.py
-==================
-Aligns and merges paired Russian/Kazakh legal JSON files from parser.py output."""
+"""Aligns Russian and Kazakh JSON article pairs by article number."""
 
 from __future__ import annotations
 

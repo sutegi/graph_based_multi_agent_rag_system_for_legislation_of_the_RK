@@ -1,253 +1,141 @@
+"""
+Three-phase RAG pipeline  —  no LangGraph dependency.
+
+  Phase 1 — UNDERSTAND  : LLM intent analysis  →  IntentResult
+  Phase 2 — RETRIEVE    : Weighted BM25 + graph enrichment  →  RetrievalResult
+  Phase 3 — ANSWER      : LLM answer synthesis  →  AnswerResult
+
+  Optional retry:
+    If confidence < CONFIDENCE_THRESHOLD a second attempt is made with
+    the codex filter removed (broader corpus).  The attempt with the
+    higher confidence score is returned.
+
+Public API:
+    result = await run(question, session)   →  PipelineResult
+"""
 from __future__ import annotations
-"""LangGraph StateGraph pipeline assembly, caching, and public query API."""
 
-import argparse
-import asyncio
-from typing import Any, Callable, Literal
+import time
+from dataclasses import dataclass, field
 
-from langgraph.graph import END, START, StateGraph
-
-from .config import MAX_ITERATIONS, DEEPSEEK_MODEL, logger
-from .models import Node, FinalAnswer, AgentState, _build_context
-from .database import _llm
-from .agents import (
-    definition_agent,
-    initial_search_agent,
-    supervisor_agent,
-    router_agent,
-    recursive_retrieval_agent,
-    answering_agent,
-)
+from .config import CONFIDENCE_THRESHOLD, MAX_RETRIES, logger
+from .llm import AnswerResult, IntentResult, analyse_intent, synthesise_answer
+from .retriever import RetrievalResult, retrieve
+from .session import Session
 
 
-def _route_decision(state: AgentState) -> Literal["stop", "keep_looking"]:
-    """Conditional edge: return branch key after router_agent."""
-    if state["iteration_count"] >= MAX_ITERATIONS:
-        return "stop"
-    return state.get("next_step", "stop")                              
+# ── Result type ───────────────────────────────────────────────────────────────
+
+@dataclass
+class PipelineResult:
+    question: str
+    intent: IntentResult
+    retrieval: RetrievalResult
+    answer: AnswerResult
+    retried: bool = False
+    elapsed_ms: int = 0
+
+    @property
+    def is_low_confidence(self) -> bool:
+        return self.answer.confidence < CONFIDENCE_THRESHOLD
 
 
-def build_graph():
-    """Assemble and compile the full LangGraph StateGraph (with answering_agent)."""
-    g = StateGraph(AgentState)
+# ── Pipeline ──────────────────────────────────────────────────────────────────
 
-    g.add_node("definition_agent",          definition_agent)
-    g.add_node("initial_search_agent",      initial_search_agent)
-    g.add_node("supervisor_agent",          supervisor_agent)
-    g.add_node("router_agent",              router_agent)
-    g.add_node("recursive_retrieval_agent", recursive_retrieval_agent)
-    g.add_node("answering_agent",           answering_agent)
+async def run(question: str, session: Session) -> PipelineResult:
+    """
+    Execute the full pipeline for *question* given conversation *session*.
 
-    g.add_edge(START,                  "definition_agent")
-    g.add_edge("definition_agent",     "initial_search_agent")
-    g.add_edge("initial_search_agent", "supervisor_agent")
-    g.add_edge("supervisor_agent",     "router_agent")
+    Always returns a PipelineResult.  Never raises.
+    """
+    t0          = time.monotonic()
+    history_ctx = session.format_for_llm()
 
-    g.add_conditional_edges(
-        "router_agent",
-        _route_decision,
-        {
-            "stop":         "answering_agent",
-            "keep_looking": "recursive_retrieval_agent",
-        },
-    )
+    # ── Phase 1: UNDERSTAND ───────────────────────────────────────────────────
+    logger.info("Pipeline ▶ phase 1 — intent analysis")
+    intent = await analyse_intent(question, history_ctx=history_ctx)
 
-    g.add_edge("recursive_retrieval_agent", "supervisor_agent")
-    g.add_edge("answering_agent", END)
-
-    return g.compile()
-
-
-_FULL_PIPELINE:    Any | None = None
-_CONTEXT_PIPELINE: Any | None = None
-
-
-def _get_full_pipeline() -> Any:
-    """Return the cached full pipeline (definition → answer)."""
-    global _FULL_PIPELINE
-    if _FULL_PIPELINE is None:
-        _FULL_PIPELINE = build_graph()
-        logger.info("Full pipeline compiled and cached.")
-    return _FULL_PIPELINE
-
-
-def _build_context_graph():
-    """Assemble the context-only graph (stops at router — no answering_agent)."""
-    g = StateGraph(AgentState)
-
-    g.add_node("definition_agent",          definition_agent)
-    g.add_node("initial_search_agent",      initial_search_agent)
-    g.add_node("supervisor_agent",          supervisor_agent)
-    g.add_node("router_agent",              router_agent)
-    g.add_node("recursive_retrieval_agent", recursive_retrieval_agent)
-
-    g.add_edge(START,                  "definition_agent")
-    g.add_edge("definition_agent",     "initial_search_agent")
-    g.add_edge("initial_search_agent", "supervisor_agent")
-    g.add_edge("supervisor_agent",     "router_agent")
-
-    g.add_conditional_edges(
-        "router_agent",
-        _route_decision,
-        {
-            "stop":         END,
-            "keep_looking": "recursive_retrieval_agent",
-        },
-    )
-    g.add_edge("recursive_retrieval_agent", "supervisor_agent")
-    return g.compile()
-
-
-def _get_context_pipeline() -> Any:
-    """Return the cached context-only pipeline (definition → router, no answering)."""
-    global _CONTEXT_PIPELINE
-    if _CONTEXT_PIPELINE is None:
-        _CONTEXT_PIPELINE = _build_context_graph()
-        logger.info("Context pipeline compiled and cached.")
-    return _CONTEXT_PIPELINE
-
-
-async def run_query(query: str, bilingual: bool = False) -> FinalAnswer | None:
-    """Execute the full multi-agent pipeline for a legal query."""
-    pipeline = _get_full_pipeline()
-
-    initial_state: AgentState = {
-        "query":            query + (" (ответ на двух языках)" if bilingual else ""),
-        "current_nodes":    [],
-        "visited_node_ids": set(),
-        "next_step":        "keep_looking",
-        "logs":             [],
-        "iteration_count":  0,
-        "final_answer":     None,
-    }
-
-    logger.info("=" * 65)
-    logger.info("Pipeline start | Query: %r", query[:80])
-    logger.info("=" * 65)
-
-    try:
-        final_state: AgentState = await pipeline.ainvoke(initial_state)
-    except Exception as exc:
-        logger.error("Pipeline crashed: %s", exc, exc_info=True)
-        return None
-
-    logger.info("─" * 65)
-    logger.info("Execution trace (%d steps):", len(final_state.get("logs", [])))
-    for entry in final_state.get("logs", []):
-        logger.info("  %s", entry)
-
-    answer: FinalAnswer | None = final_state.get("final_answer")
-    if answer:
-        logger.info("─" * 65)
-        logger.info("ANSWER (RU):\n%s", answer.answer_ru)
-        if answer.answer_kz:
-            logger.info("ANSWER (KZ):\n%s", answer.answer_kz)
-        logger.info("CITED: %s", answer.cited_articles)
-        logger.info("CONFIDENCE: %.2f", answer.confidence_score)
-    else:
-        logger.warning("No answer produced.")
-
-    return answer
-
-
-async def get_context_nodes(
-    query: str,
-    status_cb: "Callable[[str], None] | None" = None,
-) -> tuple[list[Node], list[str]]:
-    """Run retrieval agents without generating the final answer."""
-    pipeline = _get_context_pipeline()
-
-    initial_state: AgentState = {
-        "query":            query,
-        "current_nodes":    [],
-        "visited_node_ids": set(),
-        "next_step":        "keep_looking",
-        "logs":             [],
-        "iteration_count":  0,
-        "final_answer":     None,
-    }
-
-    try:
-        final_state: AgentState = await pipeline.ainvoke(initial_state)
-    except Exception as exc:
-        logger.error("get_context_nodes failed: %s", exc)
-        return [], [f"[ERROR] {exc}"]
-
-    logs = final_state.get("logs", [])
-    if status_cb:
-        for entry in logs:
-            status_cb(entry)
-
-    return final_state.get("current_nodes", []), logs
-
-
-async def stream_answer(query: str, nodes: list[Node]):
-    """Async generator yielding DeepSeek response tokens as they arrive."""
-    if not nodes:
-        yield "⚠ Релевантные статьи не найдены. Попробуйте переформулировать запрос."
-        return
-
-    context = _build_context(nodes)
-
-    system_prompt = (
-        "Ты — профессиональный юридический ассистент по законодательству "
-        "Республики Казахстан. Правила:\n"
-        "1. Отвечай СТРОГО на основе предоставленных статей.\n"
-        "2. Каждый тезис подкрепляй ссылкой (id статьи в квадратных скобках).\n"
-        "3. Структура: краткий вывод → детальный анализ → ссылки.\n"
-        "4. Если информации недостаточно — явно укажи это.\n"
-        "Отвечай на русском языке."
-    )
-    user_prompt = (
-        f"Вопрос пользователя:\n{query}\n\n"
-        f"Статьи законодательства ({len(nodes)} шт.):\n{context}"
-    )
-
-    try:
-        stream = await _llm.chat.completions.create(
-            model=DEEPSEEK_MODEL,
-            messages=[
-                {"role": "system", "content": system_prompt},
-                {"role": "user",   "content": user_prompt},
-            ],
-            stream=True,
-            temperature=0.2,
-            max_tokens=4_096,
+    # Short-circuit: clearly not a legal question
+    if not intent.is_legal_question:
+        off_topic = AnswerResult(
+            answer=(
+                "Ваш вопрос не относится к правовой сфере Республики Казахстан. "
+                "Пожалуйста, задайте юридический вопрос о законодательстве РК."
+            ),
+            citations=[],
+            confidence=1.0,
         )
-        async for chunk in stream:
-            delta = chunk.choices[0].delta.content
-            if delta:
-                yield delta
+        elapsed = int((time.monotonic() - t0) * 1000)
+        return PipelineResult(
+            question=question,
+            intent=intent,
+            retrieval=RetrievalResult(),
+            answer=off_topic,
+            elapsed_ms=elapsed,
+        )
 
-    except Exception as exc:
-        logger.error("stream_answer error: %s", exc)
-        yield f"\n\n⚠ Ошибка при генерации ответа: {exc}"
-
-
-async def _main(query: str | None) -> None:
-    """Function _main."""
-    test_queries = query and [query] or [
-        "Какова ответственность за нарушение договора по гражданскому кодексу?",
-        "Каковы права работника при незаконном увольнении по трудовому кодексу?",
-    ]
-    for q in test_queries:
-        await run_query(q)
-        print()
-
-
-def main() -> None:
-    """Function main."""
-    parser = argparse.ArgumentParser(
-        description="Multi-Agent Graph-RAG pipeline for Kazakhstani legislation.",
+    # ── Phase 2: RETRIEVE ─────────────────────────────────────────────────────
+    logger.info(
+        "Pipeline ▶ phase 2 — retrieval  codexes=%s  kws=%d",
+        intent.codex_slugs, len(intent.keywords),
     )
-    parser.add_argument(
-        "--query", "-q",
-        default=None,
-        help="Legal question to answer. Omit to run built-in demo queries.",
+    retrieval = await retrieve(intent)
+
+    # ── Phase 3: ANSWER ───────────────────────────────────────────────────────
+    logger.info("Pipeline ▶ phase 3 — answer synthesis")
+    answer = await synthesise_answer(
+        question,
+        context_text=retrieval.context_text,
+        history_ctx=history_ctx,
     )
-    args = parser.parse_args()
-    asyncio.run(_main(args.query))
 
+    retried = False
 
-if __name__ == "__main__":
-    main()
+    # ── Optional retry with broader search ────────────────────────────────────
+    if answer.confidence < CONFIDENCE_THRESHOLD and MAX_RETRIES > 0:
+        logger.info(
+            "Pipeline ↩ retry — conf %.2f < threshold %.2f — dropping codex filter",
+            answer.confidence, CONFIDENCE_THRESHOLD,
+        )
+        retried = True
+
+        # Drop codex filter → search across the entire corpus
+        broad_intent = IntentResult(
+            language=intent.language,
+            is_legal_question=True,
+            codex_slugs=[],
+            keywords=intent.keywords,
+        )
+        broad_retrieval = await retrieve(broad_intent)
+        broad_answer    = await synthesise_answer(
+            question,
+            context_text=broad_retrieval.context_text,
+            history_ctx=history_ctx,
+        )
+
+        # Keep whichever attempt produced higher confidence
+        if broad_answer.confidence >= answer.confidence:
+            retrieval = broad_retrieval
+            answer    = broad_answer
+            logger.info(
+                "Pipeline ↩ retry improved: %.2f → %.2f",
+                answer.confidence, broad_answer.confidence,
+            )
+
+    elapsed = int((time.monotonic() - t0) * 1000)
+    logger.info(
+        "Pipeline ✓  conf=%.2f  retried=%s  elapsed=%dms",
+        answer.confidence, retried, elapsed,
+    )
+
+    # Persist this turn to session history
+    session.add(question, answer.answer, answer.confidence)
+
+    return PipelineResult(
+        question=question,
+        intent=intent,
+        retrieval=retrieval,
+        answer=answer,
+        retried=retried,
+        elapsed_ms=elapsed,
+    )

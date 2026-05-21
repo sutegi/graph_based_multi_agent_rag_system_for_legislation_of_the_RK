@@ -1,5 +1,5 @@
 from __future__ import annotations
-"""Parses bilingual (RU/KZ) Kazakh legal Markdown files into structured article JSON."""
+"""Parses bilingual Kazakh legal Markdown files into structured article JSON."""
 import argparse, json, logging, re, sys
 from pathlib import Path
 from typing import Any

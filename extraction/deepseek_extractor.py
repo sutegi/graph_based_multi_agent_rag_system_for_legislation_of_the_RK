@@ -1,7 +1,4 @@
-"""deepseek_extractor.py
-=====================
-Extracts bilingual keywords and typed legal relationships from article text
-using the DeepSeek API (OpenAI-compatible) with Pydantic-validated JSON output."""
+"""Extracts bilingual keywords and typed relations via DeepSeek API."""
 
 from __future__ import annotations
 

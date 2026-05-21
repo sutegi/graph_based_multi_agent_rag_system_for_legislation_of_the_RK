@@ -1,369 +1,280 @@
-                      
-"""main.py  —  Real-time chat interface for the Kazakhstani Legal RAG system."""
+"""
+Kazakhstan Legal AI Assistant — real-time chat interface.
 
+Usage (PowerShell):
+    python main.py
+
+Commands (type during chat):
+    /help   — available commands
+    /clear  — clear conversation history
+    /stats  — retrieval statistics for the last query
+    /quit   — exit
+"""
 from __future__ import annotations
 
 import asyncio
 import sys
-import textwrap
-from datetime import datetime
-from pathlib import Path
-from typing import NamedTuple
 
-                                                                               
-try:
-    from rich.console import Console
-    from rich.live import Live
-    from rich.markdown import Markdown
-    from rich.panel import Panel
-    from rich.rule import Rule
-    from rich.spinner import Spinner
-    from rich.table import Table
-    from rich.text import Text
-    from rich import box
-    HAS_RICH = True
-except ImportError:
-    HAS_RICH = False
+from rich import box
+from rich.console import Console
+from rich.live import Live
+from rich.panel import Panel
+from rich.rule import Rule
+from rich.spinner import Spinner
+from rich.table import Table
+from rich.text import Text
 
-                                                                               
-from multi_agent_rag import run_query, get_context_nodes, stream_answer, Node
+from multi_agent_rag import Session, close_driver, run
+from multi_agent_rag.config import LEGAL_CODEXES
+from multi_agent_rag.database import ping
+from multi_agent_rag.pipeline import PipelineResult
 
-                                                                             
-        
-                                                                             
+# ── Console ───────────────────────────────────────────────────────────────────
 
-ASSISTANT_NAME = "Юр. Ассистент"
-USER_NAME      = "Вы"
-MAX_HISTORY    = 20                            
+console = Console(highlight=False)
 
-COMMANDS = {
-    "/exit":    "Завершить сеанс",
-    "/clear":   "Очистить экран",
-    "/history": "Показать историю вопросов",
-    "/nodes":   "Показать статьи последнего ответа",
-    "/help":    "Показать эту справку",
-}
+# ── Static text ───────────────────────────────────────────────────────────────
 
-WELCOME = """
-╔══════════════════════════════════════════════════════════════════╗
-║      Юридический ассистент — Законодательство РК (RU + KZ)      ║
-║   Введите вопрос на русском или казахском языке и нажмите Enter  ║
-╚══════════════════════════════════════════════════════════════════╝
+_BANNER = """\
+[bold cyan]\
+╔══════════════════════════════════════════════════════════╗
+║   Казахстанский Правовой ИИ-Ассистент                    ║
+║   Kazakhstan Legal AI Assistant                          ║
+╚══════════════════════════════════════════════════════════╝\
+[/bold cyan]
+
+[dim]Задавайте вопросы о законодательстве РК на русском или казахском языке.
+Команды: /help  /clear  /stats  /quit[/dim]
 """
 
+_HELP = """\
+[bold white]Команды:[/bold white]
+  [yellow]/help[/yellow]   — эта справка
+  [yellow]/clear[/yellow]  — очистить историю разговора
+  [yellow]/stats[/yellow]  — подробная статистика последнего поиска
+  [yellow]/quit[/yellow]   — выйти
 
-                                                                             
-               
-                                                                             
+[bold white]О системе:[/bold white]
+  База данных: {:d} кодексов · ~9 587 статей · законодательство РК
+  Поиск: BM25 fulltext + one-hop graph enrichment + DeepSeek LLM
+  Многоходовой диалог: история последних {:d} вопросов передаётся в LLM
+""".format(len(LEGAL_CODEXES), 6)
 
-class ChatEntry(NamedTuple):
-    """Class ChatEntry."""
-    timestamp: str
-    query:     str
-    answer:    str
-    nodes:     list[Node]
+# ── Session-level state ───────────────────────────────────────────────────────
+
+_last_result: PipelineResult | None = None
+
+# ── Rendering helpers ─────────────────────────────────────────────────────────
+
+def _conf_colour(conf: float) -> str:
+    if conf >= 0.75:
+        return "bright_green"
+    if conf >= 0.45:
+        return "yellow"
+    return "red"
 
 
-class Session:
-    """Class Session."""
-    def __init__(self) -> None:
-        """Function __init__."""
-        self.history:    list[ChatEntry] = []
-        self.last_nodes: list[Node]      = []
-        self.console:    "Console | None" = Console(highlight=False) if HAS_RICH else None
+def _answer_panel(result: PipelineResult) -> Panel:
+    conf    = result.answer.confidence
+    colour  = _conf_colour(conf)
+    s       = result.retrieval.stats
 
-    def add(self, query: str, answer: str, nodes: list[Node]) -> None:
-        """Function add."""
-        entry = ChatEntry(
-            timestamp=datetime.now().strftime("%H:%M:%S"),
-            query=query,
-            answer=answer,
-            nodes=nodes,
+    meta: list[str] = [
+        f"[{colour}]уверенность {conf:.0%}[/{colour}]",
+    ]
+    if result.retried:
+        meta.append("[yellow]↩ расширенный поиск[/yellow]")
+    meta.append(f"[dim]{result.elapsed_ms} мс[/dim]")
+    if s:
+        meta.append(
+            f"[dim]статей: {s.get('included_in_context', 0)}"
+            f"/{s.get('total_candidates', 0)}[/dim]"
         )
-        self.history.append(entry)
-        if len(self.history) > MAX_HISTORY:
-            self.history.pop(0)
-        self.last_nodes = nodes
+
+    return Panel(
+        Text(result.answer.answer),
+        title="[bold white]Ответ[/bold white]",
+        subtitle="  ·  ".join(meta),
+        border_style="blue",
+        padding=(1, 2),
+    )
 
 
-                                                                             
-            
-                                                                             
+def _citations_table(result: PipelineResult) -> Table | None:
+    cits = result.answer.citations
+    if not cits:
+        return None
 
-def _print(session: Session, text: str = "", **kwargs) -> None:
-    """Function _print."""
-    if session.console:
-        session.console.print(text, **kwargs)
+    tbl = Table(
+        title="Использованные статьи",
+        box=box.SIMPLE_HEAD,
+        show_lines=False,
+        header_style="bold cyan",
+        border_style="dim",
+        padding=(0, 1),
+    )
+    tbl.add_column("Кодекс",   style="cyan",        no_wrap=True, max_width=42)
+    tbl.add_column("Статья",   style="bold white",  no_wrap=True)
+    tbl.add_column("Название", style="white",        max_width=55)
+
+    seen: set[str] = set()
+    for c in cits:
+        key = f"{c.codex_prefix}:{c.number}"
+        if key in seen:
+            continue
+        seen.add(key)
+        codex_name = (LEGAL_CODEXES.get(c.codex_prefix) or ("",))[0] or c.codex_prefix
+        tbl.add_row(codex_name[:42], f"Ст. {c.number}", (c.name_ru or "")[:55])
+
+    return tbl if seen else None
+
+
+def _stats_table(result: PipelineResult) -> Table:
+    tbl = Table(
+        title="Статистика последнего запроса",
+        box=box.SIMPLE_HEAD,
+        show_header=False,
+        border_style="dim",
+        padding=(0, 1),
+    )
+    tbl.add_column("Параметр", style="dim cyan", no_wrap=True)
+    tbl.add_column("Значение", style="white")
+
+    s      = result.retrieval.stats
+    intent = result.intent
+
+    tbl.add_row("Язык вопроса",     intent.language)
+    tbl.add_row(
+        "Кодексы",
+        ", ".join(intent.codex_slugs) if intent.codex_slugs else "(авто — без фильтра)",
+    )
+    tbl.add_row(
+        "Ключевые слова",
+        "  ".join(f"{k.text}({k.weight:.1f})" for k in intent.keywords[:6]),
+    )
+    tbl.add_row("BM25 хитов",        str(s.get("bm25_hits",           "—")))
+    tbl.add_row("Граф-соседей",      str(s.get("graph_hits",           "—")))
+    tbl.add_row("Всего кандидатов",  str(s.get("total_candidates",     "—")))
+    tbl.add_row("В контексте LLM",   str(s.get("included_in_context",  "—")))
+    tbl.add_row("Определений",       str(s.get("definitions_found",    "—")))
+    tbl.add_row("Уверенность",       f"{result.answer.confidence:.0%}")
+    tbl.add_row("Расш. поиск",       "да" if result.retried else "нет")
+    tbl.add_row("Время",             f"{result.elapsed_ms} мс")
+
+    return tbl
+
+
+def _intent_hint(result: PipelineResult) -> str:
+    """One-line summary of detected codexes + top keywords for the dim hint line."""
+    parts: list[str] = []
+    if result.intent.codex_slugs:
+        names = [
+            (LEGAL_CODEXES.get(s) or (s,))[0]
+            for s in result.intent.codex_slugs[:2]
+        ]
+        parts.append("Кодекс: " + ", ".join(names))
+    if result.intent.keywords:
+        kw_str = ", ".join(k.text for k in result.intent.keywords[:4])
+        parts.append(f"Термины: {kw_str}")
+    return "  |  ".join(parts)
+
+
+# ── Processing ────────────────────────────────────────────────────────────────
+
+async def _process(question: str, session: Session) -> None:
+    """Run pipeline behind a Rich spinner, then render the result."""
+    global _last_result
+
+    with Live(
+        Spinner("dots", text="[cyan]Анализирую запрос…[/cyan]"),
+        console=console,
+        refresh_per_second=12,
+        transient=True,
+    ):
+        result = await run(question, session)
+
+    _last_result = result
+
+    hint = _intent_hint(result)
+    if hint:
+        console.print(f"  [dim]↳ {hint}[/dim]")
+
+    console.print(_answer_panel(result))
+
+    cit_tbl = _citations_table(result)
+    if cit_tbl:
+        console.print(cit_tbl)
+
+    console.print()
+
+
+# ── Main loop ─────────────────────────────────────────────────────────────────
+
+async def main() -> None:
+    console.print(_BANNER)
+
+    # Connectivity check
+    console.print("[dim]Подключение к Neo4j…[/dim]", end=" ")
+    if await ping():
+        console.print("[bright_green]✓ подключено[/bright_green]\n")
     else:
-        print(text)
-
-
-def _rule(session: Session, title: str = "") -> None:
-    """Function _rule."""
-    if session.console:
-        session.console.print(Rule(title, style="dim"))
-    else:
-        print("─" * 60)
-
-
-def _print_welcome(session: Session) -> None:
-    """Function _print_welcome."""
-    if session.console:
-        session.console.print(
-            Panel(
-                Text.assemble(
-                    ("Юридический ассистент\n", "bold white"),
-                    ("Законодательство Республики Казахстан (RU + KZ)\n\n", "cyan"),
-                    ("Введите вопрос и нажмите Enter\n", "dim"),
-                    ("Команды: ", "dim"),
-                    ("/help  /history  /nodes  /clear  /exit", "dim yellow"),
-                ),
-                border_style="blue",
-                padding=(1, 4),
-            )
+        console.print("[red]✗ недоступно[/red]")
+        console.print(
+            "[yellow]Убедитесь, что Neo4j запущен и .env настроен верно.[/yellow]"
         )
-    else:
-        print(WELCOME)
+        sys.exit(1)
 
-
-def _print_help(session: Session) -> None:
-    """Function _print_help."""
-    if session.console:
-        tbl = Table(show_header=False, box=box.SIMPLE, padding=(0, 2))
-        tbl.add_column("cmd",  style="yellow")
-        tbl.add_column("desc", style="dim")
-        for cmd, desc in COMMANDS.items():
-            tbl.add_row(cmd, desc)
-        session.console.print(tbl)
-    else:
-        for cmd, desc in COMMANDS.items():
-            print(f"  {cmd:<12} {desc}")
-
-
-def _print_history(session: Session) -> None:
-    """Function _print_history."""
-    if not session.history:
-        _print(session, "[dim]История пуста.[/dim]" if session.console else "История пуста.")
-        return
-    if session.console:
-        for i, entry in enumerate(session.history, 1):
-            session.console.print(
-                f"[dim]{i:2}. [{entry.timestamp}][/dim] [cyan]{entry.query}[/cyan]"
-            )
-    else:
-        for i, entry in enumerate(session.history, 1):
-            print(f"  {i:2}. [{entry.timestamp}] {entry.query}")
-
-
-def _print_nodes(session: Session) -> None:
-    """Function _print_nodes."""
-    nodes = session.last_nodes
-    if not nodes:
-        _print(session, "[dim]Нет данных — задайте вопрос сначала.[/dim]"
-               if session.console else "Нет данных.")
-        return
-    if session.console:
-        tbl = Table(
-            "№", "ID", "Кодекс", "Статья", "Релевантность",
-            box=box.SIMPLE_HEAVY, show_lines=False,
-        )
-        for i, n in enumerate(nodes, 1):
-            tbl.add_row(
-                str(i),
-                n.id[:12] + "…",
-                n.metadata.get("codex_prefix", "—"),
-                n.metadata.get("number", "—"),
-                f"{n.relevance_score:.2f}",
-            )
-        session.console.print(tbl)
-    else:
-        for i, n in enumerate(nodes, 1):
-            print(f"  {i}. [{n.id[:12]}] {n.metadata.get('codex_prefix','?')} "
-                  f"ст.{n.metadata.get('number','?')}  score={n.relevance_score:.2f}")
-
-
-def _get_input(session: Session) -> str:
-    """Read user input with a styled prompt."""
-    if session.console:
-        return session.console.input("\n[bold cyan]Вы:[/bold cyan] ").strip()
-    else:
-        return input("\nВы: ").strip()
-
-
-                                                                             
-                    
-                                                                             
-
-async def handle_query(query: str, session: Session) -> None:
-    """Two-phase execution:
-      Phase 1 — Context collection with live spinner showing agent progress."""
-
-                                                                           
-    nodes: list[Node] = []
-    logs:  list[str]  = []
-    agent_status = {"text": "Инициализация..."}
-
-    def _status_cb(log_entry: str) -> None:
-                                                        
-                                           
-        """Function _status_cb."""
-        if log_entry.startswith("["):
-            end = log_entry.find("]")
-            agent_status["text"] = log_entry[1:end] if end > 0 else log_entry
-
-    if session.console:
-                                                                 
-        spinner_text = Text()
-        with session.console.status(
-            "[bold yellow]Поиск по законодательству…[/bold yellow]",
-            spinner="dots",
-        ):
-            nodes, logs = await get_context_nodes(query, status_cb=_status_cb)
-        _print(session, f"[dim]Найдено статей: {len(nodes)} | "
-               f"Агентов отработало: {len(logs)}[/dim]")
-    else:
-        print("Поиск по законодательству…", flush=True)
-        nodes, logs = await get_context_nodes(query)
-        print(f"Найдено статей: {len(nodes)}")
-
-                                                                           
-    _rule(session)
-
-    if session.console:
-        session.console.print(f"[bold green]{ASSISTANT_NAME}:[/bold green]")
-    else:
-        print(f"\n{ASSISTANT_NAME}:")
-
-    full_answer_parts: list[str] = []
-
-                                                             
-                                                                     
-    async for token in stream_answer(query, nodes):
-        sys.stdout.write(token)
-        sys.stdout.flush()
-        full_answer_parts.append(token)
-
-    sys.stdout.write("\n\n")
-    sys.stdout.flush()
-
-    full_answer = "".join(full_answer_parts)
-
-                                                                           
-    if nodes and session.console:
-        cited = " · ".join(
-            f"[dim]{n.metadata.get('codex_prefix','?')} ст.{n.metadata.get('number','?')}[/dim]"
-            for n in nodes[:6]
-        )
-        session.console.print(f"[dim]📎 Источники: {cited}"
-                               + (" …" if len(nodes) > 6 else "") + "[/dim]")
-    elif nodes:
-        sources = ", ".join(
-            f"{n.metadata.get('codex_prefix','?')} ст.{n.metadata.get('number','?')}"
-            for n in nodes[:6]
-        )
-        print(f"Источники: {sources}")
-
-    _rule(session)
-
-                                                                           
-    session.add(query, full_answer, nodes)
-
-
-                                                                             
-                    
-                                                                             
-
-async def dispatch_command(cmd: str, session: Session) -> bool:
-    """Handle slash commands."""
-    cmd = cmd.lower().strip()
-
-    if cmd == "/exit":
-        _print(session, "\n[dim]До свидания![/dim]" if session.console else "\nДо свидания!")
-        return True
-
-    if cmd == "/clear":
-        if session.console:
-            session.console.clear()
-        else:
-            print("\033[2J\033[H", end="")
-        _print_welcome(session)
-        return False
-
-    if cmd == "/help":
-        _print_help(session)
-        return False
-
-    if cmd == "/history":
-        _print_history(session)
-        return False
-
-    if cmd == "/nodes":
-        _print_nodes(session)
-        return False
-
-    _print(session,
-           f"[red]Неизвестная команда:[/red] {cmd}  (введите [yellow]/help[/yellow])"
-           if session.console else f"Неизвестная команда: {cmd}")
-    return False
-
-
-                                                                             
-           
-                                                                             
-
-async def chat_loop(session: Session) -> None:
-    """Function chat_loop."""
-    _print_welcome(session)
+    session = Session()
 
     while True:
         try:
-            raw = _get_input(session)
+            raw = console.input("[bold cyan]Вы:[/bold cyan] ").strip()
         except (KeyboardInterrupt, EOFError):
-            _print(session, "\n[dim]Прерывание — выход.[/dim]"
-                   if session.console else "\nВыход.")
+            console.print("\n[dim]До свидания![/dim]")
             break
 
         if not raw:
             continue
 
+        # ── Commands ──────────────────────────────────────────────────────────
         if raw.startswith("/"):
-            should_exit = await dispatch_command(raw, session)
-            if should_exit:
+            cmd = raw.lower().split()[0]
+
+            if cmd in ("/quit", "/exit", "/q"):
+                console.print("[dim]До свидания![/dim]")
                 break
+
+            elif cmd == "/clear":
+                session.clear()
+                console.print(Rule(style="dim"))
+                console.print("[bright_green]История разговора очищена.[/bright_green]\n")
+
+            elif cmd == "/help":
+                console.print(_HELP)
+
+            elif cmd == "/stats":
+                if _last_result is not None:
+                    console.print(_stats_table(_last_result))
+                    console.print()
+                else:
+                    console.print("[dim]Нет данных — сначала задайте вопрос.[/dim]\n")
+
+            else:
+                console.print(
+                    f"[red]Неизвестная команда:[/red] {raw}  [dim](введите /help)[/dim]\n"
+                )
             continue
 
+        # ── Legal question ────────────────────────────────────────────────────
         try:
-            await handle_query(raw, session)
+            await _process(raw, session)
         except KeyboardInterrupt:
-            _print(session, "\n[dim]Запрос прерван.[/dim]"
-                   if session.console else "\nЗапрос прерван.")
+            console.print("\n[dim]Запрос прерван.[/dim]\n")
         except Exception as exc:
-            _print(session,
-                   f"[red]Ошибка:[/red] {exc}" if session.console else f"Ошибка: {exc}")
+            console.print(f"[red]Ошибка:[/red] {exc}\n")
 
-
-                                                                             
-             
-                                                                             
-
-def main() -> None:
-    """Function main."""
-    import argparse
-    parser = argparse.ArgumentParser(
-        description="Real-time legal RAG chat for Kazakhstani legislation.",
-    )
-    parser.add_argument(
-        "--no-color", action="store_true",
-        help="Disable Rich formatting (plain terminal output).",
-    )
-    args = parser.parse_args()
-
-    session = Session()
-    if args.no_color:
-        session.console = None                            
-
-    asyncio.run(chat_loop(session))
+    await close_driver()
 
 
 if __name__ == "__main__":
-    main()
+    asyncio.run(main())

@@ -1,15 +1,4 @@
-"""converter.py v4 — Batch DOCX → Markdown converter
-for 24 Codes of the Republic of Kazakhstan (RU + KZ)
-
-Platform : Windows 11 (native Python, no WSL)
-Author   : Senior Python Developer / Data Engineer
-Project  : Multi-Agent Graph-Based RAG (Neo4j)
-Encoding : UTF-8 — Kazakh Cyrillic with diacritics (Ә І Ң Ү Қ Ғ Һ Ө)
-
-Bug-fixes v4 (over v3)
-──────────────────────
-  BUG-1 FIXED — Non-breaking spaces (\xa0, U+00A0): pandoc uses \xa0 for body-text
-         indentation."""
+"""Batch DOCX-to-Markdown conversion with legal heading normalisation."""
 
 from __future__ import annotations
 

@@ -1,3 +1,4 @@
+"""Preprocessing pipeline: DOCX→Markdown, Markdown→JSON, bilingual merge."""
 from .converter import run_batch, run_reprocess
 from .parser import run as parse_run
 from .merge_bilingual import merge_all
