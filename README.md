@@ -1,4 +1,4 @@
-# Graph Based Multi-Agent RAG System for Legislation of Kazakhstan
+# Graph Based Multi-Agent RAG System for Legislation of the Republic of Kazakhstan
 
 A retrieval-augmented generation system that answers legal questions about Kazakhstani legislation. The system combines BM25 fulltext search, knowledge graph traversal, and a large language model to produce precise, article-grounded answers in Russian and Kazakh.
 
