@@ -99,10 +99,8 @@ async def retrieve(intent: "IntentResult") -> RetrievalResult:
                     source="bm25",
                 )
             else:
-                if score > score_map[aid].combined_score:
-                    score_map[aid].combined_score = score
-                else:
-                    score_map[aid].combined_score += score * 0.25
+                # Articles matching multiple keywords get a stronger bonus (was 0.25)
+                score_map[aid].combined_score += score * 0.5
 
     bm25_articles = sorted(score_map.values(), key=lambda a: a.combined_score, reverse=True)
 

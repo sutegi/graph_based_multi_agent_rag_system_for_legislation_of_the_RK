@@ -3,3 +3,6 @@ __pycache__/
 .env
 .vscode/
 data/
+evaluation_results_v2.json
+evaluation_results.json
+.gitignore

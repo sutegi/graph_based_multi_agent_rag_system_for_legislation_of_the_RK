@@ -31,17 +31,17 @@ NEO4J_USER:     str = os.getenv("NEO4J_USER",     "neo4j")
 NEO4J_PASSWORD: str = os.getenv("NEO4J_PASSWORD", "")
 NEO4J_DATABASE: str = os.getenv("NEO4J_DATABASE", "neo4j")
 
-TOP_K_BASE: int          = 10
+TOP_K_BASE: int          = 20   # was 10 — more BM25 candidates per keyword
 MAX_CODEX_FILTERS: int   = 3
-GRAPH_SEED: int          = 8
+GRAPH_SEED: int          = 15   # was 8  — seed more articles into graph traversal
 GRAPH_DEPTH: int         = 1
-GRAPH_LIMIT: int         = 5
+GRAPH_LIMIT: int         = 8    # was 5  — more graph neighbours per seed
 GRAPH_DECAY: float       = 0.75
 DEFINITION_KW_COUNT: int = 3
 DEFINITION_TOP_K: int    = 5
-CONTEXT_MAX_CHARS: int   = 18_000
+CONTEXT_MAX_CHARS: int   = 20_000  # was 18_000 — accommodate larger candidate set
 
-CONFIDENCE_THRESHOLD: float = 0.55
+CONFIDENCE_THRESHOLD: float = 0.45  # was 0.55 — reduces 30% retry rate
 MAX_RETRIES: int            = 1
 
 LEGAL_CODEXES: dict[str, tuple[str, str]] = {
