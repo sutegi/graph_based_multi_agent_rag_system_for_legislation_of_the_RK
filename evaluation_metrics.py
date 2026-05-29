@@ -1036,12 +1036,79 @@ async def evaluate_case(
 
 
 # =============================================================================
+# 6b. BM25-ONLY BASELINE (ablation: no graph enrichment)
+# =============================================================================
+
+async def _retrieve_bm25_only(intent: Any) -> list[str]:
+    """Run BM25-only retrieval (skip graph_neighbours); return article numbers in ranked order."""
+    from multi_agent_rag.database import bm25_search  # noqa: PLC0415
+
+    keywords    = intent.keywords
+    codex_slugs = intent.codex_slugs
+
+    score_map: dict[str, tuple[str, float]] = {}  # id -> (number, score)
+
+    for kw in keywords:
+        limit = max(5, round(20 * (0.5 + kw.weight)))
+        rows: list[dict] = []
+        if codex_slugs:
+            rows = await bm25_search(kw.text, limit=limit, codex_slugs=codex_slugs)
+        if not rows:
+            rows = await bm25_search(kw.text, limit=limit)
+
+        for row in rows:
+            aid    = (row.get("id") or "").strip()
+            number = str(row.get("number") or "")
+            score  = (row.get("score") or 0.0) * kw.weight
+            if not aid:
+                continue
+            if aid not in score_map:
+                score_map[aid] = (number, score)
+            else:
+                prev_num, prev_score = score_map[aid]
+                score_map[aid] = (prev_num, prev_score + score * 0.5)
+
+    ranked = sorted(score_map.values(), key=lambda x: x[1], reverse=True)
+    return [num for num, _ in ranked]
+
+
+async def evaluate_case_baseline(
+    case: "EvalCase",
+    k_values: list[int],
+) -> dict[str, float]:
+    """Run intent analysis + BM25-only retrieval; return retrieval metrics for ablation."""
+    from multi_agent_rag.llm import analyse_intent  # noqa: PLC0415
+
+    if not case.is_legal or not case.expected_article_numbers:
+        return {}
+
+    session = Session()
+    try:
+        intent = await analyse_intent(case.question, history_ctx="")
+    except Exception:
+        return {}
+
+    try:
+        retrieved_numbers = await _retrieve_bm25_only(intent)
+    except Exception:
+        return {}
+
+    return compute_retrieval_metrics(retrieved_numbers, case.expected_article_numbers, k_values)
+
+
+# =============================================================================
 # 7.  AGGREGATE METRICS
 # =============================================================================
 
 def _safe_mean(vals: list[float]) -> float:
     valid = [v for v in vals if not math.isnan(v)]
     return float(np.mean(valid)) if valid else float("nan")
+
+
+def _safe_std(vals: list[float]) -> float:
+    """Population standard deviation over non-NaN values."""
+    valid = [v for v in vals if not math.isnan(v)]
+    return float(np.std(valid, ddof=0)) if len(valid) > 1 else float("nan")
 
 
 def _safe_percentile(vals: list[float], p: float) -> float:
@@ -1074,30 +1141,38 @@ def aggregate(results: list[CaseResult], k_values: list[int]) -> dict:
         if offtopic_results else float("nan")
     )
 
-    # ── Retrieval metrics (macro-averaged) ───────────────────────────────────
+    # ── Retrieval metrics (macro-averaged ± std) ─────────────────────────────
     retrieval_agg: dict[str, float] = {}
     for k in k_values:
         for metric in (f"precision@{k}", f"recall@{k}", f"f1@{k}",
                        f"ndcg@{k}", f"hit@{k}"):
             vals = [r.retrieval.get(metric, float("nan")) for r in retrieval_results]
-            retrieval_agg[metric] = _safe_mean(vals)
+            retrieval_agg[metric]            = _safe_mean(vals)
+            retrieval_agg[f"{metric}_std"]   = _safe_std(vals)
     mrr_vals = [r.retrieval.get("mrr", float("nan")) for r in retrieval_results]
-    retrieval_agg["mrr"] = _safe_mean(mrr_vals)
+    retrieval_agg["mrr"]     = _safe_mean(mrr_vals)
+    retrieval_agg["mrr_std"] = _safe_std(mrr_vals)
 
-    # ── Generation metrics ────────────────────────────────────────────────────
+    # ── Generation metrics (mean ± std) ───────────────────────────────────────
     gen_results = [r for r in legal_results if not math.isnan(r.rouge1)]
     generation = {
-        "rouge1":  _safe_mean([r.rouge1  for r in gen_results]),
-        "rouge2":  _safe_mean([r.rouge2  for r in gen_results]),
-        "rougeL":  _safe_mean([r.rougeL  for r in gen_results]),
-        "sem_sim": _safe_mean([r.sem_sim for r in gen_results]),
+        "rouge1":      _safe_mean([r.rouge1  for r in gen_results]),
+        "rouge1_std":  _safe_std( [r.rouge1  for r in gen_results]),
+        "rouge2":      _safe_mean([r.rouge2  for r in gen_results]),
+        "rouge2_std":  _safe_std( [r.rouge2  for r in gen_results]),
+        "rougeL":      _safe_mean([r.rougeL  for r in gen_results]),
+        "rougeL_std":  _safe_std( [r.rougeL  for r in gen_results]),
+        "sem_sim":     _safe_mean([r.sem_sim for r in gen_results]),
+        "sem_sim_std": _safe_std( [r.sem_sim for r in gen_results]),
     }
 
-    # ── LLM judge metrics ─────────────────────────────────────────────────────
+    # ── LLM judge metrics (mean ± std) ────────────────────────────────────────
     judge_results = [r for r in legal_results if not math.isnan(r.faithfulness)]
     llm_judge = {
-        "faithfulness": _safe_mean([r.faithfulness for r in judge_results]),
-        "relevance":    _safe_mean([r.relevance    for r in judge_results]),
+        "faithfulness":     _safe_mean([r.faithfulness for r in judge_results]),
+        "faithfulness_std": _safe_std( [r.faithfulness for r in judge_results]),
+        "relevance":        _safe_mean([r.relevance    for r in judge_results]),
+        "relevance_std":    _safe_std( [r.relevance    for r in judge_results]),
     }
 
     # ── Intent / Codex routing ────────────────────────────────────────────────
@@ -1242,12 +1317,16 @@ def print_report(agg: dict, results: list[CaseResult], k_values: list[int]) -> N
         for k in k_values:
             key = f"{metric_base}@{k}"
             val = agg["retrieval"].get(key, float("nan"))
+            std = agg["retrieval"].get(f"{key}_std", float("nan"))
             c   = _colour(val)
-            row.append(f"[{c}]{_fmt(val)}[/{c}]")
+            std_str = f" ±{std:.3f}" if not math.isnan(std) else ""
+            row.append(f"[{c}]{_fmt(val)}{std_str}[/{c}]")
         if "mrr" in agg["retrieval"] and metric_base == "f1":
             mrr_val = agg["retrieval"]["mrr"]
+            mrr_std = agg["retrieval"].get("mrr_std", float("nan"))
             c = _colour(mrr_val)
-            row.append(f"[{c}]{_fmt(mrr_val)}[/{c}]")
+            std_str = f" ±{mrr_std:.3f}" if not math.isnan(mrr_std) else ""
+            row.append(f"[{c}]{_fmt(mrr_val)}{std_str}[/{c}]")
         elif "mrr" in agg["retrieval"]:
             row.append("")
         ret_tbl.add_row(*row)
@@ -1262,8 +1341,10 @@ def print_report(agg: dict, results: list[CaseResult], k_values: list[int]) -> N
     for label, key in (("ROUGE-1 F1", "rouge1"), ("ROUGE-2 F1", "rouge2"),
                        ("ROUGE-L F1", "rougeL"), ("Semantic Similarity (SBERT)", "sem_sim")):
         val = gen.get(key, float("nan"))
+        std = gen.get(f"{key}_std", float("nan"))
         c   = _colour(val, low=0.2, high=0.5)
-        gen_tbl.add_row(label, f"[{c}]{_fmt(val)}[/{c}]")
+        std_str = f" ± {std:.3f}" if not math.isnan(std) else ""
+        gen_tbl.add_row(label, f"[{c}]{_fmt(val)}{std_str}[/{c}]")
     console.print(Panel(gen_tbl, title="Generation Quality (vs reference answers)", border_style="blue"))
 
     # ── LLM Judge ─────────────────────────────────────────────────────────────
@@ -1273,8 +1354,10 @@ def print_report(agg: dict, results: list[CaseResult], k_values: list[int]) -> N
     jdg_tbl.add_column("Score", justify="right")
     for label, key in (("Faithfulness", "faithfulness"), ("Answer Relevance", "relevance")):
         val = jdg.get(key, float("nan"))
+        std = jdg.get(f"{key}_std", float("nan"))
         c   = _colour(val)
-        jdg_tbl.add_row(label, f"[{c}]{_fmt(val)}[/{c}]")
+        std_str = f" ± {std:.3f}" if not math.isnan(std) else ""
+        jdg_tbl.add_row(label, f"[{c}]{_fmt(val)}{std_str}[/{c}]")
     console.print(Panel(jdg_tbl, title="LLM-as-Judge (DeepSeek evaluator)", border_style="blue"))
 
     # ── Intent ────────────────────────────────────────────────────────────────
@@ -1433,6 +1516,10 @@ def parse_args() -> argparse.Namespace:
         "--cases", nargs="*",
         help="Run only specific case IDs (e.g. --cases labor_01 tax_01)",
     )
+    parser.add_argument(
+        "--ablation", action="store_true",
+        help="Also run BM25-only baseline (no graph enrichment) and print comparison table",
+    )
     return parser.parse_args()
 
 
@@ -1475,7 +1562,8 @@ async def main() -> None:
         f"  Cases         : [cyan]{len(cases)}[/cyan]\n"
         f"  K values      : [cyan]{args.k}[/cyan]\n"
         f"  LLM judge     : [cyan]{'yes' if run_llm_judge else 'no (--no-llm-judge)'}[/cyan]\n"
-        f"  SBERT sim     : [cyan]{'yes' if _SBERT_AVAILABLE else 'no (pip install sentence-transformers)'}[/cyan]"
+        f"  SBERT sim     : [cyan]{'yes' if _SBERT_AVAILABLE else 'no (pip install sentence-transformers)'}[/cyan]\n"
+        f"  Ablation      : [cyan]{'yes (--ablation)' if args.ablation else 'no'}[/cyan]"
     )
     console.print()
 
@@ -1504,6 +1592,89 @@ async def main() -> None:
 
     # ── Report ────────────────────────────────────────────────────────
     print_report(agg, results, k_values)
+
+    # ── Ablation: BM25-only baseline ───────────────────────────────────
+    if args.ablation:
+        legal_cases = [c for c in cases if c.is_legal and c.expected_article_numbers]
+        console.print(Rule("[bold white]ABLATION: BM25-only baseline[/bold white]", style="yellow"))
+        console.print(f"  [dim]Running BM25-only retrieval on {len(legal_cases)} legal cases "
+                      f"(no graph enrichment, no answer synthesis)…[/dim]\n")
+
+        baseline_results: list[tuple[str, dict[str, float]]] = []
+        with Progress(
+            SpinnerColumn(),
+            TextColumn("[progress.description]{task.description}"),
+            BarColumn(), MofNCompleteColumn(), TimeElapsedColumn(),
+            console=console, transient=True,
+        ) as prog:
+            t = prog.add_task("BM25 baseline…", total=len(legal_cases))
+            for case in legal_cases:
+                prog.update(t, description=f"[yellow]{case.id}[/yellow]")
+                metrics = await evaluate_case_baseline(case, k_values)
+                baseline_results.append((case.id, metrics))
+                prog.advance(t)
+
+        # Aggregate baseline retrieval metrics
+        def _agg_baseline(key: str) -> tuple[float, float]:
+            vals = [m.get(key, float("nan")) for _, m in baseline_results]
+            return _safe_mean(vals), _safe_std(vals)
+
+        # Build comparison table
+        cmp_tbl = Table(
+            title="Graph-enriched vs BM25-only — Retrieval Metric Comparison",
+            box=box.SIMPLE_HEAD, border_style="yellow", padding=(0, 2),
+        )
+        cmp_tbl.add_column("Metric",           style="dim cyan")
+        cmp_tbl.add_column("Full (mean ± std)", justify="right")
+        cmp_tbl.add_column("BM25-only (mean ± std)", justify="right")
+        cmp_tbl.add_column("Δ",                justify="right")
+
+        compare_keys = (
+            [(f"hit@{k}",  f"Hit@{k}")  for k in k_values] +
+            [(f"ndcg@{k}", f"NDCG@{k}") for k in k_values] +
+            [("mrr", "MRR")]
+        )
+        for key, label in compare_keys:
+            full_mean = agg["retrieval"].get(key, float("nan"))
+            full_std  = agg["retrieval"].get(f"{key}_std", float("nan"))
+            base_mean, base_std = _agg_baseline(key)
+            delta = full_mean - base_mean if not (math.isnan(full_mean) or math.isnan(base_mean)) else float("nan")
+
+            def _fmt_pm(m: float, s: float) -> str:
+                if math.isnan(m):
+                    return "[dim]N/A[/dim]"
+                s_str = f" ± {s:.3f}" if not math.isnan(s) else ""
+                return f"{m:.3f}{s_str}"
+
+            delta_str = (
+                f"[bright_green]+{delta:.3f}[/bright_green]" if delta > 0.005
+                else f"[red]{delta:.3f}[/red]" if delta < -0.005
+                else f"[dim]{delta:.3f}[/dim]"
+            ) if not math.isnan(delta) else "[dim]N/A[/dim]"
+
+            cmp_tbl.add_row(label, _fmt_pm(full_mean, full_std),
+                            _fmt_pm(base_mean, base_std), delta_str)
+
+        console.print(cmp_tbl)
+        console.print()
+
+        # Save ablation results alongside main results
+        ablation_payload = {
+            "baseline_retrieval": {
+                case_id: _clean_for_json(metrics)
+                for case_id, metrics in baseline_results
+            },
+            "baseline_aggregate": {
+                key: _clean_for_json({"mean": _agg_baseline(key)[0],
+                                      "std":  _agg_baseline(key)[1]})
+                for key, _ in compare_keys
+            },
+        }
+        ablation_path = args.out.with_name(args.out.stem + "_ablation.json")
+        ablation_path.write_text(
+            json.dumps(ablation_payload, ensure_ascii=False, indent=2), encoding="utf-8"
+        )
+        console.print(f"[dim]Ablation results saved → [cyan]{ablation_path}[/cyan][/dim]\n")
 
     # ── Save ────────────────────────────────────────────────────────────
     save_results(agg, results, args.out)
